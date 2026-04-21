@@ -1,1 +1,53 @@
-*.history
+# --- Core KiCad files (TRACK THESE) ---
+# Schematics, PCB, and project definition
+!*.kicad_sch
+!*.kicad_pcb
+!*.kicad_pro
+# Libraries (TRACK THESE if stored in repo)
+!*.kicad_sym
+!*.kicad_mod
+!*.pretty/
+
+
+
+# --- User / machine-specific settings (IGNORE) ---
+*.kicad_prl
+*.kicad_pro-bak
+
+# --- Autosave & backup noise ---
+*-bak
+*.bak
+*.bck
+*.autosave
+*.tmp
+
+# --- Lock files (avoid commit conflicts) ---
+*.lck
+
+# --- Plot / fabrication outputs (usually NOT versioned) ---
+*.gbr
+*.gerber
+*.drl
+*.zip
+*.pos
+*.csv
+
+# --- 3D / export artifacts ---
+*.step
+*.stp
+
+# --- History folders ---
+.history/
+**/.history/
+
+# --- IDE / editor ---
+.vscode/
+.idea/
+
+# --- OS junk ---
+.DS_Store
+Thumbs.db
+
+# --- Python cache (if using scripts/plugins) ---
+__pycache__/
+*.pyc
