@@ -8,6 +8,7 @@
 		(title "Radio Receiver")
 		(date "2026-04-19")
 		(rev "0.0.1")
+		(company "Walla Walla University")
 		(comment 2 "Daniel Mendoza")
 		(comment 3 "Jeffrey McCormick")
 	)
