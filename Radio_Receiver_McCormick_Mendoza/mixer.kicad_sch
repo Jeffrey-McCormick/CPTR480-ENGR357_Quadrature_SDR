@@ -5,6 +5,7 @@
 	(uuid "036b4818-fc53-4612-96cc-2c5af3bdde80")
 	(paper "A4")
 	(title_block
+		(title "Radio Receiver")
 		(date "2026-04-19")
 		(rev "0.0.1")
 		(comment 2 "Daniel Mendoza")
