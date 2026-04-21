@@ -3,4 +3,5 @@
 	(lib (name "TPS727-4.8V_regulator") (type "KiCad") (uri "${KIPRJMOD}/TPS72748DSER/KiCADv6/footprints.pretty") (options "") (descr ""))
 	(lib (name "TPS727-3.3V_regulator") (type "KiCad") (uri "${KIPRJMOD}/TPS72733DSER/KiCADv6/footprints.pretty") (options "") (descr ""))
 	(lib (name "SWITCH SLIDE SPDT 0.5A 24V 09.03290.01") (type "KiCad") (uri "${KIPRJMOD}/09_03290_01/KiCADv6/footprints.pretty") (options "") (descr ""))
+	(lib (name "SN74CBT3253CDBR_1-4_MUX") (type "KiCad") (uri "${KIPRJMOD}/SN74CBT3253CDBR/KiCADv6/footprints.pretty") (options "") (descr ""))
 )
