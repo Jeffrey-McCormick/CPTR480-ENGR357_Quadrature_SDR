@@ -1215,7 +1215,7 @@
 		)
 		(uuid "ae3bcc91-b295-474d-acf0-c01c7a84c8e6")
 	)
-	(text "[FREQ RANGE] ([FILTER ORDER] Order, Series-First [FILTER NAME])\nBy doing Series-First, DC signals cannot pass through the capacitor (C2), \nallowing better control over the DC offset going into the op-amps"
+	(text "0.5 MHz - 10 MHz (3rd Order, Series-First Bessel filter)\nBy doing Series-First, DC signals cannot pass through the capacitor (C2), \nallowing better control over the DC offset going into the op-amps"
 		(exclude_from_sim no)
 		(at 101.6 71.755 0)
 		(effects
