@@ -3049,6 +3049,52 @@
 		)
 	)
 	(sheet
+		(at 259.715 134.62)
+		(size 12.7 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "f13b25c3-8e17-4875-84b2-896666dfe469")
+		(property "Sheetname" "ADC-24bit"
+			(at 259.715 133.9084 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ADC-24bit.kicad_sch"
+			(at 259.715 142.8246 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Radio_Receiver_McCormick_Mendoza"
+				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f"
+					(page "9")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 220.98 121.92)
 		(size 12.7 7.62)
 		(exclude_from_sim no)

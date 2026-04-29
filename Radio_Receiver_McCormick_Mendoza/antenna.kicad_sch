@@ -998,6 +998,399 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Switch:SW_Slide_DPDT"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "SW"
+				(at 0 6.858 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SW_Slide_DPDT"
+				(at 0 -8.128 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 13.97 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Slide Switch, dual pole double throw"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "switch dual-pole double-throw dpdt ON-ON"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SW_Slide_DPDT_0_0"
+				(circle
+					(center -2.032 5.08)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -2.032 -5.08)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 -5.08)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SW_Slide_DPDT_0_1"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 5.08)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SW_Slide_DPDT_1_1"
+				(rectangle
+					(start -1.397 5.588)
+					(end -0.762 -0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.762 5.588)
+					(end 1.397 -0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(pin passive line
+					(at -5.08 5.08 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -5.08 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 5.08 180)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:GND"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:VDDA"
 			(power global)
 			(pin_numbers
@@ -1151,7 +1544,7 @@
 	)
 	(text "T37-6 Toroid:\n[NUM] turns"
 		(exclude_from_sim no)
-		(at 153.67 101.6 0)
+		(at 166.624 107.95 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1159,6 +1552,16 @@
 			(justify left bottom)
 		)
 		(uuid "4b9d331d-ce3f-4ad3-b303-bf698cfdb7d0")
+	)
+	(text "0 Hz - 2 MHz (3rd Order, Shunt-First Butterworth filter)\nWe rely on the fact that AM radio transmissions are strong.\nWe may need to put a large capacitor at the beginning if DC\noffsets become an issue."
+		(exclude_from_sim no)
+		(at 162.306 124.46 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "66a7cdd6-8558-4070-b8d0-f3a352e4282c")
 	)
 	(text "Jumper for\npreventing \nground loops"
 		(exclude_from_sim no)
@@ -1173,7 +1576,7 @@
 	)
 	(text "T50-6 Toroid: \n[NUMBER] turns"
 		(exclude_from_sim no)
-		(at 128.27 80.645 0)
+		(at 138.43 90.805 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1195,7 +1598,7 @@
 	)
 	(text "T50-6 Toroid: \n[NUM] turns"
 		(exclude_from_sim no)
-		(at 157.48 79.375 0)
+		(at 167.64 89.535 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1227,68 +1630,104 @@
 		(uuid "ea16f446-337a-4e0b-b50f-d194db2fecb0")
 	)
 	(junction
-		(at 203.835 80.01)
+		(at 157.48 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0a2eed19-098f-4306-bcf5-2a062f037fd2")
+	)
+	(junction
+		(at 194.31 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0b2288e6-332a-44e9-9ae3-a7faec2d4885")
+	)
+	(junction
+		(at 147.32 135.89)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0da20f5a-76ce-435b-8fd6-2ecde49b8607")
+	)
+	(junction
+		(at 262.89 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "26a0209f-469b-4323-806d-10b4450aa589")
 	)
 	(junction
-		(at 95.25 99.06)
+		(at 162.56 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "2d2b1b2e-3658-4a50-81d5-ab1510893488")
+		(uuid "36933de1-e255-468c-b074-fe3f99f86390")
 	)
 	(junction
-		(at 147.32 86.36)
+		(at 157.48 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3c0d39c8-bf9b-4a9f-80ee-3bbfe7e259a8")
 	)
 	(junction
-		(at 179.07 86.36)
+		(at 171.45 135.89)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "5902aff2-eacf-4048-a118-71ecee1cf9a3")
+		(uuid "40b4d007-4bfe-4933-a2e6-3117ec9214c4")
 	)
 	(junction
-		(at 147.32 99.06)
+		(at 134.62 105.41)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "82a92464-2e21-446f-9966-32ad9bbc6cda")
+		(uuid "4399b26b-44e2-486d-8c53-7102e4b1dbc8")
 	)
 	(junction
-		(at 182.88 80.01)
+		(at 252.095 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "93c0a9b9-44fb-4a24-95f2-0910a4017714")
+	)
+	(junction
+		(at 241.935 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a747d886-a21c-404b-ba0a-68c1a3da1a74")
 	)
 	(junction
-		(at 104.14 86.36)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a7a71836-7a21-4b8d-8ec1-74b740300bf2")
-	)
-	(junction
-		(at 193.04 80.01)
+		(at 252.095 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "abe5a305-3a4d-4a9c-9f92-d35c8bdb1511")
 	)
 	(junction
-		(at 152.4 86.36)
+		(at 232.41 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c51fcec2-8e9d-4bc9-8f9a-cf7dfb45505a")
+	)
+	(junction
+		(at 162.56 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d33bc494-d5e7-4ca5-b198-bde910551d08")
 	)
 	(junction
-		(at 193.04 86.36)
+		(at 104.14 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "dc6e0268-599c-4397-adce-a15082c5c8cb")
+		(uuid "d8324f91-eaf2-48e0-b17c-6837dcbf6dc6")
+	)
+	(junction
+		(at 114.3 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e22d4dbf-e3a6-4cef-af6c-0c6f327038d8")
+	)
+	(junction
+		(at 251.46 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "edacc3da-e8b5-4529-837e-00ec0bb14514")
 	)
 	(wire
 		(pts
-			(xy 179.07 80.01) (xy 182.88 80.01)
+			(xy 238.125 81.28) (xy 241.935 81.28)
 		)
 		(stroke
 			(width 0)
@@ -1298,7 +1737,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 86.36) (xy 134.62 86.36)
+			(xy 142.24 96.52) (xy 144.78 96.52)
 		)
 		(stroke
 			(width 0)
@@ -1308,7 +1747,17 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 99.06) (xy 152.4 99.06)
+			(xy 162.56 109.22) (xy 186.69 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09e46ddc-e725-44d2-8707-6036777bcfb8")
+	)
+	(wire
+		(pts
+			(xy 157.48 109.22) (xy 162.56 109.22)
 		)
 		(stroke
 			(width 0)
@@ -1318,13 +1767,53 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 86.36) (xy 167.64 86.36)
+			(xy 144.78 109.22) (xy 144.78 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f02484e-f311-47b0-b868-3f669f9ed84f")
+	)
+	(wire
+		(pts
+			(xy 191.77 91.44) (xy 191.77 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10769aca-81f0-4605-9e23-3b8db8d26f2e")
+	)
+	(wire
+		(pts
+			(xy 175.26 96.52) (xy 177.8 96.52)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "11304214-2a71-4d02-9006-85245c5a48d5")
+	)
+	(wire
+		(pts
+			(xy 121.92 135.89) (xy 147.32 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1184a737-e522-4476-9263-0fa5532b27dd")
+	)
+	(wire
+		(pts
+			(xy 251.46 87.63) (xy 252.095 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "146a0e4e-45bc-483d-b549-cbe48de50a0a")
 	)
 	(wire
 		(pts
@@ -1335,6 +1824,16 @@
 			(type default)
 		)
 		(uuid "17a83858-d984-4afc-bf4a-2bf47ef92b11")
+	)
+	(wire
+		(pts
+			(xy 204.47 96.52) (xy 209.55 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17e19001-d5e6-4937-baa1-5b0107a2d899")
 	)
 	(polyline
 		(pts
@@ -1348,7 +1847,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 86.36) (xy 152.4 86.36)
+			(xy 157.48 96.52) (xy 162.56 96.52)
 		)
 		(stroke
 			(width 0)
@@ -1358,27 +1857,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 99.06) (xy 147.32 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "295af842-6ce1-4bd4-a9c0-dc8ed496cd43")
-	)
-	(wire
-		(pts
-			(xy 179.07 86.36) (xy 193.04 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2b3d3d2b-7ef3-4c09-a8d7-a52e2ab7ec83")
-	)
-	(wire
-		(pts
-			(xy 95.25 97.79) (xy 95.25 99.06)
+			(xy 95.25 97.79) (xy 95.25 100.33)
 		)
 		(stroke
 			(width 0)
@@ -1388,7 +1867,17 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 93.98) (xy 152.4 99.06)
+			(xy 144.78 105.41) (xy 134.62 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e9b8008-dd25-4b73-a9fb-d99699c45a9b")
+	)
+	(wire
+		(pts
+			(xy 162.56 104.14) (xy 162.56 109.22)
 		)
 		(stroke
 			(width 0)
@@ -1406,9 +1895,29 @@
 		)
 		(uuid "3f6dcc65-3ee3-4a89-9591-177cdb03b566")
 	)
+	(wire
+		(pts
+			(xy 157.48 109.22) (xy 144.78 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44833f64-0137-4194-bf2a-8c9677dc1cec")
+	)
+	(wire
+		(pts
+			(xy 137.16 91.44) (xy 137.16 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47867d33-28c5-413a-b410-8d5847f48a9e")
+	)
 	(polyline
 		(pts
-			(xy 156.21 96.52) (xy 156.21 92.71)
+			(xy 166.37 106.68) (xy 166.37 102.87)
 		)
 		(stroke
 			(width 0)
@@ -1418,7 +1927,17 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 86.36) (xy 147.32 86.36)
+			(xy 137.16 91.44) (xy 134.62 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a67d72a-f8c7-4487-9a4c-c31c3abc55f1")
+	)
+	(wire
+		(pts
+			(xy 152.4 96.52) (xy 157.48 96.52)
 		)
 		(stroke
 			(width 0)
@@ -1426,9 +1945,19 @@
 		)
 		(uuid "4b61f815-82de-4312-a237-2aa35f978e2b")
 	)
+	(wire
+		(pts
+			(xy 114.3 86.36) (xy 104.14 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e62d0ee-9535-4806-bc68-57ca299d7ebd")
+	)
 	(polyline
 		(pts
-			(xy 171.45 78.74) (xy 171.45 80.01)
+			(xy 181.61 88.9) (xy 181.61 90.17)
 		)
 		(stroke
 			(width 0)
@@ -1436,9 +1965,19 @@
 		)
 		(uuid "5223a01c-3938-4a16-9274-8e159888d5d1")
 	)
+	(wire
+		(pts
+			(xy 147.32 143.51) (xy 171.45 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "524a5978-6c26-46bd-bb78-6916caeae2db")
+	)
 	(polyline
 		(pts
-			(xy 136.525 85.09) (xy 136.525 80.645)
+			(xy 146.685 95.25) (xy 146.685 90.805)
 		)
 		(stroke
 			(width 0)
@@ -1448,7 +1987,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.835 80.01) (xy 206.375 80.01)
+			(xy 262.89 81.28) (xy 265.43 81.28)
 		)
 		(stroke
 			(width 0)
@@ -1458,7 +1997,27 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 71.12) (xy 182.88 80.01)
+			(xy 147.32 135.89) (xy 154.94 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "620a0541-b870-4b53-aa86-6fa7dea396a5")
+	)
+	(wire
+		(pts
+			(xy 191.77 83.82) (xy 232.41 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64dc2b2a-5664-497b-b8c7-7d8ee68f2d15")
+	)
+	(wire
+		(pts
+			(xy 241.935 72.39) (xy 241.935 81.28)
 		)
 		(stroke
 			(width 0)
@@ -1468,7 +2027,17 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 80.01) (xy 203.835 80.01)
+			(xy 232.41 101.6) (xy 232.41 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6fabcc3d-7ceb-48c1-911f-f01da46399ce")
+	)
+	(wire
+		(pts
+			(xy 259.715 81.28) (xy 262.89 81.28)
 		)
 		(stroke
 			(width 0)
@@ -1478,7 +2047,37 @@
 	)
 	(wire
 		(pts
-			(xy 203.835 71.12) (xy 197.485 71.12)
+			(xy 114.3 101.6) (xy 114.3 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "781572c9-e188-44c0-bf4b-bb385ade109d")
+	)
+	(wire
+		(pts
+			(xy 232.41 87.63) (xy 251.46 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78f83468-b114-4819-afdd-f1a6ee61bc10")
+	)
+	(wire
+		(pts
+			(xy 137.16 82.55) (xy 114.3 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79430e09-122a-4335-aa3d-9af0153c5673")
+	)
+	(wire
+		(pts
+			(xy 262.89 72.39) (xy 256.54 72.39)
 		)
 		(stroke
 			(width 0)
@@ -1486,29 +2085,9 @@
 		)
 		(uuid "796cf36d-4024-4f6d-9dc9-cdfa696d09a5")
 	)
-	(wire
-		(pts
-			(xy 193.04 86.36) (xy 201.93 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8150c846-0969-4855-8afe-f05815432173")
-	)
-	(wire
-		(pts
-			(xy 175.26 86.36) (xy 179.07 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "844f0291-f0b1-4a97-abfb-1265379bfa65")
-	)
 	(polyline
 		(pts
-			(xy 167.64 78.74) (xy 171.45 78.74)
+			(xy 177.8 88.9) (xy 181.61 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1528,7 +2107,17 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 71.12) (xy 189.865 71.12)
+			(xy 204.47 91.44) (xy 213.36 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9cc5b1c1-6cc2-45b7-8c0a-19d0c5392c8f")
+	)
+	(wire
+		(pts
+			(xy 241.935 72.39) (xy 248.92 72.39)
 		)
 		(stroke
 			(width 0)
@@ -1548,17 +2137,57 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 99.06) (xy 95.25 100.33)
+			(xy 186.69 109.22) (xy 186.69 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a4e537fd-3dc5-44c8-a85d-07d51b7d3a73")
+		(uuid "9f38595f-5a9e-4601-a5d9-8da5d6f89d76")
 	)
 	(wire
 		(pts
-			(xy 203.835 71.12) (xy 203.835 80.01)
+			(xy 194.31 91.44) (xy 191.77 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a01d509e-1f75-43b1-a1d7-ba1d1c41a5cf")
+	)
+	(wire
+		(pts
+			(xy 124.46 101.6) (xy 114.3 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3fe4423-f6bb-4aa4-b124-82db735618c4")
+	)
+	(wire
+		(pts
+			(xy 171.45 135.89) (xy 209.55 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a40303ff-7c2e-4771-a393-62cc5e189fad")
+	)
+	(wire
+		(pts
+			(xy 194.31 101.6) (xy 194.31 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5d6a322-2399-4dc6-b805-20aa57bc9090")
+	)
+	(wire
+		(pts
+			(xy 262.89 72.39) (xy 262.89 81.28)
 		)
 		(stroke
 			(width 0)
@@ -1568,7 +2197,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 86.36) (xy 157.48 86.36)
+			(xy 162.56 96.52) (xy 167.64 96.52)
 		)
 		(stroke
 			(width 0)
@@ -1578,13 +2207,93 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 93.98) (xy 147.32 99.06)
+			(xy 186.69 101.6) (xy 194.31 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c21be48c-82aa-433d-a616-9cb50c52b3ad")
+	)
+	(wire
+		(pts
+			(xy 121.92 96.52) (xy 121.92 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c32d5cba-5bda-45e3-a57b-7e4162a9348f")
+	)
+	(wire
+		(pts
+			(xy 185.42 96.52) (xy 194.31 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3763bd2-f343-4396-8a92-2f8a8de734c8")
+	)
+	(wire
+		(pts
+			(xy 232.41 83.82) (xy 232.41 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4fde6fd-3305-4338-9e70-a8ad65f44703")
+	)
+	(wire
+		(pts
+			(xy 162.56 135.89) (xy 171.45 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c79c5c34-0aeb-4198-bdef-13bc50a02c1b")
+	)
+	(wire
+		(pts
+			(xy 157.48 104.14) (xy 157.48 109.22)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "ca3fd856-9439-430c-b1ab-35259e3172c8")
+	)
+	(wire
+		(pts
+			(xy 252.095 87.63) (xy 260.985 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cdaefbec-5f5e-41d7-be2c-7c3ef7867328")
+	)
+	(wire
+		(pts
+			(xy 209.55 96.52) (xy 209.55 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dba68fc3-ff0e-4ee7-a3f8-51c9797be30c")
+	)
+	(wire
+		(pts
+			(xy 114.3 82.55) (xy 114.3 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "defaa589-b0f2-4cb2-9533-8032026342e1")
 	)
 	(polyline
 		(pts
@@ -1598,7 +2307,27 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 80.01) (xy 185.42 80.01)
+			(xy 204.47 101.6) (xy 232.41 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7d131dd-aac2-45fd-9e3d-a3897314e025")
+	)
+	(wire
+		(pts
+			(xy 134.62 101.6) (xy 134.62 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee6ec94f-d179-4a58-a1e0-66217ddb5740")
+	)
+	(wire
+		(pts
+			(xy 241.935 81.28) (xy 244.475 81.28)
 		)
 		(stroke
 			(width 0)
@@ -1608,7 +2337,7 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 80.01) (xy 193.04 86.36)
+			(xy 252.095 81.28) (xy 252.095 87.63)
 		)
 		(stroke
 			(width 0)
@@ -1618,16 +2347,26 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 86.36) (xy 124.46 86.36)
+			(xy 118.11 91.44) (xy 124.46 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fdb91d0c-0a5d-43d5-bd0a-ef288159b137")
+		(uuid "f5d1fd51-2623-4231-ad39-46269fd51900")
+	)
+	(wire
+		(pts
+			(xy 121.92 96.52) (xy 124.46 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5d346dc-3c9d-4964-b107-b67aca782878")
 	)
 	(label "BPF_OUT"
-		(at 201.93 86.36 0)
+		(at 260.985 87.63 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1714,7 +2453,7 @@
 	)
 	(symbol
 		(lib_id "SDRReciever-rescue:C-Device-SDRReciever-rescue")
-		(at 193.675 71.12 90)
+		(at 252.73 72.39 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1724,7 +2463,7 @@
 		(dnp no)
 		(uuid "342d64e7-0e04-4408-a0fb-6b9c2baa1abb")
 		(property "Reference" "C5"
-			(at 195.58 64.77 90)
+			(at 254.635 66.04 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1735,7 +2474,7 @@
 			)
 		)
 		(property "Value" "0.1u"
-			(at 195.58 66.675 90)
+			(at 254.635 67.945 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1746,7 +2485,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 197.485 70.1548 0)
+			(at 256.54 71.4248 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1757,7 +2496,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 193.675 71.12 0)
+			(at 252.73 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1768,7 +2507,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 193.675 71.12 0)
+			(at 252.73 72.39 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1794,7 +2533,7 @@
 	)
 	(symbol
 		(lib_id "SDRReciever-rescue:L-Device-SDRReciever-rescue")
-		(at 171.45 86.36 90)
+		(at 181.61 96.52 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1804,7 +2543,7 @@
 		(dnp no)
 		(uuid "3b93e4e0-532d-40ce-8c5f-02a1e89dc5e9")
 		(property "Reference" "L3"
-			(at 171.45 81.534 90)
+			(at 181.61 91.694 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1814,7 +2553,7 @@
 			)
 		)
 		(property "Value" "L"
-			(at 171.45 83.8454 90)
+			(at 181.61 94.0054 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1824,7 +2563,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_THT:L_Toroid_Vertical_L13.0mm_W6.5mm_P5.60mm"
-			(at 171.45 86.36 0)
+			(at 181.61 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1835,7 +2574,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.lodestonepacific.com/distrib/pdfs/Micrometals/RFA_Cat.pdf"
-			(at 171.45 86.36 0)
+			(at 181.61 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1846,7 +2585,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 171.45 86.36 0)
+			(at 181.61 96.52 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1872,7 +2611,7 @@
 	)
 	(symbol
 		(lib_id "power:VDDA")
-		(at 179.07 80.01 0)
+		(at 238.125 81.28 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1883,7 +2622,7 @@
 		(fields_autoplaced yes)
 		(uuid "488eff5c-f5bf-487f-a9e9-144ce2465a40")
 		(property "Reference" "#PWR09"
-			(at 179.07 83.82 0)
+			(at 238.125 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1894,7 +2633,7 @@
 			)
 		)
 		(property "Value" "VDDA"
-			(at 179.07 74.93 0)
+			(at 238.125 76.2 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1904,7 +2643,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 179.07 80.01 0)
+			(at 238.125 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1915,7 +2654,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 179.07 80.01 0)
+			(at 238.125 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1926,7 +2665,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDDA\""
-			(at 179.07 80.01 0)
+			(at 238.125 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1950,7 +2689,7 @@
 	)
 	(symbol
 		(lib_id "SDRReciever-rescue:R-Device-SDRReciever-rescue")
-		(at 196.85 80.01 270)
+		(at 255.905 81.28 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1960,7 +2699,7 @@
 		(dnp no)
 		(uuid "56fff822-4f1c-4873-987f-c2dabf6f75f4")
 		(property "Reference" "R7"
-			(at 196.85 74.7522 90)
+			(at 255.905 76.0222 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1970,7 +2709,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 196.85 77.0636 90)
+			(at 255.905 78.3336 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1980,7 +2719,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 196.85 78.232 90)
+			(at 255.905 79.502 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1991,7 +2730,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 196.85 80.01 0)
+			(at 255.905 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2002,7 +2741,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 196.85 80.01 0)
+			(at 255.905 81.28 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2028,7 +2767,7 @@
 	)
 	(symbol
 		(lib_id "SDRReciever-rescue:L-Device-SDRReciever-rescue")
-		(at 152.4 90.17 0)
+		(at 162.56 100.33 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2038,7 +2777,7 @@
 		(dnp no)
 		(uuid "5c4e24ae-8bac-4d03-a26e-474872e54fb1")
 		(property "Reference" "L2"
-			(at 153.7462 89.0016 0)
+			(at 163.9062 99.1616 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2049,7 +2788,7 @@
 			)
 		)
 		(property "Value" "L"
-			(at 153.7462 91.313 0)
+			(at 163.9062 101.473 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2060,7 +2799,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_THT:L_Toroid_Vertical_L10.0mm_W5.0mm_P5.08mm"
-			(at 152.4 90.17 0)
+			(at 162.56 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2071,7 +2810,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.lodestonepacific.com/distrib/pdfs/Micrometals/RFA_Cat.pdf"
-			(at 152.4 90.17 0)
+			(at 162.56 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2082,7 +2821,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 152.4 90.17 0)
+			(at 162.56 100.33 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2107,8 +2846,8 @@
 		)
 	)
 	(symbol
-		(lib_id "SDRReciever-rescue:GND-power-SDRReciever-rescue")
-		(at 206.375 80.01 0)
+		(lib_id "Switch:SW_Slide_DPDT")
+		(at 199.39 96.52 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2116,10 +2855,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "75cb0081-75b1-4d68-98b8-466433d32554")
-		(property "Reference" "#PWR012"
-			(at 206.375 86.36 0)
-			(hide yes)
+		(fields_autoplaced yes)
+		(uuid "697ff268-e34f-403f-8815-81659b59e0dd")
+		(property "Reference" "SW2"
+			(at 199.39 86.36 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2128,8 +2867,8 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 206.375 76.2 0)
+		(property "Value" "SW_Slide_DPDT"
+			(at 199.39 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2139,7 +2878,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 206.375 80.01 0)
+			(at 213.36 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2150,7 +2889,99 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 206.375 80.01 0)
+			(at 199.39 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Slide Switch, dual pole double throw"
+			(at 199.39 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6a60b6bd-3305-4e94-be79-865caa9590f2")
+		)
+		(pin "6"
+			(uuid "f52a00fd-3cdf-448d-921e-98304271e013")
+		)
+		(pin "5"
+			(uuid "a3d588d5-ad9f-44a9-bd10-07f17fdcc8ac")
+		)
+		(pin "2"
+			(uuid "8c628585-015e-4c3e-a0f0-c59b7d0d23f1")
+		)
+		(pin "4"
+			(uuid "a02f1514-b551-4601-93fe-14de81a3e260")
+		)
+		(pin "3"
+			(uuid "f4448be7-2880-4bd1-8367-e45d6040187a")
+		)
+		(instances
+			(project "Radio_Receiver_McCormick_Mendoza"
+				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/bb2f90fe-90d6-4041-8023-4e8a6153d0ef"
+					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SDRReciever-rescue:GND-power-SDRReciever-rescue")
+		(at 265.43 81.28 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "75cb0081-75b1-4d68-98b8-466433d32554")
+		(property "Reference" "#PWR012"
+			(at 265.43 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 265.43 77.47 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 265.43 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 265.43 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2161,7 +2992,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 206.375 80.01 0)
+			(at 265.43 81.28 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2183,8 +3014,86 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 134.62 105.41 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "79a41e5b-65b7-40c4-ac00-9b977c98f39e")
+		(property "Reference" "#PWR059"
+			(at 134.62 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 134.62 110.49 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 134.62 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 134.62 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 134.62 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "294b1e87-f331-41cf-a9d3-4ee29774ee2c")
+		)
+		(instances
+			(project "Radio_Receiver_McCormick_Mendoza"
+				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/bb2f90fe-90d6-4041-8023-4e8a6153d0ef"
+					(reference "#PWR059")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "SDRReciever-rescue:L-Device-SDRReciever-rescue")
-		(at 138.43 86.36 90)
+		(at 148.59 96.52 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2194,7 +3103,7 @@
 		(dnp no)
 		(uuid "9e61fe7f-4026-40d0-9de3-de17f352031f")
 		(property "Reference" "L1"
-			(at 139.065 81.28 90)
+			(at 149.225 91.44 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2204,7 +3113,7 @@
 			)
 		)
 		(property "Value" "L"
-			(at 140.97 83.82 90)
+			(at 151.13 93.98 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2214,7 +3123,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_THT:L_Toroid_Vertical_L13.0mm_W6.5mm_P5.60mm"
-			(at 138.43 86.36 0)
+			(at 148.59 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2225,7 +3134,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.lodestonepacific.com/distrib/pdfs/Micrometals/RFA_Cat.pdf"
-			(at 138.43 86.36 0)
+			(at 148.59 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2236,7 +3145,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 138.43 86.36 0)
+			(at 148.59 96.52 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2342,7 +3251,7 @@
 	)
 	(symbol
 		(lib_id "SDRReciever-rescue:C-Device-SDRReciever-rescue")
-		(at 161.29 86.36 90)
+		(at 171.45 96.52 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2352,7 +3261,7 @@
 		(dnp no)
 		(uuid "a687e075-beec-4d1f-8d3f-2eaa19f512bc")
 		(property "Reference" "C4"
-			(at 161.29 90.17 90)
+			(at 171.45 100.33 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2363,7 +3272,7 @@
 			)
 		)
 		(property "Value" "C"
-			(at 160.02 92.71 90)
+			(at 170.18 102.87 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2374,7 +3283,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 165.1 85.3948 0)
+			(at 175.26 95.5548 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2385,7 +3294,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 161.29 86.36 0)
+			(at 171.45 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2396,7 +3305,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 161.29 86.36 0)
+			(at 171.45 96.52 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2422,7 +3331,7 @@
 	)
 	(symbol
 		(lib_id "SDRReciever-rescue:C-Device-SDRReciever-rescue")
-		(at 147.32 90.17 180)
+		(at 157.48 100.33 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2432,7 +3341,7 @@
 		(dnp no)
 		(uuid "a9906c93-435c-480f-9e66-e7bb2d710bc6")
 		(property "Reference" "C3"
-			(at 139.7 90.17 0)
+			(at 149.86 100.33 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2443,7 +3352,7 @@
 			)
 		)
 		(property "Value" "C"
-			(at 138.43 92.71 0)
+			(at 148.59 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2454,7 +3363,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 146.3548 86.36 0)
+			(at 156.5148 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2465,7 +3374,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 147.32 90.17 0)
+			(at 157.48 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2476,7 +3385,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 147.32 90.17 0)
+			(at 157.48 100.33 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2501,8 +3410,8 @@
 		)
 	)
 	(symbol
-		(lib_id "SDRReciever-rescue:R-Device-SDRReciever-rescue")
-		(at 189.23 80.01 270)
+		(lib_id "SDRReciever-rescue:L-Device-SDRReciever-rescue")
+		(at 158.75 135.89 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2510,9 +3419,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "c113bb2d-6005-45d3-87ae-2459e6e2aab2")
-		(property "Reference" "R6"
-			(at 189.23 74.7522 90)
+		(uuid "ab75d370-8f4e-493e-a167-0051452a05d8")
+		(property "Reference" "L4"
+			(at 158.75 131.064 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2521,8 +3430,8 @@
 				)
 			)
 		)
-		(property "Value" "10k"
-			(at 189.23 77.0636 90)
+		(property "Value" "L"
+			(at 158.75 133.3754 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2531,8 +3440,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 189.23 78.232 90)
+		(property "Footprint" "Inductor_THT:L_Toroid_Vertical_L13.0mm_W6.5mm_P5.60mm"
+			(at 158.75 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2542,8 +3451,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 189.23 80.01 0)
+		(property "Datasheet" "http://www.lodestonepacific.com/distrib/pdfs/Micrometals/RFA_Cat.pdf"
+			(at 158.75 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2554,7 +3463,85 @@
 			)
 		)
 		(property "Description" ""
-			(at 189.23 80.01 0)
+			(at 158.75 135.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1b53432e-d4f3-4862-8f7c-92d4cd979a8d")
+		)
+		(pin "2"
+			(uuid "a458342d-e4c4-47c8-abdf-64b867baed59")
+		)
+		(instances
+			(project "Radio_Receiver_McCormick_Mendoza"
+				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/bb2f90fe-90d6-4041-8023-4e8a6153d0ef"
+					(reference "L4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SDRReciever-rescue:R-Device-SDRReciever-rescue")
+		(at 248.285 81.28 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c113bb2d-6005-45d3-87ae-2459e6e2aab2")
+		(property "Reference" "R6"
+			(at 248.285 76.0222 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 248.285 78.3336 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 248.285 79.502 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 248.285 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 248.285 81.28 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2573,6 +3560,162 @@
 			(project "Radio_Receiver_McCormick_Mendoza"
 				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/bb2f90fe-90d6-4041-8023-4e8a6153d0ef"
 					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 213.36 91.44 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cc6ede8e-4ca2-4c7b-b978-cb5a564fc15b")
+		(property "Reference" "#PWR060"
+			(at 213.36 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 213.36 96.52 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 213.36 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 213.36 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 213.36 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1307576a-a478-40fb-9dfa-6537ae8032cf")
+		)
+		(instances
+			(project "Radio_Receiver_McCormick_Mendoza"
+				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/bb2f90fe-90d6-4041-8023-4e8a6153d0ef"
+					(reference "#PWR060")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 194.31 106.68 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d041ec67-77d3-42aa-8047-9e0385d5939a")
+		(property "Reference" "#PWR061"
+			(at 194.31 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 194.31 111.76 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 194.31 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 194.31 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 194.31 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "33444cff-fd4c-496f-8bd0-3cd038076ef1")
+		)
+		(instances
+			(project "Radio_Receiver_McCormick_Mendoza"
+				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/bb2f90fe-90d6-4041-8023-4e8a6153d0ef"
+					(reference "#PWR061")
 					(unit 1)
 				)
 			)
@@ -2735,8 +3878,100 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_Slide_DPDT")
+		(at 129.54 96.52 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "da99d1c2-d926-495e-b02b-4400af2ec9e0")
+		(property "Reference" "SW1"
+			(at 129.54 86.36 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Slide_DPDT"
+			(at 129.54 88.9 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 143.51 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 129.54 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Slide Switch, dual pole double throw"
+			(at 129.54 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "550f8781-ad8c-4435-a904-079a8ad864b4")
+		)
+		(pin "6"
+			(uuid "d31d3a54-3715-4afb-bde4-ea712532a2bd")
+		)
+		(pin "5"
+			(uuid "22963fe6-c6d9-4eb1-8fd2-12303acfb158")
+		)
+		(pin "2"
+			(uuid "898d602b-8d9f-4e2a-8687-c9637754f2bc")
+		)
+		(pin "4"
+			(uuid "e0d4f7e2-0c7d-4277-96a9-c3d16ddc2ff5")
+		)
+		(pin "3"
+			(uuid "97602fad-6e7a-41af-a54c-5e1401cb936c")
+		)
+		(instances
+			(project "Radio_Receiver_McCormick_Mendoza"
+				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/bb2f90fe-90d6-4041-8023-4e8a6153d0ef"
+					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "SDRReciever-rescue:C-Device-SDRReciever-rescue")
-		(at 128.27 86.36 90)
+		(at 138.43 96.52 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2746,7 +3981,7 @@
 		(dnp no)
 		(uuid "dbfc55cf-aa8c-4d77-a35e-833901149bb0")
 		(property "Reference" "C2"
-			(at 128.27 90.17 90)
+			(at 138.43 100.33 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2757,7 +3992,7 @@
 			)
 		)
 		(property "Value" "C"
-			(at 127 92.71 90)
+			(at 137.16 102.87 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2768,7 +4003,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 132.08 85.3948 0)
+			(at 142.24 95.5548 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2779,7 +4014,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 128.27 86.36 0)
+			(at 138.43 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2790,7 +4025,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 128.27 86.36 0)
+			(at 138.43 96.52 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2815,8 +4050,8 @@
 		)
 	)
 	(symbol
-		(lib_id "SDRReciever-rescue:Conn_01x01-Connector_Generic-SDRReciever-rescue")
-		(at 179.07 91.44 270)
+		(lib_id "power:GND")
+		(at 118.11 91.44 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2824,31 +4059,109 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "e7a6f042-d47a-42ad-afb0-8c7967daf9a0")
-		(property "Reference" "J8"
-			(at 174.625 91.44 90)
+		(fields_autoplaced yes)
+		(uuid "dcd696ed-723e-4251-b461-83419af9783c")
+		(property "Reference" "#PWR055"
+			(at 118.11 97.79 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "FIL_OUT"
-			(at 175.26 94.615 90)
+		(property "Value" "GND"
+			(at 118.11 96.52 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
-			(at 179.07 91.44 0)
+		(property "Footprint" ""
+			(at 118.11 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118.11 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 118.11 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8334c4c2-bad7-468f-ae80-8f70fc27421a")
+		)
+		(instances
+			(project "Radio_Receiver_McCormick_Mendoza"
+				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/bb2f90fe-90d6-4041-8023-4e8a6153d0ef"
+					(reference "#PWR055")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SDRReciever-rescue:C-Device-SDRReciever-rescue")
+		(at 171.45 139.7 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e161d5da-6d96-42d6-9185-82c006bb931d")
+		(property "Reference" "C31"
+			(at 163.83 139.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "C"
+			(at 162.56 142.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 170.4848 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2859,7 +4172,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 179.07 91.44 0)
+			(at 171.45 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2870,7 +4183,87 @@
 			)
 		)
 		(property "Description" ""
-			(at 179.07 91.44 0)
+			(at 171.45 139.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a997926e-85f6-4214-945b-3af857f9a366")
+		)
+		(pin "2"
+			(uuid "3eaea59f-672b-47a2-8fe7-251afe6f454a")
+		)
+		(instances
+			(project "Radio_Receiver_McCormick_Mendoza"
+				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/bb2f90fe-90d6-4041-8023-4e8a6153d0ef"
+					(reference "C31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SDRReciever-rescue:Conn_01x01-Connector_Generic-SDRReciever-rescue")
+		(at 251.46 92.71 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e7a6f042-d47a-42ad-afb0-8c7967daf9a0")
+		(property "Reference" "J8"
+			(at 247.015 92.71 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "FIL_OUT"
+			(at 247.65 95.885 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
+			(at 251.46 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 251.46 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 251.46 92.71 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2886,6 +4279,86 @@
 			(project "Radio_Receiver_McCormick_Mendoza"
 				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/bb2f90fe-90d6-4041-8023-4e8a6153d0ef"
 					(reference "J8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SDRReciever-rescue:C-Device-SDRReciever-rescue")
+		(at 147.32 139.7 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fbe6f103-6cfc-4dd6-8dc9-793105c394a1")
+		(property "Reference" "C30"
+			(at 139.7 139.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "C"
+			(at 138.43 142.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 146.3548 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 147.32 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 147.32 139.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f9b42e1d-1bf6-4cbe-a43b-fbb5af1750f2")
+		)
+		(pin "2"
+			(uuid "efb5990e-af73-4509-a58c-3721409c34c9")
+		)
+		(instances
+			(project "Radio_Receiver_McCormick_Mendoza"
+				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/bb2f90fe-90d6-4041-8023-4e8a6153d0ef"
+					(reference "C30")
 					(unit 1)
 				)
 			)

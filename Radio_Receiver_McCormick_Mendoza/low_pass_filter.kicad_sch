@@ -1194,7 +1194,7 @@
 		(uuid "ef24d1ee-7821-489e-9532-af06ff62a3f7")
 	)
 	(global_label "I Signal"
-		(shape input)
+		(shape output)
 		(at 191.77 93.98 0)
 		(fields_autoplaced yes)
 		(effects
