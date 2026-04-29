@@ -835,6 +835,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Verify that the I and Q stay phase-accurate\nas it approaches the cutoff frequency. "
+		(exclude_from_sim no)
+		(at 77.216 41.656 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "96660d88-81f4-4d92-9fd7-051be5000f67")
+	)
 	(junction
 		(at 127 77.47)
 		(diameter 0)
