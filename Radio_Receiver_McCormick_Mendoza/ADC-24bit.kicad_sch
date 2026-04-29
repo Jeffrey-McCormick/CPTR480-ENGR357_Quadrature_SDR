@@ -2616,6 +2616,16 @@
 		)
 		(uuid "b183f981-66ed-4f29-8873-977b5d454163")
 	)
+	(text "Place Audio Jack for Quisk\nHere"
+		(exclude_from_sim no)
+		(at 92.964 159.512 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "dbeeedc3-3321-4b09-b7f4-ae9a06483d0f")
+	)
 	(text "LRCK (WS)"
 		(exclude_from_sim no)
 		(at 232.41 106.68 0)
@@ -3019,7 +3029,7 @@
 			)
 		)
 	)
-	(global_label "I Signal"
+	(global_label "I_OUT"
 		(shape input)
 		(at 77.47 74.93 180)
 		(fields_autoplaced yes)
@@ -3031,7 +3041,7 @@
 		)
 		(uuid "698ec370-e46e-48d3-8b08-b7f13b08e2c0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 66.9859 74.93 0)
+			(at 69.2838 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

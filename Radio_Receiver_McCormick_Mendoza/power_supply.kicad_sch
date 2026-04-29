@@ -1771,6 +1771,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "4.8V"
+		(exclude_from_sim no)
+		(at 124.46 78.994 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "22289452-ebed-439b-8a0d-fc7f876a67fc")
+	)
 	(text "Battery\nInput"
 		(exclude_from_sim no)
 		(at 47.498 123.952 0)

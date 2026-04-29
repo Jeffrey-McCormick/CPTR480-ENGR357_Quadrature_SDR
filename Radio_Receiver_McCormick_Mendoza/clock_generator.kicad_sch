@@ -1541,11 +1541,27 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Johnson Counter CLK/4 Circuit\nusing 74AC74"
+		(exclude_from_sim no)
+		(at 221.234 76.708 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "52a7c2ee-265f-4d03-9383-1bdad5c14ac9")
+	)
 	(junction
 		(at 134.62 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1654849d-5236-49f3-9336-f99daa78bdec")
+	)
+	(junction
+		(at 182.88 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2452cfa1-1d5b-41eb-9a85-e53fdc2763ce")
 	)
 	(junction
 		(at 139.7 120.65)
@@ -1611,10 +1627,6 @@
 		(at 213.36 114.3)
 		(uuid "23a542b5-f297-4bf8-828e-f1099bab4282")
 	)
-	(no_connect
-		(at 128.27 134.62)
-		(uuid "edf7513e-553c-4250-af02-87c5d68122dc")
-	)
 	(wire
 		(pts
 			(xy 130.81 120.65) (xy 139.7 120.65)
@@ -1677,13 +1689,33 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 124.46) (xy 228.6 124.46)
+			(xy 182.88 96.52) (xy 191.77 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b8122a6-4344-44ea-b424-ca816059ccfa")
+	)
+	(wire
+		(pts
+			(xy 205.74 128.27) (xy 228.6 128.27)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "2c8d8ec1-cbab-4324-9b89-0a94435b4740")
+	)
+	(wire
+		(pts
+			(xy 238.76 97.79) (xy 232.41 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d3ad440-1e33-4476-bca6-2f3f1f6093a5")
 	)
 	(wire
 		(pts
@@ -1755,6 +1787,16 @@
 		)
 		(uuid "4b6a543b-23b6-4027-b998-f0ef7254bfd9")
 	)
+	(polyline
+		(pts
+			(xy 190.5 80.01) (xy 190.5 137.795)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e4c8098-9cd8-42b1-bf35-9a481bc4e99b")
+	)
 	(wire
 		(pts
 			(xy 191.77 96.52) (xy 198.12 96.52)
@@ -1797,7 +1839,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 109.22) (xy 228.6 124.46)
+			(xy 228.6 109.22) (xy 228.6 128.27)
 		)
 		(stroke
 			(width 0)
@@ -1847,6 +1889,16 @@
 	)
 	(wire
 		(pts
+			(xy 205.74 128.27) (xy 205.74 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66f80739-7677-4f1f-bc01-1a44054a7123")
+	)
+	(wire
+		(pts
 			(xy 228.6 93.98) (xy 213.36 93.98)
 		)
 		(stroke
@@ -1854,6 +1906,26 @@
 			(type default)
 		)
 		(uuid "6e9dec3f-6d9d-473e-8f5c-a7ed9f22f8ea")
+	)
+	(wire
+		(pts
+			(xy 232.41 88.9) (xy 226.06 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f612e06-432f-4969-924b-5b3ae7ce9aec")
+	)
+	(polyline
+		(pts
+			(xy 253.365 102.235) (xy 247.65 102.235)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "769910c9-7886-4387-b653-4a9e13d0ac3b")
 	)
 	(wire
 		(pts
@@ -1925,6 +1997,26 @@
 		)
 		(uuid "89d079cd-182b-497c-aac4-44a8fbc2f3c1")
 	)
+	(polyline
+		(pts
+			(xy 253.365 137.795) (xy 253.365 102.235)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2d3db1e-9c4e-4b3c-a31d-6863a461215c")
+	)
+	(polyline
+		(pts
+			(xy 190.5 80.01) (xy 247.65 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a89de18d-8a0f-4fc5-9a28-06730c7b4773")
+	)
 	(wire
 		(pts
 			(xy 238.76 97.79) (xy 238.76 99.06)
@@ -1954,6 +2046,26 @@
 			(type default)
 		)
 		(uuid "bb3e37e5-2e1d-462b-8edc-def17fac1ae5")
+	)
+	(polyline
+		(pts
+			(xy 247.65 102.235) (xy 247.65 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc799f7c-5166-4770-b8a0-c4bd0f5d3faf")
+	)
+	(wire
+		(pts
+			(xy 232.41 97.79) (xy 232.41 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf4b54a2-0e54-425e-8212-58f6833e8212")
 	)
 	(wire
 		(pts
@@ -2027,7 +2139,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 96.52) (xy 191.77 96.52)
+			(xy 179.07 96.52) (xy 182.88 96.52)
 		)
 		(stroke
 			(width 0)
@@ -2065,6 +2177,16 @@
 		)
 		(uuid "f41f2cdd-c1d4-4ede-a847-c9546e5d534b")
 	)
+	(polyline
+		(pts
+			(xy 190.5 137.795) (xy 253.365 137.795)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd22ee15-3d18-498c-8d1b-6357fbbaacd0")
+	)
 	(label "SCL"
 		(at 130.81 120.65 180)
 		(effects
@@ -2084,6 +2206,54 @@
 			(justify right bottom)
 		)
 		(uuid "de39af3b-ddb7-409e-be75-455f595dc4f1")
+	)
+	(global_label "Q_LO"
+		(shape output)
+		(at 214.63 119.38 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "328e355b-2799-45bb-9c75-6cc477a800c0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 214.63 127.0219 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "I_LO"
+		(shape output)
+		(at 214.63 99.06 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "bdfd5144-eca5-4b4a-b363-9fc2ffdc81df")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 214.63 105.9762 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x01")
@@ -3098,6 +3268,83 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 182.88 91.44 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a25a09bd-9536-41e2-895f-3d0819e673e9")
+		(property "Reference" "J24"
+			(at 181.8132 89.408 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "CLK_0"
+			(at 184.1246 89.408 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
+			(at 182.88 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 182.88 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 182.88 91.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "71be3474-d1ad-4a5a-bd9c-98fdd99fa086")
+		)
+		(instances
+			(project "Radio_Receiver_McCormick_Mendoza"
+				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/f64ea8ac-f7b3-4ac7-b675-bede152c9b4e"
+					(reference "J24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 252.73 97.79 90)
 		(unit 1)
@@ -3464,7 +3711,8 @@
 			)
 		)
 		(property "Description" "Clock Generator IC 200MHz 2 10-TFSOP, 10-MSOP (0.118\", 3.00mm Width)"
-			(at 161.29 109.22 0)
+			(at 161.544 133.604 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3701,84 +3949,6 @@
 			(project "Radio_Receiver_McCormick_Mendoza"
 				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/f64ea8ac-f7b3-4ac7-b675-bede152c9b4e"
 					(reference "J10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 238.76 97.79 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f8b6790e-6e74-4fed-b822-6e229dcf609c")
-		(property "Reference" "#PWR037"
-			(at 238.76 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 238.76 92.71 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 238.76 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 238.76 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 238.76 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "76940bcc-52e9-4281-bcd5-69adba4c66e6")
-		)
-		(instances
-			(project "Radio_Receiver_McCormick_Mendoza"
-				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/f64ea8ac-f7b3-4ac7-b675-bede152c9b4e"
-					(reference "#PWR037")
 					(unit 1)
 				)
 			)
