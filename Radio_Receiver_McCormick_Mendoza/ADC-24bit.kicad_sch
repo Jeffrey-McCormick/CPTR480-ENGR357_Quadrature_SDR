@@ -3348,7 +3348,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "GND and GNDA all the same second layer from the top.\nSplit ground planes under the PCM1808 and connect them\njust under the PCM1808 or maybe follow the new way of\nmaking one big ground plane for the second layer and as\nmuch ground plane on top and bottom as possible, with the\npower plane on the third layer."
+	(text "GND and GNDA all the same second layer \nfrom the top. Follow the new way of\nmaking one big ground plane for the second\nlayer and as much ground plane on top and \nbottom as possible, with the power plane on\nthe third layer."
 		(exclude_from_sim no)
 		(at 162.56 135.89 0)
 		(effects
@@ -3358,46 +3358,6 @@
 			(justify left bottom)
 		)
 		(uuid "081a5efd-7cb3-4b2c-9987-855a45e2fab7")
-	)
-	(text "GNDA?"
-		(exclude_from_sim no)
-		(at 144.272 105.664 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "15f5cb24-3ac0-4195-946a-0ddeafdf05e4")
-	)
-	(text "GNDA?"
-		(exclude_from_sim no)
-		(at 211.836 118.618 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "1bdb7ab9-0079-471c-8bba-722a658f5848")
-	)
-	(text "GNDA?"
-		(exclude_from_sim no)
-		(at 138.176 105.41 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "5401dcfe-3f1e-468b-b456-9e0c4a59b8a5")
-	)
-	(text "GNDA?"
-		(exclude_from_sim no)
-		(at 55.88 110.744 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "66639640-c2ca-4e64-972b-d999b44b6f25")
 	)
 	(text "24.576 MHz osc.\n(allows 48 kHz \nor 96 kHz)"
 		(exclude_from_sim no)
@@ -3419,16 +3379,6 @@
 			(justify left bottom)
 		)
 		(uuid "7743bc1f-49fe-4da7-9ce9-4cda3b9e6d4c")
-	)
-	(text "GNDA?"
-		(exclude_from_sim no)
-		(at 115.316 114.3 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "8c95fe64-52a4-425d-a579-d7ba5ceee47d")
 	)
 	(text "Having the I and Q inputs here eliminates the mismatch between C1 and C4."
 		(exclude_from_sim no)
@@ -3473,16 +3423,6 @@
 			)
 		)
 		(uuid "dbeeedc3-3321-4b09-b7f4-ae9a06483d0f")
-	)
-	(text "GNDA?"
-		(exclude_from_sim no)
-		(at 114.808 81.788 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "ef292a56-6a46-4e1c-9023-7aa4b00d9bb2")
 	)
 	(text "LRCK (WS)"
 		(exclude_from_sim no)
