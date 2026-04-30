@@ -501,17 +501,7 @@
       "version": 5
     },
     "net_colors": null,
-    "netclass_assignments": {
-      "Net-(J22-Pin_1)": [
-        "5V0"
-      ],
-      "Net-(J23-Pin_2)": [
-        "5V"
-      ],
-      "Net-(J23-Pin_5)": [
-        "1V1"
-      ]
-    },
+    "netclass_assignments": null,
     "netclass_patterns": []
   },
   "pcbnew": {
@@ -642,7 +632,7 @@
         "uuid": "f31d31ab-6846-4f3a-92b1-aa5a6a13373f"
       }
     ],
-    "used_designators": "J24",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
@@ -677,10 +667,6 @@
     [
       "1382cf63-6685-4835-bd9f-b4058c692ca4",
       "Display"
-    ],
-    [
-      "f13b25c3-8e17-4875-84b2-896666dfe469",
-      "ADC-24bit"
     ]
   ],
   "text_variables": {},
