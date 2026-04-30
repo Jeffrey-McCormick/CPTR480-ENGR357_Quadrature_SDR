@@ -656,10 +656,14 @@
       }
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     "used_designators": "",
 =======
     "used_designators": "#PWR32-33,SW3-5",
 >>>>>>> d2c9274a52aaeb996f7ee3b0bbb53a6bc6db90cf
+=======
+    "used_designators": "",
+>>>>>>> a8a3ea2b9ceb4c27223d7af8333a1d77c71f4b78
     "variants": []
   },
   "sheets": [
