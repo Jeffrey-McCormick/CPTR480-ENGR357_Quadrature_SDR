@@ -1,0 +1,18 @@
+LTspice 24.1.10 for Windows
+Circuit: C:\Users\Daniel\Documents\WWU_F25\ENGR357\CPTR480-ENGR357_Quadrature_SDR\LTSpice_Simulations\Capacitor_Fileter.net
+Start Time: Thu Apr 30 16:40:55 2026
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+.OP point found by inspection.
+.step capacitor=1e-08
+.step capacitor=2.2e-08
+.step capacitor=4.7e-08
+.step capacitor=1e-07
+Total elapsed time: 0.167 seconds.
+
+Files loaded:
+C:\Users\Daniel\Documents\WWU_F25\ENGR357\CPTR480-ENGR357_Quadrature_SDR\LTSpice_Simulations\Capacitor_Fileter.net
+
