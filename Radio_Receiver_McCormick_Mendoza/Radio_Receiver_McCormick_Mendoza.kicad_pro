@@ -502,6 +502,12 @@
     },
     "net_colors": null,
     "netclass_assignments": {
+      "+3.3V": [
+        "1V1"
+      ],
+      "+4.7V": [
+        "5V"
+      ],
       "Net-(J22-Pin_1)": [
         "5V0"
       ],
@@ -510,6 +516,9 @@
       ],
       "Net-(J23-Pin_5)": [
         "1V1"
+      ],
+      "Net-(J28-Pin_1)": [
+        "5V0"
       ]
     },
     "netclass_patterns": []
@@ -642,7 +651,7 @@
         "uuid": "f31d31ab-6846-4f3a-92b1-aa5a6a13373f"
       }
     ],
-    "used_designators": "J24",
+    "used_designators": "#PWR32-33,SW3-5",
     "variants": []
   },
   "sheets": [
@@ -667,20 +676,16 @@
       "Clock Generator"
     ],
     [
-      "615af9b2-5777-40d7-88a6-72f3cb129d0c",
-      "Low-Pass Filter"
+      "f13b25c3-8e17-4875-84b2-896666dfe469",
+      "ADC-24bit"
     ],
     [
-      "4d2030c4-eaf6-4dbc-afd9-0af09cc1e3c5",
-      "RP-2040"
+      "410b623f-becc-4f3c-a123-5075a8235689",
+      "Raspberry_Pi_Pico"
     ],
     [
       "1382cf63-6685-4835-bd9f-b4058c692ca4",
       "Display"
-    ],
-    [
-      "f13b25c3-8e17-4875-84b2-896666dfe469",
-      "ADC-24bit"
     ]
   ],
   "text_variables": {},

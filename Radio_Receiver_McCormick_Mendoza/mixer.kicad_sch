@@ -1793,26 +1793,6 @@
 		)
 		(uuid "0b6691c1-b45a-4456-8067-599ab6f5f77d")
 	)
-	(text "GNDA?"
-		(exclude_from_sim no)
-		(at 208.28 80.518 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "1a1d4026-4aae-438c-9cdd-c3051248960f")
-	)
-	(text "GNDA?"
-		(exclude_from_sim no)
-		(at 209.296 117.348 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "1a275d37-0c23-435a-a9e4-3b4046a7e831")
-	)
 	(text "Justified?\nConfirm gain\nin LTSpice"
 		(exclude_from_sim no)
 		(at 174.244 50.546 0)
@@ -1822,6 +1802,16 @@
 			)
 		)
 		(uuid "47684b4d-bbdb-43bb-a285-432db08c0f7c")
+	)
+	(text "Gain: G = 1+49.4kΩ/Rg"
+		(exclude_from_sim no)
+		(at 204.724 37.846 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e46fc6ea-ae24-45a7-a7f6-008f504ea91e")
 	)
 	(junction
 		(at 168.91 114.3)
@@ -1834,12 +1824,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3cab3823-568f-4b64-a7e7-61c5ba82228c")
-	)
-	(junction
-		(at 66.04 82.55)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "40420791-4e4e-4bb2-b7c3-5b1c553aeed2")
 	)
 	(junction
 		(at 199.39 60.96)
@@ -1967,6 +1951,16 @@
 	)
 	(wire
 		(pts
+			(xy 41.91 76.2) (xy 74.93 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "029db3f1-1b1b-4fad-9644-13c9ee6eb204")
+	)
+	(wire
+		(pts
 			(xy 222.25 72.39) (xy 222.25 80.01)
 		)
 		(stroke
@@ -2017,7 +2011,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 114.3) (xy 156.21 114.3)
+			(xy 137.16 114.3) (xy 168.91 114.3)
 		)
 		(stroke
 			(width 0)
@@ -2157,16 +2151,6 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 82.55) (xy 66.04 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "425b8644-a74d-488d-8522-1af7344b6073")
-	)
-	(wire
-		(pts
 			(xy 182.88 71.12) (xy 184.15 71.12)
 		)
 		(stroke
@@ -2227,33 +2211,13 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 114.3) (xy 168.91 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5fd52644-d94e-4a1e-a57e-53fe9d39f205")
-	)
-	(wire
-		(pts
-			(xy 134.62 102.87) (xy 156.21 102.87)
+			(xy 134.62 102.87) (xy 168.91 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "6237d421-0a44-45fb-a252-b7437d921732")
-	)
-	(wire
-		(pts
-			(xy 74.93 76.2) (xy 66.04 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "62e50b82-41bf-4424-9205-f08e990911b8")
 	)
 	(wire
 		(pts
@@ -2357,7 +2321,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 77.47) (xy 156.21 77.47)
+			(xy 139.7 77.47) (xy 168.91 77.47)
 		)
 		(stroke
 			(width 0)
@@ -2407,16 +2371,6 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 66.04) (xy 168.91 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "84951796-007a-46da-9063-2b4b21915e90")
-	)
-	(wire
-		(pts
 			(xy 190.5 114.3) (xy 193.04 114.3)
 		)
 		(stroke
@@ -2434,16 +2388,6 @@
 			(type default)
 		)
 		(uuid "8847e4a7-cf04-4e3a-9611-6d9bad2c4a44")
-	)
-	(wire
-		(pts
-			(xy 163.83 77.47) (xy 168.91 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "89d743a7-9296-44f4-a758-2fa6f29fbfc2")
 	)
 	(wire
 		(pts
@@ -2487,16 +2431,6 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 102.87) (xy 168.91 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "98d70f33-3be7-4a1c-992c-ab5080f24e0d")
-	)
-	(wire
-		(pts
 			(xy 182.88 73.66) (xy 184.15 73.66)
 		)
 		(stroke
@@ -2534,16 +2468,6 @@
 			(type default)
 		)
 		(uuid "a8b6a60b-670c-45b8-a49d-94f334b58715")
-	)
-	(wire
-		(pts
-			(xy 66.04 82.55) (xy 66.04 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aa0a5484-d5b9-4ad1-b099-2beb15384b5f")
 	)
 	(wire
 		(pts
@@ -2647,7 +2571,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 66.04) (xy 156.21 66.04)
+			(xy 132.08 66.04) (xy 168.91 66.04)
 		)
 		(stroke
 			(width 0)
@@ -2684,6 +2608,16 @@
 			(type default)
 		)
 		(uuid "d66da380-3af6-42ab-b805-bc7f9973f3e6")
+	)
+	(wire
+		(pts
+			(xy 41.91 88.9) (xy 74.93 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd366f60-ba3d-4e36-9275-7cc7c49179d0")
 	)
 	(wire
 		(pts
@@ -2744,26 +2678,6 @@
 			(type default)
 		)
 		(uuid "e84ef4a7-7702-47d2-a6cb-6c94c6260d74")
-	)
-	(wire
-		(pts
-			(xy 66.04 88.9) (xy 74.93 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e96ebf8f-0a0e-4ddb-a5f9-b2085a46495a")
-	)
-	(wire
-		(pts
-			(xy 66.04 76.2) (xy 66.04 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ea5fd964-4985-4e52-a08b-4308a9caae36")
 	)
 	(wire
 		(pts
@@ -2915,7 +2829,7 @@
 		)
 		(uuid "fca5c350-bde1-4648-82f6-274c3488bd12")
 	)
-	(global_label "I_Signal"
+	(global_label "I_OUT"
 		(shape output)
 		(at 232.41 80.01 0)
 		(fields_autoplaced yes)
@@ -2927,7 +2841,7 @@
 		)
 		(uuid "0e8bdd9c-7ea3-436f-b679-ab3271826fa8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 242.8941 80.01 0)
+			(at 240.5962 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2939,7 +2853,7 @@
 			)
 		)
 	)
-	(global_label "Q_Signal"
+	(global_label "Q_OUT"
 		(shape output)
 		(at 232.41 101.6 0)
 		(fields_autoplaced yes)
@@ -2951,7 +2865,7 @@
 		)
 		(uuid "27a64739-fed8-4051-9642-6530153305b2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 243.6198 101.6 0)
+			(at 241.3219 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2963,9 +2877,33 @@
 			)
 		)
 	)
-	(global_label "BPF_OUT"
+	(global_label "BPF_OUT2"
 		(shape input)
-		(at 58.42 82.55 180)
+		(at 41.91 88.9 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "69426d50-07ef-4597-9411-693f69c0845e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 29.4905 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "BPF_OUT1"
+		(shape input)
+		(at 41.91 76.2 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2975,7 +2913,7 @@
 		)
 		(uuid "9f4c33a3-d1f8-42ab-946a-ab053499ef0e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 47.21 82.55 0)
+			(at 29.4905 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4229,166 +4167,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 160.02 102.87 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "726e2356-a2df-4a87-9289-492eb652a801")
-		(property "Reference" "R5"
-			(at 160.02 96.52 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "50"
-			(at 160.02 99.06 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 160.02 104.648 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 160.02 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 160.02 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5d74396e-577c-43ed-a951-05c0f5e29605")
-		)
-		(pin "2"
-			(uuid "fc164d96-29be-46ca-a69e-4caee66eaa0b")
-		)
-		(instances
-			(project "Radio_Receiver_McCormick_Mendoza"
-				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/132a78a3-63a8-4709-a5ba-2b34eb7966d9"
-					(reference "R5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 160.02 77.47 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7571744c-3856-46fb-8264-d64eddf92a2b")
-		(property "Reference" "R4"
-			(at 160.02 71.12 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "50"
-			(at 160.02 73.66 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 160.02 79.248 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 160.02 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 160.02 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "92d106cd-7490-42aa-8c11-6002e05654c8")
-		)
-		(pin "2"
-			(uuid "6794d697-6d24-4655-be99-c03b9addba13")
-		)
-		(instances
-			(project "Radio_Receiver_McCormick_Mendoza"
-				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/132a78a3-63a8-4709-a5ba-2b34eb7966d9"
-					(reference "R4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 208.28 97.79 0)
 		(unit 1)
@@ -4535,86 +4313,6 @@
 			(project "Radio_Receiver_McCormick_Mendoza"
 				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/132a78a3-63a8-4709-a5ba-2b34eb7966d9"
 					(reference "#PWR0104")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 160.02 66.04 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "859b7707-13f8-42d3-b657-47b223399cb4")
-		(property "Reference" "R3"
-			(at 160.02 59.69 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "50"
-			(at 160.02 62.23 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 160.02 67.818 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 160.02 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 160.02 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "ed595f67-a910-4d13-91f5-fd9984c436eb")
-		)
-		(pin "2"
-			(uuid "6142d118-b752-404b-a0e0-876c8ed45035")
-		)
-		(instances
-			(project "Radio_Receiver_McCormick_Mendoza"
-				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/132a78a3-63a8-4709-a5ba-2b34eb7966d9"
-					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -5160,86 +4858,6 @@
 			(project "Radio_Receiver_McCormick_Mendoza"
 				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/132a78a3-63a8-4709-a5ba-2b34eb7966d9"
 					(reference "J15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 160.02 114.3 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b1d883cf-88e9-4169-a83b-b2fd48225e1c")
-		(property "Reference" "R8"
-			(at 160.02 107.95 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "50"
-			(at 160.02 110.49 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 160.02 116.078 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 160.02 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 160.02 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f929e299-9d17-4895-905a-240929013907")
-		)
-		(pin "2"
-			(uuid "29944557-e0ca-408d-9578-c8a41c61e03d")
-		)
-		(instances
-			(project "Radio_Receiver_McCormick_Mendoza"
-				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/132a78a3-63a8-4709-a5ba-2b34eb7966d9"
-					(reference "R8")
 					(unit 1)
 				)
 			)
