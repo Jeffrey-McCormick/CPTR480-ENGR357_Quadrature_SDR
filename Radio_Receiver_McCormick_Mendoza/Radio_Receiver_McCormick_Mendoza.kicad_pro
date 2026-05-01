@@ -501,12 +501,10 @@
       "version": 5
     },
     "net_colors": null,
-<<<<<<< HEAD
-    "netclass_assignments": null,
-=======
     "netclass_assignments": {
       "+3.3V": [
-        "1V1"
+        "1V1",
+        "5V"
       ],
       "+4.7V": [
         "5V"
@@ -524,7 +522,6 @@
         "5V0"
       ]
     },
->>>>>>> d2c9274a52aaeb996f7ee3b0bbb53a6bc6db90cf
     "netclass_patterns": []
   },
   "pcbnew": {
@@ -655,15 +652,7 @@
         "uuid": "f31d31ab-6846-4f3a-92b1-aa5a6a13373f"
       }
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "used_designators": "",
-=======
-    "used_designators": "#PWR32-33,SW3-5",
->>>>>>> d2c9274a52aaeb996f7ee3b0bbb53a6bc6db90cf
-=======
-    "used_designators": "",
->>>>>>> a8a3ea2b9ceb4c27223d7af8333a1d77c71f4b78
+    "used_designators": "C5,C16,C19-21,R3-5,#PWR35-37,#PWR40-41,#PWR58,#PWR61,#PWR63,U1,U10",
     "variants": []
   },
   "sheets": [

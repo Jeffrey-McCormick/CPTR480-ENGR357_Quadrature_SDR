@@ -5045,6 +5045,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Only connect jumper if\nthe battery is disconnected."
+		(exclude_from_sim no)
+		(at 182.626 48.006 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "5c20da92-355b-4cd9-9f3c-2c01b53d37ba")
+	)
 	(text "V+ (YD-RP2040)\nVBUS (Pico)"
 		(exclude_from_sim no)
 		(at 148.59 58.674 0)
