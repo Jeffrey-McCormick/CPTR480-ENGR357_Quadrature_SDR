@@ -1220,6 +1220,16 @@
 		)
 		(uuid "2cd020ff-2b25-45f9-92a3-a47711df7554")
 	)
+	(text "To control the\nfilter type"
+		(exclude_from_sim no)
+		(at 128.524 80.264 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "62685bcd-523c-4643-b5e0-e10fa293910e")
+	)
 	(junction
 		(at 53.34 73.66)
 		(diameter 0)
@@ -1745,6 +1755,54 @@
 			(justify left bottom)
 		)
 		(uuid "f45d25a2-d322-4af6-8836-5d3fce882a9c")
+	)
+	(global_label "CTL1"
+		(shape output)
+		(at 114.3 77.47 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1ed6ca56-f78d-4dc7-a5d0-3224be24bec9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 121.7604 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "CTL2"
+		(shape output)
+		(at 114.3 82.55 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "679cb158-fde6-4a88-a5cd-b884dec89f1d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 121.7604 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:+3.3V")

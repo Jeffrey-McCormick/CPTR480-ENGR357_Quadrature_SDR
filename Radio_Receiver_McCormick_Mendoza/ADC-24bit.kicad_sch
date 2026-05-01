@@ -833,6 +833,172 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Jumper:Jumper_2_Bridged"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "JP"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Jumper_2_Bridged"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Jumper, 2-pole, closed/bridged"
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Jumper SPST"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Jumper* TestPoint*2Pads* TestPoint*Bridge*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Jumper_2_Bridged_0_0"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Jumper_2_Bridged_0_1"
+				(arc
+					(start -1.524 0.254)
+					(mid 0 0.762)
+					(end 1.524 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Jumper_2_Bridged_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Jumper_2_Bridged_1"
 			(pin_names
 				(offset 0)
@@ -5214,7 +5380,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 90.17) (xy 124.46 119.38)
+			(xy 124.46 90.17) (xy 124.46 106.68)
 		)
 		(stroke
 			(width 0)
@@ -5241,6 +5407,16 @@
 			(type default)
 		)
 		(uuid "146ccded-4d96-47d2-847b-049a9b20a29e")
+	)
+	(wire
+		(pts
+			(xy 124.46 116.84) (xy 124.46 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1967b363-956f-41a5-865e-2b4537f282b4")
 	)
 	(wire
 		(pts
@@ -7363,7 +7539,7 @@
 	(symbol
 		(lib_name "VDDA_1")
 		(lib_id "power:VDDA")
-		(at 64.77 170.18 0)
+		(at 110.49 154.94 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7374,7 +7550,7 @@
 		(fields_autoplaced yes)
 		(uuid "2192c9e3-7137-4469-9ae2-54ca0ea626e5")
 		(property "Reference" "#PWR040"
-			(at 64.77 173.99 0)
+			(at 110.49 158.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7385,7 +7561,7 @@
 			)
 		)
 		(property "Value" "VDDA"
-			(at 64.77 165.1 0)
+			(at 110.49 149.86 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7395,7 +7571,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 64.77 170.18 0)
+			(at 110.49 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7406,7 +7582,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 64.77 170.18 0)
+			(at 110.49 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7417,7 +7593,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDDA\""
-			(at 64.77 170.18 0)
+			(at 110.49 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7676,6 +7852,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 148.59 165.1 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "290ecf63-a044-4de3-83e8-b328a4753722")
+		(property "Reference" "J30"
+			(at 151.13 163.8299 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Q_OUT"
+			(at 151.13 166.3699 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
+			(at 148.59 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 148.59 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 148.59 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7ee9db9d-fa5d-4571-81ce-4ab481a95e99")
+		)
+		(instances
+			(project "Radio_Receiver_McCormick_Mendoza"
+				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/f13b25c3-8e17-4875-84b2-896666dfe469"
+					(reference "J30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 134.62 67.31 0)
 		(unit 1)
@@ -7748,6 +8003,83 @@
 			(project "Radio_Receiver_McCormick_Mendoza"
 				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/f13b25c3-8e17-4875-84b2-896666dfe469"
 					(reference "#PWR044")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 128.27 167.64 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4484305c-ef3c-4c07-90e0-02e7d0123048")
+		(property "Reference" "J31"
+			(at 128.27 161.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Q_OUT"
+			(at 128.27 163.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
+			(at 128.27 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 128.27 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 128.27 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cf4c4bbb-6d5a-4ac7-9cd2-d5934f6caaa8")
+		)
+		(instances
+			(project "Radio_Receiver_McCormick_Mendoza"
+				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/f13b25c3-8e17-4875-84b2-896666dfe469"
+					(reference "J31")
 					(unit 1)
 				)
 			)
@@ -10557,7 +10889,7 @@
 	(symbol
 		(lib_name "GND_1")
 		(lib_id "power:GND")
-		(at 64.77 185.42 0)
+		(at 110.49 170.18 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10568,7 +10900,7 @@
 		(fields_autoplaced yes)
 		(uuid "a86dbc10-2f36-4f5f-89b0-e209d4e674a8")
 		(property "Reference" "#PWR037"
-			(at 64.77 191.77 0)
+			(at 110.49 176.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10579,7 +10911,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 64.77 190.5 0)
+			(at 110.49 175.26 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10589,7 +10921,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 64.77 185.42 0)
+			(at 110.49 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10600,7 +10932,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 64.77 185.42 0)
+			(at 110.49 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10611,7 +10943,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 64.77 185.42 0)
+			(at 110.49 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10635,7 +10967,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:OPA1612AxD")
-		(at 67.31 177.8 0)
+		(at 113.03 162.56 0)
 		(unit 3)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10646,7 +10978,7 @@
 		(fields_autoplaced yes)
 		(uuid "aa2463e5-6e1a-44b5-af7b-3f89af68839d")
 		(property "Reference" "U10"
-			(at 66.04 176.5299 0)
+			(at 111.76 161.2899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10657,7 +10989,7 @@
 			)
 		)
 		(property "Value" "OPA1612AxD"
-			(at 66.04 179.0699 0)
+			(at 111.76 163.8299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10668,7 +11000,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 67.31 177.8 0)
+			(at 113.03 162.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10679,7 +11011,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/opa1612.pdf"
-			(at 67.31 177.8 0)
+			(at 113.03 162.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10690,7 +11022,7 @@
 			)
 		)
 		(property "Description" "Dual SoundPlus High Performance, Bipolar-Input Audio Operational Amplifiers, SOIC-8"
-			(at 67.31 177.8 0)
+			(at 113.03 162.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11112,28 +11444,28 @@
 			)
 		)
 		(pin "4"
-			(uuid "c54d2b6c-dcdd-4942-961f-595a1fd4b205")
+			(uuid "c54d2b6c-dcdd-4942-961f-595a1fd4b206")
 		)
 		(pin "7"
-			(uuid "80e86901-82f0-4403-a4ed-87ecddfa8e5a")
+			(uuid "80e86901-82f0-4403-a4ed-87ecddfa8e5b")
 		)
 		(pin "5"
-			(uuid "d33e9c9e-09e0-445b-b2e5-701a00f8f5d4")
+			(uuid "d33e9c9e-09e0-445b-b2e5-701a00f8f5d5")
 		)
 		(pin "1"
-			(uuid "b815aaba-f622-447a-8bbd-450ece7f7648")
+			(uuid "b815aaba-f622-447a-8bbd-450ece7f7649")
 		)
 		(pin "3"
-			(uuid "c472491c-81f0-4f99-85ba-a819d06979e0")
+			(uuid "c472491c-81f0-4f99-85ba-a819d06979e1")
 		)
 		(pin "2"
-			(uuid "b1ff3e02-e8f4-4110-80c3-a35384fde683")
+			(uuid "b1ff3e02-e8f4-4110-80c3-a35384fde684")
 		)
 		(pin "8"
-			(uuid "82c6a7db-b37a-4d08-b56d-3e9be2519bfe")
+			(uuid "82c6a7db-b37a-4d08-b56d-3e9be2519bff")
 		)
 		(pin "6"
-			(uuid "57efe813-7436-4407-83e1-74dba56d5c20")
+			(uuid "57efe813-7436-4407-83e1-74dba56d5c21")
 		)
 		(instances
 			(project "Radio_Receiver_McCormick_Mendoza"
@@ -11323,6 +11655,83 @@
 			(project "Radio_Receiver_McCormick_Mendoza"
 				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/f13b25c3-8e17-4875-84b2-896666dfe469"
 					(reference "#PWR045")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 128.27 172.72 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "cb8670ae-5dec-4cfb-b7ba-ec5f47787d19")
+		(property "Reference" "J32"
+			(at 128.27 179.07 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Q_OUT"
+			(at 128.27 176.53 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
+			(at 128.27 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 128.27 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 128.27 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "84df0259-e73a-4807-aef8-2b4d6e393f6d")
+		)
+		(instances
+			(project "Radio_Receiver_McCormick_Mendoza"
+				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/f13b25c3-8e17-4875-84b2-896666dfe469"
+					(reference "J32")
 					(unit 1)
 				)
 			)
@@ -11589,6 +11998,88 @@
 			(project "Radio_Receiver_McCormick_Mendoza"
 				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/f13b25c3-8e17-4875-84b2-896666dfe469"
 					(reference "R20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:Jumper_2_Bridged")
+		(at 124.46 111.76 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d19ff0b1-fe27-4dab-8b65-5f791c419ef6")
+		(property "Reference" "JP5"
+			(at 125.73 110.4899 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Jumper_2_Bridged"
+			(at 125.73 113.0299 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 124.46 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 129.54 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Jumper, 2-pole, closed/bridged"
+			(at 132.08 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "08330d26-960b-4008-b4d8-c9af68d29267")
+		)
+		(pin "2"
+			(uuid "4722bf4b-ebcd-4039-9c18-8ed8903de6b4")
+		)
+		(instances
+			(project "Radio_Receiver_McCormick_Mendoza"
+				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/f13b25c3-8e17-4875-84b2-896666dfe469"
+					(reference "JP5")
 					(unit 1)
 				)
 			)
@@ -12566,28 +13057,28 @@
 			)
 		)
 		(pin "4"
-			(uuid "c54d2b6c-dcdd-4942-961f-595a1fd4b205")
+			(uuid "c54d2b6c-dcdd-4942-961f-595a1fd4b207")
 		)
 		(pin "7"
-			(uuid "80e86901-82f0-4403-a4ed-87ecddfa8e5a")
+			(uuid "80e86901-82f0-4403-a4ed-87ecddfa8e5c")
 		)
 		(pin "5"
-			(uuid "d33e9c9e-09e0-445b-b2e5-701a00f8f5d4")
+			(uuid "d33e9c9e-09e0-445b-b2e5-701a00f8f5d6")
 		)
 		(pin "1"
-			(uuid "b815aaba-f622-447a-8bbd-450ece7f7648")
+			(uuid "b815aaba-f622-447a-8bbd-450ece7f764a")
 		)
 		(pin "3"
-			(uuid "c472491c-81f0-4f99-85ba-a819d06979e0")
+			(uuid "c472491c-81f0-4f99-85ba-a819d06979e2")
 		)
 		(pin "2"
-			(uuid "b1ff3e02-e8f4-4110-80c3-a35384fde683")
+			(uuid "b1ff3e02-e8f4-4110-80c3-a35384fde685")
 		)
 		(pin "8"
-			(uuid "82c6a7db-b37a-4d08-b56d-3e9be2519bfe")
+			(uuid "82c6a7db-b37a-4d08-b56d-3e9be2519c00")
 		)
 		(pin "6"
-			(uuid "57efe813-7436-4407-83e1-74dba56d5c20")
+			(uuid "57efe813-7436-4407-83e1-74dba56d5c22")
 		)
 		(instances
 			(project "Radio_Receiver_McCormick_Mendoza"
