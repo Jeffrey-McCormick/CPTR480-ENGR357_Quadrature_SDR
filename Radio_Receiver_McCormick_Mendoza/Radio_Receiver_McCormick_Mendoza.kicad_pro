@@ -652,7 +652,7 @@
         "uuid": "f31d31ab-6846-4f3a-92b1-aa5a6a13373f"
       }
     ],
-    "used_designators": "U1,#PWR55,#PWR60,#PWR65-68,B1,R4,R6,J33-34,C22",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
@@ -687,6 +687,14 @@
     [
       "1382cf63-6685-4835-bd9f-b4058c692ca4",
       "Display"
+    ],
+    [
+      "ef9bceef-cb55-4562-86e1-9664871484e3",
+      "Audio DAC"
+    ],
+    [
+      "775bb6b1-f0ed-4d15-b765-5e0d3e71119f",
+      "Angle Encoder"
     ]
   ],
   "text_variables": {},

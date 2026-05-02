@@ -4301,6 +4301,52 @@
 		)
 	)
 	(sheet
+		(at 179.07 36.83)
+		(size 12.7 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "775bb6b1-f0ed-4d15-b765-5e0d3e71119f")
+		(property "Sheetname" "Angle Encoder"
+			(at 179.07 36.1184 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Angle_Encoder.kicad_sch"
+			(at 179.07 45.0346 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Radio_Receiver_McCormick_Mendoza"
+				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f"
+					(page "10")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 179.07 76.2)
 		(size 12.7 7.62)
 		(exclude_from_sim no)
@@ -4388,6 +4434,52 @@
 			(project "Radio_Receiver_McCormick_Mendoza"
 				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f"
 					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 225.425 38.735)
+		(size 12.7 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "ef9bceef-cb55-4562-86e1-9664871484e3")
+		(property "Sheetname" "Audio DAC"
+			(at 225.425 38.0234 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Audio_DAC.kicad_sch"
+			(at 225.425 46.9396 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Radio_Receiver_McCormick_Mendoza"
+				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f"
+					(page "9")
 				)
 			)
 		)
