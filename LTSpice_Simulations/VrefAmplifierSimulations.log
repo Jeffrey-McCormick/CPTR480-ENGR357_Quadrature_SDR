@@ -1,0 +1,48 @@
+LTspice 24.1.10 for Windows
+Circuit: C:\Users\Daniel\Documents\WWU_F25\ENGR357\CPTR480-ENGR357_Quadrature_SDR\LTSpice_Simulations\VrefAmplifierSimulations.net
+Start Time: Fri May  1 09:43:42 2026
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+Gmin = 0.115292
+Gmin = 0.0123794
+Gmin = 0.00132923
+Gmin = 0.000142725
+Gmin = 1.5325e-05
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
+Gmin = 5.90244e-06
+vernier = 0.166667
+vernier = 0.222222
+Gmin = 3.99104e-06
+vernier = 0.296296
+Gmin = 2.13064e-06
+vernier = 0.395061
+vernier = 0.526748
+Gmin = 7.77797e-07
+vernier = 0.702331
+vernier = 0.936441
+Gmin = 1.64746e-07
+vernier = 1
+Gmin = 1.88579e-08
+Gmin = 2.02486e-09
+Gmin = 2.17417e-10
+Gmin = 2.3345e-11
+Gmin = 2.50665e-12
+Gmin = 2.69149e-13
+Gmin = 0
+Gmin stepping succeeded in finding the operating point.
+
+Total elapsed time: 0.513 seconds.
+
+Files loaded:
+C:\Users\Daniel\Documents\WWU_F25\ENGR357\CPTR480-ENGR357_Quadrature_SDR\LTSpice_Simulations\VrefAmplifierSimulations.net
+C:\Users\Daniel\AppData\Local\LTspice\lib\sub\ADI.lib
+
