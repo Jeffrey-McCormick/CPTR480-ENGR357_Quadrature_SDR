@@ -5,4 +5,5 @@
 	(lib (name "SWITCH SLIDE SPDT 0.5A 24V 09.03290.01") (type "KiCad") (uri "${KIPRJMOD}/09_03290_01/KiCADv6/footprints.pretty") (options "") (descr ""))
 	(lib (name "SN74CBT3253CDBR_1-4_MUX") (type "KiCad") (uri "${KIPRJMOD}/SN74CBT3253CDBR/KiCADv6/footprints.pretty") (options "") (descr ""))
 	(lib (name "BATTTERY_HOLDER_12mm_SMT") (type "KiCad") (uri "${KIPRJMOD}/BAT_HLD_012_SMT/KiCADv6/footprints.pretty") (options "") (descr ""))
+	(lib (name "ASTX_H11_24_576MHZ_T") (type "KiCad") (uri "${KIPRJMOD}/ASTX_H11_24_576MHZ_T") (options "") (descr ""))
 )

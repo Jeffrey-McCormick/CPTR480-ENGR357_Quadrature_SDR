@@ -13,6 +13,490 @@
 		(comment 3 "Jeffrey McCormick")
 	)
 	(lib_symbols
+		(symbol "Connector_Generic:Conn_01x02"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x02"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_01x02_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Jumper:Jumper_2_Open"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "JP"
+				(at 0 2.794 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Jumper_2_Open"
+				(at 0 -2.286 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Jumper, 2-pole, open"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Jumper SPST"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Jumper* TestPoint*2Pads* TestPoint*Bridge*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Jumper_2_Open_0_0"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Jumper_2_Open_0_1"
+				(arc
+					(start -1.524 1.27)
+					(mid 0 1.778)
+					(end 1.524 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Jumper_2_Open_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Jumper_2_Bridged_1"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "JP"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Jumper_2_Bridged"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Jumper, 2-pole, closed/bridged"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Jumper SPST"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Jumper* TestPoint*2Pads* TestPoint*Bridge*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Jumper_2_Bridged_1_0_0"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Jumper_2_Bridged_1_0_1"
+				(arc
+					(start -1.524 0.254)
+					(mid 0 0.762)
+					(end 1.524 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Jumper_2_Bridged_1_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "PCM_JLCPCB-Capacitors:0402,100nF"
 			(pin_numbers
 				(hide yes)
@@ -293,6 +777,890 @@
 				(pin passive line
 					(at 0 -3.81 90)
 					(length 3.175)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "PCM_JLCPCB-Diodes:LED,0805,Green"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 2.032 0.834 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Green"
+				(at 2.032 -1.2122 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 0.8 0.8)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "PCM_JLCPCB:D_0805"
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1806151820_Hubei-KENTO-Elec-KT-0805G_C2297.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Emerald 0805 LED Indication - Discrete ROHS"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC" "C2297"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Stock" "2062782"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Price" "0.014USD"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Process" "SMT"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Minimum Qty" "20"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Attrition Qty" "10"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Class" "Basic Component"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Category" "Optoelectronics,Light Emitting Diodes (LED)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "Hubei KENTO Elec"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Part" "KT-0805G"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Emitted Color" "Emerald"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "D_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "LED,0805,Green_0_1"
+				(polyline
+					(pts
+						(xy -1.905 0) (xy -3.429 1.524) (xy -3.429 1.016) (xy -3.429 1.524) (xy -2.921 1.524)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 -1.27) (xy -3.429 0.254) (xy -3.429 -0.254) (xy -3.429 0.254) (xy -2.921 0.254)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy 0 -1.27) (xy 1.27 1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED,0805,Green_1_1"
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 3.81)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 3.81 270)
+					(length 3.81)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "PCM_JLCPCB-Diodes:LED,0805,Yellow"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 2.032 0.834 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Yellow"
+				(at 2.032 -1.2122 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 0.8 0.8)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "PCM_JLCPCB:D_0805"
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1806151129_Hubei-KENTO-Elec-KT-0805Y_C2296.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Yellow 0805 LED Indication - Discrete ROHS"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC" "C2296"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Stock" "662678"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Price" "0.015USD"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Process" "SMT"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Minimum Qty" "20"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Attrition Qty" "10"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Class" "Basic Component"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Category" "Optocouplers & LEDs & Infrared,Light Emitting Diodes (LED)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "Hubei KENTO Elec"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Part" "KT-0805Y"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "D_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "LED,0805,Yellow_0_1"
+				(polyline
+					(pts
+						(xy -1.905 0) (xy -3.429 1.524) (xy -3.429 1.016) (xy -3.429 1.524) (xy -2.921 1.524)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 -1.27) (xy -3.429 0.254) (xy -3.429 -0.254) (xy -3.429 0.254) (xy -2.921 0.254)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy 0 -1.27) (xy 1.27 1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED,0805,Yellow_1_1"
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 3.81)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 3.81 270)
+					(length 3.81)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "PCM_JLCPCB-Resistors:0603,470Ω"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 1.778 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "470Ω"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.8 0.8)
+					)
+				)
+			)
+			(property "Footprint" "PCM_JLCPCB:R_0603"
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010116_UNI-ROYAL-Uniroyal-Elec-0603WAF4700T5E_C23179.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "100mW Thick Film Resistors 75V ±100ppm/°C ±1% 470Ω 0603 Chip Resistor - Surface Mount ROHS"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC" "C23179"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Stock" "3910258"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Price" "0.004USD"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Process" "SMT"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Minimum Qty" "20"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Attrition Qty" "10"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Class" "Basic Component"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Category" "Resistors,Chip Resistor - Surface Mount"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Part" "0603WAF4700T5E"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Resistance" "470Ω"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Power(Watts)" "100mW"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Type" "Thick Film Resistors"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Overload Voltage (Max)" "75V"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Operating Temperature Range" "-55°C~+155°C"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Tolerance" "±1%"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Temperature Coefficient" "±100ppm/°C"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "0603,470Ω_0_1"
+				(rectangle
+					(start -1.016 2.54)
+					(end 1.016 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "0603,470Ω_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
 					(name ""
 						(effects
 							(font
@@ -1339,9 +2707,19 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "I2S"
+		(exclude_from_sim no)
+		(at 171.958 39.624 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "015c7370-4411-46c1-8212-7f630c9fd038")
+	)
 	(text "USB"
 		(exclude_from_sim no)
-		(at 85.344 38.862 0)
+		(at 80.264 70.612 0)
 		(effects
 			(font
 				(size 1.016 1.016)
@@ -1351,7 +2729,7 @@
 	)
 	(text "I2C"
 		(exclude_from_sim no)
-		(at 61.468 72.644 0)
+		(at 56.388 104.394 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1359,63 +2737,101 @@
 		)
 		(uuid "2cd020ff-2b25-45f9-92a3-a47711df7554")
 	)
-	(text "To control the\nfilter type"
+	(text "I2C"
 		(exclude_from_sim no)
-		(at 133.604 72.644 0)
+		(at 171.958 147.32 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "62685bcd-523c-4643-b5e0-e10fa293910e")
+		(uuid "d33997de-4fde-4a0e-8a2d-2b882d8dbdd2")
+	)
+	(text "I2S"
+		(exclude_from_sim no)
+		(at 214.376 102.87 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "d5d54e0f-e566-45a1-b8a5-3494e35614fd")
+	)
+	(text "I2C"
+		(exclude_from_sim no)
+		(at 222.758 38.862 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "fff76063-e83b-486f-bbcc-3838b5a211a4")
 	)
 	(junction
-		(at 53.34 73.66)
+		(at 16.51 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1a521617-06e6-44e1-9fca-e071a8f25e30")
+	)
+	(junction
+		(at 219.71 115.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1c1b8c0c-1a62-42a1-b4b6-eda39ee312b0")
+	)
+	(junction
+		(at 163.83 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "20d1d174-c3cc-472f-88e1-995eeacd9a53")
+	)
+	(junction
+		(at 48.26 105.41)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "656521e4-3e6a-4878-be46-6a13249ad6aa")
 	)
 	(junction
-		(at 120.65 44.45)
+		(at 115.57 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8216562f-809f-4856-8934-5c7c7e022a4b")
 	)
 	(junction
-		(at 55.88 71.12)
+		(at 50.8 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8ddc6c68-39ee-4f74-a441-cbf1edd3e938")
 	)
 	(junction
-		(at 54.61 59.69)
+		(at 49.53 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ab610143-170f-491a-ab1e-e662c95c0472")
 	)
 	(no_connect
-		(at 100.33 54.61)
+		(at 95.25 86.36)
 		(uuid "004d2fcf-5db2-47ec-ada0-b0c57a39d737")
 	)
 	(no_connect
-		(at 100.33 52.07)
+		(at 95.25 83.82)
 		(uuid "31bb4d5d-d999-486d-85fb-5d4c1aeb4d00")
 	)
 	(no_connect
-		(at 100.33 59.69)
+		(at 95.25 91.44)
 		(uuid "732a1804-8abd-4ac5-be4a-f432a2c9b964")
 	)
 	(no_connect
-		(at 100.33 57.15)
+		(at 95.25 88.9)
 		(uuid "7f5ea7fe-8bd7-46b8-ba9e-4b2f8a4535a0")
 	)
 	(no_connect
-		(at 100.33 46.99)
+		(at 95.25 78.74)
 		(uuid "e970fc76-e396-45ed-84df-e2fca1eaeed5")
 	)
 	(polyline
 		(pts
-			(xy 90.17 35.56) (xy 90.17 40.64)
+			(xy 85.09 67.31) (xy 85.09 72.39)
 		)
 		(stroke
 			(width 0)
@@ -1423,9 +2839,29 @@
 		)
 		(uuid "0230b4b9-5b60-4a1e-a656-1f3f361654b7")
 	)
+	(polyline
+		(pts
+			(xy 205.74 105.41) (xy 208.28 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "043fbcd4-7e44-4ca5-9602-a82adebb0e59")
+	)
 	(wire
 		(pts
-			(xy 55.88 83.82) (xy 55.88 86.36)
+			(xy 31.75 82.55) (xy 25.4 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "093b9480-82ec-40ed-a841-d23e204d3b54")
+	)
+	(wire
+		(pts
+			(xy 50.8 115.57) (xy 50.8 118.11)
 		)
 		(stroke
 			(width 0)
@@ -1435,7 +2871,17 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 83.82) (xy 53.34 90.17)
+			(xy 60.96 110.49) (xy 66.04 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c15ae44-6a76-47ca-b48a-b481565be23a")
+	)
+	(wire
+		(pts
+			(xy 48.26 115.57) (xy 48.26 121.92)
 		)
 		(stroke
 			(width 0)
@@ -1445,17 +2891,47 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 53.34) (xy 60.96 53.34)
+			(xy 16.51 92.71) (xy 25.4 92.71)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2d46fb18-88dd-4158-bc78-ed00efd3feec")
+		(uuid "2448e073-fa83-4f0e-8f05-cde996f7618b")
 	)
 	(wire
 		(pts
-			(xy 39.37 71.12) (xy 43.18 71.12)
+			(xy 208.28 148.59) (xy 234.95 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "256a6cf1-7aff-4a21-93c0-72b419d8ee17")
+	)
+	(polyline
+		(pts
+			(xy 175.26 151.13) (xy 179.07 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a4e9f10-041b-4495-8239-dd18550c329a")
+	)
+	(wire
+		(pts
+			(xy 39.37 82.55) (xy 55.88 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c305c2b-5237-41cb-b163-2dadcf66587a")
+	)
+	(wire
+		(pts
+			(xy 34.29 102.87) (xy 38.1 102.87)
 		)
 		(stroke
 			(width 0)
@@ -1463,9 +2939,49 @@
 		)
 		(uuid "42681eda-7326-40e0-a31f-2e641163f11c")
 	)
+	(polyline
+		(pts
+			(xy 226.06 33.02) (xy 226.06 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "436605e4-ca3c-42e0-8db3-d49cfc6bb58f")
+	)
 	(wire
 		(pts
-			(xy 53.34 73.66) (xy 53.34 76.2)
+			(xy 182.88 44.45) (xy 163.83 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44540257-3615-48ea-be32-e60236f1d311")
+	)
+	(wire
+		(pts
+			(xy 58.42 120.65) (xy 58.42 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4602e478-afc2-4fb0-baad-a6d370a3bc94")
+	)
+	(polyline
+		(pts
+			(xy 175.26 36.83) (xy 173.99 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48b2d81f-da12-4c80-aa8b-05d0d14681a3")
+	)
+	(wire
+		(pts
+			(xy 48.26 105.41) (xy 48.26 107.95)
 		)
 		(stroke
 			(width 0)
@@ -1475,7 +2991,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 71.12) (xy 55.88 71.12)
+			(xy 45.72 102.87) (xy 50.8 102.87)
 		)
 		(stroke
 			(width 0)
@@ -1483,9 +2999,29 @@
 		)
 		(uuid "4f723e25-7b91-4884-b986-1552876bda54")
 	)
+	(polyline
+		(pts
+			(xy 179.07 143.51) (xy 175.26 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50887fed-7944-46b0-9472-36ed686722dc")
+	)
 	(wire
 		(pts
-			(xy 120.65 40.64) (xy 120.65 44.45)
+			(xy 179.07 110.49) (xy 186.055 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5198559c-cc9d-4e03-97ab-fda784234af6")
+	)
+	(wire
+		(pts
+			(xy 115.57 72.39) (xy 115.57 76.2)
 		)
 		(stroke
 			(width 0)
@@ -1495,7 +3031,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 59.69) (xy 54.61 59.69)
+			(xy 48.26 91.44) (xy 49.53 91.44)
 		)
 		(stroke
 			(width 0)
@@ -1505,7 +3041,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 67.31) (xy 55.88 71.12)
+			(xy 50.8 99.06) (xy 50.8 102.87)
 		)
 		(stroke
 			(width 0)
@@ -1515,17 +3051,77 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 53.34) (xy 60.96 60.96)
+			(xy 204.47 115.57) (xy 219.71 115.57)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6a70243e-fdda-4f27-9d01-f069c1afb154")
+		(uuid "54c55ca5-1288-4456-bb99-89970f9bae98")
+	)
+	(wire
+		(pts
+			(xy 219.71 104.14) (xy 219.71 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56732b43-f357-4ece-b9e8-5fa141991487")
+	)
+	(wire
+		(pts
+			(xy 236.22 104.14) (xy 219.71 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "648057bb-bb87-480f-960b-f26a0e175fe6")
+	)
+	(wire
+		(pts
+			(xy 16.51 80.01) (xy 31.75 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6534a02e-e409-4c59-a0bd-ef08240aab0f")
+	)
+	(wire
+		(pts
+			(xy 57.15 85.09) (xy 66.04 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66883482-7e8d-4217-b8a4-e6c76126db33")
 	)
 	(polyline
 		(pts
-			(xy 81.28 35.56) (xy 81.28 40.64)
+			(xy 207.01 99.06) (xy 212.09 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68656528-0d01-4190-951a-01e40a156e89")
+	)
+	(wire
+		(pts
+			(xy 208.28 146.05) (xy 234.95 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e609d5b-0674-4178-9112-20f4c1462256")
+	)
+	(polyline
+		(pts
+			(xy 76.2 67.31) (xy 76.2 72.39)
 		)
 		(stroke
 			(width 0)
@@ -1533,19 +3129,29 @@
 		)
 		(uuid "70f27fc0-96fd-44d2-a42a-8ec2abf97ba9")
 	)
-	(wire
+	(polyline
 		(pts
-			(xy 60.96 60.96) (xy 71.12 60.96)
+			(xy 173.99 41.91) (xy 176.53 41.91)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7e587d26-d10e-497c-b118-887f0918a926")
+		(uuid "87701fc2-f2eb-4280-aef0-3e4a44e09a99")
 	)
 	(wire
 		(pts
-			(xy 120.65 44.45) (xy 100.33 44.45)
+			(xy 60.96 120.65) (xy 60.96 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f5efa8c-6a56-47e3-9a4c-6d4a1708d271")
+	)
+	(wire
+		(pts
+			(xy 115.57 76.2) (xy 95.25 76.2)
 		)
 		(stroke
 			(width 0)
@@ -1555,7 +3161,97 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 59.69) (xy 55.88 59.69)
+			(xy 55.88 82.55) (xy 55.88 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9af1ae55-a552-4203-bf19-2e16884590f4")
+	)
+	(wire
+		(pts
+			(xy 57.15 80.01) (xy 57.15 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c4108d5-8919-4377-9e66-144743128ea7")
+	)
+	(wire
+		(pts
+			(xy 179.07 142.24) (xy 187.96 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a32f53c6-c292-41ad-a207-0d1c13b97347")
+	)
+	(polyline
+		(pts
+			(xy 173.99 36.83) (xy 173.99 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6625f03-e0cf-4521-8a72-fb135896f3b2")
+	)
+	(wire
+		(pts
+			(xy 219.71 137.16) (xy 234.95 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6e688f6-baf6-4894-b5a9-5b2306d11d19")
+	)
+	(wire
+		(pts
+			(xy 255.27 142.24) (xy 254 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a79bd845-0d29-49d1-9491-e1ff2b2b95f0")
+	)
+	(polyline
+		(pts
+			(xy 226.06 43.18) (xy 228.6 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b86f0d9d-725c-4c25-a83c-76b9fe5727ab")
+	)
+	(wire
+		(pts
+			(xy 25.4 82.55) (xy 25.4 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b94e582e-0b2d-481f-bde8-db2025cbd296")
+	)
+	(polyline
+		(pts
+			(xy 228.6 33.02) (xy 226.06 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bbbb6fa0-8d48-4a8c-afea-363de2a27000")
+	)
+	(wire
+		(pts
+			(xy 49.53 91.44) (xy 50.8 91.44)
 		)
 		(stroke
 			(width 0)
@@ -1565,7 +3261,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 67.31) (xy 53.34 73.66)
+			(xy 48.26 99.06) (xy 48.26 105.41)
 		)
 		(stroke
 			(width 0)
@@ -1573,9 +3269,19 @@
 		)
 		(uuid "c46d59d6-414f-4488-a3b5-96e95e19a14d")
 	)
+	(polyline
+		(pts
+			(xy 175.26 143.51) (xy 175.26 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd651397-39e2-4c09-8675-64e0279cd0dd")
+	)
 	(wire
 		(pts
-			(xy 55.88 71.12) (xy 71.12 71.12)
+			(xy 50.8 102.87) (xy 66.04 102.87)
 		)
 		(stroke
 			(width 0)
@@ -1583,9 +3289,19 @@
 		)
 		(uuid "ce7f0148-ba40-4a67-b19b-127818c7a5aa")
 	)
+	(wire
+		(pts
+			(xy 39.37 80.01) (xy 57.15 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf255ec2-bfaa-4a4e-b889-21166687d0b5")
+	)
 	(polyline
 		(pts
-			(xy 81.28 40.64) (xy 90.17 40.64)
+			(xy 76.2 72.39) (xy 85.09 72.39)
 		)
 		(stroke
 			(width 0)
@@ -1593,9 +3309,29 @@
 		)
 		(uuid "d75cc113-c6d7-4071-9592-d5d3de2f4152")
 	)
+	(polyline
+		(pts
+			(xy 208.28 105.41) (xy 212.09 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d84d0233-5330-4845-8f4f-ef78ceebe306")
+	)
 	(wire
 		(pts
-			(xy 50.8 73.66) (xy 53.34 73.66)
+			(xy 55.88 87.63) (xy 66.04 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da8cc2fb-d308-49ed-ab55-3c5c7ec1cb9b")
+	)
+	(wire
+		(pts
+			(xy 45.72 105.41) (xy 48.26 105.41)
 		)
 		(stroke
 			(width 0)
@@ -1605,7 +3341,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 73.66) (xy 71.12 73.66)
+			(xy 48.26 105.41) (xy 66.04 105.41)
 		)
 		(stroke
 			(width 0)
@@ -1613,9 +3349,29 @@
 		)
 		(uuid "e1104d41-8154-4ae1-a4c5-f1f1774e3ee5")
 	)
+	(polyline
+		(pts
+			(xy 212.09 99.06) (xy 212.09 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed9845d0-a372-452d-ae9d-660b38d9bdf2")
+	)
 	(wire
 		(pts
-			(xy 55.88 71.12) (xy 55.88 76.2)
+			(xy 179.07 110.49) (xy 179.07 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2e6402a-35bb-4a4a-abe8-278574c4cfbe")
+	)
+	(wire
+		(pts
+			(xy 50.8 102.87) (xy 50.8 107.95)
 		)
 		(stroke
 			(width 0)
@@ -1625,7 +3381,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 73.66) (xy 43.18 73.66)
+			(xy 34.29 105.41) (xy 38.1 105.41)
 		)
 		(stroke
 			(width 0)
@@ -1633,8 +3389,58 @@
 		)
 		(uuid "f3ce1bdb-b915-44d8-812d-9102b69e288b")
 	)
+	(wire
+		(pts
+			(xy 163.83 36.83) (xy 163.83 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5deb689-34cb-4a90-8e89-fd9def261866")
+	)
+	(wire
+		(pts
+			(xy 185.42 102.87) (xy 186.055 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7dc706a-3b46-4ce0-8df2-489aea07c2eb")
+	)
+	(wire
+		(pts
+			(xy 16.51 92.71) (xy 16.51 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa9f33ce-5d2c-4224-9d11-7020a5680985")
+	)
+	(wire
+		(pts
+			(xy 58.42 107.95) (xy 66.04 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb9a0713-6de9-4379-96c6-98b6040e5305")
+	)
+	(wire
+		(pts
+			(xy 219.71 115.57) (xy 219.71 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc859744-dc25-4cfb-818b-5612fbf1ebb5")
+	)
 	(image
-		(at 48.26 172.085)
+		(at 49.53 37.465)
 		(uuid "3ff4234f-028d-4e84-bfc9-a86399a903d3")
 		(data "iVBORw0KGgoAAAANSUhEUgAAA0oAAAJTCAYAAAA2dOYKAAAABHNCSVQICAgIfAhkiAAAIABJREFU"
 			"eJzs3Xd8VeX9B/DPc86d2ZsM9gZlZAFhj8hSQRwobm2r/hw4a7XaitvWWbV1tI5aF1jBslGmTIEw"
@@ -4212,48 +6018,108 @@
 			"IYQQQgghhBBCCCGEEEIIIYQQJ8v/A3O8zILdIxB5AAAAAElFTkSuQmCC"
 		)
 	)
-	(label "BCK"
-		(at 71.12 78.74 180)
+	(label "LRCK"
+		(at 66.04 77.47 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "041aeaf7-0cc0-4d8b-bf0d-373edb27b6b6")
+		(uuid "00cbf23f-b497-4032-888a-fd0c46b42f73")
 	)
-	(label "SW_C"
-		(at 71.12 53.34 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "1c511c36-973b-490f-9010-2bf6477b2fa7")
-	)
-	(label "FMT"
-		(at 71.12 66.04 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "22e30906-75b0-4003-8382-facfaf974571")
-	)
-	(label "WS"
-		(at 100.33 77.47 0)
+	(label "ANG_A"
+		(at 95.25 96.52 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "27eb6e39-87f1-4f88-841e-60582df8fb91")
+		(uuid "1665b702-e454-4a7a-bfbc-64eff48acbca")
+	)
+	(label "OSC_SCL"
+		(at 187.96 146.05 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1c3af4f9-f794-496b-8194-60b2ceb46220")
+	)
+	(label "BCKO"
+		(at 204.47 105.41 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "28085230-ae72-4465-a805-9828a6190342")
+	)
+	(label "MUTE"
+		(at 66.04 82.55 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "289b31bf-d32f-49b3-b723-aaaed817945d")
+	)
+	(label "CTL1"
+		(at 236.22 110.49 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3296ffa6-7c83-4e52-9397-4aeabd9bad38")
+	)
+	(label "MD1"
+		(at 186.055 115.57 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "35ccb7fc-cd71-45b0-80a2-7ef32ae69a0f")
+	)
+	(label "BCKO"
+		(at 66.04 95.25 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "370721c4-e3ab-45c9-acfa-3205fd3a9ace")
+	)
+	(label "MUTE"
+		(at 182.88 46.99 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "384e8b90-1666-4459-84af-b8f04cd6b606")
+	)
+	(label "ANG_A"
+		(at 232.41 71.12 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "443c1167-2438-406a-8bb8-0b33aa97fe8a")
 	)
 	(label "SCL"
-		(at 53.34 90.17 0)
+		(at 48.26 121.92 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4262,18 +6128,78 @@
 		)
 		(uuid "4b1b397d-ba97-416a-9c67-97427f5af421")
 	)
-	(label "SDIN"
-		(at 71.12 63.5 180)
+	(label "CTL2"
+		(at 236.22 113.03 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "5b0e75dd-80f3-4384-a268-9145d373a453")
+		(uuid "56b07ba3-71dd-48c5-824d-bcb091a4aa7c")
+	)
+	(label "DATA"
+		(at 204.47 102.87 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5a4aebb5-f10e-4b34-a560-cf3340a674ab")
+	)
+	(label "MD1"
+		(at 66.04 100.33 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5aa75846-e50f-4f8d-858d-d0f70e0911db")
+	)
+	(label "I"
+		(at 255.27 142.24 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5d020faf-de38-499b-821f-b1e197445eb7")
+	)
+	(label "RF_IN1"
+		(at 234.95 140.97 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "656e65a9-0255-4f24-9740-a7d0778b7dcd")
+	)
+	(label "MCLK"
+		(at 153.67 36.83 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "66039f5e-3687-4662-a1f7-087a620e61a7")
+	)
+	(label "RF_IN1"
+		(at 255.27 106.68 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6cd01d3e-6adb-4aaf-b52e-bc5040d41861")
 	)
 	(label "OSC_SDA"
-		(at 39.37 71.12 180)
+		(at 34.29 102.87 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4282,8 +6208,18 @@
 		)
 		(uuid "6f6fb666-857e-4909-8d54-ebebe4515f75")
 	)
+	(label "EX_CLK"
+		(at 153.67 44.45 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "7080d7c4-6748-4eb0-80e0-f1dec710165b")
+	)
 	(label "SDA"
-		(at 55.88 86.36 0)
+		(at 50.8 118.11 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4292,88 +6228,248 @@
 		)
 		(uuid "7702cedc-2d18-4267-8c8b-5254312edee3")
 	)
-	(label "MCLK"
-		(at 36.83 53.34 180)
+	(label "SDA"
+		(at 232.41 39.37 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "a0f62327-89b5-4842-9f92-acca10af4fe6")
+		(uuid "77dfa1ba-ed61-4b2b-9f8e-28f639d7f0f6")
 	)
-	(label "MD1"
-		(at 71.12 68.58 180)
+	(label "Q"
+		(at 186.055 105.41 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "a181878f-1a28-45ce-8940-da21e0511ef6")
-	)
-	(label "SCLK"
-		(at 71.12 55.88 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "aa5cd3a0-d0d1-4114-b608-55ab85aebf56")
-	)
-	(label "ANG_A"
-		(at 100.33 72.39 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "aea69888-eaed-43ef-88dd-47cf094f2c49")
-	)
-	(label "DATA"
-		(at 71.12 76.2 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "af49013b-b764-44ac-8025-fddf77d05533")
+		(uuid "794ea431-304f-44cf-969a-938df1645d9c")
 	)
 	(label "LRCK"
-		(at 71.12 58.42 180)
+		(at 182.88 36.83 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "d60b4ccf-ad21-4300-a339-e9a3995bf6a3")
+		(uuid "7d3894a3-dc2d-4f46-a869-f2baef74d784")
 	)
 	(label "ANG_B"
-		(at 100.33 74.93 0)
+		(at 232.41 73.66 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "7ee7625c-317e-4e74-8a1a-059eed8bae17")
+	)
+	(label "OSC_SDA"
+		(at 187.96 148.59 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "854c934d-f4fa-4b42-8e68-80b5e80e915c")
+	)
+	(label "SDIN"
+		(at 66.04 72.39 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "98e4055f-9caa-4de6-8652-52ba4ae4b6cc")
+	)
+	(label "DATA"
+		(at 66.04 92.71 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9ca842b8-90eb-4821-ab21-931754b7ea50")
+	)
+	(label "Q"
+		(at 254 144.78 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "de539bba-a0a5-4a7e-9449-c953f8e52595")
+		(uuid "9f72d62a-a27c-45bf-8024-e2769c1d01bd")
 	)
-	(label "SCKI"
-		(at 71.12 50.8 180)
+	(label "RF_IN2"
+		(at 234.95 143.51 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "f12c9e34-7d96-4c69-82ae-7ce08ddf049f")
+		(uuid "b91c5553-c3db-44c5-bc8f-074257b0c29f")
+	)
+	(label "FMT"
+		(at 66.04 97.79 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ba50c856-faaf-4604-9d97-2a44d700fa71")
+	)
+	(label "SCL"
+		(at 232.41 36.83 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "bd5be1d0-214b-4c14-84ca-4bc5210a73da")
+	)
+	(label "BCK"
+		(at 182.88 41.91 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c13ca863-c5ae-47f8-9980-b70c3798b061")
+	)
+	(label "WS"
+		(at 204.47 107.95 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c4fc78be-16d5-4054-a28a-3e3e77ff1484")
+	)
+	(label "SW_C"
+		(at 95.25 93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c9e8400b-2288-4aa9-92be-5e6caa221fdc")
+	)
+	(label "CTL2"
+		(at 95.25 104.14 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cb5d1da8-e657-48e1-a5c8-787700e07684")
+	)
+	(label "EX_CLK"
+		(at 187.96 139.7 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "cd45bffe-af44-4863-8920-79249e809834")
+	)
+	(label "SDIN"
+		(at 182.88 39.37 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d3d96014-1864-40d1-b1ad-5afcfbfa42d2")
+	)
+	(label "CTL1"
+		(at 95.25 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d45725f6-5e4c-474a-8c6b-328441ba997a")
+	)
+	(label "MCLK"
+		(at 66.04 80.01 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d4f32f36-fbf1-4f9a-ae8b-a7466d7d9a2b")
+	)
+	(label "BCK"
+		(at 66.04 74.93 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d85b0219-0db1-4e3c-8152-59237dd13381")
+	)
+	(label "FMT"
+		(at 186.055 113.03 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "deae0d8d-66dd-4fb7-b2d1-d669cf33f25a")
+	)
+	(label "ANG_B"
+		(at 95.25 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e51bcf7a-2a59-4310-8889-317b96bccaa7")
+	)
+	(label "I"
+		(at 185.42 102.87 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e8d590a4-9664-4880-9a60-ae1d084fb14d")
+	)
+	(label "SW_C"
+		(at 232.41 76.2 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f0d49a17-c97b-4db1-8042-9c294ec2c544")
 	)
 	(label "OSC_SCL"
-		(at 39.37 73.66 180)
+		(at 34.29 105.41 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4382,153 +6478,29 @@
 		)
 		(uuid "f4378441-cc04-4170-bc83-57e2f4403ce5")
 	)
-	(global_label "CTL1"
-		(shape output)
-		(at 119.38 69.85 0)
-		(fields_autoplaced yes)
+	(label "WS"
+		(at 66.04 90.17 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right bottom)
 		)
-		(uuid "1ed6ca56-f78d-4dc7-a5d0-3224be24bec9")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 126.8404 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
+		(uuid "fae9f436-5f8b-49c2-9cad-ae8b6e10a7a4")
 	)
-	(global_label "SCKO"
-		(shape output)
-		(at 118.11 88.9 0)
-		(fields_autoplaced yes)
+	(label "RF_IN2"
+		(at 255.27 109.22 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify left bottom)
 		)
-		(uuid "25ce1042-f2b9-4e84-927f-7019db3f104d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 126.1752 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "LRCKO"
-		(shape output)
-		(at 118.11 81.28 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "31a414ae-dc1d-4987-bb27-665b86c56dfd")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 127.2638 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "DINO"
-		(shape output)
-		(at 118.11 83.82 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "555919d0-6161-4591-a59b-31dcbc933bef")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 125.631 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "CTL2"
-		(shape output)
-		(at 119.38 72.39 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "679cb158-fde6-4a88-a5cd-b884dec89f1d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 126.8404 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "BCKO"
-		(shape output)
-		(at 118.11 86.36 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "b5171827-e64c-45b6-89c7-e13d5e0d530f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 126.2357 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
+		(uuid "ff909327-8da9-4bba-be8f-eb6ff48ed6e5")
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 54.61 59.69 0)
+		(at 49.53 91.44 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -4539,7 +6511,7 @@
 		(dnp no)
 		(uuid "05f76271-a8ab-483b-b9e3-9d9727a94050")
 		(property "Reference" "#PWR069"
-			(at 54.61 63.5 0)
+			(at 49.53 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4550,7 +6522,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 54.102 55.626 0)
+			(at 49.022 87.376 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4560,7 +6532,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 54.61 59.69 0)
+			(at 49.53 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4571,7 +6543,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 54.61 59.69 0)
+			(at 49.53 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4582,7 +6554,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 54.61 59.69 0)
+			(at 49.53 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4605,8 +6577,275 @@
 		)
 	)
 	(symbol
+		(lib_id "PCM_JLCPCB-Resistors:0603,470Ω")
+		(at 35.56 80.01 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "38780d2d-eb57-4476-8150-66b500b10a5f")
+		(property "Reference" "R37"
+			(at 35.56 76.2 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "470Ω"
+			(at 35.56 80.01 90)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:R_0603"
+			(at 35.56 81.788 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010116_UNI-ROYAL-Uniroyal-Elec-0603WAF4700T5E_C23179.pdf"
+			(at 35.56 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100mW Thick Film Resistors 75V ±100ppm/°C ±1% 470Ω 0603 Chip Resistor - Surface Mount ROHS"
+			(at 35.56 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C23179"
+			(at 35.56 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "3910258"
+			(at 35.56 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" "0.004USD"
+			(at 35.56 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Process" "SMT"
+			(at 35.56 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Minimum Qty" "20"
+			(at 35.56 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Attrition Qty" "10"
+			(at 35.56 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Class" "Basic Component"
+			(at 35.56 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Category" "Resistors,Chip Resistor - Surface Mount"
+			(at 35.56 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 35.56 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "0603WAF4700T5E"
+			(at 35.56 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Resistance" "470Ω"
+			(at 35.56 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Power(Watts)" "100mW"
+			(at 35.56 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Type" "Thick Film Resistors"
+			(at 35.56 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Overload Voltage (Max)" "75V"
+			(at 35.56 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Operating Temperature Range" "-55°C~+155°C"
+			(at 35.56 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "±1%"
+			(at 35.56 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Temperature Coefficient" "±100ppm/°C"
+			(at 35.56 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "f26cc524-5a25-4328-ba2c-b39601fd6d87")
+		)
+		(pin "1"
+			(uuid "d54783b6-6ac1-4fda-b192-584f0f0d18bc")
+		)
+		(instances
+			(project "Radio_Receiver_McCormick_Mendoza"
+				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f"
+					(reference "R37")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 120.65 52.07 0)
+		(at 115.57 83.82 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4617,7 +6856,7 @@
 		(fields_autoplaced yes)
 		(uuid "3f41e348-7851-430d-a298-deaa9a0c1421")
 		(property "Reference" "#PWR034"
-			(at 120.65 58.42 0)
+			(at 115.57 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4628,7 +6867,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 120.65 57.15 0)
+			(at 115.57 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4638,7 +6877,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 120.65 52.07 0)
+			(at 115.57 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4649,7 +6888,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 120.65 52.07 0)
+			(at 115.57 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4660,7 +6899,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 120.65 52.07 0)
+			(at 115.57 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4683,8 +6922,8 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_JLCPCB-Resistors:0805,4.7kΩ")
-		(at 53.34 63.5 0)
+		(lib_id "power:GND")
+		(at 16.51 92.71 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4692,9 +6931,88 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "5b4041f1-a4b5-4599-8089-41ed6983714c")
-		(property "Reference" "R23"
-			(at 48.768 59.69 0)
+		(fields_autoplaced yes)
+		(uuid "4143e2c4-ff24-4b45-9a0a-0435231be5e7")
+		(property "Reference" "#PWR088"
+			(at 16.51 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 16.51 97.79 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 16.51 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 16.51 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 16.51 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0f0a4e32-a8e3-4482-8f2f-5a31d99f4d65")
+		)
+		(instances
+			(project "Radio_Receiver_McCormick_Mendoza"
+				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f"
+					(reference "#PWR088")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_JLCPCB-Diodes:LED,0805,Green")
+		(at 16.51 83.82 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "468df9eb-75da-4626-8449-13dac7663251")
+		(property "Reference" "D2"
+			(at 19.05 82.4546 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4704,18 +7022,19 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7kΩ"
-			(at 53.34 63.5 90)
+		(property "Value" "Green"
+			(at 19.05 84.9947 0)
 			(show_name no)
-			(do_not_autoplace yes)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.8 0.8)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:R_0805"
-			(at 51.562 63.5 90)
+		(property "Footprint" "PCM_JLCPCB:D_0805"
+			(at 14.732 83.82 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4725,8 +7044,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010200_UNI-ROYAL-Uniroyal-Elec-0805W8F4701T5E_C17673.pdf"
-			(at 53.34 63.5 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1806151820_Hubei-KENTO-Elec-KT-0805G_C2297.pdf"
+			(at 16.51 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4736,8 +7055,8 @@
 				)
 			)
 		)
-		(property "Description" "125mW Thick Film Resistors 150V ±100ppm/°C ±1% 4.7kΩ 0805 Chip Resistor - Surface Mount ROHS"
-			(at 53.34 63.5 0)
+		(property "Description" "Emerald 0805 LED Indication - Discrete ROHS"
+			(at 16.51 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4747,8 +7066,8 @@
 				)
 			)
 		)
-		(property "LCSC" "C17673"
-			(at 53.34 63.5 0)
+		(property "LCSC" "C2297"
+			(at 16.51 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4758,8 +7077,8 @@
 				)
 			)
 		)
-		(property "Stock" "4733934"
-			(at 53.34 63.5 0)
+		(property "Stock" "2062782"
+			(at 16.51 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4769,8 +7088,8 @@
 				)
 			)
 		)
-		(property "Price" "0.005USD"
-			(at 53.34 63.5 0)
+		(property "Price" "0.014USD"
+			(at 16.51 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4781,7 +7100,7 @@
 			)
 		)
 		(property "Process" "SMT"
-			(at 53.34 63.5 0)
+			(at 16.51 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4792,7 +7111,7 @@
 			)
 		)
 		(property "Minimum Qty" "20"
-			(at 53.34 63.5 0)
+			(at 16.51 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4802,8 +7121,8 @@
 				)
 			)
 		)
-		(property "Attrition Qty" "6"
-			(at 53.34 63.5 0)
+		(property "Attrition Qty" "10"
+			(at 16.51 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4814,7 +7133,208 @@
 			)
 		)
 		(property "Class" "Basic Component"
-			(at 53.34 63.5 0)
+			(at 16.51 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Category" "Optoelectronics,Light Emitting Diodes (LED)"
+			(at 16.51 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Hubei KENTO Elec"
+			(at 16.51 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "KT-0805G"
+			(at 16.51 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Emitted Color" "Emerald"
+			(at 16.51 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "2d8c8385-f52b-4b57-be80-b5b23e78c553")
+		)
+		(pin "1"
+			(uuid "4fd776e3-d98e-41cc-9784-83d479decb80")
+		)
+		(instances
+			(project "Radio_Receiver_McCormick_Mendoza"
+				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_JLCPCB-Resistors:0805,4.7kΩ")
+		(at 48.26 95.25 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5b4041f1-a4b5-4599-8089-41ed6983714c")
+		(property "Reference" "R23"
+			(at 43.688 91.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7kΩ"
+			(at 48.26 95.25 90)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:R_0805"
+			(at 46.482 95.25 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010200_UNI-ROYAL-Uniroyal-Elec-0805W8F4701T5E_C17673.pdf"
+			(at 48.26 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "125mW Thick Film Resistors 150V ±100ppm/°C ±1% 4.7kΩ 0805 Chip Resistor - Surface Mount ROHS"
+			(at 48.26 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C17673"
+			(at 48.26 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "4733934"
+			(at 48.26 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" "0.005USD"
+			(at 48.26 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Process" "SMT"
+			(at 48.26 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Minimum Qty" "20"
+			(at 48.26 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Attrition Qty" "6"
+			(at 48.26 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Class" "Basic Component"
+			(at 48.26 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4825,7 +7345,7 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 53.34 63.5 0)
+			(at 48.26 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4836,7 +7356,7 @@
 			)
 		)
 		(property "Part" "0805W8F4701T5E"
-			(at 53.34 63.5 0)
+			(at 48.26 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4847,7 +7367,7 @@
 			)
 		)
 		(property "Resistance" "4.7kΩ"
-			(at 53.34 63.5 0)
+			(at 48.26 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4858,7 +7378,7 @@
 			)
 		)
 		(property "Power(Watts)" "125mW"
-			(at 53.34 63.5 0)
+			(at 48.26 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4869,7 +7389,7 @@
 			)
 		)
 		(property "Type" "Thick Film Resistors"
-			(at 53.34 63.5 0)
+			(at 48.26 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4880,7 +7400,7 @@
 			)
 		)
 		(property "Overload Voltage (Max)" "150V"
-			(at 53.34 63.5 0)
+			(at 48.26 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4891,7 +7411,7 @@
 			)
 		)
 		(property "Operating Temperature Range" "-55°C~+155°C"
-			(at 53.34 63.5 0)
+			(at 48.26 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4902,7 +7422,7 @@
 			)
 		)
 		(property "Tolerance" "±1%"
-			(at 53.34 63.5 0)
+			(at 48.26 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4913,7 +7433,7 @@
 			)
 		)
 		(property "Temperature Coefficient" "±100ppm/°C"
-			(at 53.34 63.5 0)
+			(at 48.26 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4939,8 +7459,8 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_JLCPCB-Capacitors:0402,100nF")
-		(at 120.65 48.26 0)
+		(lib_id "PCM_JLCPCB-Diodes:LED,0805,Yellow")
+		(at 25.4 88.9 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4949,9 +7469,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "699234db-8eab-499e-9502-d797ccf0a658")
-		(property "Reference" "C13"
-			(at 123.19 45.7199 0)
+		(uuid "5d99ba82-2a9c-4f45-9af3-0c674e78d746")
+		(property "Reference" "D3"
+			(at 27.94 87.5346 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4961,8 +7481,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
-			(at 123.19 48.26 0)
+		(property "Value" "Yellow"
+			(at 27.94 90.0747 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4972,8 +7492,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:C_0402"
-			(at 118.872 48.26 90)
+		(property "Footprint" "PCM_JLCPCB:D_0805"
+			(at 23.622 88.9 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4983,8 +7503,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf"
-			(at 120.65 48.26 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1806151129_Hubei-KENTO-Elec-KT-0805Y_C2296.pdf"
+			(at 25.4 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4994,8 +7514,8 @@
 				)
 			)
 		)
-		(property "Description" "16V 100nF X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
-			(at 120.65 48.26 0)
+		(property "Description" "Yellow 0805 LED Indication - Discrete ROHS"
+			(at 25.4 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5005,8 +7525,8 @@
 				)
 			)
 		)
-		(property "LCSC" "C1525"
-			(at 120.65 48.26 0)
+		(property "LCSC" "C2296"
+			(at 25.4 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5016,8 +7536,8 @@
 				)
 			)
 		)
-		(property "Stock" "20208285"
-			(at 120.65 48.26 0)
+		(property "Stock" "662678"
+			(at 25.4 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5027,8 +7547,8 @@
 				)
 			)
 		)
-		(property "Price" "0.004USD"
-			(at 120.65 48.26 0)
+		(property "Price" "0.015USD"
+			(at 25.4 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5039,7 +7559,7 @@
 			)
 		)
 		(property "Process" "SMT"
-			(at 120.65 48.26 0)
+			(at 25.4 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5050,7 +7570,7 @@
 			)
 		)
 		(property "Minimum Qty" "20"
-			(at 120.65 48.26 0)
+			(at 25.4 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5061,7 +7581,7 @@
 			)
 		)
 		(property "Attrition Qty" "10"
-			(at 120.65 48.26 0)
+			(at 25.4 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5072,7 +7592,199 @@
 			)
 		)
 		(property "Class" "Basic Component"
-			(at 120.65 48.26 0)
+			(at 25.4 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Category" "Optocouplers & LEDs & Infrared,Light Emitting Diodes (LED)"
+			(at 25.4 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Hubei KENTO Elec"
+			(at 25.4 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "KT-0805Y"
+			(at 25.4 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2f34ed38-f4ac-4f10-89af-f8d9fcd64adf")
+		)
+		(pin "2"
+			(uuid "24ab548c-0db4-4db5-89ea-fd4d4024279d")
+		)
+		(instances
+			(project "Radio_Receiver_McCormick_Mendoza"
+				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_JLCPCB-Capacitors:0402,100nF")
+		(at 115.57 80.01 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "699234db-8eab-499e-9502-d797ccf0a658")
+		(property "Reference" "C13"
+			(at 118.11 77.4699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 118.11 80.01 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:C_0402"
+			(at 113.792 80.01 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf"
+			(at 115.57 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "16V 100nF X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+			(at 115.57 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 115.57 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "20208285"
+			(at 115.57 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" "0.004USD"
+			(at 115.57 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Process" "SMT"
+			(at 115.57 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Minimum Qty" "20"
+			(at 115.57 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Attrition Qty" "10"
+			(at 115.57 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Class" "Basic Component"
+			(at 115.57 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5083,7 +7795,7 @@
 			)
 		)
 		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 120.65 48.26 0)
+			(at 115.57 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5094,7 +7806,7 @@
 			)
 		)
 		(property "Part" "CL05B104KO5NNNC"
-			(at 120.65 48.26 0)
+			(at 115.57 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5105,7 +7817,7 @@
 			)
 		)
 		(property "Voltage Rated" "16V"
-			(at 123.19 50.8 0)
+			(at 118.11 82.55 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5116,7 +7828,7 @@
 			)
 		)
 		(property "Tolerance" "±10%"
-			(at 120.65 48.26 0)
+			(at 115.57 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5127,7 +7839,7 @@
 			)
 		)
 		(property "Capacitance" "100nF"
-			(at 120.65 48.26 0)
+			(at 115.57 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5138,7 +7850,7 @@
 			)
 		)
 		(property "Temperature Coefficient" "X7R"
-			(at 120.65 48.26 0)
+			(at 115.57 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5165,7 +7877,7 @@
 	)
 	(symbol
 		(lib_id "PCM_JLCPCB-Resistors:0805,4.7kΩ")
-		(at 55.88 63.5 0)
+		(at 50.8 95.25 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5175,7 +7887,7 @@
 		(dnp no)
 		(uuid "6e14702e-b80a-4a67-b361-30ce42d824a8")
 		(property "Reference" "R22"
-			(at 56.388 59.944 0)
+			(at 51.308 91.694 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5186,7 +7898,7 @@
 			)
 		)
 		(property "Value" "4.7kΩ"
-			(at 55.88 63.5 90)
+			(at 50.8 95.25 90)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -5196,7 +7908,7 @@
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:R_0805"
-			(at 54.102 63.5 90)
+			(at 49.022 95.25 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5207,7 +7919,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010200_UNI-ROYAL-Uniroyal-Elec-0805W8F4701T5E_C17673.pdf"
-			(at 55.88 63.5 0)
+			(at 50.8 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5218,7 +7930,7 @@
 			)
 		)
 		(property "Description" "125mW Thick Film Resistors 150V ±100ppm/°C ±1% 4.7kΩ 0805 Chip Resistor - Surface Mount ROHS"
-			(at 55.88 63.5 0)
+			(at 50.8 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5229,7 +7941,7 @@
 			)
 		)
 		(property "LCSC" "C17673"
-			(at 55.88 63.5 0)
+			(at 50.8 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5240,7 +7952,7 @@
 			)
 		)
 		(property "Stock" "4733934"
-			(at 55.88 63.5 0)
+			(at 50.8 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5251,7 +7963,7 @@
 			)
 		)
 		(property "Price" "0.005USD"
-			(at 55.88 63.5 0)
+			(at 50.8 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5262,7 +7974,7 @@
 			)
 		)
 		(property "Process" "SMT"
-			(at 55.88 63.5 0)
+			(at 50.8 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5273,7 +7985,7 @@
 			)
 		)
 		(property "Minimum Qty" "20"
-			(at 55.88 63.5 0)
+			(at 50.8 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5284,7 +7996,7 @@
 			)
 		)
 		(property "Attrition Qty" "6"
-			(at 55.88 63.5 0)
+			(at 50.8 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5295,7 +8007,7 @@
 			)
 		)
 		(property "Class" "Basic Component"
-			(at 55.88 63.5 0)
+			(at 50.8 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5306,7 +8018,7 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 55.88 63.5 0)
+			(at 50.8 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5317,7 +8029,7 @@
 			)
 		)
 		(property "Part" "0805W8F4701T5E"
-			(at 55.88 63.5 0)
+			(at 50.8 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5328,7 +8040,7 @@
 			)
 		)
 		(property "Resistance" "4.7kΩ"
-			(at 55.88 63.5 0)
+			(at 50.8 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5339,7 +8051,7 @@
 			)
 		)
 		(property "Power(Watts)" "125mW"
-			(at 55.88 63.5 0)
+			(at 50.8 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5350,7 +8062,7 @@
 			)
 		)
 		(property "Type" "Thick Film Resistors"
-			(at 55.88 63.5 0)
+			(at 50.8 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5361,7 +8073,7 @@
 			)
 		)
 		(property "Overload Voltage (Max)" "150V"
-			(at 55.88 63.5 0)
+			(at 50.8 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5372,7 +8084,7 @@
 			)
 		)
 		(property "Operating Temperature Range" "-55°C~+155°C"
-			(at 55.88 63.5 0)
+			(at 50.8 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5383,7 +8095,7 @@
 			)
 		)
 		(property "Tolerance" "±1%"
-			(at 55.88 63.5 0)
+			(at 50.8 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5394,7 +8106,7 @@
 			)
 		)
 		(property "Temperature Coefficient" "±100ppm/°C"
-			(at 55.88 63.5 0)
+			(at 50.8 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5420,8 +8132,174 @@
 		)
 	)
 	(symbol
+		(lib_name "Jumper_2_Bridged_1")
+		(lib_id "Jumper:Jumper_2_Bridged")
+		(at 158.75 36.83 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7b8a8b4e-9abf-4f9a-bdaa-2008ee201432")
+		(property "Reference" "e9"
+			(at 160.0201 38.1 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "MCLK"
+			(at 161.798 34.544 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm"
+			(at 158.75 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 158.75 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Jumper, 2-pole, closed/bridged"
+			(at 158.75 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "99ef9c6b-43a3-4223-86c2-797e93031caa")
+		)
+		(pin "2"
+			(uuid "a81d93db-f6eb-4016-80e8-3a2d66de5a08")
+		)
+		(instances
+			(project "Radio_Receiver_McCormick_Mendoza"
+				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f"
+					(reference "e9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 58.42 125.73 90)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7e8b66bf-ec06-47b1-9719-3552aff10065")
+		(property "Reference" "J44"
+			(at 63.5 124.4599 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 63.5 126.9999 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 58.42 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 58.42 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 58.42 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "56cd8f05-dc21-4b96-b9d0-05c053cbdefd")
+		)
+		(pin "1"
+			(uuid "6ca818f3-9220-40c7-8c56-9282c48b344f")
+		)
+		(instances
+			(project "Radio_Receiver_McCormick_Mendoza"
+				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f"
+					(reference "J44")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PCM_JLCPCB-Resistors:0805,100Ω")
-		(at 53.34 80.01 180)
+		(at 48.26 111.76 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5431,7 +8309,7 @@
 		(dnp no)
 		(uuid "82b62cfe-14ff-4be6-9236-9537fd33a43d")
 		(property "Reference" "R26"
-			(at 50.8 80.01 90)
+			(at 45.72 111.76 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5441,7 +8319,7 @@
 			)
 		)
 		(property "Value" "100Ω"
-			(at 53.34 80.01 90)
+			(at 48.26 111.76 90)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -5451,7 +8329,7 @@
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:R_0805"
-			(at 55.118 80.01 90)
+			(at 50.038 111.76 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5462,7 +8340,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F1000T5E_C17408.pdf"
-			(at 53.34 80.01 0)
+			(at 48.26 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5473,7 +8351,7 @@
 			)
 		)
 		(property "Description" "125mW Thick Film Resistors 150V ±100ppm/°C ±1% 100Ω 0805 Chip Resistor - Surface Mount ROHS"
-			(at 53.34 80.01 0)
+			(at 48.26 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5484,7 +8362,7 @@
 			)
 		)
 		(property "LCSC" "C17408"
-			(at 53.34 80.01 0)
+			(at 48.26 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5495,7 +8373,7 @@
 			)
 		)
 		(property "Stock" "3356429"
-			(at 53.34 80.01 0)
+			(at 48.26 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5506,7 +8384,7 @@
 			)
 		)
 		(property "Price" "0.005USD"
-			(at 53.34 80.01 0)
+			(at 48.26 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5517,7 +8395,7 @@
 			)
 		)
 		(property "Process" "SMT"
-			(at 53.34 80.01 0)
+			(at 48.26 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5528,7 +8406,7 @@
 			)
 		)
 		(property "Minimum Qty" "20"
-			(at 53.34 80.01 0)
+			(at 48.26 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5539,7 +8417,7 @@
 			)
 		)
 		(property "Attrition Qty" "10"
-			(at 53.34 80.01 0)
+			(at 48.26 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5550,7 +8428,7 @@
 			)
 		)
 		(property "Class" "Basic Component"
-			(at 53.34 80.01 0)
+			(at 48.26 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5561,7 +8439,7 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 53.34 80.01 0)
+			(at 48.26 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5572,7 +8450,7 @@
 			)
 		)
 		(property "Part" "0805W8F1000T5E"
-			(at 53.34 80.01 0)
+			(at 48.26 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5583,7 +8461,7 @@
 			)
 		)
 		(property "Resistance" "100Ω"
-			(at 53.34 80.01 0)
+			(at 48.26 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5594,7 +8472,7 @@
 			)
 		)
 		(property "Power(Watts)" "125mW"
-			(at 53.34 80.01 0)
+			(at 48.26 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5605,7 +8483,7 @@
 			)
 		)
 		(property "Type" "Thick Film Resistors"
-			(at 53.34 80.01 0)
+			(at 48.26 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5616,7 +8494,7 @@
 			)
 		)
 		(property "Overload Voltage (Max)" "150V"
-			(at 53.34 80.01 0)
+			(at 48.26 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5627,7 +8505,7 @@
 			)
 		)
 		(property "Operating Temperature Range" "-55°C~+155°C"
-			(at 53.34 80.01 0)
+			(at 48.26 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5638,7 +8516,7 @@
 			)
 		)
 		(property "Tolerance" "±1%"
-			(at 53.34 80.01 0)
+			(at 48.26 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5649,7 +8527,7 @@
 			)
 		)
 		(property "Temperature Coefficient" "±100ppm/°C"
-			(at 53.34 80.01 0)
+			(at 48.26 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5676,7 +8554,7 @@
 	)
 	(symbol
 		(lib_id "power:VDD")
-		(at 120.65 40.64 0)
+		(at 115.57 72.39 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5687,7 +8565,7 @@
 		(fields_autoplaced yes)
 		(uuid "86f395a1-222f-4668-a5e4-2b1706f70fc0")
 		(property "Reference" "#PWR010"
-			(at 120.65 44.45 0)
+			(at 115.57 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5698,7 +8576,7 @@
 			)
 		)
 		(property "Value" "VDD"
-			(at 120.65 35.56 0)
+			(at 115.57 67.31 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5708,7 +8586,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 120.65 40.64 0)
+			(at 115.57 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5719,7 +8597,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 120.65 40.64 0)
+			(at 115.57 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5730,7 +8608,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 120.65 40.64 0)
+			(at 115.57 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5754,7 +8632,7 @@
 	)
 	(symbol
 		(lib_id "PCM_JLCPCB-Resistors:0805,100Ω")
-		(at 46.99 73.66 90)
+		(at 41.91 105.41 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5764,7 +8642,7 @@
 		(dnp no)
 		(uuid "96a20914-e770-4c4a-b23d-5b037b287a08")
 		(property "Reference" "R25"
-			(at 47.244 76.708 90)
+			(at 42.164 108.458 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5774,7 +8652,7 @@
 			)
 		)
 		(property "Value" "100Ω"
-			(at 46.99 73.66 90)
+			(at 41.91 105.41 90)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -5784,7 +8662,7 @@
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:R_0805"
-			(at 46.99 75.438 90)
+			(at 41.91 107.188 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5795,7 +8673,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F1000T5E_C17408.pdf"
-			(at 46.99 73.66 0)
+			(at 41.91 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5806,7 +8684,7 @@
 			)
 		)
 		(property "Description" "125mW Thick Film Resistors 150V ±100ppm/°C ±1% 100Ω 0805 Chip Resistor - Surface Mount ROHS"
-			(at 46.99 73.66 0)
+			(at 41.91 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5817,7 +8695,7 @@
 			)
 		)
 		(property "LCSC" "C17408"
-			(at 46.99 73.66 0)
+			(at 41.91 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5828,7 +8706,7 @@
 			)
 		)
 		(property "Stock" "3356429"
-			(at 46.99 73.66 0)
+			(at 41.91 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5839,7 +8717,7 @@
 			)
 		)
 		(property "Price" "0.005USD"
-			(at 46.99 73.66 0)
+			(at 41.91 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5850,7 +8728,7 @@
 			)
 		)
 		(property "Process" "SMT"
-			(at 46.99 73.66 0)
+			(at 41.91 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5861,7 +8739,7 @@
 			)
 		)
 		(property "Minimum Qty" "20"
-			(at 46.99 73.66 0)
+			(at 41.91 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5872,7 +8750,7 @@
 			)
 		)
 		(property "Attrition Qty" "10"
-			(at 46.99 73.66 0)
+			(at 41.91 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5883,7 +8761,7 @@
 			)
 		)
 		(property "Class" "Basic Component"
-			(at 46.99 73.66 0)
+			(at 41.91 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5894,7 +8772,7 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 46.99 73.66 0)
+			(at 41.91 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5905,7 +8783,7 @@
 			)
 		)
 		(property "Part" "0805W8F1000T5E"
-			(at 46.99 73.66 0)
+			(at 41.91 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5916,7 +8794,7 @@
 			)
 		)
 		(property "Resistance" "100Ω"
-			(at 46.99 73.66 0)
+			(at 41.91 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5927,7 +8805,7 @@
 			)
 		)
 		(property "Power(Watts)" "125mW"
-			(at 46.99 73.66 0)
+			(at 41.91 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5938,7 +8816,7 @@
 			)
 		)
 		(property "Type" "Thick Film Resistors"
-			(at 46.99 73.66 0)
+			(at 41.91 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5949,7 +8827,7 @@
 			)
 		)
 		(property "Overload Voltage (Max)" "150V"
-			(at 46.99 73.66 0)
+			(at 41.91 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5960,7 +8838,7 @@
 			)
 		)
 		(property "Operating Temperature Range" "-55°C~+155°C"
-			(at 46.99 73.66 0)
+			(at 41.91 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5971,7 +8849,7 @@
 			)
 		)
 		(property "Tolerance" "±1%"
-			(at 46.99 73.66 0)
+			(at 41.91 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5982,7 +8860,7 @@
 			)
 		)
 		(property "Temperature Coefficient" "±100ppm/°C"
-			(at 46.99 73.66 0)
+			(at 41.91 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6008,8 +8886,89 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 100.33 106.68 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a1d79d9e-1168-426a-ac8e-ee31b24a45a9")
+		(property "Reference" "J43"
+			(at 102.87 106.6799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 102.87 109.2199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 100.33 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 100.33 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 100.33 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "497a19c3-1613-4348-83f3-f03301ce39d2")
+		)
+		(pin "1"
+			(uuid "2f360d4a-d3f9-49ab-8c8d-d359e34eefc3")
+		)
+		(instances
+			(project "Radio_Receiver_McCormick_Mendoza"
+				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f"
+					(reference "J43")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PCM_JLCPCB-Resistors:0805,100Ω")
-		(at 55.88 80.01 180)
+		(at 50.8 111.76 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6019,7 +8978,7 @@
 		(dnp no)
 		(uuid "be7fb90e-b12f-4d3e-8e99-cd1d0eeef542")
 		(property "Reference" "R27"
-			(at 58.928 79.756 90)
+			(at 53.848 111.506 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6029,7 +8988,7 @@
 			)
 		)
 		(property "Value" "100Ω"
-			(at 55.88 80.01 90)
+			(at 50.8 111.76 90)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -6039,7 +8998,7 @@
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:R_0805"
-			(at 57.658 80.01 90)
+			(at 52.578 111.76 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6050,7 +9009,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F1000T5E_C17408.pdf"
-			(at 55.88 80.01 0)
+			(at 50.8 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6061,7 +9020,7 @@
 			)
 		)
 		(property "Description" "125mW Thick Film Resistors 150V ±100ppm/°C ±1% 100Ω 0805 Chip Resistor - Surface Mount ROHS"
-			(at 55.88 80.01 0)
+			(at 50.8 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6072,7 +9031,7 @@
 			)
 		)
 		(property "LCSC" "C17408"
-			(at 55.88 80.01 0)
+			(at 50.8 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6083,7 +9042,7 @@
 			)
 		)
 		(property "Stock" "3356429"
-			(at 55.88 80.01 0)
+			(at 50.8 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6094,7 +9053,7 @@
 			)
 		)
 		(property "Price" "0.005USD"
-			(at 55.88 80.01 0)
+			(at 50.8 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6105,7 +9064,7 @@
 			)
 		)
 		(property "Process" "SMT"
-			(at 55.88 80.01 0)
+			(at 50.8 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6116,7 +9075,7 @@
 			)
 		)
 		(property "Minimum Qty" "20"
-			(at 55.88 80.01 0)
+			(at 50.8 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6127,7 +9086,7 @@
 			)
 		)
 		(property "Attrition Qty" "10"
-			(at 55.88 80.01 0)
+			(at 50.8 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6138,7 +9097,7 @@
 			)
 		)
 		(property "Class" "Basic Component"
-			(at 55.88 80.01 0)
+			(at 50.8 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6149,7 +9108,7 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 55.88 80.01 0)
+			(at 50.8 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6160,7 +9119,7 @@
 			)
 		)
 		(property "Part" "0805W8F1000T5E"
-			(at 55.88 80.01 0)
+			(at 50.8 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6171,7 +9130,7 @@
 			)
 		)
 		(property "Resistance" "100Ω"
-			(at 55.88 80.01 0)
+			(at 50.8 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6182,7 +9141,7 @@
 			)
 		)
 		(property "Power(Watts)" "125mW"
-			(at 55.88 80.01 0)
+			(at 50.8 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6193,7 +9152,7 @@
 			)
 		)
 		(property "Type" "Thick Film Resistors"
-			(at 55.88 80.01 0)
+			(at 50.8 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6204,7 +9163,7 @@
 			)
 		)
 		(property "Overload Voltage (Max)" "150V"
-			(at 55.88 80.01 0)
+			(at 50.8 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6215,7 +9174,7 @@
 			)
 		)
 		(property "Operating Temperature Range" "-55°C~+155°C"
-			(at 55.88 80.01 0)
+			(at 50.8 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6226,7 +9185,7 @@
 			)
 		)
 		(property "Tolerance" "±1%"
-			(at 55.88 80.01 0)
+			(at 50.8 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6237,7 +9196,7 @@
 			)
 		)
 		(property "Temperature Coefficient" "±100ppm/°C"
-			(at 55.88 80.01 0)
+			(at 50.8 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6263,8 +9222,8 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_JLCPCB-Resistors:0805,100Ω")
-		(at 46.99 71.12 90)
+		(lib_id "PCM_JLCPCB-Resistors:0603,470Ω")
+		(at 35.56 82.55 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6272,9 +9231,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "fb79f99a-aaa0-45f8-aa93-d29801b9c0bd")
-		(property "Reference" "R24"
-			(at 46.99 68.58 90)
+		(uuid "d7c002a9-17df-4958-ab73-fee826f0c7b7")
+		(property "Reference" "R38"
+			(at 35.56 86.36 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6283,8 +9242,8 @@
 				)
 			)
 		)
-		(property "Value" "100Ω"
-			(at 46.99 71.12 90)
+		(property "Value" "470Ω"
+			(at 35.56 82.55 90)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -6293,8 +9252,8 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:R_0805"
-			(at 46.99 72.898 90)
+		(property "Footprint" "PCM_JLCPCB:R_0603"
+			(at 35.56 80.772 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6304,8 +9263,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F1000T5E_C17408.pdf"
-			(at 46.99 71.12 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010116_UNI-ROYAL-Uniroyal-Elec-0603WAF4700T5E_C23179.pdf"
+			(at 35.56 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6315,8 +9274,8 @@
 				)
 			)
 		)
-		(property "Description" "125mW Thick Film Resistors 150V ±100ppm/°C ±1% 100Ω 0805 Chip Resistor - Surface Mount ROHS"
-			(at 46.99 71.12 0)
+		(property "Description" "100mW Thick Film Resistors 75V ±100ppm/°C ±1% 470Ω 0603 Chip Resistor - Surface Mount ROHS"
+			(at 35.56 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6326,8 +9285,8 @@
 				)
 			)
 		)
-		(property "LCSC" "C17408"
-			(at 46.99 71.12 0)
+		(property "LCSC" "C23179"
+			(at 35.56 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6337,8 +9296,8 @@
 				)
 			)
 		)
-		(property "Stock" "3356429"
-			(at 46.99 71.12 0)
+		(property "Stock" "3910258"
+			(at 35.56 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6348,8 +9307,8 @@
 				)
 			)
 		)
-		(property "Price" "0.005USD"
-			(at 46.99 71.12 0)
+		(property "Price" "0.004USD"
+			(at 35.56 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6360,7 +9319,7 @@
 			)
 		)
 		(property "Process" "SMT"
-			(at 46.99 71.12 0)
+			(at 35.56 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6371,7 +9330,7 @@
 			)
 		)
 		(property "Minimum Qty" "20"
-			(at 46.99 71.12 0)
+			(at 35.56 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6382,7 +9341,7 @@
 			)
 		)
 		(property "Attrition Qty" "10"
-			(at 46.99 71.12 0)
+			(at 35.56 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6393,7 +9352,7 @@
 			)
 		)
 		(property "Class" "Basic Component"
-			(at 46.99 71.12 0)
+			(at 35.56 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6404,7 +9363,7 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 46.99 71.12 0)
+			(at 35.56 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6414,8 +9373,8 @@
 				)
 			)
 		)
-		(property "Part" "0805W8F1000T5E"
-			(at 46.99 71.12 0)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 35.56 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6425,8 +9384,8 @@
 				)
 			)
 		)
-		(property "Resistance" "100Ω"
-			(at 46.99 71.12 0)
+		(property "Part" "0603WAF4700T5E"
+			(at 35.56 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6436,8 +9395,19 @@
 				)
 			)
 		)
-		(property "Power(Watts)" "125mW"
-			(at 46.99 71.12 0)
+		(property "Resistance" "470Ω"
+			(at 35.56 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Power(Watts)" "100mW"
+			(at 35.56 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6448,7 +9418,7 @@
 			)
 		)
 		(property "Type" "Thick Film Resistors"
-			(at 46.99 71.12 0)
+			(at 35.56 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6458,8 +9428,8 @@
 				)
 			)
 		)
-		(property "Overload Voltage (Max)" "150V"
-			(at 46.99 71.12 0)
+		(property "Overload Voltage (Max)" "75V"
+			(at 35.56 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6470,7 +9440,7 @@
 			)
 		)
 		(property "Operating Temperature Range" "-55°C~+155°C"
-			(at 46.99 71.12 0)
+			(at 35.56 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6481,7 +9451,7 @@
 			)
 		)
 		(property "Tolerance" "±1%"
-			(at 46.99 71.12 0)
+			(at 35.56 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6492,7 +9462,354 @@
 			)
 		)
 		(property "Temperature Coefficient" "±100ppm/°C"
-			(at 46.99 71.12 0)
+			(at 35.56 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6f842a45-8464-4e8e-a4a5-e6dee2418312")
+		)
+		(pin "2"
+			(uuid "b4fc34c1-cc31-414c-8b40-cf2fccf955d8")
+		)
+		(instances
+			(project "Radio_Receiver_McCormick_Mendoza"
+				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f"
+					(reference "R38")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:Jumper_2_Open")
+		(at 158.75 44.45 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f804be71-a283-4fcb-a46b-1b5a3a5f80ca")
+		(property "Reference" "JP13"
+			(at 158.75 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "EX_CLK"
+			(at 158.75 40.64 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
+			(at 158.75 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 158.75 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 158.75 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB #" ""
+			(at 158.75 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c37411b7-ca85-47fb-bbc2-a0b3fd9e3ec6")
+		)
+		(pin "2"
+			(uuid "2e2e641d-cf18-4a2e-bd62-3e225bf8401f")
+		)
+		(instances
+			(project "Radio_Receiver_McCormick_Mendoza"
+				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f"
+					(reference "JP13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_JLCPCB-Resistors:0805,100Ω")
+		(at 41.91 102.87 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fb79f99a-aaa0-45f8-aa93-d29801b9c0bd")
+		(property "Reference" "R24"
+			(at 41.91 100.33 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100Ω"
+			(at 41.91 102.87 90)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:R_0805"
+			(at 41.91 104.648 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F1000T5E_C17408.pdf"
+			(at 41.91 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "125mW Thick Film Resistors 150V ±100ppm/°C ±1% 100Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 41.91 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C17408"
+			(at 41.91 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "3356429"
+			(at 41.91 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" "0.005USD"
+			(at 41.91 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Process" "SMT"
+			(at 41.91 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Minimum Qty" "20"
+			(at 41.91 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Attrition Qty" "10"
+			(at 41.91 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Class" "Basic Component"
+			(at 41.91 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Category" "Resistors,Chip Resistor - Surface Mount"
+			(at 41.91 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "0805W8F1000T5E"
+			(at 41.91 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Resistance" "100Ω"
+			(at 41.91 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Power(Watts)" "125mW"
+			(at 41.91 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Type" "Thick Film Resistors"
+			(at 41.91 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Overload Voltage (Max)" "150V"
+			(at 41.91 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Operating Temperature Range" "-55°C~+155°C"
+			(at 41.91 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "±1%"
+			(at 41.91 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Temperature Coefficient" "±100ppm/°C"
+			(at 41.91 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6518,8 +9835,8 @@
 		)
 	)
 	(sheet
-		(at 179.07 147.32)
-		(size 12.7 7.62)
+		(at 234.95 135.89)
+		(size 19.05 13.97)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -6534,7 +9851,7 @@
 		)
 		(uuid "132a78a3-63a8-4709-a5ba-2b34eb7966d9")
 		(property "Sheetname" "Mixer - Taloe Detector"
-			(at 179.07 146.6084 0)
+			(at 234.95 135.1784 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6545,7 +9862,7 @@
 			)
 		)
 		(property "Sheetfile" "mixer.kicad_sch"
-			(at 179.07 155.5246 0)
+			(at 234.95 150.4446 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6553,6 +9870,76 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "I_LO" input
+			(at 234.95 146.05 180)
+			(uuid "effcff3d-1590-4c92-9c17-e8a89e4667fb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "I_OUT" output
+			(at 254 142.24 0)
+			(uuid "96f084b8-1d3a-497e-9918-b490a9babaac")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Q_LO" input
+			(at 234.95 148.59 180)
+			(uuid "558462a9-8e89-4726-bfbc-80d7135ff897")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Q_OUT" output
+			(at 254 144.78 0)
+			(uuid "272d0327-9d91-4db6-9ed2-1c742c71112a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "RF_IN1" input
+			(at 234.95 140.97 180)
+			(uuid "5db73b29-f6de-44a5-bac9-f65f98d601ba")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "RF_IN2" input
+			(at 234.95 143.51 180)
+			(uuid "ae73536a-f052-4e9e-a9bb-9f8050befb40")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VDDA{slash}2" input
+			(at 234.95 137.16 180)
+			(uuid "4afac8a2-c8e5-4c5e-bbaa-4c491d93b3e0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -6564,8 +9951,8 @@
 		)
 	)
 	(sheet
-		(at 228.6 109.22)
-		(size 12.7 7.62)
+		(at 232.41 34.29)
+		(size 16.51 11.43)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -6580,7 +9967,7 @@
 		)
 		(uuid "1382cf63-6685-4835-bd9f-b4058c692ca4")
 		(property "Sheetname" "Display"
-			(at 228.6 108.5084 0)
+			(at 232.41 33.5784 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6591,7 +9978,7 @@
 			)
 		)
 		(property "Sheetfile" "Display.kicad_sch"
-			(at 228.6 117.4246 0)
+			(at 232.41 46.3046 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6599,6 +9986,26 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "SCL" input
+			(at 232.41 36.83 180)
+			(uuid "4a8c9fd4-907a-4354-b868-e222137495bc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SDA" input
+			(at 232.41 39.37 180)
+			(uuid "3dcf2dd7-55c1-4031-b982-66e2dd99d957")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -6610,7 +10017,7 @@
 		)
 	)
 	(sheet
-		(at 71.12 35.56)
+		(at 66.04 67.31)
 		(size 29.21 48.26)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6626,7 +10033,7 @@
 		)
 		(uuid "410b623f-becc-4f3c-a123-5075a8235689")
 		(property "Sheetname" "Raspberry_Pi_Pico"
-			(at 71.12 34.8484 0)
+			(at 66.04 66.5984 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6637,7 +10044,7 @@
 			)
 		)
 		(property "Sheetfile" "raspberry_pi_pico.kicad_sch"
-			(at 71.12 84.4046 0)
+			(at 66.04 116.1546 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6648,7 +10055,7 @@
 			)
 		)
 		(pin "GPIO28_ADC2" bidirectional
-			(at 100.33 54.61 0)
+			(at 95.25 86.36 0)
 			(uuid "8a1dec5f-d0c1-41c6-a0aa-6b12192dc0aa")
 			(effects
 				(font
@@ -6658,7 +10065,7 @@
 			)
 		)
 		(pin "GPIO26_ADC0" bidirectional
-			(at 100.33 59.69 0)
+			(at 95.25 91.44 0)
 			(uuid "2914e229-986f-4ac2-a30d-d5ad37f8971d")
 			(effects
 				(font
@@ -6668,7 +10075,7 @@
 			)
 		)
 		(pin "ADC_VREF" input
-			(at 100.33 52.07 0)
+			(at 95.25 83.82 0)
 			(uuid "968ba5d2-3346-46c4-8baf-53141b63382f")
 			(effects
 				(font
@@ -6678,7 +10085,7 @@
 			)
 		)
 		(pin "GPIO27_ADC1" bidirectional
-			(at 100.33 57.15 0)
+			(at 95.25 88.9 0)
 			(uuid "48926582-8f83-4bf0-a536-c531c9f2f80f")
 			(effects
 				(font
@@ -6688,7 +10095,7 @@
 			)
 		)
 		(pin "VSYS" output
-			(at 100.33 44.45 0)
+			(at 95.25 76.2 0)
 			(uuid "c57aaf75-dff5-4308-a207-bcc63bc2e018")
 			(effects
 				(font
@@ -6698,7 +10105,7 @@
 			)
 		)
 		(pin "3V3_EN" input
-			(at 100.33 46.99 0)
+			(at 95.25 78.74 0)
 			(uuid "8382d2ad-6f83-4e97-a8ba-4fefadfbe059")
 			(effects
 				(font
@@ -6708,7 +10115,7 @@
 			)
 		)
 		(pin "GPIO18" bidirectional
-			(at 100.33 72.39 0)
+			(at 95.25 104.14 0)
 			(uuid "3b00cd7e-87a4-4dde-a976-cb1474fa1919")
 			(effects
 				(font
@@ -6718,7 +10125,7 @@
 			)
 		)
 		(pin "GPIO21" bidirectional
-			(at 100.33 64.77 0)
+			(at 95.25 96.52 0)
 			(uuid "a9bf9976-df95-4940-a9fd-1da1b4cda440")
 			(effects
 				(font
@@ -6728,7 +10135,7 @@
 			)
 		)
 		(pin "GPIO19" bidirectional
-			(at 100.33 69.85 0)
+			(at 95.25 101.6 0)
 			(uuid "a70fb479-7e4f-4980-8e8a-5d781a92dcee")
 			(effects
 				(font
@@ -6738,7 +10145,7 @@
 			)
 		)
 		(pin "GPIO20" bidirectional
-			(at 100.33 67.31 0)
+			(at 95.25 99.06 0)
 			(uuid "589718a1-e672-4051-8a08-b74622bd516b")
 			(effects
 				(font
@@ -6748,7 +10155,7 @@
 			)
 		)
 		(pin "GPIO22" bidirectional
-			(at 100.33 62.23 0)
+			(at 95.25 93.98 0)
 			(uuid "9caa54ab-5491-4e31-822d-812f6a96214c")
 			(effects
 				(font
@@ -6758,7 +10165,7 @@
 			)
 		)
 		(pin "GPIO17" bidirectional
-			(at 100.33 74.93 0)
+			(at 95.25 106.68 0)
 			(uuid "5dc3b50b-0849-4d86-979f-3b6305bea7f2")
 			(effects
 				(font
@@ -6768,7 +10175,7 @@
 			)
 		)
 		(pin "GPIO16" bidirectional
-			(at 100.33 77.47 0)
+			(at 95.25 109.22 0)
 			(uuid "03d5f17d-c565-46a5-94c2-1e6844c818a3")
 			(effects
 				(font
@@ -6778,7 +10185,7 @@
 			)
 		)
 		(pin "GPIO4" bidirectional
-			(at 71.12 50.8 180)
+			(at 66.04 82.55 180)
 			(uuid "8df567f6-ef54-46a3-a8be-f6250091e4ae")
 			(effects
 				(font
@@ -6788,7 +10195,7 @@
 			)
 		)
 		(pin "GPIO8" bidirectional
-			(at 71.12 60.96 180)
+			(at 66.04 92.71 180)
 			(uuid "383dd857-d60f-49b9-ae6c-021093e88e67")
 			(effects
 				(font
@@ -6798,7 +10205,7 @@
 			)
 		)
 		(pin "GPIO0" bidirectional
-			(at 71.12 40.64 180)
+			(at 66.04 72.39 180)
 			(uuid "75e027f8-02a7-41c1-8d03-04e4138e7ea9")
 			(effects
 				(font
@@ -6808,7 +10215,7 @@
 			)
 		)
 		(pin "GPIO1" bidirectional
-			(at 71.12 43.18 180)
+			(at 66.04 74.93 180)
 			(uuid "59cacbb0-acd0-4353-b200-78588040014c")
 			(effects
 				(font
@@ -6818,7 +10225,7 @@
 			)
 		)
 		(pin "GPIO2" bidirectional
-			(at 71.12 45.72 180)
+			(at 66.04 77.47 180)
 			(uuid "72cebd44-5639-4235-99c6-9f078883b540")
 			(effects
 				(font
@@ -6828,7 +10235,7 @@
 			)
 		)
 		(pin "GPIO3" bidirectional
-			(at 71.12 48.26 180)
+			(at 66.04 80.01 180)
 			(uuid "7d049146-d535-41bf-8f52-77f9e32560a0")
 			(effects
 				(font
@@ -6838,7 +10245,7 @@
 			)
 		)
 		(pin "GPIO7" bidirectional
-			(at 71.12 58.42 180)
+			(at 66.04 90.17 180)
 			(uuid "2739941b-247a-4403-9bad-c7bef9f86930")
 			(effects
 				(font
@@ -6848,7 +10255,7 @@
 			)
 		)
 		(pin "GPIO5" bidirectional
-			(at 71.12 53.34 180)
+			(at 66.04 85.09 180)
 			(uuid "26b4fba9-a703-428d-b9d5-d89296018d95")
 			(effects
 				(font
@@ -6858,7 +10265,7 @@
 			)
 		)
 		(pin "GPIO6" bidirectional
-			(at 71.12 55.88 180)
+			(at 66.04 87.63 180)
 			(uuid "ba868610-3f50-4a3c-bd4a-a1dff5e7eb03")
 			(effects
 				(font
@@ -6868,7 +10275,7 @@
 			)
 		)
 		(pin "GPIO9" bidirectional
-			(at 71.12 63.5 180)
+			(at 66.04 95.25 180)
 			(uuid "15d2adcb-6a8f-485b-a156-7f93d0798e4f")
 			(effects
 				(font
@@ -6878,7 +10285,7 @@
 			)
 		)
 		(pin "GPIO10" bidirectional
-			(at 71.12 66.04 180)
+			(at 66.04 97.79 180)
 			(uuid "65e30f24-29ff-432e-93fd-8602720a004e")
 			(effects
 				(font
@@ -6888,7 +10295,7 @@
 			)
 		)
 		(pin "GPIO11" bidirectional
-			(at 71.12 68.58 180)
+			(at 66.04 100.33 180)
 			(uuid "e53d4278-5771-434a-9c7a-a49fec4bbcce")
 			(effects
 				(font
@@ -6898,7 +10305,7 @@
 			)
 		)
 		(pin "GPIO12" bidirectional
-			(at 71.12 71.12 180)
+			(at 66.04 102.87 180)
 			(uuid "adc34d62-3b4f-4721-ba4b-ab0e9cf5a412")
 			(effects
 				(font
@@ -6908,7 +10315,7 @@
 			)
 		)
 		(pin "GPIO13" bidirectional
-			(at 71.12 73.66 180)
+			(at 66.04 105.41 180)
 			(uuid "699e23ef-d030-4798-91ce-b9da26a81cfc")
 			(effects
 				(font
@@ -6918,7 +10325,7 @@
 			)
 		)
 		(pin "GPIO14" bidirectional
-			(at 71.12 76.2 180)
+			(at 66.04 107.95 180)
 			(uuid "36a94e39-0313-4e56-a37e-721ffc81994b")
 			(effects
 				(font
@@ -6928,7 +10335,7 @@
 			)
 		)
 		(pin "GPIO15" bidirectional
-			(at 71.12 78.74 180)
+			(at 66.04 110.49 180)
 			(uuid "6fc695ef-ffbe-42e6-b64c-96c31e1a1dde")
 			(effects
 				(font
@@ -6946,8 +10353,8 @@
 		)
 	)
 	(sheet
-		(at 179.07 36.83)
-		(size 12.7 7.62)
+		(at 232.41 69.85)
+		(size 19.05 11.43)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -6962,7 +10369,7 @@
 		)
 		(uuid "775bb6b1-f0ed-4d15-b765-5e0d3e71119f")
 		(property "Sheetname" "Angle Encoder"
-			(at 179.07 36.1184 0)
+			(at 232.41 69.1384 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6973,7 +10380,7 @@
 			)
 		)
 		(property "Sheetfile" "Angle_Encoder.kicad_sch"
-			(at 179.07 45.0346 0)
+			(at 232.41 81.8646 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6981,6 +10388,36 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "GPIO_A" output
+			(at 232.41 71.12 180)
+			(uuid "453abd45-01d5-4584-92d3-2096c270a3d8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "GPIO_B" output
+			(at 232.41 73.66 180)
+			(uuid "c126bc2e-9d38-4616-b7db-67038a5b95a2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "GPIO_C" output
+			(at 232.41 76.2 180)
+			(uuid "9fbe3171-f45d-44c5-ba8b-50ca855a6588")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -6992,7 +10429,7 @@
 		)
 	)
 	(sheet
-		(at 179.07 76.2)
+		(at 185.42 71.12)
 		(size 12.7 7.62)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7008,7 +10445,7 @@
 		)
 		(uuid "89503fbf-50e2-456e-a9ae-3607dd041f50")
 		(property "Sheetname" "Power Supply"
-			(at 179.07 75.4884 0)
+			(at 185.42 70.4084 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7019,7 +10456,7 @@
 			)
 		)
 		(property "Sheetfile" "power_supply.kicad_sch"
-			(at 179.07 84.4046 0)
+			(at 185.42 79.3246 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7038,8 +10475,8 @@
 		)
 	)
 	(sheet
-		(at 179.07 109.22)
-		(size 12.7 7.62)
+		(at 236.22 102.87)
+		(size 19.05 11.43)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -7054,7 +10491,7 @@
 		)
 		(uuid "bb2f90fe-90d6-4041-8023-4e8a6153d0ef")
 		(property "Sheetname" "Antenna"
-			(at 179.07 108.5084 0)
+			(at 236.22 102.1584 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7065,7 +10502,7 @@
 			)
 		)
 		(property "Sheetfile" "antenna.kicad_sch"
-			(at 179.07 117.4246 0)
+			(at 236.22 114.8846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7073,6 +10510,56 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "VDDA{slash}2" input
+			(at 236.22 104.14 180)
+			(uuid "1ee55ad1-e15c-4786-91c7-e83431d09c25")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CTL1" input
+			(at 236.22 110.49 180)
+			(uuid "8ff00816-ca13-468b-a417-0d1b4ecd056a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CTL2" input
+			(at 236.22 113.03 180)
+			(uuid "61b0b2a2-aad0-4e91-acca-b48f46948e5b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "RF_IN1" output
+			(at 255.27 106.68 0)
+			(uuid "b0ad8df7-c899-44b2-bde1-68dacd2976ca")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "RF_IN2" output
+			(at 255.27 109.22 0)
+			(uuid "3564067a-a24b-48f9-906b-0ed74d90c0db")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -7084,8 +10571,8 @@
 		)
 	)
 	(sheet
-		(at 225.425 38.735)
-		(size 12.7 7.62)
+		(at 182.88 34.925)
+		(size 18.415 14.605)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -7100,7 +10587,7 @@
 		)
 		(uuid "ef9bceef-cb55-4562-86e1-9664871484e3")
 		(property "Sheetname" "Audio DAC"
-			(at 225.425 38.0234 0)
+			(at 182.88 34.2134 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7111,7 +10598,7 @@
 			)
 		)
 		(property "Sheetfile" "Audio_DAC.kicad_sch"
-			(at 225.425 46.9396 0)
+			(at 182.88 50.1146 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7119,6 +10606,56 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "BCK" input
+			(at 182.88 41.91 180)
+			(uuid "459d47d4-6814-479f-a98d-96e0cc1b4988")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DIN" input
+			(at 182.88 39.37 180)
+			(uuid "5ba2ab1f-4b57-496c-86f9-6cb34a48e57e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "LRCK" input
+			(at 182.88 36.83 180)
+			(uuid "eb9aea41-e339-40af-8bcf-df6b29fb773d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MUTE" input
+			(at 182.88 46.99 180)
+			(uuid "4b5eb782-9817-4c19-bc79-1adf6a081c6a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SCK" input
+			(at 182.88 44.45 180)
+			(uuid "3ad36701-6b5c-404c-898e-8a366ffea630")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -7130,8 +10667,8 @@
 		)
 	)
 	(sheet
-		(at 229.235 146.05)
-		(size 12.7 7.62)
+		(at 186.055 101.6)
+		(size 18.415 15.24)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -7146,7 +10683,7 @@
 		)
 		(uuid "f13b25c3-8e17-4875-84b2-896666dfe469")
 		(property "Sheetname" "ADC-24bit"
-			(at 229.235 145.3384 0)
+			(at 186.055 100.8884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7157,7 +10694,7 @@
 			)
 		)
 		(property "Sheetfile" "ADC-24bit.kicad_sch"
-			(at 229.235 154.2546 0)
+			(at 186.055 117.4246 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7165,6 +10702,96 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "BCKO" output
+			(at 204.47 105.41 0)
+			(uuid "bd620074-32f9-4273-abd3-1689433d80e2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "FMT" input
+			(at 186.055 113.03 180)
+			(uuid "ce256ce6-2be3-4f8b-bae3-9a6f9781316a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "I_OUT" input
+			(at 186.055 102.87 180)
+			(uuid "073ed35c-36b9-4fb3-b658-8915b4e5fef5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MD1" input
+			(at 186.055 115.57 180)
+			(uuid "5ae95869-e77e-4c2f-9094-d6ff24259bdd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Q_OUT" input
+			(at 186.055 105.41 180)
+			(uuid "2aa67748-3929-4226-ad85-b4e0c9c27b50")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SCKI" input
+			(at 186.055 110.49 180)
+			(uuid "a9f9a5e6-84ec-4315-b424-77773e4e63cb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SD" output
+			(at 204.47 102.87 0)
+			(uuid "c37ee7c0-3846-4636-b465-16634f649540")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "VDDA{slash}2" output
+			(at 204.47 115.57 0)
+			(uuid "16d6a697-25fa-4527-9dab-642db8049273")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "WS" output
+			(at 204.47 107.95 0)
+			(uuid "4827b6e8-cac4-4636-8b0d-3715943ba3b9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -7176,8 +10803,8 @@
 		)
 	)
 	(sheet
-		(at 228.6 74.93)
-		(size 12.7 7.62)
+		(at 187.96 137.16)
+		(size 20.32 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -7192,7 +10819,7 @@
 		)
 		(uuid "f64ea8ac-f7b3-4ac7-b675-bede152c9b4e")
 		(property "Sheetname" "Clock Generator"
-			(at 228.6 74.2184 0)
+			(at 187.96 136.4484 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7203,7 +10830,7 @@
 			)
 		)
 		(property "Sheetfile" "clock_generator.kicad_sch"
-			(at 228.6 83.1346 0)
+			(at 187.96 150.4446 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7211,6 +10838,66 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "I_LO" output
+			(at 208.28 146.05 0)
+			(uuid "06e7e30d-7df7-4158-ae68-607fb9ca4f2b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Q_LO" output
+			(at 208.28 148.59 0)
+			(uuid "edee2fdc-ae14-4b6f-84f4-6ffc20b48e6a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SCK" output
+			(at 187.96 139.7 180)
+			(uuid "fa84c96a-5acc-48cf-abec-a63a5d54adcf")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SCKI" output
+			(at 187.96 142.24 180)
+			(uuid "75325f2b-1e9f-4309-b1be-88b2306fd26f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SCL" input
+			(at 187.96 146.05 180)
+			(uuid "f9c09705-afd5-4d2a-aa73-2b43d95b3f18")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SDA" input
+			(at 187.96 148.59 180)
+			(uuid "ff4c901f-1bf9-46d5-8641-317e63852085")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances

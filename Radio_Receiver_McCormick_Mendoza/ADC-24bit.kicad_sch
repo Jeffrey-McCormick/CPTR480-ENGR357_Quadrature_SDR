@@ -6759,7 +6759,7 @@
 		)
 		(uuid "68460772-0d60-4415-93b3-fdce63dcb9d2")
 	)
-	(text "BCK"
+	(text "BCK (BCKO)"
 		(exclude_from_sim no)
 		(at 234.95 85.09 0)
 		(effects
@@ -6780,7 +6780,7 @@
 		)
 		(uuid "8e0d59f8-bd5c-4c13-8286-0ff9563b5136")
 	)
-	(text "Data (SD)"
+	(text "SD (DATA)"
 		(exclude_from_sim no)
 		(at 234.95 82.55 0)
 		(effects
@@ -6814,6 +6814,16 @@
 		)
 		(uuid "dbeeedc3-3321-4b09-b7f4-ae9a06483d0f")
 	)
+	(text "I2S"
+		(exclude_from_sim no)
+		(at 249.682 82.804 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e4aaccf7-b079-4cf9-be74-113f0299fbf1")
+	)
 	(text "LRCK (WS)"
 		(exclude_from_sim no)
 		(at 234.95 87.63 0)
@@ -6838,6 +6848,12 @@
 		(uuid "07aeede0-cba2-492a-98ca-1bef93bb3cd9")
 	)
 	(junction
+		(at 100.33 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "09f5bdb6-6da2-41b8-8ca0-692753eaeda8")
+	)
+	(junction
 		(at 139.7 71.12)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6848,12 +6864,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2f3b01a6-2fb3-4c4c-8f9f-14a4ce61b358")
-	)
-	(junction
-		(at 100.33 115.57)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "37e80e7b-52ea-41e9-ae29-b93bc9a17560")
 	)
 	(junction
 		(at 115.57 49.53)
@@ -6892,12 +6902,6 @@
 		(uuid "77cd0ea4-f413-4c3b-abc4-a4a15a9e9e8b")
 	)
 	(junction
-		(at 127 107.95)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7bb062d6-ed74-449a-bbb8-bc39ecd44484")
-	)
-	(junction
 		(at 146.05 71.12)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6908,6 +6912,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "827c2319-f3c2-4b7a-b71b-6cfb4cf1cbfa")
+	)
+	(junction
+		(at 127 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8ec9bb64-3e97-43d5-aa5d-dea2da768193")
 	)
 	(junction
 		(at 81.28 121.92)
@@ -6946,16 +6956,16 @@
 		(uuid "c6b7d9ea-7694-4b38-a7c4-c471eae94af2")
 	)
 	(junction
-		(at 127 99.06)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d0de9779-7b58-474c-a125-f1ff1f826c83")
-	)
-	(junction
 		(at 92.71 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d466d1a5-fd14-4bb7-9be9-abc28237f087")
+	)
+	(junction
+		(at 119.38 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dab2d1be-c57e-4946-b59d-fb4111fb1c83")
 	)
 	(junction
 		(at 116.84 80.01)
@@ -7071,26 +7081,6 @@
 	)
 	(wire
 		(pts
-			(xy 127 97.79) (xy 127 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1967b363-956f-41a5-865e-2b4537f282b4")
-	)
-	(wire
-		(pts
-			(xy 127 107.95) (xy 119.38 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "263f8cbb-cbc0-44f3-9563-d0377b6e4e0d")
-	)
-	(wire
-		(pts
 			(xy 102.87 49.53) (xy 102.87 55.88)
 		)
 		(stroke
@@ -7171,6 +7161,16 @@
 	)
 	(wire
 		(pts
+			(xy 127 95.25) (xy 127 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "452cabcd-7e20-4b65-b0e6-257947039e95")
+	)
+	(wire
+		(pts
 			(xy 160.02 40.64) (xy 166.37 40.64)
 		)
 		(stroke
@@ -7241,16 +7241,6 @@
 	)
 	(wire
 		(pts
-			(xy 127 99.06) (xy 127 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6715c6df-cd63-4c8c-b286-e5d4069d7cec")
-	)
-	(wire
-		(pts
 			(xy 151.13 133.35) (xy 133.35 133.35)
 		)
 		(stroke
@@ -7288,6 +7278,16 @@
 			(type default)
 		)
 		(uuid "73872d46-b503-465f-9d1b-f1ea0fe18f62")
+	)
+	(wire
+		(pts
+			(xy 119.38 107.95) (xy 111.76 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7713c171-1ddf-47d3-be9e-d338895406e9")
 	)
 	(wire
 		(pts
@@ -7421,6 +7421,16 @@
 	)
 	(wire
 		(pts
+			(xy 127 107.95) (xy 127 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94a08c05-63c1-414d-b10a-868215917dfe")
+	)
+	(wire
+		(pts
 			(xy 123.19 66.04) (xy 166.37 66.04)
 		)
 		(stroke
@@ -7429,9 +7439,19 @@
 		)
 		(uuid "96822272-a4ef-454d-9911-ec8e1d05ba85")
 	)
+	(polyline
+		(pts
+			(xy 247.65 85.09) (xy 252.73 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97c9454b-f24b-4c4e-b4b9-10d8f04caab4")
+	)
 	(wire
 		(pts
-			(xy 100.33 115.57) (xy 100.33 129.54)
+			(xy 100.33 107.95) (xy 100.33 123.19)
 		)
 		(stroke
 			(width 0)
@@ -7439,15 +7459,15 @@
 		)
 		(uuid "99a59e50-e5e9-4b01-a997-f79528a37ae4")
 	)
-	(wire
+	(polyline
 		(pts
-			(xy 100.33 99.06) (xy 100.33 115.57)
+			(xy 252.73 80.01) (xy 252.73 85.09)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9c538416-bb38-4612-a9b0-1a0c7177549e")
+		(uuid "9a15c077-9d3b-499b-bc77-0db895553863")
 	)
 	(wire
 		(pts
@@ -7481,7 +7501,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 99.06) (xy 100.33 99.06)
+			(xy 101.6 107.95) (xy 100.33 107.95)
 		)
 		(stroke
 			(width 0)
@@ -7528,6 +7548,16 @@
 			(type default)
 		)
 		(uuid "adac9f4d-ade6-4764-b177-781e0e45b7f7")
+	)
+	(wire
+		(pts
+			(xy 100.33 123.19) (xy 100.33 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b067fae1-1775-4ce9-9f6c-7a5b38e9cb0f")
 	)
 	(wire
 		(pts
@@ -7589,6 +7619,16 @@
 		)
 		(uuid "bbb3c79b-d602-4bc2-bc4a-83fc71018142")
 	)
+	(polyline
+		(pts
+			(xy 245.11 80.01) (xy 252.73 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "beaa61b7-07a3-4b93-8f88-36b4c0774966")
+	)
 	(wire
 		(pts
 			(xy 201.93 81.28) (xy 215.9 81.28)
@@ -7598,6 +7638,16 @@
 			(type default)
 		)
 		(uuid "c2bbb720-7796-44ae-9b24-170990bffc70")
+	)
+	(wire
+		(pts
+			(xy 127 106.68) (xy 127 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c31f0728-0597-48c0-86e6-e7227e49daab")
 	)
 	(wire
 		(pts
@@ -7781,7 +7831,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 99.06) (xy 111.76 99.06)
+			(xy 127 107.95) (xy 119.38 107.95)
 		)
 		(stroke
 			(width 0)
@@ -7821,16 +7871,6 @@
 	)
 	(wire
 		(pts
-			(xy 127 107.95) (xy 127 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f98e2623-d0cb-4301-9c0a-310df5aed194")
-	)
-	(wire
-		(pts
 			(xy 88.265 55.88) (xy 91.44 55.88)
 		)
 		(stroke
@@ -7839,77 +7879,16 @@
 		)
 		(uuid "fd10c42e-ef1d-4e5c-bc50-c6185202261e")
 	)
-	(global_label "Q_OUT"
+	(hierarchical_label "Q_OUT"
 		(shape input)
 		(at 76.2 90.17 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "5513a1d9-b3a7-44e8-bc90-8763ed1329a5")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 67.2881 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "I_OUT"
-		(shape input)
-		(at 73.66 38.1 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "698ec370-e46e-48d3-8b08-b7f13b08e2c0")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 65.4738 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "VDDA{slash}2"
-		(shape output)
-		(at 215.9 123.19 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "98633cd3-72d4-4081-9dd3-469f28e3fdd7")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 226.1424 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
+		(uuid "009488c3-0e9e-4299-af86-ce122e8f7ff0")
 	)
 	(hierarchical_label "SD"
 		(shape output)
@@ -7921,6 +7900,28 @@
 			(justify left)
 		)
 		(uuid "032bfca3-e0d1-49a9-8433-bd6dfce6067f")
+	)
+	(hierarchical_label "I_OUT"
+		(shape input)
+		(at 73.66 38.1 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2d7aab5c-6011-42a0-9bae-82af2eaabd83")
+	)
+	(hierarchical_label "VDDA{slash}2"
+		(shape output)
+		(at 215.9 123.19 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3ab72c10-0938-41d0-b620-e640db940370")
 	)
 	(hierarchical_label "SCKI"
 		(shape input)
@@ -7966,7 +7967,7 @@
 		)
 		(uuid "7a8d09bf-011e-4a59-85c1-5d5280219f44")
 	)
-	(hierarchical_label "BCK"
+	(hierarchical_label "BCKO"
 		(shape output)
 		(at 227.33 83.82 0)
 		(effects
@@ -9524,7 +9525,7 @@
 	)
 	(symbol
 		(lib_id "Jumper:Jumper_2_Open")
-		(at 106.68 99.06 0)
+		(at 106.68 107.95 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9535,7 +9536,7 @@
 		(fields_autoplaced yes)
 		(uuid "1a83df91-87e4-4603-abab-2c757e9ef405")
 		(property "Reference" "JP11"
-			(at 106.68 92.71 0)
+			(at 106.68 101.6 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9545,7 +9546,7 @@
 			)
 		)
 		(property "Value" "Jumper_2_Open"
-			(at 106.68 95.25 0)
+			(at 106.68 104.14 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9555,7 +9556,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 106.68 99.06 0)
+			(at 106.68 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9566,7 +9567,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 106.68 99.06 0)
+			(at 106.68 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9577,7 +9578,7 @@
 			)
 		)
 		(property "Description" "Jumper, 2-pole, open"
-			(at 106.68 99.06 0)
+			(at 106.68 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10456,7 +10457,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x01")
-		(at 105.41 115.57 0)
+		(at 105.41 123.19 0)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -10467,7 +10468,7 @@
 		(dnp no)
 		(uuid "310f524d-12f2-4c52-a34f-376d004977b7")
 		(property "Reference" "J41"
-			(at 105.41 109.22 0)
+			(at 105.41 116.84 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10477,7 +10478,7 @@
 			)
 		)
 		(property "Value" "V_DIV"
-			(at 105.41 111.76 0)
+			(at 105.41 119.38 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10487,7 +10488,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
-			(at 105.41 115.57 0)
+			(at 105.41 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10498,7 +10499,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 105.41 115.57 0)
+			(at 105.41 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10509,7 +10510,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 105.41 115.57 0)
+			(at 105.41 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11260,263 +11261,6 @@
 			(project "Radio_Receiver_McCormick_Mendoza"
 				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/f13b25c3-8e17-4875-84b2-896666dfe469"
 					(reference "#PWR048")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PCM_JLCPCB-Resistors:0402,1kΩ")
-		(at 127 104.14 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "59e781a2-85f0-44bb-bb8e-6f23b286b773")
-		(property "Reference" "R3"
-			(at 129.54 104.1399 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1kΩ"
-			(at 127 104.14 90)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.8 0.8)
-				)
-			)
-		)
-		(property "Footprint" "PCM_JLCPCB:R_0402"
-			(at 125.222 104.14 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010216_UNI-ROYAL-Uniroyal-Elec-0402WGF1001TCE_C11702.pdf"
-			(at 127 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "62.5mW Thick Film Resistors 50V ±100ppm/°C ±1% 1kΩ 0402 Chip Resistor - Surface Mount ROHS"
-			(at 127 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C11702"
-			(at 127 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Stock" "13226393"
-			(at 127 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Price" "0.004USD"
-			(at 127 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Process" "SMT"
-			(at 127 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Minimum Qty" "20"
-			(at 127 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Attrition Qty" "10"
-			(at 127 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" "Basic Component"
-			(at 127 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 127 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part" "0402WGF1001TCE"
-			(at 127 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Resistance" "1kΩ"
-			(at 127 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Power(Watts)" "62.5mW"
-			(at 127 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Type" "Thick Film Resistors"
-			(at 127 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Overload Voltage (Max)" "50V"
-			(at 127 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Operating Temperature Range" "-55°C~+155°C"
-			(at 127 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance" "±1%"
-			(at 127 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Temperature Coefficient" "±100ppm/°C"
-			(at 127 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d0807fc3-6012-4672-b92a-2aed33f54d06")
-		)
-		(pin "2"
-			(uuid "5b240bb8-6328-4da2-a277-0bdf125abded")
-		)
-		(instances
-			(project "Radio_Receiver_McCormick_Mendoza"
-				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/f13b25c3-8e17-4875-84b2-896666dfe469"
-					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -15552,7 +15296,7 @@
 	)
 	(symbol
 		(lib_id "Jumper:Jumper_2_Bridged")
-		(at 127 92.71 90)
+		(at 127 101.6 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15563,7 +15307,7 @@
 		(fields_autoplaced yes)
 		(uuid "d19ff0b1-fe27-4dab-8b65-5f791c419ef6")
 		(property "Reference" "JP5"
-			(at 128.27 91.4399 90)
+			(at 128.27 100.3299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15574,7 +15318,7 @@
 			)
 		)
 		(property "Value" "Jumper_2_Bridged"
-			(at 128.27 93.9799 90)
+			(at 128.27 102.8699 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15585,7 +15329,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 127 92.71 0)
+			(at 127 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15596,7 +15340,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 132.08 92.71 0)
+			(at 132.08 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15607,7 +15351,7 @@
 			)
 		)
 		(property "Description" "Jumper, 2-pole, closed/bridged"
-			(at 134.62 92.71 0)
+			(at 134.62 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16184,6 +15928,263 @@
 			(project "Radio_Receiver_McCormick_Mendoza"
 				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/f13b25c3-8e17-4875-84b2-896666dfe469"
 					(reference "C29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_JLCPCB-Resistors:0402,1kΩ")
+		(at 127 91.44 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ece2ec64-6b35-4825-82b0-1d61f391bd9a")
+		(property "Reference" "R3"
+			(at 129.54 91.4399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1kΩ"
+			(at 127 91.44 90)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:R_0402"
+			(at 125.222 91.44 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010216_UNI-ROYAL-Uniroyal-Elec-0402WGF1001TCE_C11702.pdf"
+			(at 127 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "62.5mW Thick Film Resistors 50V ±100ppm/°C ±1% 1kΩ 0402 Chip Resistor - Surface Mount ROHS"
+			(at 127 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C11702"
+			(at 127 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "13226393"
+			(at 127 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" "0.004USD"
+			(at 127 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Process" "SMT"
+			(at 127 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Minimum Qty" "20"
+			(at 127 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Attrition Qty" "10"
+			(at 127 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Class" "Basic Component"
+			(at 127 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Category" "Resistors,Chip Resistor - Surface Mount"
+			(at 127 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "0402WGF1001TCE"
+			(at 127 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Resistance" "1kΩ"
+			(at 127 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Power(Watts)" "62.5mW"
+			(at 127 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Type" "Thick Film Resistors"
+			(at 127 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Overload Voltage (Max)" "50V"
+			(at 127 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Operating Temperature Range" "-55°C~+155°C"
+			(at 127 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "±1%"
+			(at 127 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Temperature Coefficient" "±100ppm/°C"
+			(at 127 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e6d38624-9cb2-46af-8122-41eeaf53fd3e")
+		)
+		(pin "2"
+			(uuid "531dcda2-db50-46bc-a756-dd40205e222c")
+		)
+		(instances
+			(project "Radio_Receiver_McCormick_Mendoza"
+				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/f13b25c3-8e17-4875-84b2-896666dfe469"
+					(reference "R3")
 					(unit 1)
 				)
 			)

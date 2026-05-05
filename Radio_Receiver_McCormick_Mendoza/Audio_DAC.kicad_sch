@@ -5832,125 +5832,60 @@
 		)
 		(uuid "febc928b-d18b-4fc9-8580-9c10ea23ab69")
 	)
-	(global_label "LRCKO"
-		(shape input)
-		(at 107.95 78.74 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "28f04f44-f1b4-4df2-a398-fc161b6bb5cf")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 98.7962 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "BCKO"
-		(shape input)
-		(at 107.95 83.82 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "5ab54cef-1f01-4dd4-836e-38da64bf498f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 99.8243 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "DINO"
-		(shape input)
-		(at 107.95 81.28 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "5ae6d670-9071-42dc-bd3a-02d626380ccf")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 100.429 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "SCKO"
+	(hierarchical_label "SCK"
 		(shape input)
 		(at 107.95 86.36 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "befaedd6-2106-49fa-8dfa-906d5f6da0b5")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 99.8848 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
+		(uuid "105e396f-3574-4abf-aa67-0ef26efe149c")
 	)
-	(global_label "MUTE"
+	(hierarchical_label "DIN"
+		(shape input)
+		(at 107.95 81.28 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "506d325b-bec9-4e6a-bd0d-14f87f68cbb5")
+	)
+	(hierarchical_label "BCK"
+		(shape input)
+		(at 107.95 83.82 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6f7985cc-0baf-4b9f-837f-bedf9599ed52")
+	)
+	(hierarchical_label "LRCK"
+		(shape input)
+		(at 107.95 78.74 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b7b301ad-bc2b-4cab-83dd-552f273b5107")
+	)
+	(hierarchical_label "MUTE"
 		(shape input)
 		(at 105.41 96.52 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "da053556-8101-4d34-a43e-37c1d2fa5997")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 97.5263 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
+		(uuid "f089e12d-45d1-41de-bb37-2ab7b9a0af5c")
 	)
 	(symbol
 		(lib_id "PCM_JLCPCB-Capacitors:0805,2.2nF")
