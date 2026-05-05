@@ -2153,6 +2153,12 @@
 		(uuid "e46fc6ea-ae24-45a7-a7f6-008f504ea91e")
 	)
 	(junction
+		(at 168.91 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "016d50b8-6a82-4ffe-abe4-e6baa91da793")
+	)
+	(junction
 		(at 193.04 54.61)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2169,6 +2175,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0b34d710-0028-4de4-bf68-8af1e14d0d74")
+	)
+	(junction
+		(at 138.43 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0bd8b513-c45a-449b-9af9-9dd8e161afdc")
 	)
 	(junction
 		(at 67.31 64.77)
@@ -2193,18 +2205,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2dbda58e-18fa-47f1-b158-f0fe84fd50ef")
-	)
-	(junction
-		(at 168.91 143.51)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3b3a1799-3776-4a96-9cc0-236f8397c40b")
-	)
-	(junction
-		(at 138.43 43.18)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "44b223d9-f7c2-46b4-8892-286b9001b59f")
 	)
 	(junction
 		(at 134.62 91.44)
@@ -2279,12 +2279,6 @@
 		(uuid "a81e8258-534e-41a4-b1b8-f6c2da1b4e94")
 	)
 	(junction
-		(at 168.91 104.14)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "aff94875-7e9c-494a-a1aa-3c5122ffbc7f")
-	)
-	(junction
 		(at 246.38 130.81)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2303,22 +2297,28 @@
 		(uuid "b86dbf72-3831-4713-b2cf-386753c65648")
 	)
 	(junction
+		(at 168.91 143.51)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c123b871-8e06-4cdd-8619-a93655eef622")
+	)
+	(junction
 		(at 139.7 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cf062233-ff6f-41bf-993d-727dc49c0432")
 	)
 	(junction
-		(at 168.91 78.74)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d0ba5067-4d39-45a2-bbf5-b1fb8c3ee49e")
-	)
-	(junction
 		(at 261.62 123.19)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "db49dc6b-8ad0-4af1-a998-9f67f33dc394")
+	)
+	(junction
+		(at 168.91 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eae2fec5-2978-4be0-a5bc-c933b45d448c")
 	)
 	(junction
 		(at 190.5 104.14)
@@ -2350,7 +2350,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 104.14) (xy 168.91 104.14)
+			(xy 134.62 104.14) (xy 168.91 104.14)
 		)
 		(stroke
 			(width 0)
@@ -2397,16 +2397,6 @@
 			(type default)
 		)
 		(uuid "092ad3b0-e106-49b0-807f-94fb697a2093")
-	)
-	(wire
-		(pts
-			(xy 168.91 78.74) (xy 190.5 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "116dd423-2c81-49bd-95b0-383ae1f00ada")
 	)
 	(wire
 		(pts
@@ -2620,6 +2610,16 @@
 	)
 	(wire
 		(pts
+			(xy 168.91 78.74) (xy 190.5 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "419b27a8-b611-47d2-afa1-71657f45f478")
+	)
+	(wire
+		(pts
 			(xy 245.11 130.81) (xy 246.38 130.81)
 		)
 		(stroke
@@ -2670,6 +2670,16 @@
 	)
 	(wire
 		(pts
+			(xy 168.91 104.14) (xy 190.5 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50d873f8-dade-47eb-ad6b-0a3f74aa2f35")
+	)
+	(wire
+		(pts
 			(xy 167.64 64.77) (xy 172.72 64.77)
 		)
 		(stroke
@@ -2700,6 +2710,16 @@
 	)
 	(wire
 		(pts
+			(xy 66.04 99.06) (xy 74.93 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53f43784-0308-42bd-a8e4-d3596ba8b7c4")
+	)
+	(wire
+		(pts
 			(xy 172.72 54.61) (xy 176.53 54.61)
 		)
 		(stroke
@@ -2717,6 +2737,16 @@
 			(type default)
 		)
 		(uuid "5752df78-bc82-4cd5-9d75-c207017d9164")
+	)
+	(wire
+		(pts
+			(xy 168.91 143.51) (xy 190.5 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d5205f4-5dbe-4881-a1fe-adf3b07a30b5")
 	)
 	(wire
 		(pts
@@ -2760,16 +2790,6 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 104.14) (xy 168.91 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6237d421-0a44-45fb-a252-b7437d921732")
-	)
-	(wire
-		(pts
 			(xy 137.16 93.98) (xy 137.16 143.51)
 		)
 		(stroke
@@ -2780,7 +2800,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 101.6) (xy 74.93 101.6)
+			(xy 66.04 101.6) (xy 74.93 101.6)
 		)
 		(stroke
 			(width 0)
@@ -2797,16 +2817,6 @@
 			(type default)
 		)
 		(uuid "660ef6b7-f74f-4b7f-911f-7ed2a728eee3")
-	)
-	(wire
-		(pts
-			(xy 168.91 143.51) (xy 190.5 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "68413cea-3c1f-4eec-b7f0-46cee113155e")
 	)
 	(wire
 		(pts
@@ -2867,6 +2877,16 @@
 			(type default)
 		)
 		(uuid "79b7e5de-aa17-4261-a0a0-46513c8cdb25")
+	)
+	(wire
+		(pts
+			(xy 138.43 43.18) (xy 190.5 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d38a27b-0548-4d0b-b838-7e048bb04c52")
 	)
 	(wire
 		(pts
@@ -3040,16 +3060,6 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 99.06) (xy 74.93 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b4892568-7999-47d5-810b-5c081a34885b")
-	)
-	(wire
-		(pts
 			(xy 115.57 76.2) (xy 132.08 76.2)
 		)
 		(stroke
@@ -3131,16 +3141,6 @@
 	(wire
 		(pts
 			(xy 132.08 43.18) (xy 138.43 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cd3ae749-9924-4430-bb44-5af40400ab52")
-	)
-	(wire
-		(pts
-			(xy 138.43 43.18) (xy 190.5 43.18)
 		)
 		(stroke
 			(width 0)
@@ -3564,7 +3564,7 @@
 	)
 	(global_label "I_LO"
 		(shape input)
-		(at 64.77 99.06 180)
+		(at 66.04 99.06 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3574,7 +3574,7 @@
 		)
 		(uuid "c071f130-5a00-4ce1-bc4e-1548244d9097")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 57.8538 99.06 0)
+			(at 59.1238 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3588,7 +3588,7 @@
 	)
 	(global_label "Q_LO"
 		(shape input)
-		(at 64.77 101.6 180)
+		(at 66.04 101.6 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3598,7 +3598,7 @@
 		)
 		(uuid "dd954740-e7c2-4c04-b5a3-5c3fa586238a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 57.1281 101.6 0)
+			(at 58.3981 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3677,6 +3677,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C861101"
+			(at 187.96 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "da6a20f2-1e91-47b6-8fce-05aa2554faa5")
 		)
@@ -3687,6 +3698,192 @@
 			(project "Radio_Receiver_McCormick_Mendoza"
 				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/132a78a3-63a8-4709-a5ba-2b34eb7966d9"
 					(reference "R16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 168.91 147.32 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0b185575-e1c9-41ad-a86f-979ad6eda2cb")
+		(property "Reference" "C82"
+			(at 172.72 146.0499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10nF"
+			(at 172.72 148.5899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:C_0805"
+			(at 167.9448 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/partdetail/AIDECAPACITOR-0805C0G103J500NT/C49326666"
+			(at 168.91 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "10nF 50V C0G ±5% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+			(at 168.91 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C49326666"
+			(at 168.91 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "986ce1c3-a98b-40b5-9edd-e81d53e40633")
+		)
+		(pin "1"
+			(uuid "3398b332-b037-4db2-8ae0-d6a99f0c5dc3")
+		)
+		(instances
+			(project "Radio_Receiver_McCormick_Mendoza"
+				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/132a78a3-63a8-4709-a5ba-2b34eb7966d9"
+					(reference "C82")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 138.43 46.99 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "22542990-9742-4d7e-9902-b53522eb237e")
+		(property "Reference" "C69"
+			(at 142.24 45.7199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10nF"
+			(at 142.24 48.2599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:C_0805"
+			(at 137.4648 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/partdetail/AIDECAPACITOR-0805C0G103J500NT/C49326666"
+			(at 138.43 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "10nF 50V C0G ±5% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+			(at 138.43 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C49326666"
+			(at 138.43 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "8b81cc9b-0cf4-4250-b78d-c71dea96bc7b")
+		)
+		(pin "1"
+			(uuid "7fe2747f-0aff-40c0-9398-a85104743af1")
+		)
+		(instances
+			(project "Radio_Receiver_McCormick_Mendoza"
+				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/132a78a3-63a8-4709-a5ba-2b34eb7966d9"
+					(reference "C69")
 					(unit 1)
 				)
 			)
@@ -3995,6 +4192,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C861188"
+			(at 220.98 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "92a6c01f-11df-4fb5-aab3-85c426808a78")
 		)
@@ -4112,6 +4320,17 @@
 					(size 1.27 1.27)
 				)
 				(justify left bottom)
+			)
+		)
+		(property "LCSC" "C2060822"
+			(at 242.57 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "4"
@@ -4898,6 +5117,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C861188"
+			(at 219.71 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ef9097d8-e17c-48bd-903c-86730cf94e0a")
 		)
@@ -5214,7 +5444,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Q_OUT"
+		(property "Value" "Q_RAW"
 			(at 268.732 124.4346 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5739,6 +5969,99 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 168.91 82.55 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "81adff13-d896-4fb9-ac48-5ce2cf138c4a")
+		(property "Reference" "C79"
+			(at 172.72 81.2799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10nF"
+			(at 172.72 83.8199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:C_0805"
+			(at 167.9448 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/partdetail/AIDECAPACITOR-0805C0G103J500NT/C49326666"
+			(at 168.91 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "10nF 50V C0G ±5% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+			(at 168.91 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C49326666"
+			(at 168.91 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "0ffdb058-cd94-4ab9-8a42-9ddfba24be25")
+		)
+		(pin "1"
+			(uuid "777fcfb1-1113-4d1b-abce-b9300a200e53")
+		)
+		(instances
+			(project "Radio_Receiver_McCormick_Mendoza"
+				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/132a78a3-63a8-4709-a5ba-2b34eb7966d9"
+					(reference "C79")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 238.76 69.85 0)
 		(unit 1)
@@ -5809,86 +6132,6 @@
 			(project "Radio_Receiver_McCormick_Mendoza"
 				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/132a78a3-63a8-4709-a5ba-2b34eb7966d9"
 					(reference "#PWR0104")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 168.91 107.95 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "8bb02a42-28d2-471c-bdec-57d1a8d048a6")
-		(property "Reference" "C17"
-			(at 172.72 106.68 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100p"
-			(at 171.831 109.093 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
-			(at 169.8752 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 168.91 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 168.91 107.95 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "07b13634-4972-47a2-8c3d-195c17b791f9")
-		)
-		(pin "2"
-			(uuid "65f42802-02eb-4ae2-825e-2a11090f6258")
-		)
-		(instances
-			(project "Radio_Receiver_McCormick_Mendoza"
-				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/132a78a3-63a8-4709-a5ba-2b34eb7966d9"
-					(reference "C17")
 					(unit 1)
 				)
 			)
@@ -6196,6 +6439,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C861486"
+			(at 203.2 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "541bb37b-580d-4efc-bdd1-5150b9c8782c")
 		)
@@ -6282,86 +6536,6 @@
 			(project "Radio_Receiver_McCormick_Mendoza"
 				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/132a78a3-63a8-4709-a5ba-2b34eb7966d9"
 					(reference "#PWR029")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 168.91 147.32 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "99ef18af-9559-417a-9d39-de7169a222c1")
-		(property "Reference" "C18"
-			(at 172.72 146.05 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100p"
-			(at 171.831 148.463 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
-			(at 169.8752 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 168.91 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 168.91 147.32 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "44bf5ae9-f984-4f78-8e53-2dee8d985351")
-		)
-		(pin "2"
-			(uuid "86ca8033-a957-4187-9eae-54a85919f0bd")
-		)
-		(instances
-			(project "Radio_Receiver_McCormick_Mendoza"
-				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/132a78a3-63a8-4709-a5ba-2b34eb7966d9"
-					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -6621,7 +6795,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "I_OUT"
+		(property "Value" "I_RAW"
 			(at 268.732 60.9346 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6909,6 +7083,99 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 168.91 107.95 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c6fe6dc8-e96a-4e6e-b456-fea80e67e3ba")
+		(property "Reference" "C81"
+			(at 172.72 106.6799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10nF"
+			(at 172.72 109.2199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:C_0805"
+			(at 167.9448 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/partdetail/AIDECAPACITOR-0805C0G103J500NT/C49326666"
+			(at 168.91 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "10nF 50V C0G ±5% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+			(at 168.91 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C49326666"
+			(at 168.91 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "6f82acdc-db3c-4196-b11c-146b2d69df90")
+		)
+		(pin "1"
+			(uuid "a0372b86-91ad-44a3-9cfd-ff7af71e5abb")
+		)
+		(instances
+			(project "Radio_Receiver_McCormick_Mendoza"
+				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/132a78a3-63a8-4709-a5ba-2b34eb7966d9"
+					(reference "C81")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 186.69 67.31 0)
 		(unit 1)
@@ -6965,6 +7232,17 @@
 			)
 		)
 		(property "Description" "-55℃~+155℃ 100mW 12.3kΩ Thin Film Resistor ±0.1% ±25ppm/℃ 0603 Chip Resistor - Surface Mount ROHS"
+			(at 186.69 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C861101"
 			(at 186.69 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -7078,166 +7356,6 @@
 			(project "Radio_Receiver_McCormick_Mendoza"
 				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/132a78a3-63a8-4709-a5ba-2b34eb7966d9"
 					(reference "C62")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 138.43 46.99 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "d46f3e1f-5c42-4a42-a576-47f166f5cb20")
-		(property "Reference" "C10"
-			(at 142.24 45.72 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100p"
-			(at 141.351 48.133 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
-			(at 139.3952 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 138.43 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 138.43 46.99 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "7f45e370-f438-4d3f-85af-02205bff5418")
-		)
-		(pin "2"
-			(uuid "f5d65a50-eb8d-49d4-acc0-2450b49637f9")
-		)
-		(instances
-			(project "Radio_Receiver_McCormick_Mendoza"
-				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/132a78a3-63a8-4709-a5ba-2b34eb7966d9"
-					(reference "C10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 168.91 82.55 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "d6895d09-35ec-4816-b457-be03affaeace")
-		(property "Reference" "C11"
-			(at 172.72 81.28 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100p"
-			(at 171.831 83.693 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
-			(at 169.8752 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 168.91 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 168.91 82.55 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c56dadac-88d1-4e35-b1cd-626d6fa5db7e")
-		)
-		(pin "2"
-			(uuid "a2eca152-a0aa-465c-9e81-e7a2ba30300b")
-		)
-		(instances
-			(project "Radio_Receiver_McCormick_Mendoza"
-				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/132a78a3-63a8-4709-a5ba-2b34eb7966d9"
-					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -7422,6 +7540,17 @@
 					(size 1.27 1.27)
 				)
 				(justify left bottom)
+			)
+		)
+		(property "LCSC" "C2060822"
+			(at 241.3 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "4"
@@ -8048,6 +8177,17 @@
 			)
 		)
 		(property "Description" "-55℃~+155℃ 100mW 5.49kΩ 75V Thin Film Resistor ±0.1% ±25ppm/℃ 0603 Chip Resistor - Surface Mount ROHS"
+			(at 204.47 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C861486"
 			(at 204.47 129.54 0)
 			(hide yes)
 			(show_name no)

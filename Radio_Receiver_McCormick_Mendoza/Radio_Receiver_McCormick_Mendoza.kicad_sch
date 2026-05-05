@@ -1361,7 +1361,7 @@
 	)
 	(text "To control the\nfilter type"
 		(exclude_from_sim no)
-		(at 128.524 80.264 0)
+		(at 133.604 72.644 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4362,6 +4362,16 @@
 		)
 		(uuid "de539bba-a0a5-4a7e-9449-c953f8e52595")
 	)
+	(label "SCKI"
+		(at 71.12 50.8 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f12c9e34-7d96-4c69-82ae-7ce08ddf049f")
+	)
 	(label "OSC_SCL"
 		(at 39.37 73.66 180)
 		(effects
@@ -4374,7 +4384,7 @@
 	)
 	(global_label "CTL1"
 		(shape output)
-		(at 114.3 77.47 0)
+		(at 119.38 69.85 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4384,7 +4394,79 @@
 		)
 		(uuid "1ed6ca56-f78d-4dc7-a5d0-3224be24bec9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 121.7604 77.47 0)
+			(at 126.8404 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "SCKO"
+		(shape output)
+		(at 118.11 88.9 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "25ce1042-f2b9-4e84-927f-7019db3f104d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 126.1752 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "LRCKO"
+		(shape output)
+		(at 118.11 81.28 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "31a414ae-dc1d-4987-bb27-665b86c56dfd")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 127.2638 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "DINO"
+		(shape output)
+		(at 118.11 83.82 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "555919d0-6161-4591-a59b-31dcbc933bef")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 125.631 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4398,7 +4480,7 @@
 	)
 	(global_label "CTL2"
 		(shape output)
-		(at 114.3 82.55 0)
+		(at 119.38 72.39 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4408,7 +4490,31 @@
 		)
 		(uuid "679cb158-fde6-4a88-a5cd-b884dec89f1d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 121.7604 82.55 0)
+			(at 126.8404 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "BCKO"
+		(shape output)
+		(at 118.11 86.36 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b5171827-e64c-45b6-89c7-e13d5e0d530f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 126.2357 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

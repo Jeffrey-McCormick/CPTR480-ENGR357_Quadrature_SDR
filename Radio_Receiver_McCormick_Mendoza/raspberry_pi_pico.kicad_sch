@@ -5392,6 +5392,16 @@
 		)
 		(uuid "b37559e9-96c3-4dd6-8282-3bebac9bdbc0")
 	)
+	(text "To Digital parts\n(OLED, DAC, etc.)"
+		(exclude_from_sim no)
+		(at 205.74 71.374 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "b9a34c83-98e6-4b63-a868-f5873bcba616")
+	)
 	(text "RST here\nis redundant\nif using a\nYD-RP2040."
 		(exclude_from_sim no)
 		(at 196.596 140.208 0)
