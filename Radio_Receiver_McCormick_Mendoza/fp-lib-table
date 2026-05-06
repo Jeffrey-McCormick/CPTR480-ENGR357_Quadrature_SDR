@@ -9,4 +9,5 @@
 	(lib (name "OPA1612AID_SOIC8") (type "KiCad") (uri "${KIPRJMOD}/OPA1612AID/KiCADv6/footprints.pretty") (options "") (descr ""))
 	(lib (name "SN74AC74DR") (type "KiCad") (uri "${KIPRJMOD}/SN74AC74DR/KiCADv6/footprints.pretty") (options "") (descr ""))
 	(lib (name "Reciever_Parts") (type "KiCad") (uri "${KIPRJMOD}/Reciever_Parts.pretty") (options "") (descr ""))
+	(lib (name "Library") (type "KiCad") (uri "${KIPRJMOD}/Library.pretty") (options "") (descr ""))
 )
