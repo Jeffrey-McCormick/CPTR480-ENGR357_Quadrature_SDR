@@ -13603,7 +13603,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "OPA1612AxD"
+		(property "Value" "OPA1612AID"
 			(at 114.3 144.7799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14468,7 +14468,7 @@
 				)
 			)
 		)
-		(property "Value" "OPA1612AxD"
+		(property "Value" "OPA1612AID"
 			(at 143.51 115.57 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16541,7 +16541,7 @@
 				)
 			)
 		)
-		(property "Value" "OPA1612AxD"
+		(property "Value" "OPA1612AID"
 			(at 147.32 142.24 0)
 			(show_name no)
 			(do_not_autoplace no)
