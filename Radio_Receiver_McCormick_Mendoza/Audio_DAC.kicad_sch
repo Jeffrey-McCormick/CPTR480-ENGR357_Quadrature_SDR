@@ -5185,7 +5185,7 @@
 	)
 	(text "Consider a buffer amplifier here to drive head phones."
 		(exclude_from_sim no)
-		(at 195.326 56.388 0)
+		(at 199.644 21.844 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5230,12 +5230,6 @@
 		(uuid "04875a5c-78c4-492b-acb3-7cbea8a2c5cd")
 	)
 	(junction
-		(at 194.31 78.74)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "240b2f07-f2f8-4c2b-ae30-4fcbbe4b0e72")
-	)
-	(junction
 		(at 140.97 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5276,6 +5270,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "48ee5d36-4990-4876-824e-509b83da4108")
+	)
+	(junction
+		(at 190.5 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4a459305-87cf-4ddc-9346-9e1614e3d48e")
 	)
 	(junction
 		(at 234.95 102.87)
@@ -5356,6 +5356,12 @@
 		(uuid "d836e3e7-34d4-4432-bee4-e85370b14df3")
 	)
 	(junction
+		(at 227.33 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dcfd083f-1c2d-46aa-9f94-6528a2613da3")
+	)
+	(junction
 		(at 237.49 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5366,10 +5372,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f9972938-9f33-4270-a359-d7d35fd687e9")
-	)
-	(no_connect
-		(at 232.41 53.34)
-		(uuid "09b8989a-892c-41aa-ba44-e05b97dafb28")
 	)
 	(wire
 		(pts
@@ -5453,13 +5455,23 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 50.8) (xy 194.31 78.74)
+			(xy 190.5 50.8) (xy 190.5 78.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "0dd92ca4-09b2-4fa1-b19b-301480872461")
+	)
+	(wire
+		(pts
+			(xy 227.33 50.8) (xy 227.33 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14afafff-12a8-4a88-a94b-a64feba0a942")
 	)
 	(wire
 		(pts
@@ -5493,7 +5505,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 50.8) (xy 194.31 50.8)
+			(xy 219.71 50.8) (xy 190.5 50.8)
 		)
 		(stroke
 			(width 0)
@@ -5673,16 +5685,6 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 78.74) (xy 214.63 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "527c6ded-88fb-4902-98a1-71eff39d2ef9")
-	)
-	(wire
-		(pts
 			(xy 76.2 57.15) (xy 85.09 57.15)
 		)
 		(stroke
@@ -5813,13 +5815,23 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 50.8) (xy 223.52 50.8)
+			(xy 232.41 50.8) (xy 227.33 50.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "72ff48d2-bb1e-4e20-8e20-e275652893b2")
+	)
+	(wire
+		(pts
+			(xy 227.33 53.34) (xy 232.41 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7380c4f4-17ee-4526-8a2d-da47b3f85cdc")
 	)
 	(wire
 		(pts
@@ -5893,7 +5905,7 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 78.74) (xy 194.31 78.74)
+			(xy 186.69 78.74) (xy 190.5 78.74)
 		)
 		(stroke
 			(width 0)
@@ -5910,6 +5922,16 @@
 			(type default)
 		)
 		(uuid "916b6506-7aff-4dba-aa76-a6de1362f8a6")
+	)
+	(wire
+		(pts
+			(xy 233.68 67.31) (xy 233.68 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97206c29-4e83-4813-8900-880e8648829a")
 	)
 	(wire
 		(pts
@@ -6050,6 +6072,16 @@
 			(type default)
 		)
 		(uuid "b032ede6-c2c3-466a-bcf4-28cc5cdbd160")
+	)
+	(wire
+		(pts
+			(xy 233.68 58.42) (xy 233.68 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0a4f677-5520-4f5c-9b92-35bf684778bd")
 	)
 	(wire
 		(pts
@@ -6220,6 +6252,16 @@
 			(type default)
 		)
 		(uuid "f0fc4edb-95fd-4b7c-96bc-773b5673c8be")
+	)
+	(wire
+		(pts
+			(xy 190.5 78.74) (xy 214.63 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f10a5b19-c911-45eb-bac8-4fae7e18484e")
 	)
 	(wire
 		(pts
@@ -11402,7 +11444,7 @@
 	)
 	(symbol
 		(lib_id "PCM_JLCPCB-Capacitors:0805,10uF,(2)")
-		(at 219.71 50.8 90)
+		(at 223.52 50.8 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11413,7 +11455,7 @@
 		(fields_autoplaced yes)
 		(uuid "ac555c09-a185-43b7-9ea4-ee86a93dd118")
 		(property "Reference" "C68"
-			(at 219.71 41.91 90)
+			(at 223.52 41.91 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11423,7 +11465,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 219.71 44.45 90)
+			(at 223.52 44.45 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11433,7 +11475,7 @@
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:C_0805"
-			(at 219.71 52.578 90)
+			(at 223.52 52.578 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11444,7 +11486,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411041759_Murata-Electronics-GRM21BR61H106KE43L_C440198.pdf"
-			(at 219.71 50.8 0)
+			(at 223.52 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11455,7 +11497,7 @@
 			)
 		)
 		(property "Description" "50V 10uF X5R ±10% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
-			(at 219.71 50.8 0)
+			(at 223.52 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11466,7 +11508,7 @@
 			)
 		)
 		(property "LCSC" "C440198"
-			(at 219.71 50.8 0)
+			(at 223.52 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11477,7 +11519,7 @@
 			)
 		)
 		(property "Stock" "1422246"
-			(at 219.71 50.8 0)
+			(at 223.52 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11488,7 +11530,7 @@
 			)
 		)
 		(property "Price" "0.066USD"
-			(at 219.71 50.8 0)
+			(at 223.52 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11499,7 +11541,7 @@
 			)
 		)
 		(property "Process" "SMT"
-			(at 219.71 50.8 0)
+			(at 223.52 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11510,7 +11552,7 @@
 			)
 		)
 		(property "Minimum Qty" "5"
-			(at 219.71 50.8 0)
+			(at 223.52 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11521,7 +11563,7 @@
 			)
 		)
 		(property "Attrition Qty" "4"
-			(at 219.71 50.8 0)
+			(at 223.52 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11532,7 +11574,7 @@
 			)
 		)
 		(property "Class" "Basic Component"
-			(at 219.71 50.8 0)
+			(at 223.52 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11543,7 +11585,7 @@
 			)
 		)
 		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 219.71 50.8 0)
+			(at 223.52 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11554,7 +11596,7 @@
 			)
 		)
 		(property "Part" "GRM21BR61H106KE43L"
-			(at 219.71 50.8 0)
+			(at 223.52 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11565,7 +11607,7 @@
 			)
 		)
 		(property "Voltage Rated" "50V"
-			(at 219.71 46.99 90)
+			(at 223.52 46.99 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11575,7 +11617,7 @@
 			)
 		)
 		(property "Tolerance" "±10%"
-			(at 219.71 50.8 0)
+			(at 223.52 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11586,7 +11628,7 @@
 			)
 		)
 		(property "Capacitance" "10uF"
-			(at 219.71 50.8 0)
+			(at 223.52 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11597,7 +11639,7 @@
 			)
 		)
 		(property "Temperature Coefficient" "X5R"
-			(at 219.71 50.8 0)
+			(at 223.52 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
