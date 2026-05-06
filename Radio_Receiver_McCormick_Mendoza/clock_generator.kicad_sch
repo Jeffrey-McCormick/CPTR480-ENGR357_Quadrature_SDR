@@ -4327,16 +4327,6 @@
 		)
 		(uuid "d0ac48a1-25bf-4c4a-b153-79ac748fb08b")
 	)
-	(text "ASK FROHNE IF 3.3VA\nis better than 3.3V here"
-		(exclude_from_sim no)
-		(at 171.958 26.924 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "d719f3ba-1589-43de-bbcc-3a2dbd195e7f")
-	)
 	(junction
 		(at 63.5 69.85)
 		(diameter 0)
@@ -4416,6 +4406,12 @@
 		(uuid "6a27e159-1ba5-434a-9f8f-4efa4e717943")
 	)
 	(junction
+		(at 171.45 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "70131f95-d30f-4749-93ec-71e53c6ee6f8")
+	)
+	(junction
 		(at 180.34 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4468,12 +4464,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "dfbda679-7875-40f9-bca9-679a5f789eb0")
-	)
-	(junction
-		(at 171.45 41.91)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e7338696-b949-43ef-9857-1091b2fb9e7a")
 	)
 	(junction
 		(at 180.34 88.9)
@@ -4537,7 +4527,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 35.56) (xy 171.45 41.91)
+			(xy 171.45 25.4) (xy 171.45 29.21)
 		)
 		(stroke
 			(width 0)
@@ -4937,6 +4927,16 @@
 	)
 	(wire
 		(pts
+			(xy 171.45 36.83) (xy 171.45 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6158dc3d-8fa7-4fa2-a7a6-0594f3c2c32b")
+	)
+	(wire
+		(pts
 			(xy 168.91 102.87) (xy 168.91 104.14)
 		)
 		(stroke
@@ -5154,16 +5154,6 @@
 			(type default)
 		)
 		(uuid "90ea2de9-fbc6-436f-9ff0-f6cd84321432")
-	)
-	(polyline
-		(pts
-			(xy 163.83 33.655) (xy 168.91 33.655)
-		)
-		(stroke
-			(width 0)
-			(type dash)
-		)
-		(uuid "9190af2e-6852-455b-8ada-28870d116c9c")
 	)
 	(wire
 		(pts
@@ -5424,16 +5414,6 @@
 			(type default)
 		)
 		(uuid "f41f2cdd-c1d4-4ede-a847-c9546e5d534b")
-	)
-	(polyline
-		(pts
-			(xy 163.83 29.845) (xy 163.83 33.655)
-		)
-		(stroke
-			(width 0)
-			(type dash)
-		)
-		(uuid "fb481f65-df5e-4201-90a1-0d0e17ccb770")
 	)
 	(polyline
 		(pts
@@ -8472,7 +8452,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3VA")
-		(at 171.45 35.56 0)
+		(at 171.45 25.4 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8483,7 +8463,7 @@
 		(fields_autoplaced yes)
 		(uuid "5668158b-70b1-4782-be48-5e7c710fe932")
 		(property "Reference" "#PWR019"
-			(at 171.45 39.37 0)
+			(at 171.45 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8494,7 +8474,7 @@
 			)
 		)
 		(property "Value" "+3.3VA"
-			(at 171.45 30.48 0)
+			(at 171.45 20.32 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8504,7 +8484,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 171.45 35.56 0)
+			(at 171.45 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8515,7 +8495,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 171.45 35.56 0)
+			(at 171.45 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8526,7 +8506,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3VA\""
-			(at 171.45 35.56 0)
+			(at 171.45 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9049,6 +9029,263 @@
 			(project "Radio_Receiver_McCormick_Mendoza"
 				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/f64ea8ac-f7b3-4ac7-b675-bede152c9b4e"
 					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_JLCPCB-Resistors:0805,2.2Ω")
+		(at 171.45 33.02 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8d7c06cd-4c9f-4f10-acc7-af99b42dd8d8")
+		(property "Reference" "R41"
+			(at 173.99 33.0199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2.2Ω"
+			(at 171.45 33.02 90)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:R_0805"
+			(at 169.672 33.02 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010200_UNI-ROYAL-Uniroyal-Elec-0805W8F220KT5E_C17521.pdf"
+			(at 171.45 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "125mW Thick Film Resistors 150V ±1% ±400ppm/°C 2.2Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 171.45 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C17521"
+			(at 171.45 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "143756"
+			(at 171.45 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" "0.006USD"
+			(at 171.45 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Process" "SMT"
+			(at 171.45 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Minimum Qty" "20"
+			(at 171.45 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Attrition Qty" "10"
+			(at 171.45 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Class" "Basic Component"
+			(at 171.45 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Category" "Resistors,Chip Resistor - Surface Mount"
+			(at 171.45 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "0805W8F220KT5E"
+			(at 171.45 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Resistance" "2.2Ω"
+			(at 171.45 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Power(Watts)" "125mW"
+			(at 171.45 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Type" "Thick Film Resistors"
+			(at 171.45 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Overload Voltage (Max)" "150V"
+			(at 171.45 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Operating Temperature Range" "-55°C~+155°C"
+			(at 171.45 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "±1%"
+			(at 171.45 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Temperature Coefficient" "±400ppm/°C"
+			(at 171.45 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bf9d8ca5-7451-4558-9a79-387d09253d0a")
+		)
+		(pin "2"
+			(uuid "77897c40-627d-4a6c-bccd-c33e5e152e1c")
+		)
+		(instances
+			(project "Radio_Receiver_McCormick_Mendoza"
+				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/f64ea8ac-f7b3-4ac7-b675-bede152c9b4e"
+					(reference "R41")
 					(unit 1)
 				)
 			)

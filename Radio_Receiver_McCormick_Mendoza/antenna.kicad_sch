@@ -3779,6 +3779,16 @@
 		)
 		(uuid "9b328f44-6aaf-4015-a3a1-d95ddacefec8")
 	)
+	(text "UPDATE GND AND GNDA."
+		(exclude_from_sim no)
+		(at 62.484 118.364 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a6e1cae0-4cf5-4a7e-b62c-13e51f65e858")
+	)
 	(text "GNDA is the Antenna Ground\nIt must be separate from the\ndevice ground (GND) to prevent\nground loops."
 		(exclude_from_sim no)
 		(at 125.73 65.024 0)
@@ -5994,84 +6004,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 97.79 133.35 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "2d99ea95-b7ca-4c01-a130-76c19018a3ef")
-		(property "Reference" "#PWR012"
-			(at 97.79 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GNDA"
-			(at 95.504 137.668 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 97.79 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 97.79 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 97.79 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "710b0a06-b91a-4593-b2cc-7726604bac5e")
-		)
-		(instances
-			(project "Radio_Receiver_McCormick_Mendoza"
-				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/bb2f90fe-90d6-4041-8023-4e8a6153d0ef"
-					(reference "#PWR012")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "SDRReciever-rescue:GND-power-SDRReciever-rescue")
 		(at 33.02 62.23 0)
 		(unit 1)
@@ -6669,6 +6601,164 @@
 			(project "Radio_Receiver_McCormick_Mendoza"
 				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/bb2f90fe-90d6-4041-8023-4e8a6153d0ef"
 					(reference "C55")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 97.79 133.35 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4e7204c8-76cb-45bf-98e1-fd2e8fb61448")
+		(property "Reference" "#PWR087"
+			(at 97.79 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 100.33 134.6199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 97.79 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 97.79 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 97.79 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "36f886dd-0022-41b5-b602-960fa09e5225")
+		)
+		(instances
+			(project "Radio_Receiver_McCormick_Mendoza"
+				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/bb2f90fe-90d6-4041-8023-4e8a6153d0ef"
+					(reference "#PWR087")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 86.36 120.65 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "51245c4c-d549-4757-8c53-9f97a431251e")
+		(property "Reference" "#PWR089"
+			(at 86.36 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 88.9 121.9199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 86.36 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 86.36 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 86.36 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9a3ecf9f-7a5c-41ed-b036-b59cd6d61e49")
+		)
+		(instances
+			(project "Radio_Receiver_McCormick_Mendoza"
+				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/bb2f90fe-90d6-4041-8023-4e8a6153d0ef"
+					(reference "#PWR089")
 					(unit 1)
 				)
 			)
@@ -7960,7 +8050,7 @@
 				)
 			)
 		)
-		(property "Value" "GNDA"
+		(property "Value" "GND"
 			(at 149.86 147.3199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9562,84 +9652,6 @@
 			(project "Radio_Receiver_McCormick_Mendoza"
 				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/bb2f90fe-90d6-4041-8023-4e8a6153d0ef"
 					(reference "J5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 86.36 120.65 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "d7ea17c1-60dd-47b2-8461-ae7d946dd353")
-		(property "Reference" "#PWR09"
-			(at 86.36 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GNDA"
-			(at 83.566 124.46 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 86.36 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 86.36 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 86.36 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2eafc360-d386-4cac-a1fd-f503ac9cb677")
-		)
-		(instances
-			(project "Radio_Receiver_McCormick_Mendoza"
-				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/bb2f90fe-90d6-4041-8023-4e8a6153d0ef"
-					(reference "#PWR09")
 					(unit 1)
 				)
 			)

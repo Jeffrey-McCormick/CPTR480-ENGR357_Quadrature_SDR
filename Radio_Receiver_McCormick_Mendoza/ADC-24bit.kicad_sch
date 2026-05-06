@@ -6896,12 +6896,6 @@
 		(uuid "5c43102d-77e1-4e00-a603-d3ec166788fc")
 	)
 	(junction
-		(at 91.44 55.88)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "77cd0ea4-f413-4c3b-abc4-a4a15a9e9e8b")
-	)
-	(junction
 		(at 146.05 71.12)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6972,12 +6966,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "dc029dee-65c0-4687-821f-2dd7e41e804d")
-	)
-	(junction
-		(at 95.25 71.12)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fbc012c0-b800-4891-93c1-09a9c6048d1d")
 	)
 	(wire
 		(pts
@@ -7141,7 +7129,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 55.88) (xy 102.87 55.88)
+			(xy 88.265 55.88) (xy 102.87 55.88)
 		)
 		(stroke
 			(width 0)
@@ -7481,16 +7469,6 @@
 	)
 	(wire
 		(pts
-			(xy 88.265 71.12) (xy 95.25 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9e65f5b0-a91e-4aca-8c21-2915bab1f71e")
-	)
-	(wire
-		(pts
 			(xy 123.19 63.5) (xy 166.37 63.5)
 		)
 		(stroke
@@ -7801,7 +7779,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 71.12) (xy 102.87 71.12)
+			(xy 88.265 71.12) (xy 102.87 71.12)
 		)
 		(stroke
 			(width 0)
@@ -7868,16 +7846,6 @@
 			(type default)
 		)
 		(uuid "f9566c44-b966-48f7-a348-32d60f60f89f")
-	)
-	(wire
-		(pts
-			(xy 88.265 55.88) (xy 91.44 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fd10c42e-ef1d-4e5c-bc50-c6185202261e")
 	)
 	(hierarchical_label "Q_OUT"
 		(shape input)
@@ -11783,85 +11751,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x01")
-		(at 95.25 66.04 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "626fcfb0-efbd-4b49-98bc-440b4b93e3b9")
-		(property "Reference" "J22"
-			(at 97.79 64.7699 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "Q_OUT"
-			(at 97.79 67.3099 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
-			(at 95.25 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 95.25 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 95.25 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "aa6e2cb5-5c5b-4978-9653-4bc309556def")
-		)
-		(instances
-			(project "Radio_Receiver_McCormick_Mendoza"
-				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/f13b25c3-8e17-4875-84b2-896666dfe469"
-					(reference "J22")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_name "Jumper_2_Bridged_1")
 		(lib_id "Jumper:Jumper_2_Bridged")
 		(at 45.72 81.28 270)
@@ -12607,85 +12496,6 @@
 			(project "Radio_Receiver_McCormick_Mendoza"
 				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/f13b25c3-8e17-4875-84b2-896666dfe469"
 					(reference "#PWR049")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x01")
-		(at 91.44 50.8 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8205727b-db12-46dc-a1ec-0a7f54d95af9")
-		(property "Reference" "J7"
-			(at 93.98 49.5299 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "I_OUT"
-			(at 93.98 52.0699 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
-			(at 91.44 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 91.44 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 91.44 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4e710478-8c7f-4a24-8ea2-48ebec7c2b87")
-		)
-		(instances
-			(project "Radio_Receiver_McCormick_Mendoza"
-				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/f13b25c3-8e17-4875-84b2-896666dfe469"
-					(reference "J7")
 					(unit 1)
 				)
 			)

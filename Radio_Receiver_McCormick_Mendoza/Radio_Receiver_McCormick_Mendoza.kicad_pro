@@ -511,6 +511,9 @@
       "+5V": [
         "5V0"
       ],
+      "/Raspberry_Pi_Pico/VSYS": [
+        "5V"
+      ],
       "Net-(J22-Pin_1)": [
         "5V0"
       ],
@@ -524,6 +527,9 @@
         "5V0"
       ],
       "Net-(J29-Pin_2)": [
+        "5V"
+      ],
+      "VDD": [
         "5V"
       ]
     },
@@ -1077,7 +1083,7 @@
         "uuid": "f31d31ab-6846-4f3a-92b1-aa5a6a13373f"
       }
     ],
-    "used_designators": "J43-45,D2-3,C56,C83,C88,e9,FB17,#PWR67-68,#PWR87-88,#PWR129-130,Y1,R1-3,R34-40,JP12-13",
+    "used_designators": "D4-5,JP15,#FLG1-7,U1-2,#PWR4,FB18-19",
     "variants": []
   },
   "sheets": [
