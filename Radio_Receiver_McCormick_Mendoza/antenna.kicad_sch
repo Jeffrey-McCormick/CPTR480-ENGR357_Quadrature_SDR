@@ -3966,6 +3966,12 @@
 		(uuid "df9dcdcf-172c-4349-8966-469532e3026b")
 	)
 	(junction
+		(at 157.48 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dfdf2c5f-2261-4688-a6b6-612954148598")
+	)
+	(junction
 		(at 226.06 133.35)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4170,6 +4176,16 @@
 			(type default)
 		)
 		(uuid "300cd77b-72d5-4f45-abb5-a44358ea55aa")
+	)
+	(wire
+		(pts
+			(xy 157.48 45.72) (xy 161.29 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3087f9ef-25ce-4867-9321-dfc6c8e3a115")
 	)
 	(wire
 		(pts
@@ -4473,7 +4489,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 45.72) (xy 161.29 45.72)
+			(xy 138.43 45.72) (xy 157.48 45.72)
 		)
 		(stroke
 			(width 0)
@@ -5078,7 +5094,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Reciever_Parts:Transformer_Toroid_Vertical_2Pri_3Sec_T37"
 			(at 128.27 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -5089,7 +5105,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.rf-microwave.com/resources/products_attachments/6128ffba1982b.pdf"
 			(at 128.27 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -5280,17 +5296,6 @@
 			)
 		)
 		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 220.98 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 220.98 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -5839,17 +5844,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "FH(Guangdong Fenghua Advanced Tech)"
-			(at 242.57 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "0402CG101J500NT"
 			(at 242.57 97.79 0)
 			(hide yes)
@@ -6385,17 +6379,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 220.98 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "CL21C222JBFNNNE"
 			(at 220.98 97.79 0)
 			(hide yes)
@@ -6611,17 +6594,6 @@
 			)
 		)
 		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 261.62 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 261.62 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -6850,6 +6822,28 @@
 				)
 			)
 		)
+		(property "LCSC" "C2674583"
+			(at 127 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" "3.5033USD"
+			(at 127 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "11"
 			(uuid "e0bacabb-3bd9-4929-b945-2d1a3a61fb01")
 		)
@@ -7054,17 +7048,6 @@
 			)
 		)
 		(property "Category" "Diodes,Switching Diode"
-			(at 67.31 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Nexperia"
 			(at 67.31 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -7435,17 +7418,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 207.01 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "CL10C331JB8NNNC"
 			(at 207.01 124.46 0)
 			(hide yes)
@@ -7660,17 +7632,6 @@
 			)
 		)
 		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 233.68 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "FH(Guangdong Fenghua Advanced Tech)"
 			(at 233.68 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -7906,17 +7867,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 224.79 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "CL10C331JB8NNNC"
 			(at 224.79 128.27 0)
 			(hide yes)
@@ -8138,6 +8088,83 @@
 			(project "Radio_Receiver_McCormick_Mendoza"
 				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/bb2f90fe-90d6-4041-8023-4e8a6153d0ef"
 					(reference "J34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SDRReciever-rescue:Conn_01x01-Connector_Generic-SDRReciever-rescue")
+		(at 157.48 40.64 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a0ea5fa0-7bc3-4437-b048-516a001b7aa7")
+		(property "Reference" "J45"
+			(at 161.925 40.64 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "CENTER_TAP"
+			(at 161.29 37.465 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
+			(at 157.48 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 157.48 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 157.48 40.64 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f4c7f380-3a98-475a-819b-2ccbaf7b9c7f")
+		)
+		(instances
+			(project "Radio_Receiver_McCormick_Mendoza"
+				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/bb2f90fe-90d6-4041-8023-4e8a6153d0ef"
+					(reference "J45")
 					(unit 1)
 				)
 			)
@@ -8550,17 +8577,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 261.62 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "CL21C222JBFNNNE"
 			(at 261.62 105.41 0)
 			(hide yes)
@@ -8862,17 +8878,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 261.62 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "CL10C331JB8NNNC"
 			(at 261.62 124.46 0)
 			(hide yes)
@@ -9087,17 +9092,6 @@
 			)
 		)
 		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 212.09 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 212.09 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -9414,17 +9408,6 @@
 			)
 		)
 		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 203.2 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "FH(Guangdong Fenghua Advanced Tech)"
 			(at 203.2 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -9884,17 +9867,6 @@
 			)
 		)
 		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 242.57 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "FH(Guangdong Fenghua Advanced Tech)"
 			(at 242.57 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -10495,17 +10467,6 @@
 			)
 		)
 		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 251.46 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 251.46 97.79 0)
 			(hide yes)
 			(show_name no)

@@ -6266,17 +6266,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "AVX"
-			(at 104.14 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "TAJA106K016RNJ"
 			(at 104.14 58.42 0)
 			(hide yes)
@@ -6892,17 +6881,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 140.97 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "CL21A225KBQNNNE"
 			(at 140.97 105.41 0)
 			(hide yes)
@@ -7464,17 +7442,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 146.05 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "CL10A105KB8NNNC"
 			(at 146.05 45.72 0)
 			(hide yes)
@@ -7601,6 +7568,28 @@
 			)
 		)
 		(property "Description" "2.1 VRMS, 112dB Audio Stereo DAC with PLL and 32-bit, 384kHz PCM Interface, TSSOP-20"
+			(at 127 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C107671"
+			(at 127 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" "4.0305USD"
 			(at 127 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -7826,17 +7815,6 @@
 			)
 		)
 		(property "Category" "Filters/EMI Optimization,Ferrite Beads"
-			(at 129.54 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Sunlord"
 			(at 129.54 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -8494,17 +8472,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 76.2 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "CL05B104KB54PNC"
 			(at 76.2 62.23 0)
 			(hide yes)
@@ -8720,17 +8687,6 @@
 			)
 		)
 		(property "Category" "Capacitors,Tantalum Capacitors"
-			(at 149.86 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "AVX"
 			(at 149.86 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -9872,17 +9828,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "AVX"
-			(at 167.64 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "TAJA106K016RNJ"
 			(at 167.64 105.41 0)
 			(hide yes)
@@ -10567,17 +10512,6 @@
 			)
 		)
 		(property "Category" "Capacitors,Tantalum Capacitors"
-			(at 85.09 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "AVX"
 			(at 85.09 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -11381,17 +11315,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Sunlord"
-			(at 124.46 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "GZ2012D601TF"
 			(at 124.46 49.53 0)
 			(hide yes)
@@ -11619,17 +11542,6 @@
 			)
 		)
 		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 156.21 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 156.21 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -12189,17 +12101,6 @@
 			)
 		)
 		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 139.7 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 139.7 90.17 0)
 			(hide yes)
 			(show_name no)

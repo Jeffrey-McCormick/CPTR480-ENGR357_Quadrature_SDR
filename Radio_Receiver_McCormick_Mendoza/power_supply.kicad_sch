@@ -4982,17 +4982,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Sunlord"
-			(at 43.18 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "GZ2012D601TF"
 			(at 43.18 46.99 0)
 			(hide yes)
@@ -6072,17 +6061,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 26.67 48.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "CL10A105KB8NNNC"
 			(at 26.67 48.26 0)
 			(hide yes)
@@ -6522,6 +6500,28 @@
 			)
 		)
 		(property "Description" "Linear 4.8V Voltage Regulator IC Positive Fixed 1 Output 250mA 6-WSON (1.5x1.5)"
+			(at 104.14 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C2868088"
+			(at 104.14 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" "4.374USD"
 			(at 104.14 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -7329,17 +7329,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Sunlord"
-			(at 140.97 168.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "GZ2012D601TF"
 			(at 140.97 168.91 0)
 			(hide yes)
@@ -8106,6 +8095,28 @@
 				)
 			)
 		)
+		(property "LCSC" "C2868088"
+			(at 111.76 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" "4.374USD"
+			(at 111.76 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ab6df29a-d750-43d8-86f4-a5caf6087b49")
 		)
@@ -8300,7 +8311,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "a87475aa-44c2-47ed-a8a4-55e3db6235b1")
 		(property "Reference" "SW6"
@@ -8981,17 +8992,6 @@
 			)
 		)
 		(property "Category" "Capacitors,Tantalum Capacitors"
-			(at 34.29 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "AVX"
 			(at 34.29 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -10755,6 +10755,28 @@
 			)
 		)
 		(property "Description" "Linear 3.3V Voltage Regulator IC Positive Fixed 1 Output 250mA 6-WSON (1.5x1.5)"
+			(at 172.72 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C544524"
+			(at 172.72 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" "3.7957USD"
 			(at 172.72 106.68 0)
 			(hide yes)
 			(show_name no)

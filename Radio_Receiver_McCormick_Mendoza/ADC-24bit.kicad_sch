@@ -8389,17 +8389,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 81.28 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "0603WAF1004T5E"
 			(at 81.28 125.73 0)
 			(hide yes)
@@ -9757,17 +9746,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 88.9 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "CL05B104KB54PNC"
 			(at 88.9 121.92 0)
 			(hide yes)
@@ -10685,17 +10663,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 88.9 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "CL05B104KB54PNC"
 			(at 88.9 137.16 0)
 			(hide yes)
@@ -10987,17 +10954,6 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 81.28 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 81.28 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -13848,7 +13804,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "OPA1612AID_SOIC8:D8-M"
 			(at 115.57 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -13871,6 +13827,28 @@
 			)
 		)
 		(property "Description" "Dual SoundPlus High Performance, Bipolar-Input Audio Operational Amplifiers, SOIC-8"
+			(at 115.57 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C2871441"
+			(at 115.57 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" "4.7846USD"
 			(at 115.57 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -14056,17 +14034,6 @@
 			)
 		)
 		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 77.47 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 77.47 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -14288,17 +14255,6 @@
 			)
 		)
 		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 80.01 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 80.01 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -14712,7 +14668,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "OPA1612AID_SOIC8:D8-M"
 			(at 143.51 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -14735,6 +14691,28 @@
 			)
 		)
 		(property "Description" "Dual SoundPlus High Performance, Bipolar-Input Audio Operational Amplifiers, SOIC-8"
+			(at 143.51 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C2871441"
+			(at 143.51 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" "4.7846USD"
 			(at 143.51 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -16345,17 +16323,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 73.66 129.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "CL10A105KB8NNNC"
 			(at 73.66 129.54 0)
 			(hide yes)
@@ -16774,7 +16741,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "OPA1612AID_SOIC8:D8-M"
 			(at 147.32 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -16797,6 +16764,28 @@
 			)
 		)
 		(property "Description" "Dual SoundPlus High Performance, Bipolar-Input Audio Operational Amplifiers, SOIC-8"
+			(at 147.32 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C2871441"
+			(at 147.32 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" "4.7846USD"
 			(at 147.32 149.86 0)
 			(hide yes)
 			(show_name no)

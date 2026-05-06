@@ -5261,6 +5261,28 @@
 				)
 			)
 		)
+		(property "LCSC" "C2674583"
+			(at 95.25 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" "3.5033USD"
+			(at 95.25 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "11"
 			(uuid "0ea39a32-1303-493b-bc6a-3f8bd1a4ac3c")
 		)
