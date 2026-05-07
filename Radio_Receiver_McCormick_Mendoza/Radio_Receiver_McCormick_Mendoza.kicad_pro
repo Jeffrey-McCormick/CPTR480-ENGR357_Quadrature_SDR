@@ -754,7 +754,7 @@
         },
         {
           "group_by": false,
-          "label": "MANUFACTURER",
+          "label": "Manufacturer",
           "name": "MANUFACTURER",
           "show": false
         },
@@ -1036,8 +1036,38 @@
         },
         {
           "group_by": false,
-          "label": "Manufacturer",
-          "name": "Manufacturer",
+          "label": "Dominant Wavelength",
+          "name": "Dominant Wavelength",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Forward Current",
+          "name": "Forward Current",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Forward Voltage (VF)",
+          "name": "Forward Voltage (VF)",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Luminous Intensity",
+          "name": "Luminous Intensity",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Lens Color",
+          "name": "Lens Color",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Viewing Angle",
+          "name": "Viewing Angle",
           "show": false
         }
       ],
@@ -1046,7 +1076,7 @@
       "include_excluded_from_bom": true,
       "name": "",
       "sort_asc": true,
-      "sort_field": "LCSC"
+      "sort_field": "${DNP}"
     },
     "bus_aliases": {},
     "connection_grid_size": 50.0,
@@ -1089,7 +1119,7 @@
         "uuid": "f31d31ab-6846-4f3a-92b1-aa5a6a13373f"
       }
     ],
-    "used_designators": "R5-6,R33,R44-46,R52-53,C49,C59,C68,C83,C85-86,C89,C93-98,FB2,FB20-22,#PWR4,#PWR97-98,#PWR114,#PWR116,#PWR129",
+    "used_designators": "SW7,R37,D2",
     "variants": []
   },
   "sheets": [
@@ -1132,6 +1162,10 @@
     [
       "775bb6b1-f0ed-4d15-b765-5e0d3e71119f",
       "Angle Encoder"
+    ],
+    [
+      "1fb8c01a-2e6a-47f6-bd7b-fb7d24cdb83e",
+      "MicroSD"
     ]
   ],
   "text_variables": {},

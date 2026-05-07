@@ -8218,7 +8218,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "b5c3a75f-3f08-403a-a7ba-43627bbb6c49")
 		(property "Reference" "J28"
 			(at 151.892 50.546 0)

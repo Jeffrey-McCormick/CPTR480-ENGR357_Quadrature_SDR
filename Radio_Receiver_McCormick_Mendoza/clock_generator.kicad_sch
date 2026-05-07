@@ -9057,17 +9057,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 207.01 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "CL05B104KB54PNC"
 			(at 207.01 82.55 0)
 			(hide yes)
@@ -10256,7 +10245,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
 			(at 58.42 107.95 0)
 			(hide yes)
 			(show_name no)

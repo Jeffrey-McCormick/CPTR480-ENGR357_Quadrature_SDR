@@ -9668,7 +9668,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d9afb086-f399-4d2d-ae9a-e05b86910a2c")
-		(property "Reference" "J5"
+		(property "Reference" "J47"
 			(at 44.1452 36.4744 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9728,7 +9728,7 @@
 		(instances
 			(project "Radio_Receiver_McCormick_Mendoza"
 				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/bb2f90fe-90d6-4041-8023-4e8a6153d0ef"
-					(reference "J5")
+					(reference "J47")
 					(unit 1)
 				)
 			)

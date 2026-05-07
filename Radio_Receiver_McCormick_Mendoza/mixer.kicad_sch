@@ -3816,7 +3816,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
 			(at 182.88 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -3973,7 +3973,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
 			(at 198.12 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -4371,7 +4371,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
 			(at 214.63 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -6086,7 +6086,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
 			(at 199.39 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -6799,7 +6799,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
 			(at 215.9 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -7336,6 +7336,7 @@
 		)
 		(property "Description" ""
 			(at 190.5 83.82 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7912,7 +7913,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
 			(at 181.61 63.5 0)
 			(hide yes)
 			(show_name no)

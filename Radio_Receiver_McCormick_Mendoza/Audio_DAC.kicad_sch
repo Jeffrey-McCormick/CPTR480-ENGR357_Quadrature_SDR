@@ -8749,17 +8749,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 77.47 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "0805W8F220KT5E"
 			(at 77.47 54.61 0)
 			(hide yes)
@@ -9006,17 +8995,6 @@
 			)
 		)
 		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 177.8 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Murata Electronics"
 			(at 177.8 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -9710,17 +9688,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 182.88 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "0603WAF4702T5E"
 			(at 182.88 60.96 0)
 			(hide yes)
@@ -10125,17 +10092,6 @@
 			)
 		)
 		(property "Category" "Capacitors,Tantalum Capacitors"
-			(at 218.44 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "AVX"
 			(at 218.44 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -10938,17 +10894,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 152.4 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "0805W8F1002T5E"
 			(at 152.4 85.09 0)
 			(hide yes)
@@ -11686,17 +11631,6 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 170.18 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 170.18 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -13030,7 +12964,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm"
 			(at 59.69 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -13680,17 +13614,6 @@
 			)
 		)
 		(property "Category" "Capacitors,Tantalum Capacitors"
-			(at 222.25 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "AVX"
 			(at 222.25 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -14861,17 +14784,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 142.24 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "0805W8F1002T5E"
 			(at 142.24 85.09 0)
 			(hide yes)
@@ -15196,17 +15108,6 @@
 			)
 		)
 		(property "Category" "Capacitors,Tantalum Capacitors"
-			(at 229.87 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "AVX"
 			(at 229.87 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -16123,7 +16024,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm"
 			(at 33.02 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -16863,17 +16764,6 @@
 			)
 		)
 		(property "Category" "Capacitors,Tantalum Capacitors"
-			(at 226.06 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "AVX"
 			(at 226.06 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -18202,17 +18092,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "AVX"
-			(at 233.68 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "TAJB107K006RNJ"
 			(at 233.68 66.04 0)
 			(hide yes)
@@ -18836,17 +18715,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 242.57 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "0805W8F330JT5E"
 			(at 242.57 76.2 0)
 			(hide yes)
@@ -19094,17 +18962,6 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 72.39 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 72.39 54.61 0)
 			(hide yes)
 			(show_name no)
