@@ -3122,7 +3122,7 @@
 		)
 		(uuid "2dac0212-047d-4b70-b4d6-7c046fcfccb5")
 	)
-	(text "ON/OFF Switch\n"
+	(text "POWER Switch\n"
 		(exclude_from_sim no)
 		(at 83.566 104.394 0)
 		(effects
@@ -6460,7 +6460,7 @@
 		(in_pos_files yes)
 		(dnp yes)
 		(uuid "657f2a5d-7dd7-4708-97c1-1e9c14cb3ee6")
-		(property "Reference" "ON/OFF"
+		(property "Reference" "ON/OFF1"
 			(at 90.17 90.1701 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6529,7 +6529,7 @@
 		(instances
 			(project "Radio_Receiver_McCormick_Mendoza"
 				(path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/89503fbf-50e2-456e-a9ae-3607dd041f50"
-					(reference "ON/OFF")
+					(reference "ON/OFF1")
 					(unit 1)
 				)
 			)

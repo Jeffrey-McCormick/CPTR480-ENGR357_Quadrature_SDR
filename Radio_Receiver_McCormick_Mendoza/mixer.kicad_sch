@@ -2990,16 +2990,6 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 50.8) (xy 238.76 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9a5b9e53-c080-4a22-b30d-316f042fce0a")
-	)
-	(wire
-		(pts
 			(xy 219.71 71.12) (xy 228.6 71.12)
 		)
 		(stroke
@@ -4148,7 +4138,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "import_footprint:SOIC127P600X175-8N"
+		(property "Footprint" "INA821ID:D0008A_N"
 			(at 242.57 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -7391,7 +7381,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "import_footprint:SOIC127P600X175-8N"
+		(property "Footprint" "INA821ID:D0008A_N"
 			(at 241.3 59.69 0)
 			(hide yes)
 			(show_name no)

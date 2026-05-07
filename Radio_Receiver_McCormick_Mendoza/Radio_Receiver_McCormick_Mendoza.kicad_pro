@@ -1071,12 +1071,12 @@
           "show": false
         }
       ],
-      "filter_string": "",
+      "filter_string": "j29",
       "group_symbols": true,
       "include_excluded_from_bom": true,
       "name": "",
       "sort_asc": true,
-      "sort_field": "${DNP}"
+      "sort_field": "Footprint"
     },
     "bus_aliases": {},
     "connection_grid_size": 50.0,
@@ -1119,7 +1119,7 @@
         "uuid": "f31d31ab-6846-4f3a-92b1-aa5a6a13373f"
       }
     ],
-    "used_designators": "SW7,R37,D2",
+    "used_designators": "ON/OFF1,D2,R37,SW7",
     "variants": []
   },
   "sheets": [

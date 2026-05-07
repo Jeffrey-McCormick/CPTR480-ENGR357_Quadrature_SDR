@@ -10,4 +10,6 @@
 	(lib (name "SN74AC74DR") (type "KiCad") (uri "${KIPRJMOD}/SN74AC74DR/KiCADv6/footprints.pretty") (options "") (descr ""))
 	(lib (name "Reciever_Parts") (type "KiCad") (uri "${KIPRJMOD}/Reciever_Parts.pretty") (options "") (descr ""))
 	(lib (name "0_Personal") (type "KiCad") (uri "${KIPRJMOD}/Sd-card/easyeda2kicad.pretty/0_Personal.pretty") (options "") (descr ""))
+	(lib (name "INA821ID") (type "KiCad") (uri "${KIPRJMOD}/INA821ID/KiCADv6/footprints.pretty") (options "") (descr ""))
+	(lib (name "MCU_RaspberryPi_and_Boards") (type "KiCad") (uri "${KIPRJMOD}/RP-Pico Libraries/MCU_RaspberryPi_and_Boards.pretty") (options "") (descr ""))
 )

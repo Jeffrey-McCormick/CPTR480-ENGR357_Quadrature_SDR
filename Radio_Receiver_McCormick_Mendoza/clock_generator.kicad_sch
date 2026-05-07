@@ -10076,7 +10076,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ASTX-H11-24.576MHZ-T:XTAL_ASTX-H11-24.576MHZ-T"
+		(property "Footprint" "ASTX_H11_24_576MHZ_T:XTAL_ASTX-H11-24.576MHZ-T"
 			(at 43.18 86.36 0)
 			(hide yes)
 			(show_name no)
