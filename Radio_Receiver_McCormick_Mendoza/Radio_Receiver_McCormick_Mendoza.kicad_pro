@@ -1119,7 +1119,7 @@
         "uuid": "f31d31ab-6846-4f3a-92b1-aa5a6a13373f"
       }
     ],
-    "used_designators": "VDDA1,VDD1,GND1,4.5V1,VBAT1,3.3VA1,+5V1,4.5VA1,+5RAW1",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [

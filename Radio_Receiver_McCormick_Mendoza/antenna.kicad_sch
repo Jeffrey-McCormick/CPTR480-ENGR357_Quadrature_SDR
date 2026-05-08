@@ -3673,6 +3673,16 @@
 		)
 		(uuid "1322801b-10e1-42ec-a577-d4760446999e")
 	)
+	(text "00"
+		(exclude_from_sim no)
+		(at 149.098 114.808 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "186cd954-7071-4323-b70f-375a85a1ceb7")
+	)
 	(text "T37-6 Toroid: \n[NUMBER] turns"
 		(exclude_from_sim no)
 		(at 233.426 88.138 0)
@@ -3693,6 +3703,26 @@
 			)
 		)
 		(uuid "3f420aca-4284-4386-8bf1-a671ccf96d78")
+	)
+	(text "11"
+		(exclude_from_sim no)
+		(at 148.59 135.128 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "42d75430-559e-46bd-ac0e-b3608b377734")
+	)
+	(text "01"
+		(exclude_from_sim no)
+		(at 149.098 119.888 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "45d5c17c-ab54-4d90-9bbe-93806b3b9a1e")
 	)
 	(text "Blocking Capacitor to stop the DC from\ngetting to the antenna. "
 		(exclude_from_sim no)
@@ -3715,6 +3745,16 @@
 		)
 		(uuid "4b9d331d-ce3f-4ad3-b303-bf698cfdb7d0")
 	)
+	(text "01"
+		(exclude_from_sim no)
+		(at 148.59 132.588 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "6183b07d-8789-4e9d-a4bf-9273763df8d9")
+	)
 	(text "10 kHz - 2 MHz (3rd Order, Butterworth filter)\nWe rely on the fact that AM radio transmissions are strong.\nWe may need to put a large capacitor at the beginning if DC\noffsets become an issue."
 		(exclude_from_sim no)
 		(at 216.662 78.994 0)
@@ -3735,6 +3775,26 @@
 			(justify left bottom)
 		)
 		(uuid "66f6a8bc-48c1-49c8-9bae-25f69ff62e75")
+	)
+	(text "11"
+		(exclude_from_sim no)
+		(at 149.098 122.428 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "6b3fc114-b46a-4920-83b3-7c52648fae0a")
+	)
+	(text "10"
+		(exclude_from_sim no)
+		(at 149.098 117.348 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "6fda3638-6f99-4b53-a537-3e9d10dab44f")
 	)
 	(text "T37-6 Toroid: \n[NUMBER] turns"
 		(exclude_from_sim no)
@@ -3779,6 +3839,16 @@
 		)
 		(uuid "9b328f44-6aaf-4015-a3a1-d95ddacefec8")
 	)
+	(text "10"
+		(exclude_from_sim no)
+		(at 148.59 130.048 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a1166127-1c68-4c40-be67-e537dbcb12de")
+	)
 	(text "UPDATE GND AND GNDA."
 		(exclude_from_sim no)
 		(at 62.484 118.364 0)
@@ -3809,6 +3879,16 @@
 			(justify left bottom)
 		)
 		(uuid "ae3bcc91-b295-474d-acf0-c01c7a84c8e6")
+	)
+	(text "00"
+		(exclude_from_sim no)
+		(at 148.59 127.508 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "c9ab4805-47ad-4e22-80f4-6ab2728691e6")
 	)
 	(text "6 MHz - 16 MHz (3rd Order, Series-First Bessel filter)\nBy doing Series-First, DC signals cannot pass through the capacitor (C2), \nallowing better control over the DC offset going into the op-amps"
 		(exclude_from_sim no)
@@ -4897,16 +4977,6 @@
 		)
 		(uuid "ff39c97c-0045-4aee-a58f-e5b2676ed958")
 	)
-	(label "11"
-		(at 151.13 123.19 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "131bf9cc-6fff-4fc9-95ca-8e849f82be37")
-	)
 	(label "Signal_OUT"
 		(at 106.68 128.27 180)
 		(effects
@@ -4917,26 +4987,6 @@
 		)
 		(uuid "13f6a5f3-1632-4dab-a33c-655bdb52e08c")
 	)
-	(label "00"
-		(at 151.13 128.27 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "23095133-ae4d-494f-8800-51fe2bdecc58")
-	)
-	(label "01"
-		(at 151.13 133.35 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "2d493a14-61d1-40bc-8949-dbc3fc11f7f4")
-	)
 	(label "Signal_IN"
 		(at 106.68 115.57 180)
 		(effects
@@ -4946,36 +4996,6 @@
 			(justify right bottom)
 		)
 		(uuid "40d24507-e7ac-4864-afce-f37774682551")
-	)
-	(label "11"
-		(at 151.13 135.89 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "4f64e417-d103-436b-8547-e4c62cff54b1")
-	)
-	(label "10"
-		(at 151.13 118.11 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "6591e72f-a24e-4f6e-8b6f-8ae3d4ed0d3b")
-	)
-	(label "00"
-		(at 151.13 115.57 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "944287df-d0fb-43dd-a233-1ff1c5d8651c")
 	)
 	(label "Signal_IN"
 		(at 82.55 40.64 0)
@@ -4996,26 +5016,6 @@
 			(justify right bottom)
 		)
 		(uuid "a4644dc1-408d-41e1-9edd-523a7f019a69")
-	)
-	(label "10"
-		(at 151.13 130.81 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "c3a4223b-3a24-49ec-b62b-20bbb191b4f2")
-	)
-	(label "01"
-		(at 151.13 120.65 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "f61aa6e9-1d1e-4dae-825d-0ab77d7d298a")
 	)
 	(hierarchical_label "RF_IN1"
 		(shape output)
@@ -8293,7 +8293,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm"
 			(at 33.02 49.53 0)
 			(hide yes)
 			(show_name no)
