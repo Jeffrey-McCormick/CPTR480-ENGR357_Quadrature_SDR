@@ -1,0 +1,570 @@
+(kicad_sch 
+  (version 20260306) 
+  (generator "eeschema") 
+  (generator_version "10.0") 
+  (uuid "389fbcc0-46ac-4554-9e9e-ba2f0cb4ec01") 
+  (paper "A4") 
+  (title_block 
+    (title "Radio Receiver") 
+    (date "2026-04-19") 
+    (rev "0.0.1") 
+    (company "Walla Walla University") 
+    (comment 2 "Daniel Mendoza") 
+    (comment 3 "Jeffrey McCormick")) 
+  (lib_symbols 
+    (symbol "Connector_Generic:Conn_01x04" 
+      (pin_names 
+        (offset 1.016) 
+        (hide yes)) 
+      (exclude_from_sim no) 
+      (in_bom yes) 
+      (on_board yes) 
+      (in_pos_files yes) 
+      (duplicate_pin_numbers_are_jumpers no) 
+      (property "Reference" "J" 
+        (at 0 5.08 0) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (effects 
+          (font 
+            (size 1.27 1.27)))) 
+      (property "Value" "Conn_01x04" 
+        (at 0 -7.62 0) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (effects 
+          (font 
+            (size 1.27 1.27)))) 
+      (property "Footprint" "" 
+        (at 0 0 0) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (hide yes) 
+        (effects 
+          (font 
+            (size 1.27 1.27)))) 
+      (property "Datasheet" "" 
+        (at 0 0 0) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (hide yes) 
+        (effects 
+          (font 
+            (size 1.27 1.27)))) 
+      (property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)" 
+        (at 0 0 0) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (hide yes) 
+        (effects 
+          (font 
+            (size 1.27 1.27)))) 
+      (property "ki_keywords" "connector" 
+        (at 0 0 0) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (hide yes) 
+        (effects 
+          (font 
+            (size 1.27 1.27)))) 
+      (property "ki_fp_filters" "Connector*:*_1x??_*" 
+        (at 0 0 0) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (hide yes) 
+        (effects 
+          (font 
+            (size 1.27 1.27)))) 
+      (symbol "Conn_01x04_1_1" 
+        (rectangle 
+          (start -1.27 3.81) 
+          (end 1.27 -6.35) 
+          (stroke 
+            (width 0.254) 
+            (type default)) 
+          (fill 
+            (type background))) 
+        (rectangle 
+          (start -1.27 2.667) 
+          (end 0 2.413) 
+          (stroke 
+            (width 0.1524) 
+            (type default)) 
+          (fill 
+            (type none))) 
+        (rectangle 
+          (start -1.27 0.127) 
+          (end 0 -0.127) 
+          (stroke 
+            (width 0.1524) 
+            (type default)) 
+          (fill 
+            (type none))) 
+        (rectangle 
+          (start -1.27 -2.413) 
+          (end 0 -2.667) 
+          (stroke 
+            (width 0.1524) 
+            (type default)) 
+          (fill 
+            (type none))) 
+        (rectangle 
+          (start -1.27 -4.953) 
+          (end 0 -5.207) 
+          (stroke 
+            (width 0.1524) 
+            (type default)) 
+          (fill 
+            (type none))) 
+        (pin passive line 
+          (at -5.08 2.54 0) 
+          (length 3.81) 
+          (name "Pin_1" 
+            (effects 
+              (font 
+                (size 1.27 1.27)))) 
+          (number "1" 
+            (effects 
+              (font 
+                (size 1.27 1.27))))) 
+        (pin passive line 
+          (at -5.08 0 0) 
+          (length 3.81) 
+          (name "Pin_2" 
+            (effects 
+              (font 
+                (size 1.27 1.27)))) 
+          (number "2" 
+            (effects 
+              (font 
+                (size 1.27 1.27))))) 
+        (pin passive line 
+          (at -5.08 -2.54 0) 
+          (length 3.81) 
+          (name "Pin_3" 
+            (effects 
+              (font 
+                (size 1.27 1.27)))) 
+          (number "3" 
+            (effects 
+              (font 
+                (size 1.27 1.27))))) 
+        (pin passive line 
+          (at -5.08 -5.08 0) 
+          (length 3.81) 
+          (name "Pin_4" 
+            (effects 
+              (font 
+                (size 1.27 1.27)))) 
+          (number "4" 
+            (effects 
+              (font 
+                (size 1.27 1.27)))))) 
+      (embedded_fonts no)) 
+    (symbol "power:+3.3V" 
+      (power global) 
+      (pin_names 
+        (offset 0)) 
+      (exclude_from_sim no) 
+      (in_bom yes) 
+      (on_board yes) 
+      (in_pos_files yes) 
+      (duplicate_pin_numbers_are_jumpers no) 
+      (property "Reference" "#PWR" 
+        (at 0 -3.81 0) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (hide yes) 
+        (effects 
+          (font 
+            (size 1.27 1.27)))) 
+      (property "Value" "+3.3V" 
+        (at 0 3.556 0) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (effects 
+          (font 
+            (size 1.27 1.27)))) 
+      (property "Footprint" "" 
+        (at 0 0 0) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (hide yes) 
+        (effects 
+          (font 
+            (size 1.27 1.27)))) 
+      (property "Datasheet" "" 
+        (at 0 0 0) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (hide yes) 
+        (effects 
+          (font 
+            (size 1.27 1.27)))) 
+      (property "Description" "Power symbol creates a global label with name \"+3.3V\"" 
+        (at 0 0 0) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (hide yes) 
+        (effects 
+          (font 
+            (size 1.27 1.27)))) 
+      (property "ki_keywords" "global power" 
+        (at 0 0 0) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (hide yes) 
+        (effects 
+          (font 
+            (size 1.27 1.27)))) 
+      (symbol "+3.3V_0_1" 
+        (polyline 
+          (pts 
+            (xy -0.762 1.27) 
+            (xy 0 2.54)) 
+          (stroke 
+            (width 0) 
+            (type default)) 
+          (fill 
+            (type none))) 
+        (polyline 
+          (pts 
+            (xy 0 2.54) 
+            (xy 0.762 1.27)) 
+          (stroke 
+            (width 0) 
+            (type default)) 
+          (fill 
+            (type none))) 
+        (polyline 
+          (pts 
+            (xy 0 0) 
+            (xy 0 2.54)) 
+          (stroke 
+            (width 0) 
+            (type default)) 
+          (fill 
+            (type none)))) 
+      (symbol "+3.3V_1_1" 
+        (pin power_in line 
+          (at 0 0 90) 
+          (length 0) 
+          (hide yes) 
+          (name "+3.3V" 
+            (effects 
+              (font 
+                (size 1.27 1.27)))) 
+          (number "1" 
+            (effects 
+              (font 
+                (size 1.27 1.27)))))) 
+      (embedded_fonts no)) 
+    (symbol "power:GND" 
+      (power global) 
+      (pin_names 
+        (offset 0)) 
+      (exclude_from_sim no) 
+      (in_bom yes) 
+      (on_board yes) 
+      (in_pos_files yes) 
+      (duplicate_pin_numbers_are_jumpers no) 
+      (property "Reference" "#PWR" 
+        (at 0 -6.35 0) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (hide yes) 
+        (effects 
+          (font 
+            (size 1.27 1.27)))) 
+      (property "Value" "GND" 
+        (at 0 -3.81 0) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (effects 
+          (font 
+            (size 1.27 1.27)))) 
+      (property "Footprint" "" 
+        (at 0 0 0) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (hide yes) 
+        (effects 
+          (font 
+            (size 1.27 1.27)))) 
+      (property "Datasheet" "" 
+        (at 0 0 0) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (hide yes) 
+        (effects 
+          (font 
+            (size 1.27 1.27)))) 
+      (property "Description" "Power symbol creates a global label with name \"GND\" , ground" 
+        (at 0 0 0) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (hide yes) 
+        (effects 
+          (font 
+            (size 1.27 1.27)))) 
+      (property "ki_keywords" "global power" 
+        (at 0 0 0) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (hide yes) 
+        (effects 
+          (font 
+            (size 1.27 1.27)))) 
+      (symbol "GND_0_1" 
+        (polyline 
+          (pts 
+            (xy 0 0) 
+            (xy 0 -1.27) 
+            (xy 1.27 -1.27) 
+            (xy 0 -2.54) 
+            (xy -1.27 -1.27) 
+            (xy 0 -1.27)) 
+          (stroke 
+            (width 0) 
+            (type default)) 
+          (fill 
+            (type none)))) 
+      (symbol "GND_1_1" 
+        (pin power_in line 
+          (at 0 0 270) 
+          (length 0) 
+          (hide yes) 
+          (name "GND" 
+            (effects 
+              (font 
+                (size 1.27 1.27)))) 
+          (number "1" 
+            (effects 
+              (font 
+                (size 1.27 1.27)))))) 
+      (embedded_fonts no))) 
+  (text "Be careful!  Some OLEDs have Vcc and GND swapped!\nThese are in the order GND-Vcc-SCL-SDA." 
+    (exclude_from_sim no) 
+    (at 181.102 109.982 0) 
+    (effects 
+      (font 
+        (size 1.27 1.27))) 
+    (uuid "a0476441-d9f2-4f36-ae3f-be721544c155")) 
+  (wire 
+    (pts 
+      (xy 182.88 88.9) 
+      (xy 182.88 95.25)) 
+    (stroke 
+      (width 0) 
+      (type default)) 
+    (uuid "2a91a459-646a-448a-be02-10bb5f4903d7")) 
+  (wire 
+    (pts 
+      (xy 182.88 86.36) 
+      (xy 193.04 86.36)) 
+    (stroke 
+      (width 0) 
+      (type default)) 
+    (uuid "53ff36af-8719-4370-8273-0c33ee773e87")) 
+  (hierarchical_label "SCL" 
+    (shape input) 
+    (at 182.88 83.82 0) 
+    (effects 
+      (font 
+        (size 1.27 1.27)) 
+      (justify left)) 
+    (uuid "874c7702-ade8-47e5-8406-abc8e25279df")) 
+  (hierarchical_label "SDA" 
+    (shape input) 
+    (at 182.88 81.28 0) 
+    (effects 
+      (font 
+        (size 1.27 1.27)) 
+      (justify left)) 
+    (uuid "991e1c03-ffdf-44d3-bf12-63fb74dda4ca")) 
+  (symbol 
+    (lib_id "power:GND") 
+    (at 182.88 95.25 0) 
+    (unit 1) 
+    (body_style 1) 
+    (exclude_from_sim no) 
+    (in_bom yes) 
+    (on_board yes) 
+    (in_pos_files yes) 
+    (dnp no) 
+    (uuid "a1b0c1cc-eeb1-4a8f-afc6-96eee7ad81fe") 
+    (property "Reference" "#PWR0142" 
+      (at 182.88 101.6 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Value" "GND" 
+      (at 186.69 97.79 0) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Footprint" "" 
+      (at 182.88 95.25 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Datasheet" "" 
+      (at 182.88 95.25 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Description" "" 
+      (at 182.88 95.25 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (pin "1" 
+      (uuid "8479949c-0242-4912-9001-7b242b36f2a4")) 
+    (instances 
+      (project "Radio_Receiver_McCormick_Mendoza_Duplicate" 
+        (path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/1382cf63-6685-4835-bd9f-b4058c692ca4" 
+          (reference "#PWR0142") 
+          (unit 1))))) 
+  (symbol 
+    (lib_id "power:+3.3V") 
+    (at 193.04 86.36 0) 
+    (mirror y) 
+    (unit 1) 
+    (body_style 1) 
+    (exclude_from_sim no) 
+    (in_bom yes) 
+    (on_board yes) 
+    (in_pos_files yes) 
+    (dnp no) 
+    (fields_autoplaced yes) 
+    (uuid "f9930e2a-5e60-4459-98ca-155a74faaa24") 
+    (property "Reference" "#PWR0141" 
+      (at 193.04 90.17 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Value" "+3.3V" 
+      (at 193.04 81.28 0) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Footprint" "" 
+      (at 193.04 86.36 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Datasheet" "" 
+      (at 193.04 86.36 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Description" "" 
+      (at 193.04 86.36 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (pin "1" 
+      (uuid "26b6befd-fa20-4f6d-bd08-b8a846575865")) 
+    (instances 
+      (project "Radio_Receiver_McCormick_Mendoza_Duplicate" 
+        (path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/1382cf63-6685-4835-bd9f-b4058c692ca4" 
+          (reference "#PWR0141") 
+          (unit 1))))) 
+  (symbol 
+    (lib_id "Connector_Generic:Conn_01x04") 
+    (at 177.8 86.36 180) 
+    (unit 1) 
+    (body_style 1) 
+    (exclude_from_sim no) 
+    (in_bom yes) 
+    (on_board yes) 
+    (in_pos_files yes) 
+    (dnp no) 
+    (uuid "fc765453-3a22-4129-a7bf-d42619d78d20") 
+    (property "Reference" "J25" 
+      (at 177.8 77.978 0) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Value" "OLED" 
+      (at 178.054 92.202 0) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" 
+      (at 177.8 86.36 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Datasheet" "https://www.elecrow.com/i2c-096-oled-128x64-blueyellow-p-1086.html?gad_source=1&gad_campaignid=23136944328&gbraid=0AAAAADph4po9jWu37EuBxe1xvGVNjYozO&gclid=CjwKCAiAzOXMBhASEiwAe14SaQYG3nrkmjn4OBLnkGYVkErPP2mKp2PoozwaMVSEEWoUpiUMhQ8BHRoClo0QAvD_BwE" 
+      (at 177.8 86.36 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)" 
+      (at 177.8 86.36 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "LCSC" "C2718488" 
+      (at 177.8 86.36 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (pin "4" 
+      (uuid "8ad93291-ec0a-496d-94c5-59a7b6f10a07")) 
+    (pin "1" 
+      (uuid "637078dc-e88d-46eb-a9ef-d2322884f072")) 
+    (pin "2" 
+      (uuid "67f50b1d-19a4-42c8-8b3a-84644afcc65c")) 
+    (pin "3" 
+      (uuid "854fe9f9-ebd9-45a9-b83f-a492131610f6")) 
+    (instances 
+      (project "Radio_Receiver_McCormick_Mendoza_Duplicate" 
+        (path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/1382cf63-6685-4835-bd9f-b4058c692ca4" 
+          (reference "J25") 
+          (unit 1))))))

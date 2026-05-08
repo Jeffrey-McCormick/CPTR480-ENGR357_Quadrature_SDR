@@ -1,0 +1,9 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "TPS72748DSER") (type "KiCad") (uri "${KIPRJMOD}/TPS72748DSER/KiCADv6/2026-04-20_23-44-26.kicad_sym") (options "") (descr ""))
+	(lib (name "TPS72733DSER") (type "KiCad") (uri "${KIPRJMOD}/TPS72733DSER/KiCADv6/2026-04-20_23-52-52.kicad_sym") (options "") (descr ""))
+	(lib (name "SN74CBT3253CDBR") (type "KiCad") (uri "${KIPRJMOD}/SN74CBT3253CDBR/KiCADv6/2026-04-21_19-14-04.kicad_sym") (options "") (descr ""))
+	(lib (name "BATTERY_HOLDER_12mm_SMT") (type "KiCad") (uri "${KIPRJMOD}/BAT_HLD_012_SMT/KiCADv6/2026-05-01_23-00-55.kicad_sym") (options "") (descr ""))
+	(lib (name "ASTX-H11-24.576MHZ-T") (type "KiCad") (uri "${KIPRJMOD}/ASTX_H11_24_576MHZ_T/ASTX-H11-24.576MHZ-T.kicad_sym") (options "") (descr ""))
+	(lib (name "Micro_SD-TF_PUSH") (type "KiCad") (uri "${KIPRJMOD}/Sd-card/easyeda2kicad.kicad_sym") (options "") (descr ""))
+)

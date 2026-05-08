@@ -1,0 +1,236 @@
+(footprint "Transformer_Toroid_Vertical_2Pri_3Sec_T37"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Transformer, Toroid, horizontal, laying, Diameter 10,5mm, Amidon T37,")
+	(tags "Transformer Toroid horizontal laying Diameter 10 5mm Amidon T37 ")
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a5cd6a71-4f86-4a35-a057-6b5e176e6c18")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "931da5da-8f2d-446b-a545-3fc8e72dad7d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Transformer_Toroid_Vertical_2Pri_3Sec_T37"
+		(at 1.951732 3.8 0)
+		(layer "F.Fab")
+		(uuid "a3bc6a49-77da-46d9-8cc1-94870ebb2cae")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Reference" "REF**"
+		(at 2.051732 -9.3 0)
+		(layer "F.SilkS")
+		(uuid "6682a4bb-94bf-4124-bb90-face0e5edd04")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -3.448268 -5)
+		(end 7.551732 -1)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "9a1bae50-f7b0-40dc-abdf-5d01cd48606b")
+	)
+	(fp_line
+		(start -6.198268 -8.55)
+		(end -6.198268 2.55)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "bfa4ddec-de42-49cd-a551-ed8ef8900319")
+	)
+	(fp_line
+		(start -6.198268 -8.55)
+		(end 10.301732 -8.55)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "9c290475-711f-4f3a-99d5-403ab60edf1e")
+	)
+	(fp_line
+		(start 10.301732 2.55)
+		(end -6.198268 2.55)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "b0a7c892-01d0-468e-8581-6253566e513f")
+	)
+	(fp_line
+		(start 10.301732 2.55)
+		(end 10.301732 -8.55)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "612f7edd-535b-4673-9cf1-2d9a93011157")
+	)
+	(fp_rect
+		(start -3.368245 -4.921447)
+		(end 7.5 -1.06103)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "71e1ff69-3611-4617-9253-9a324552503f")
+	)
+	(fp_text user "CTR"
+		(at 0.551732 -7 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "a2bd4748-90e5-404a-a800-dfe25a094bd2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at 2.051732 -3 0)
+		(layer "F.Fab")
+		(uuid "8102c875-69a1-4d03-8df3-0faa4830d1fe")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 2 2)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers yes)
+		(keep_end_layers yes)
+		(zone_layer_connections)
+		(uuid "7c57d383-509e-4a33-b354-aed0e2b9f4a9")
+	)
+	(pad "2" thru_hole circle
+		(at 4.051732 0)
+		(size 2 2)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers yes)
+		(keep_end_layers yes)
+		(zone_layer_connections)
+		(uuid "4ec4cfbf-3bb8-440d-9459-f2e789768e1d")
+	)
+	(pad "3" thru_hole circle
+		(at 5.551732 -6)
+		(size 2 2)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers yes)
+		(keep_end_layers yes)
+		(zone_layer_connections)
+		(uuid "758a5ffa-b0f2-4ee9-b6c7-64e1e5df410a")
+	)
+	(pad "4" thru_hole circle
+		(at 2.051732 -6)
+		(size 2 2)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers yes)
+		(keep_end_layers yes)
+		(zone_layer_connections)
+		(uuid "6e5cf4cc-8ac4-4319-9f87-79ca441e338f")
+	)
+	(pad "5" thru_hole circle
+		(at -1.448268 -6)
+		(size 2 2)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers yes)
+		(keep_end_layers yes)
+		(zone_layer_connections)
+		(uuid "ab497789-67ec-4058-9618-53f997efe496")
+	)
+	(zone
+		(layer "F.Fab")
+		(uuid "30a2dd79-bcd7-4d46-a5c1-ac4aa9d74b1c")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(keepout
+			(tracks not_allowed)
+			(vias not_allowed)
+			(pads not_allowed)
+			(copperpour not_allowed)
+			(footprints not_allowed)
+		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
+		(fill
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+			(island_removal_mode 0)
+		)
+		(polygon
+			(pts
+				(xy -3.368245 -4.921447) (xy 7.5 -4.921447) (xy 7.5 -1.06103) (xy -3.368245 -1.06103)
+			)
+		)
+	)
+	(embedded_fonts no)
+	(model "${KICAD10_3DMODEL_DIR}/Transformer_THT.3dshapes/Transformer_Toroid_Horizontal_D10.5mm_Amidon-T37.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
