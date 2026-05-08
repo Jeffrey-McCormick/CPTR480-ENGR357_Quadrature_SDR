@@ -435,7 +435,7 @@
     (pin "1" 
       (uuid "8479949c-0242-4912-9001-7b242b36f2a4")) 
     (instances 
-      (project "Radio_Receiver_McCormick_Mendoza_Duplicate" 
+      (project "New_Duplicate" 
         (path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/1382cf63-6685-4835-bd9f-b4058c692ca4" 
           (reference "#PWR0142") 
           (unit 1))))) 
@@ -494,7 +494,7 @@
     (pin "1" 
       (uuid "26b6befd-fa20-4f6d-bd08-b8a846575865")) 
     (instances 
-      (project "Radio_Receiver_McCormick_Mendoza_Duplicate" 
+      (project "New_Duplicate" 
         (path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/1382cf63-6685-4835-bd9f-b4058c692ca4" 
           (reference "#PWR0141") 
           (unit 1))))) 
@@ -564,7 +564,7 @@
     (pin "3" 
       (uuid "854fe9f9-ebd9-45a9-b83f-a492131610f6")) 
     (instances 
-      (project "Radio_Receiver_McCormick_Mendoza_Duplicate" 
+      (project "New_Duplicate" 
         (path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/1382cf63-6685-4835-bd9f-b4058c692ca4" 
           (reference "J25") 
           (unit 1))))))
