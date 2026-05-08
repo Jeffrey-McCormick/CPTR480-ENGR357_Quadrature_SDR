@@ -3204,7 +3204,7 @@
 	)
 	(text "Testpoint"
 		(exclude_from_sim no)
-		(at 235.458 98.552 0)
+		(at 226.568 68.072 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3239,12 +3239,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0878ce08-743d-44ca-a331-f16c2c097853")
-	)
-	(junction
-		(at 218.44 101.6)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0ced0fe6-8d35-4376-97ab-801df6147992")
 	)
 	(junction
 		(at 59.69 105.41)
@@ -3311,6 +3305,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "683155c8-36a4-43d7-b58a-7fa10dbeb90d")
+	)
+	(junction
+		(at 59.69 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6ab9258f-31d9-4fb0-9fc6-adb2c7100972")
 	)
 	(junction
 		(at 59.69 34.29)
@@ -3637,16 +3637,6 @@
 			(type default)
 		)
 		(uuid "43d3a8bf-615a-4841-9fc7-b3b844792ad0")
-	)
-	(wire
-		(pts
-			(xy 218.44 101.6) (xy 227.33 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4de09ec5-ecb8-48e7-978a-8bd84b68795b")
 	)
 	(wire
 		(pts
@@ -7558,7 +7548,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x01")
-		(at 64.77 72.39 0)
+		(at 64.77 71.12 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7569,7 +7559,7 @@
 		(fields_autoplaced yes)
 		(uuid "96da7d4f-2c76-4ff8-a833-6145fd94efda")
 		(property "Reference" "J26"
-			(at 67.31 71.1199 0)
+			(at 67.31 69.8499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7580,7 +7570,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 67.31 73.6599 0)
+			(at 67.31 72.3899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7591,7 +7581,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
-			(at 64.77 72.39 0)
+			(at 64.77 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7602,7 +7592,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 64.77 72.39 0)
+			(at 64.77 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7613,7 +7603,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 64.77 72.39 0)
+			(at 64.77 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7815,7 +7805,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "+5V RAW"
+		(property "Value" "+5RAW"
 			(at 67.31 31.7499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8176,7 +8166,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x01")
-		(at 232.41 101.6 0)
+		(at 223.52 71.12 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8187,7 +8177,7 @@
 		(fields_autoplaced yes)
 		(uuid "a6e55561-7b4e-4c76-9c75-b080316b93a3")
 		(property "Reference" "J3"
-			(at 234.95 100.3299 0)
+			(at 226.06 69.8499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8197,8 +8187,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "VA_3.3"
-			(at 234.95 102.8699 0)
+		(property "Value" "3.3VA"
+			(at 226.06 72.3899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8209,7 +8199,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
-			(at 232.41 101.6 0)
+			(at 223.52 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8220,7 +8210,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 232.41 101.6 0)
+			(at 223.52 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8231,7 +8221,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 232.41 101.6 0)
+			(at 223.52 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8588,7 +8578,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "V_4.5"
+		(property "Value" "4.5V"
 			(at 125.476 155.956 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10282,7 +10272,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "VA_4.5"
+		(property "Value" "4.5VA"
 			(at 133.096 93.726 90)
 			(show_name no)
 			(do_not_autoplace no)
