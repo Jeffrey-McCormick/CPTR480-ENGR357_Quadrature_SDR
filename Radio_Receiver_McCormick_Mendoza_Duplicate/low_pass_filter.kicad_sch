@@ -1,0 +1,2263 @@
+(kicad_sch 
+  (version 20260306) 
+  (generator "eeschema") 
+  (generator_version "10.0") 
+  (uuid "ae271b6f-9914-4b34-8a21-b078a60c5893") 
+  (paper "A4") 
+  (title_block 
+    (title "Radio Receiver") 
+    (date "2026-04-19") 
+    (rev "0.0.1") 
+    (company "Walla Walla University") 
+    (comment 2 "Daniel Mendoza") 
+    (comment 3 "Jeffrey McCormick")) 
+  (lib_symbols 
+    (symbol "Amplifier_Operational:OPA1662DGK" 
+      (pin_names 
+        (offset 0.127)) 
+      (exclude_from_sim no) 
+      (in_bom yes) 
+      (on_board yes) 
+      (in_pos_files yes) 
+      (duplicate_pin_numbers_are_jumpers no) 
+      (property "Reference" "U" 
+        (at 0 5.08 0) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (effects 
+          (font 
+            (size 1.27 1.27)) 
+          (justify left))) 
+      (property "Value" "OPA1662DGK" 
+        (at 0 -5.08 0) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (effects 
+          (font 
+            (size 1.27 1.27)) 
+          (justify left))) 
+      (property "Footprint" "Package_SO:VSSOP-8_3x3mm_P0.65mm" 
+        (at 0 0 0) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (hide yes) 
+        (effects 
+          (font 
+            (size 1.27 1.27)))) 
+      (property "Datasheet" "https://www.ti.com/lit/ds/symlink/opa1662.pdf" 
+        (at 0 0 0) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (hide yes) 
+        (effects 
+          (font 
+            (size 1.27 1.27)))) 
+      (property "Description" "Dual Low-Power, Low-Noise, Low-Distortion, Bipolar-Input SoundPlus Audio Operational Amplifiers, VSSOP-8" 
+        (at 0 0 0) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (hide yes) 
+        (effects 
+          (font 
+            (size 1.27 1.27)))) 
+      (property "ki_locked" "" 
+        (at 0 0 0) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (effects 
+          (font 
+            (size 1.27 1.27)))) 
+      (property "ki_keywords" "dual opamp operational-amplifier" 
+        (at 0 0 0) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (hide yes) 
+        (effects 
+          (font 
+            (size 1.27 1.27)))) 
+      (property "ki_fp_filters" "VSSOP*3x3mm*P0.65mm*" 
+        (at 0 0 0) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (hide yes) 
+        (effects 
+          (font 
+            (size 1.27 1.27)))) 
+      (symbol "OPA1662DGK_1_1" 
+        (polyline 
+          (pts 
+            (xy -5.08 5.08) 
+            (xy 5.08 0) 
+            (xy -5.08 -5.08) 
+            (xy -5.08 5.08)) 
+          (stroke 
+            (width 0.254) 
+            (type default)) 
+          (fill 
+            (type background))) 
+        (pin output line 
+          (at 7.62 0 180) 
+          (length 2.54) 
+          (name "" 
+            (effects 
+              (font 
+                (size 1.27 1.27)))) 
+          (number "1" 
+            (effects 
+              (font 
+                (size 1.27 1.27))))) 
+        (pin input line 
+          (at -7.62 -2.54 0) 
+          (length 2.54) 
+          (name "-" 
+            (effects 
+              (font 
+                (size 1.27 1.27)))) 
+          (number "2" 
+            (effects 
+              (font 
+                (size 1.27 1.27))))) 
+        (pin input line 
+          (at -7.62 2.54 0) 
+          (length 2.54) 
+          (name "+" 
+            (effects 
+              (font 
+                (size 1.27 1.27)))) 
+          (number "3" 
+            (effects 
+              (font 
+                (size 1.27 1.27)))))) 
+      (symbol "OPA1662DGK_2_1" 
+        (polyline 
+          (pts 
+            (xy -5.08 5.08) 
+            (xy 5.08 0) 
+            (xy -5.08 -5.08) 
+            (xy -5.08 5.08)) 
+          (stroke 
+            (width 0.254) 
+            (type default)) 
+          (fill 
+            (type background))) 
+        (pin input line 
+          (at -7.62 2.54 0) 
+          (length 2.54) 
+          (name "+" 
+            (effects 
+              (font 
+                (size 1.27 1.27)))) 
+          (number "5" 
+            (effects 
+              (font 
+                (size 1.27 1.27))))) 
+        (pin input line 
+          (at -7.62 -2.54 0) 
+          (length 2.54) 
+          (name "-" 
+            (effects 
+              (font 
+                (size 1.27 1.27)))) 
+          (number "6" 
+            (effects 
+              (font 
+                (size 1.27 1.27))))) 
+        (pin output line 
+          (at 7.62 0 180) 
+          (length 2.54) 
+          (name "" 
+            (effects 
+              (font 
+                (size 1.27 1.27)))) 
+          (number "7" 
+            (effects 
+              (font 
+                (size 1.27 1.27)))))) 
+      (symbol "OPA1662DGK_3_1" 
+        (pin power_in line 
+          (at -2.54 -7.62 90) 
+          (length 3.81) 
+          (name "V-" 
+            (effects 
+              (font 
+                (size 1.27 1.27)))) 
+          (number "4" 
+            (effects 
+              (font 
+                (size 1.27 1.27))))) 
+        (pin power_in line 
+          (at -2.54 7.62 270) 
+          (length 3.81) 
+          (name "V+" 
+            (effects 
+              (font 
+                (size 1.27 1.27)))) 
+          (number "8" 
+            (effects 
+              (font 
+                (size 1.27 1.27)))))) 
+      (embedded_fonts no)) 
+    (symbol "Device:C" 
+      (pin_numbers 
+        (hide yes)) 
+      (pin_names 
+        (offset 0.254)) 
+      (exclude_from_sim no) 
+      (in_bom yes) 
+      (on_board yes) 
+      (in_pos_files yes) 
+      (duplicate_pin_numbers_are_jumpers no) 
+      (property "Reference" "C" 
+        (at 0.635 2.54 0) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (effects 
+          (font 
+            (size 1.27 1.27)) 
+          (justify left))) 
+      (property "Value" "C" 
+        (at 0.635 -2.54 0) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (effects 
+          (font 
+            (size 1.27 1.27)) 
+          (justify left))) 
+      (property "Footprint" "" 
+        (at 0.9652 -3.81 0) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (hide yes) 
+        (effects 
+          (font 
+            (size 1.27 1.27)))) 
+      (property "Datasheet" "" 
+        (at 0 0 0) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (hide yes) 
+        (effects 
+          (font 
+            (size 1.27 1.27)))) 
+      (property "Description" "Unpolarized capacitor" 
+        (at 0 0 0) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (hide yes) 
+        (effects 
+          (font 
+            (size 1.27 1.27)))) 
+      (property "ki_keywords" "cap capacitor" 
+        (at 0 0 0) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (hide yes) 
+        (effects 
+          (font 
+            (size 1.27 1.27)))) 
+      (property "ki_fp_filters" "C_*" 
+        (at 0 0 0) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (hide yes) 
+        (effects 
+          (font 
+            (size 1.27 1.27)))) 
+      (symbol "C_0_1" 
+        (polyline 
+          (pts 
+            (xy -2.032 0.762) 
+            (xy 2.032 0.762)) 
+          (stroke 
+            (width 0.508) 
+            (type default)) 
+          (fill 
+            (type none))) 
+        (polyline 
+          (pts 
+            (xy -2.032 -0.762) 
+            (xy 2.032 -0.762)) 
+          (stroke 
+            (width 0.508) 
+            (type default)) 
+          (fill 
+            (type none)))) 
+      (symbol "C_1_1" 
+        (pin passive line 
+          (at 0 3.81 270) 
+          (length 2.794) 
+          (name "" 
+            (effects 
+              (font 
+                (size 1.27 1.27)))) 
+          (number "1" 
+            (effects 
+              (font 
+                (size 1.27 1.27))))) 
+        (pin passive line 
+          (at 0 -3.81 90) 
+          (length 2.794) 
+          (name "" 
+            (effects 
+              (font 
+                (size 1.27 1.27)))) 
+          (number "2" 
+            (effects 
+              (font 
+                (size 1.27 1.27)))))) 
+      (embedded_fonts no)) 
+    (symbol "Device:R" 
+      (pin_numbers 
+        (hide yes)) 
+      (pin_names 
+        (offset 0)) 
+      (exclude_from_sim no) 
+      (in_bom yes) 
+      (on_board yes) 
+      (in_pos_files yes) 
+      (duplicate_pin_numbers_are_jumpers no) 
+      (property "Reference" "R" 
+        (at 2.032 0 90) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (effects 
+          (font 
+            (size 1.27 1.27)))) 
+      (property "Value" "R" 
+        (at 0 0 90) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (effects 
+          (font 
+            (size 1.27 1.27)))) 
+      (property "Footprint" "" 
+        (at -1.778 0 90) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (hide yes) 
+        (effects 
+          (font 
+            (size 1.27 1.27)))) 
+      (property "Datasheet" "" 
+        (at 0 0 0) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (hide yes) 
+        (effects 
+          (font 
+            (size 1.27 1.27)))) 
+      (property "Description" "Resistor" 
+        (at 0 0 0) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (hide yes) 
+        (effects 
+          (font 
+            (size 1.27 1.27)))) 
+      (property "ki_keywords" "R res resistor" 
+        (at 0 0 0) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (hide yes) 
+        (effects 
+          (font 
+            (size 1.27 1.27)))) 
+      (property "ki_fp_filters" "R_*" 
+        (at 0 0 0) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (hide yes) 
+        (effects 
+          (font 
+            (size 1.27 1.27)))) 
+      (symbol "R_0_1" 
+        (rectangle 
+          (start -1.016 -2.54) 
+          (end 1.016 2.54) 
+          (stroke 
+            (width 0.254) 
+            (type default)) 
+          (fill 
+            (type none)))) 
+      (symbol "R_1_1" 
+        (pin passive line 
+          (at 0 3.81 270) 
+          (length 1.27) 
+          (name "" 
+            (effects 
+              (font 
+                (size 1.27 1.27)))) 
+          (number "1" 
+            (effects 
+              (font 
+                (size 1.27 1.27))))) 
+        (pin passive line 
+          (at 0 -3.81 90) 
+          (length 1.27) 
+          (name "" 
+            (effects 
+              (font 
+                (size 1.27 1.27)))) 
+          (number "2" 
+            (effects 
+              (font 
+                (size 1.27 1.27)))))) 
+      (embedded_fonts no)) 
+    (symbol "power:GND" 
+      (power global) 
+      (pin_numbers 
+        (hide yes)) 
+      (pin_names 
+        (offset 0) 
+        (hide yes)) 
+      (exclude_from_sim no) 
+      (in_bom yes) 
+      (on_board yes) 
+      (in_pos_files yes) 
+      (duplicate_pin_numbers_are_jumpers no) 
+      (property "Reference" "#PWR" 
+        (at 0 -6.35 0) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (hide yes) 
+        (effects 
+          (font 
+            (size 1.27 1.27)))) 
+      (property "Value" "GND" 
+        (at 0 -3.81 0) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (effects 
+          (font 
+            (size 1.27 1.27)))) 
+      (property "Footprint" "" 
+        (at 0 0 0) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (hide yes) 
+        (effects 
+          (font 
+            (size 1.27 1.27)))) 
+      (property "Datasheet" "" 
+        (at 0 0 0) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (hide yes) 
+        (effects 
+          (font 
+            (size 1.27 1.27)))) 
+      (property "Description" "Power symbol creates a global label with name \"GND\" , ground" 
+        (at 0 0 0) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (hide yes) 
+        (effects 
+          (font 
+            (size 1.27 1.27)))) 
+      (property "ki_keywords" "global power" 
+        (at 0 0 0) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (hide yes) 
+        (effects 
+          (font 
+            (size 1.27 1.27)))) 
+      (symbol "GND_0_1" 
+        (polyline 
+          (pts 
+            (xy 0 0) 
+            (xy 0 -1.27) 
+            (xy 1.27 -1.27) 
+            (xy 0 -2.54) 
+            (xy -1.27 -1.27) 
+            (xy 0 -1.27)) 
+          (stroke 
+            (width 0) 
+            (type default)) 
+          (fill 
+            (type none)))) 
+      (symbol "GND_1_1" 
+        (pin power_in line 
+          (at 0 0 270) 
+          (length 0) 
+          (name "" 
+            (effects 
+              (font 
+                (size 1.27 1.27)))) 
+          (number "1" 
+            (effects 
+              (font 
+                (size 1.27 1.27)))))) 
+      (embedded_fonts no)) 
+    (symbol "power:VDDA" 
+      (power global) 
+      (pin_numbers 
+        (hide yes)) 
+      (pin_names 
+        (offset 0) 
+        (hide yes)) 
+      (exclude_from_sim no) 
+      (in_bom yes) 
+      (on_board yes) 
+      (in_pos_files yes) 
+      (duplicate_pin_numbers_are_jumpers no) 
+      (property "Reference" "#PWR" 
+        (at 0 -3.81 0) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (hide yes) 
+        (effects 
+          (font 
+            (size 1.27 1.27)))) 
+      (property "Value" "VDDA" 
+        (at 0 3.556 0) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (effects 
+          (font 
+            (size 1.27 1.27)))) 
+      (property "Footprint" "" 
+        (at 0 0 0) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (hide yes) 
+        (effects 
+          (font 
+            (size 1.27 1.27)))) 
+      (property "Datasheet" "" 
+        (at 0 0 0) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (hide yes) 
+        (effects 
+          (font 
+            (size 1.27 1.27)))) 
+      (property "Description" "Power symbol creates a global label with name \"VDDA\"" 
+        (at 0 0 0) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (hide yes) 
+        (effects 
+          (font 
+            (size 1.27 1.27)))) 
+      (property "ki_keywords" "global power" 
+        (at 0 0 0) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (hide yes) 
+        (effects 
+          (font 
+            (size 1.27 1.27)))) 
+      (symbol "VDDA_0_1" 
+        (polyline 
+          (pts 
+            (xy -0.762 1.27) 
+            (xy 0 2.54)) 
+          (stroke 
+            (width 0) 
+            (type default)) 
+          (fill 
+            (type none))) 
+        (polyline 
+          (pts 
+            (xy 0 2.54) 
+            (xy 0.762 1.27)) 
+          (stroke 
+            (width 0) 
+            (type default)) 
+          (fill 
+            (type none))) 
+        (polyline 
+          (pts 
+            (xy 0 0) 
+            (xy 0 2.54)) 
+          (stroke 
+            (width 0) 
+            (type default)) 
+          (fill 
+            (type none)))) 
+      (symbol "VDDA_1_1" 
+        (pin power_in line 
+          (at 0 0 90) 
+          (length 0) 
+          (name "" 
+            (effects 
+              (font 
+                (size 1.27 1.27)))) 
+          (number "1" 
+            (effects 
+              (font 
+                (size 1.27 1.27)))))) 
+      (embedded_fonts no))) 
+  (text "Verify that the I and Q stay phase-accurate\nas it approaches the cutoff frequency. \n\nASK FROHNE: Will this help ADC?" 
+    (exclude_from_sim no) 
+    (at 77.216 41.656 0) 
+    (effects 
+      (font 
+        (size 1.27 1.27))) 
+    (uuid "96660d88-81f4-4d92-9fd7-051be5000f67")) 
+  (junction 
+    (at 127 77.47) 
+    (diameter 0) 
+    (color 0 0 0 0) 
+    (uuid "069fd149-a9ad-41d9-a78e-06aab0ec5ffb")) 
+  (junction 
+    (at 100.33 91.44) 
+    (diameter 0) 
+    (color 0 0 0 0) 
+    (uuid "0d9255af-585c-48e4-bfb2-cc863b96be0c")) 
+  (junction 
+    (at 149.86 114.3) 
+    (diameter 0) 
+    (color 0 0 0 0) 
+    (uuid "29953e5f-87c1-430b-bf71-37f5b8828e96")) 
+  (junction 
+    (at 120.65 111.76) 
+    (diameter 0) 
+    (color 0 0 0 0) 
+    (uuid "2fa8a982-05a1-4ac8-8b8f-aee08874af56")) 
+  (junction 
+    (at 149.86 88.9) 
+    (diameter 0) 
+    (color 0 0 0 0) 
+    (uuid "3b681983-a689-425c-b0e2-915f06ab33a2")) 
+  (junction 
+    (at 100.33 111.76) 
+    (diameter 0) 
+    (color 0 0 0 0) 
+    (uuid "549240d0-4d46-42a6-9212-b23efcbb8f3c")) 
+  (junction 
+    (at 114.3 91.44) 
+    (diameter 0) 
+    (color 0 0 0 0) 
+    (uuid "6c4417b8-6b58-407c-9ce2-d71942d73f9d")) 
+  (junction 
+    (at 125.73 124.46) 
+    (diameter 0) 
+    (color 0 0 0 0) 
+    (uuid "db787387-0a46-470a-9aeb-8b53a60df8b7")) 
+  (wire 
+    (pts 
+      (xy 149.86 93.98) 
+      (xy 163.83 93.98)) 
+    (stroke 
+      (width 0) 
+      (type default)) 
+    (uuid "03c1ea64-9c6e-4649-88fa-cb9829264fd9")) 
+  (wire 
+    (pts 
+      (xy 149.86 88.9) 
+      (xy 149.86 93.98)) 
+    (stroke 
+      (width 0) 
+      (type default)) 
+    (uuid "048a111e-c30f-445a-bb32-1204ba36eb09")) 
+  (wire 
+    (pts 
+      (xy 100.33 91.44) 
+      (xy 106.68 91.44)) 
+    (stroke 
+      (width 0) 
+      (type default)) 
+    (uuid "06ca442a-15c8-461b-bee2-ecdb69c216c8")) 
+  (wire 
+    (pts 
+      (xy 147.32 88.9) 
+      (xy 149.86 88.9)) 
+    (stroke 
+      (width 0) 
+      (type default)) 
+    (uuid "117f4d5b-5773-4f3f-b423-94a52c7b3a3c")) 
+  (wire 
+    (pts 
+      (xy 125.73 124.46) 
+      (xy 149.86 124.46)) 
+    (stroke 
+      (width 0) 
+      (type default)) 
+    (uuid "11fb6a6b-07c9-4d4a-9e73-841baa707c28")) 
+  (wire 
+    (pts 
+      (xy 100.33 124.46) 
+      (xy 125.73 124.46)) 
+    (stroke 
+      (width 0) 
+      (type default)) 
+    (uuid "1c4d9f57-9993-42db-9ca2-d01ab31aea7a")) 
+  (wire 
+    (pts 
+      (xy 114.3 111.76) 
+      (xy 120.65 111.76)) 
+    (stroke 
+      (width 0) 
+      (type default)) 
+    (uuid "2eedb2bf-a3b9-4d93-8253-83825d27a0f2")) 
+  (wire 
+    (pts 
+      (xy 100.33 111.76) 
+      (xy 106.68 111.76)) 
+    (stroke 
+      (width 0) 
+      (type default)) 
+    (uuid "2f8fa2e7-b0af-43cc-86c1-a401c41cbf02")) 
+  (wire 
+    (pts 
+      (xy 100.33 77.47) 
+      (xy 127 77.47)) 
+    (stroke 
+      (width 0) 
+      (type default)) 
+    (uuid "3523ecaa-940b-464a-8d22-d3598cb161a7")) 
+  (wire 
+    (pts 
+      (xy 184.15 93.98) 
+      (xy 191.77 93.98)) 
+    (stroke 
+      (width 0) 
+      (type default)) 
+    (uuid "40b8f0a1-3bb1-4f58-9d85-6fda124e8ff4")) 
+  (wire 
+    (pts 
+      (xy 100.33 85.09) 
+      (xy 100.33 91.44)) 
+    (stroke 
+      (width 0) 
+      (type default)) 
+    (uuid "45dc5315-c9e9-4442-85bc-ac48b61f4d36")) 
+  (wire 
+    (pts 
+      (xy 100.33 111.76) 
+      (xy 100.33 116.84)) 
+    (stroke 
+      (width 0) 
+      (type default)) 
+    (uuid "4a4ece02-ca3b-4cb5-b419-52133f3997e7")) 
+  (wire 
+    (pts 
+      (xy 137.16 50.8) 
+      (xy 142.24 50.8)) 
+    (stroke 
+      (width 0) 
+      (type default)) 
+    (uuid "4dddd75f-4a44-4d1b-9886-a39acc0f1dbb")) 
+  (wire 
+    (pts 
+      (xy 184.15 109.22) 
+      (xy 191.77 109.22)) 
+    (stroke 
+      (width 0) 
+      (type default)) 
+    (uuid "563d821e-0164-4179-8583-5f31f0114bc1")) 
+  (polyline 
+    (pts 
+      (xy 44.45 93.98) 
+      (xy 132.715 93.98)) 
+    (stroke 
+      (width 0) 
+      (type default)) 
+    (uuid "5b223085-1076-4b8c-8032-8c0eb7b6c149")) 
+  (wire 
+    (pts 
+      (xy 125.73 116.84) 
+      (xy 125.73 124.46)) 
+    (stroke 
+      (width 0) 
+      (type default)) 
+    (uuid "5ceb473a-ecae-420c-9315-e204bc496833")) 
+  (wire 
+    (pts 
+      (xy 149.86 77.47) 
+      (xy 149.86 88.9)) 
+    (stroke 
+      (width 0) 
+      (type default)) 
+    (uuid "617f6340-171e-493f-a84a-6ec52892e5b9")) 
+  (wire 
+    (pts 
+      (xy 149.86 109.22) 
+      (xy 163.83 109.22)) 
+    (stroke 
+      (width 0) 
+      (type default)) 
+    (uuid "69d44730-ab36-4546-b30e-8daeb59b0198")) 
+  (wire 
+    (pts 
+      (xy 93.98 111.76) 
+      (xy 100.33 111.76)) 
+    (stroke 
+      (width 0) 
+      (type default)) 
+    (uuid "7c0b1b20-d988-42ec-a20b-aa63c05a01cb")) 
+  (wire 
+    (pts 
+      (xy 127 77.47) 
+      (xy 149.86 77.47)) 
+    (stroke 
+      (width 0) 
+      (type default)) 
+    (uuid "9ddbbe61-eba1-4567-a2da-74ca8144823a")) 
+  (wire 
+    (pts 
+      (xy 149.86 109.22) 
+      (xy 149.86 114.3)) 
+    (stroke 
+      (width 0) 
+      (type default)) 
+    (uuid "a748f0c5-13e0-4555-ba57-10a793a0b8fb")) 
+  (wire 
+    (pts 
+      (xy 171.45 109.22) 
+      (xy 176.53 109.22)) 
+    (stroke 
+      (width 0) 
+      (type default)) 
+    (uuid "b46e184e-82a8-4ade-8e27-b46af31720d3")) 
+  (wire 
+    (pts 
+      (xy 120.65 111.76) 
+      (xy 132.08 111.76)) 
+    (stroke 
+      (width 0) 
+      (type default)) 
+    (uuid "b4c35cdf-638a-4bca-a328-985885e6115f")) 
+  (wire 
+    (pts 
+      (xy 149.86 114.3) 
+      (xy 149.86 124.46)) 
+    (stroke 
+      (width 0) 
+      (type default)) 
+    (uuid "c3a5051d-fe4f-4ff1-a686-40b061328d42")) 
+  (polyline 
+    (pts 
+      (xy 106.045 49.53) 
+      (xy 132.715 49.53)) 
+    (stroke 
+      (width 0) 
+      (type default)) 
+    (uuid "c906bfde-939c-4fc0-a4b7-58db244fa586")) 
+  (wire 
+    (pts 
+      (xy 158.75 50.8) 
+      (xy 149.86 50.8)) 
+    (stroke 
+      (width 0) 
+      (type default)) 
+    (uuid "cbcb6915-6035-4046-86c2-d7c277dc97f2")) 
+  (wire 
+    (pts 
+      (xy 132.08 86.36) 
+      (xy 127 86.36)) 
+    (stroke 
+      (width 0) 
+      (type default)) 
+    (uuid "ce77473a-de37-4962-a0db-a803e595af1c")) 
+  (wire 
+    (pts 
+      (xy 171.45 93.98) 
+      (xy 176.53 93.98)) 
+    (stroke 
+      (width 0) 
+      (type default)) 
+    (uuid "dcdd9888-c9cb-490b-be8b-ecc7e79c923b")) 
+  (polyline 
+    (pts 
+      (xy 132.715 49.53) 
+      (xy 132.715 93.98)) 
+    (stroke 
+      (width 0) 
+      (type default)) 
+    (uuid "dcfad997-eee9-4828-9afd-9e44037869ec")) 
+  (wire 
+    (pts 
+      (xy 114.3 91.44) 
+      (xy 132.08 91.44)) 
+    (stroke 
+      (width 0) 
+      (type default)) 
+    (uuid "e0223d04-db21-4402-baa8-b3641078cd81")) 
+  (wire 
+    (pts 
+      (xy 127 77.47) 
+      (xy 127 86.36)) 
+    (stroke 
+      (width 0) 
+      (type default)) 
+    (uuid "e4babfd4-4353-4b6f-837f-c7b0f099d77f")) 
+  (wire 
+    (pts 
+      (xy 132.08 116.84) 
+      (xy 125.73 116.84)) 
+    (stroke 
+      (width 0) 
+      (type default)) 
+    (uuid "e8f05030-6dd2-4edc-ae7b-da551ed7bd7a")) 
+  (wire 
+    (pts 
+      (xy 93.98 91.44) 
+      (xy 100.33 91.44)) 
+    (stroke 
+      (width 0) 
+      (type default)) 
+    (uuid "ed57d181-48f2-4d3d-abba-912f726f724e")) 
+  (wire 
+    (pts 
+      (xy 147.32 114.3) 
+      (xy 149.86 114.3)) 
+    (stroke 
+      (width 0) 
+      (type default)) 
+    (uuid "f439bd83-a657-422d-bce6-d43aa8d1eb87")) 
+  (global_label "I_OUT" 
+    (shape output) 
+    (at 191.77 93.98 0) 
+    (fields_autoplaced yes) 
+    (effects 
+      (font 
+        (size 1.27 1.27)) 
+      (justify left)) 
+    (uuid "0dd87cff-ae0f-4f84-bb58-56fda862690f") 
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" 
+      (at 199.9562 93.98 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)) 
+        (justify left)))) 
+  (global_label "I_Signal" 
+    (shape input) 
+    (at 86.36 91.44 180) 
+    (fields_autoplaced yes) 
+    (effects 
+      (font 
+        (size 1.27 1.27)) 
+      (justify right)) 
+    (uuid "1843af33-1a82-4717-bdc4-61f239a72f13") 
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" 
+      (at 75.8759 91.44 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)) 
+        (justify right)))) 
+  (global_label "Q_Signal" 
+    (shape input) 
+    (at 86.36 111.76 180) 
+    (fields_autoplaced yes) 
+    (effects 
+      (font 
+        (size 1.27 1.27)) 
+      (justify right)) 
+    (uuid "3d892241-0e69-4128-80be-20a1fcfce6de") 
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" 
+      (at 75.1502 111.76 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)) 
+        (justify right)))) 
+  (global_label "Q_OUT" 
+    (shape output) 
+    (at 191.77 109.22 0) 
+    (fields_autoplaced yes) 
+    (effects 
+      (font 
+        (size 1.27 1.27)) 
+      (justify left)) 
+    (uuid "e25ad898-6053-4c65-a978-0966d7f3346d") 
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" 
+      (at 200.6819 109.22 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)) 
+        (justify left)))) 
+  (symbol 
+    (lib_id "Device:R") 
+    (at 180.34 93.98 90) 
+    (unit 1) 
+    (body_style 1) 
+    (exclude_from_sim no) 
+    (in_bom yes) 
+    (on_board yes) 
+    (in_pos_files yes) 
+    (dnp no) 
+    (fields_autoplaced yes) 
+    (uuid "0697a195-bd4f-4893-864b-5150d30ffd81") 
+    (property "Reference" "R15" 
+      (at 180.34 87.63 90) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Value" "100" 
+      (at 180.34 90.17 90) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Footprint" "" 
+      (at 180.34 95.758 90) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Datasheet" "" 
+      (at 180.34 93.98 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Description" "Resistor" 
+      (at 180.34 93.98 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (pin "1" 
+      (uuid "629b7a79-68e7-4472-9ec4-c6266b9e4b4d")) 
+    (pin "2" 
+      (uuid "aa433ce8-1c40-45b0-8018-7a528629c2bb")) 
+    (instances 
+      (project "Radio_Receiver_McCormick_Mendoza_Duplicate" 
+        (path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/615af9b2-5777-40d7-88a6-72f3cb129d0c" 
+          (reference "R15") 
+          (unit 1))))) 
+  (symbol 
+    (lib_id "Device:C") 
+    (at 114.3 95.25 0) 
+    (unit 1) 
+    (body_style 1) 
+    (exclude_from_sim no) 
+    (in_bom yes) 
+    (on_board yes) 
+    (in_pos_files yes) 
+    (dnp no) 
+    (uuid "0b5eec7c-fb88-406d-8509-b535103b314e") 
+    (property "Reference" "C15" 
+      (at 117.094 93.98 0) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)) 
+        (justify left))) 
+    (property "Value" "4n" 
+      (at 117.094 96.52 0) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)) 
+        (justify left))) 
+    (property "Footprint" "" 
+      (at 115.2652 99.06 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Datasheet" "" 
+      (at 114.3 95.25 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Description" "Unpolarized capacitor" 
+      (at 114.3 95.25 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (pin "1" 
+      (uuid "89bc28e1-0ef3-4607-8f49-9007aed331b3")) 
+    (pin "2" 
+      (uuid "b4b80a72-e191-481b-b41f-110e029e1729")) 
+    (instances 
+      (project "Radio_Receiver_McCormick_Mendoza_Duplicate" 
+        (path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/615af9b2-5777-40d7-88a6-72f3cb129d0c" 
+          (reference "C15") 
+          (unit 1))))) 
+  (symbol 
+    (lib_id "Device:R") 
+    (at 90.17 111.76 90) 
+    (unit 1) 
+    (body_style 1) 
+    (exclude_from_sim no) 
+    (in_bom yes) 
+    (on_board yes) 
+    (in_pos_files yes) 
+    (dnp no) 
+    (fields_autoplaced yes) 
+    (uuid "0e78f819-0070-47b1-968b-d82e4d81acf0") 
+    (property "Reference" "R12" 
+      (at 90.17 105.41 90) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Value" "1.6k" 
+      (at 90.17 107.95 90) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Footprint" "" 
+      (at 90.17 113.538 90) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Datasheet" "" 
+      (at 90.17 111.76 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Description" "Resistor" 
+      (at 90.17 111.76 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (pin "1" 
+      (uuid "54c33b49-ef89-4660-b5c8-c2c70cbbf388")) 
+    (pin "2" 
+      (uuid "d8818e4d-6dc5-47f6-9968-81bc097aa01c")) 
+    (instances 
+      (project "Radio_Receiver_McCormick_Mendoza_Duplicate" 
+        (path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/615af9b2-5777-40d7-88a6-72f3cb129d0c" 
+          (reference "R12") 
+          (unit 1))))) 
+  (symbol 
+    (lib_id "Device:R") 
+    (at 90.17 91.44 90) 
+    (unit 1) 
+    (body_style 1) 
+    (exclude_from_sim no) 
+    (in_bom yes) 
+    (on_board yes) 
+    (in_pos_files yes) 
+    (dnp no) 
+    (fields_autoplaced yes) 
+    (uuid "1c920a24-f430-47ca-a0fc-efb788bbc915") 
+    (property "Reference" "R11" 
+      (at 90.17 85.09 90) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Value" "1.6k" 
+      (at 90.17 87.63 90) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Footprint" "" 
+      (at 90.17 93.218 90) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Datasheet" "" 
+      (at 90.17 91.44 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Description" "Resistor" 
+      (at 90.17 91.44 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (pin "1" 
+      (uuid "afaf0751-2a1d-462e-8c12-ac4a17b15ed1")) 
+    (pin "2" 
+      (uuid "15190a01-27de-4095-9db7-5ad08d7b5f12")) 
+    (instances 
+      (project "Radio_Receiver_McCormick_Mendoza_Duplicate" 
+        (path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/615af9b2-5777-40d7-88a6-72f3cb129d0c" 
+          (reference "R11") 
+          (unit 1))))) 
+  (symbol 
+    (lib_id "power:GND") 
+    (at 114.3 99.06 0) 
+    (unit 1) 
+    (body_style 1) 
+    (exclude_from_sim no) 
+    (in_bom yes) 
+    (on_board yes) 
+    (in_pos_files yes) 
+    (dnp no) 
+    (fields_autoplaced yes) 
+    (uuid "26329bdb-cb91-48ed-808e-03507e5ef94b") 
+    (property "Reference" "#PWR032" 
+      (at 114.3 105.41 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Value" "GND" 
+      (at 114.3 104.14 0) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Footprint" "" 
+      (at 114.3 99.06 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Datasheet" "" 
+      (at 114.3 99.06 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Description" "Power symbol creates a global label with name \"GND\" , ground" 
+      (at 114.3 99.06 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (pin "1" 
+      (uuid "c136e671-962f-4a12-b9ac-0977bf3e0495")) 
+    (instances 
+      (project "Radio_Receiver_McCormick_Mendoza_Duplicate" 
+        (path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/615af9b2-5777-40d7-88a6-72f3cb129d0c" 
+          (reference "#PWR032") 
+          (unit 1))))) 
+  (symbol 
+    (lib_id "power:GND") 
+    (at 120.65 119.38 0) 
+    (unit 1) 
+    (body_style 1) 
+    (exclude_from_sim no) 
+    (in_bom yes) 
+    (on_board yes) 
+    (in_pos_files yes) 
+    (dnp no) 
+    (fields_autoplaced yes) 
+    (uuid "2d276cd0-643e-4d16-a865-2eae1ac24a4a") 
+    (property "Reference" "#PWR033" 
+      (at 120.65 125.73 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Value" "GND" 
+      (at 118.11 120.6501 0) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)) 
+        (justify right))) 
+    (property "Footprint" "" 
+      (at 120.65 119.38 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Datasheet" "" 
+      (at 120.65 119.38 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Description" "Power symbol creates a global label with name \"GND\" , ground" 
+      (at 120.65 119.38 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (pin "1" 
+      (uuid "913dc31a-80e7-45f8-90f4-b12a75d99a81")) 
+    (instances 
+      (project "Radio_Receiver_McCormick_Mendoza_Duplicate" 
+        (path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/615af9b2-5777-40d7-88a6-72f3cb129d0c" 
+          (reference "#PWR033") 
+          (unit 1))))) 
+  (symbol 
+    (lib_id "Device:C") 
+    (at 146.05 50.8 90) 
+    (unit 1) 
+    (body_style 1) 
+    (exclude_from_sim no) 
+    (in_bom yes) 
+    (on_board yes) 
+    (in_pos_files yes) 
+    (dnp no) 
+    (fields_autoplaced yes) 
+    (uuid "3a357536-bfe8-4635-9fb7-749403e7812b") 
+    (property "Reference" "C16" 
+      (at 146.05 43.18 90) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Value" "0.1u" 
+      (at 146.05 45.72 90) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Footprint" "" 
+      (at 149.86 49.8348 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Datasheet" "" 
+      (at 146.05 50.8 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Description" "Unpolarized capacitor" 
+      (at 146.05 50.8 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (pin "1" 
+      (uuid "3317cda5-c48b-4380-ae19-ebbf4bbefa7a")) 
+    (pin "2" 
+      (uuid "83154812-afdb-4e11-b6a0-91fb9570f698")) 
+    (instances 
+      (project "Radio_Receiver_McCormick_Mendoza_Duplicate" 
+        (path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/615af9b2-5777-40d7-88a6-72f3cb129d0c" 
+          (reference "C16") 
+          (unit 1))))) 
+  (symbol 
+    (lib_id "Device:R") 
+    (at 180.34 109.22 90) 
+    (unit 1) 
+    (body_style 1) 
+    (exclude_from_sim no) 
+    (in_bom yes) 
+    (on_board yes) 
+    (in_pos_files yes) 
+    (dnp no) 
+    (fields_autoplaced yes) 
+    (uuid "5819c0c7-8718-433f-9fbd-11663810c363") 
+    (property "Reference" "R16" 
+      (at 180.34 102.87 90) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Value" "100" 
+      (at 180.34 105.41 90) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Footprint" "" 
+      (at 180.34 110.998 90) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Datasheet" "" 
+      (at 180.34 109.22 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Description" "Resistor" 
+      (at 180.34 109.22 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (pin "1" 
+      (uuid "f9aa1208-27a6-46a9-a21a-dea4cfbef273")) 
+    (pin "2" 
+      (uuid "4feae2a0-b1e9-4a36-ba3c-9abbe6859887")) 
+    (instances 
+      (project "Radio_Receiver_McCormick_Mendoza_Duplicate" 
+        (path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/615af9b2-5777-40d7-88a6-72f3cb129d0c" 
+          (reference "R16") 
+          (unit 1))))) 
+  (symbol 
+    (lib_id "Device:C") 
+    (at 167.64 93.98 90) 
+    (unit 1) 
+    (body_style 1) 
+    (exclude_from_sim no) 
+    (in_bom yes) 
+    (on_board yes) 
+    (in_pos_files yes) 
+    (dnp no) 
+    (fields_autoplaced yes) 
+    (uuid "5dcc4cfd-5a05-4038-80a6-81a413a144d7") 
+    (property "Reference" "C19" 
+      (at 167.64 86.36 90) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Value" "10u" 
+      (at 167.64 88.9 90) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Footprint" "" 
+      (at 171.45 93.0148 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Datasheet" "" 
+      (at 167.64 93.98 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Description" "Unpolarized capacitor" 
+      (at 167.64 93.98 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (pin "1" 
+      (uuid "13e754f2-ef83-478b-bfd1-ebdb5872a663")) 
+    (pin "2" 
+      (uuid "6728b156-aec7-4c77-84b0-1e621881b68f")) 
+    (instances 
+      (project "Radio_Receiver_McCormick_Mendoza_Duplicate" 
+        (path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/615af9b2-5777-40d7-88a6-72f3cb129d0c" 
+          (reference "C19") 
+          (unit 1))))) 
+  (symbol 
+    (lib_id "Device:C") 
+    (at 167.64 109.22 90) 
+    (unit 1) 
+    (body_style 1) 
+    (exclude_from_sim no) 
+    (in_bom yes) 
+    (on_board yes) 
+    (in_pos_files yes) 
+    (dnp no) 
+    (fields_autoplaced yes) 
+    (uuid "658873a6-3337-4684-9fa7-1adc9a3c004b") 
+    (property "Reference" "C20" 
+      (at 167.64 101.6 90) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Value" "10u" 
+      (at 167.64 104.14 90) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Footprint" "" 
+      (at 171.45 108.2548 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Datasheet" "" 
+      (at 167.64 109.22 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Description" "Unpolarized capacitor" 
+      (at 167.64 109.22 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (pin "1" 
+      (uuid "4f80ec8a-3fd8-42dd-b08e-dac6a87a069e")) 
+    (pin "2" 
+      (uuid "78fb452a-12f3-418d-88e3-0886ff28cd8d")) 
+    (instances 
+      (project "Radio_Receiver_McCormick_Mendoza_Duplicate" 
+        (path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/615af9b2-5777-40d7-88a6-72f3cb129d0c" 
+          (reference "C20") 
+          (unit 1))))) 
+  (symbol 
+    (lib_id "power:VDDA") 
+    (at 137.16 49.53 0) 
+    (unit 1) 
+    (body_style 1) 
+    (exclude_from_sim no) 
+    (in_bom yes) 
+    (on_board yes) 
+    (in_pos_files yes) 
+    (dnp no) 
+    (fields_autoplaced yes) 
+    (uuid "690a77d9-1846-4655-85e5-15c964d8a407") 
+    (property "Reference" "#PWR034" 
+      (at 137.16 53.34 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Value" "VDDA" 
+      (at 137.16 44.45 0) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Footprint" "" 
+      (at 137.16 49.53 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Datasheet" "" 
+      (at 137.16 49.53 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Description" "Power symbol creates a global label with name \"VDDA\"" 
+      (at 137.16 49.53 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (pin "1" 
+      (uuid "51089d00-fb9c-4513-be8d-740a1f18ed15")) 
+    (instances 
+      (project "Radio_Receiver_McCormick_Mendoza_Duplicate" 
+        (path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/615af9b2-5777-40d7-88a6-72f3cb129d0c" 
+          (reference "#PWR034") 
+          (unit 1))))) 
+  (symbol 
+    (lib_id "Device:C") 
+    (at 120.65 115.57 180) 
+    (unit 1) 
+    (body_style 1) 
+    (exclude_from_sim no) 
+    (in_bom yes) 
+    (on_board yes) 
+    (in_pos_files yes) 
+    (dnp no) 
+    (uuid "7241245b-471f-4398-9488-5983c98992bb") 
+    (property "Reference" "C14" 
+      (at 117.856 116.84 0) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)) 
+        (justify left))) 
+    (property "Value" "4n" 
+      (at 117.856 114.3 0) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)) 
+        (justify left))) 
+    (property "Footprint" "" 
+      (at 119.6848 111.76 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Datasheet" "" 
+      (at 120.65 115.57 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Description" "Unpolarized capacitor" 
+      (at 120.65 115.57 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (pin "1" 
+      (uuid "2b1d2b36-4c0d-4beb-80a3-ab1d8dbb15e3")) 
+    (pin "2" 
+      (uuid "1252b814-4b0b-4852-900b-03c1961db9c6")) 
+    (instances 
+      (project "Radio_Receiver_McCormick_Mendoza_Duplicate" 
+        (path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/615af9b2-5777-40d7-88a6-72f3cb129d0c" 
+          (reference "C14") 
+          (unit 1))))) 
+  (symbol 
+    (lib_id "power:GND") 
+    (at 137.16 64.77 0) 
+    (unit 1) 
+    (body_style 1) 
+    (exclude_from_sim no) 
+    (in_bom yes) 
+    (on_board yes) 
+    (in_pos_files yes) 
+    (dnp no) 
+    (fields_autoplaced yes) 
+    (uuid "9ab26107-97fd-4bc4-b9b3-406d5e9bdc79") 
+    (property "Reference" "#PWR035" 
+      (at 137.16 71.12 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Value" "GND" 
+      (at 137.16 69.85 0) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Footprint" "" 
+      (at 137.16 64.77 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Datasheet" "" 
+      (at 137.16 64.77 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Description" "Power symbol creates a global label with name \"GND\" , ground" 
+      (at 137.16 64.77 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (pin "1" 
+      (uuid "95ef4bed-e1d0-4624-b337-cfa176554cb6")) 
+    (instances 
+      (project "Radio_Receiver_McCormick_Mendoza_Duplicate" 
+        (path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/615af9b2-5777-40d7-88a6-72f3cb129d0c" 
+          (reference "#PWR035") 
+          (unit 1))))) 
+  (symbol 
+    (lib_id "Device:R") 
+    (at 110.49 91.44 90) 
+    (unit 1) 
+    (body_style 1) 
+    (exclude_from_sim no) 
+    (in_bom yes) 
+    (on_board yes) 
+    (in_pos_files yes) 
+    (dnp no) 
+    (fields_autoplaced yes) 
+    (uuid "9b096825-bca8-429e-be31-75011c13b3cd") 
+    (property "Reference" "R13" 
+      (at 110.49 85.09 90) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Value" "1.1k" 
+      (at 110.49 87.63 90) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Footprint" "" 
+      (at 110.49 93.218 90) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Datasheet" "" 
+      (at 110.49 91.44 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Description" "Resistor" 
+      (at 110.49 91.44 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (pin "1" 
+      (uuid "70f5a6f6-3aaf-4afb-b6c8-b194d36b9e67")) 
+    (pin "2" 
+      (uuid "f01b1788-89a1-4e56-bebb-ee3037e0f71a")) 
+    (instances 
+      (project "Radio_Receiver_McCormick_Mendoza_Duplicate" 
+        (path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/615af9b2-5777-40d7-88a6-72f3cb129d0c" 
+          (reference "R13") 
+          (unit 1))))) 
+  (symbol 
+    (lib_id "Amplifier_Operational:OPA1662DGK") 
+    (at 139.7 88.9 0) 
+    (mirror x) 
+    (unit 1) 
+    (body_style 1) 
+    (exclude_from_sim no) 
+    (in_bom yes) 
+    (on_board yes) 
+    (in_pos_files yes) 
+    (dnp no) 
+    (fields_autoplaced yes) 
+    (uuid "a575f2ba-d846-4fbe-9919-dd042d12b580") 
+    (property "Reference" "U10" 
+      (at 139.7 78.74 0) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Value" "OPA1662DGK" 
+      (at 139.7 81.28 0) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Footprint" "Package_SO:VSSOP-8_3x3mm_P0.65mm" 
+      (at 139.7 88.9 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/opa1662.pdf" 
+      (at 139.7 88.9 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Description" "Dual Low-Power, Low-Noise, Low-Distortion, Bipolar-Input SoundPlus Audio Operational Amplifiers, VSSOP-8" 
+      (at 139.7 88.9 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (pin "6" 
+      (uuid "ed301852-6f12-42d5-83cb-867bd9702877")) 
+    (pin "5" 
+      (uuid "d6de9d43-5066-4ce6-805e-9393ae0390b4")) 
+    (pin "8" 
+      (uuid "928f6117-c024-4705-aea8-c4401fbacc0b")) 
+    (pin "3" 
+      (uuid "4c53fa0f-737d-4700-86df-8edb780c74ca")) 
+    (pin "7" 
+      (uuid "36d33f91-d05d-4e08-bd08-fb1bcbe6870f")) 
+    (pin "1" 
+      (uuid "da695936-27c7-4718-91b8-9afaf1645334")) 
+    (pin "2" 
+      (uuid "80810e99-e654-4e41-a87c-c52e97c0b856")) 
+    (pin "4" 
+      (uuid "44bfbb3e-00df-444d-be91-ade88c0dd370")) 
+    (instances 
+      (project "Radio_Receiver_McCormick_Mendoza_Duplicate" 
+        (path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/615af9b2-5777-40d7-88a6-72f3cb129d0c" 
+          (reference "U10") 
+          (unit 1))))) 
+  (symbol 
+    (lib_id "Device:C") 
+    (at 100.33 120.65 0) 
+    (unit 1) 
+    (body_style 1) 
+    (exclude_from_sim no) 
+    (in_bom yes) 
+    (on_board yes) 
+    (in_pos_files yes) 
+    (dnp no) 
+    (fields_autoplaced yes) 
+    (uuid "a88fd5a9-5a8f-4f66-a3ca-c1d07537b2f0") 
+    (property "Reference" "C13" 
+      (at 104.14 119.3799 0) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)) 
+        (justify left))) 
+    (property "Value" "4.7n" 
+      (at 104.14 121.9199 0) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)) 
+        (justify left))) 
+    (property "Footprint" "" 
+      (at 101.2952 124.46 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Datasheet" "" 
+      (at 100.33 120.65 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Description" "Unpolarized capacitor" 
+      (at 100.33 120.65 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (pin "1" 
+      (uuid "50573781-99ab-4c86-be4c-7bd34d715e30")) 
+    (pin "2" 
+      (uuid "e58a0fd0-f571-41cf-8186-534b0026ed1b")) 
+    (instances 
+      (project "Radio_Receiver_McCormick_Mendoza_Duplicate" 
+        (path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/615af9b2-5777-40d7-88a6-72f3cb129d0c" 
+          (reference "C13") 
+          (unit 1))))) 
+  (symbol 
+    (lib_id "Amplifier_Operational:OPA1662DGK") 
+    (at 139.7 57.15 0) 
+    (unit 3) 
+    (body_style 1) 
+    (exclude_from_sim no) 
+    (in_bom yes) 
+    (on_board yes) 
+    (in_pos_files yes) 
+    (dnp no) 
+    (fields_autoplaced yes) 
+    (uuid "c164f1d9-6dd9-40d8-a25a-00d570cf3213") 
+    (property "Reference" "U10" 
+      (at 138.43 55.8799 0) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)) 
+        (justify left))) 
+    (property "Value" "OPA1662DGK" 
+      (at 138.43 58.4199 0) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)) 
+        (justify left))) 
+    (property "Footprint" "Package_SO:VSSOP-8_3x3mm_P0.65mm" 
+      (at 139.7 57.15 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/opa1662.pdf" 
+      (at 139.7 57.15 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Description" "Dual Low-Power, Low-Noise, Low-Distortion, Bipolar-Input SoundPlus Audio Operational Amplifiers, VSSOP-8" 
+      (at 139.7 57.15 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (pin "6" 
+      (uuid "ed301852-6f12-42d5-83cb-867bd9702879")) 
+    (pin "5" 
+      (uuid "d6de9d43-5066-4ce6-805e-9393ae0390b6")) 
+    (pin "8" 
+      (uuid "eaef163a-5c47-4329-891b-50bf802f39ea")) 
+    (pin "3" 
+      (uuid "8adcc32c-6d68-493a-81c3-bea80611079d")) 
+    (pin "7" 
+      (uuid "36d33f91-d05d-4e08-bd08-fb1bcbe68711")) 
+    (pin "1" 
+      (uuid "5599eac4-9283-46b0-98c0-f4b9130baa77")) 
+    (pin "2" 
+      (uuid "d3f19544-450d-4b91-ab3a-2e169764c90f")) 
+    (pin "4" 
+      (uuid "d6259342-9311-425c-914c-d532f3362eb5")) 
+    (instances 
+      (project "Radio_Receiver_McCormick_Mendoza_Duplicate" 
+        (path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/615af9b2-5777-40d7-88a6-72f3cb129d0c" 
+          (reference "U10") 
+          (unit 3))))) 
+  (symbol 
+    (lib_id "Amplifier_Operational:OPA1662DGK") 
+    (at 139.7 114.3 0) 
+    (unit 2) 
+    (body_style 1) 
+    (exclude_from_sim no) 
+    (in_bom yes) 
+    (on_board yes) 
+    (in_pos_files yes) 
+    (dnp no) 
+    (fields_autoplaced yes) 
+    (uuid "d561fd25-0fe2-4421-a824-60e6fa3c7cad") 
+    (property "Reference" "U10" 
+      (at 139.7 104.14 0) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Value" "OPA1662DGK" 
+      (at 139.7 106.68 0) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Footprint" "Package_SO:VSSOP-8_3x3mm_P0.65mm" 
+      (at 139.7 114.3 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/opa1662.pdf" 
+      (at 139.7 114.3 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Description" "Dual Low-Power, Low-Noise, Low-Distortion, Bipolar-Input SoundPlus Audio Operational Amplifiers, VSSOP-8" 
+      (at 139.7 114.3 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (pin "6" 
+      (uuid "ac564c01-c91d-42b5-b4f3-714dfee531c7")) 
+    (pin "5" 
+      (uuid "91502c8a-9ea0-4252-964b-b6c2c7cf8cd8")) 
+    (pin "8" 
+      (uuid "928f6117-c024-4705-aea8-c4401fbacc0c")) 
+    (pin "3" 
+      (uuid "8adcc32c-6d68-493a-81c3-bea80611079c")) 
+    (pin "7" 
+      (uuid "3ba52f98-0719-4c89-87c3-d086553a9568")) 
+    (pin "1" 
+      (uuid "5599eac4-9283-46b0-98c0-f4b9130baa76")) 
+    (pin "2" 
+      (uuid "d3f19544-450d-4b91-ab3a-2e169764c90e")) 
+    (pin "4" 
+      (uuid "44bfbb3e-00df-444d-be91-ade88c0dd371")) 
+    (instances 
+      (project "Radio_Receiver_McCormick_Mendoza_Duplicate" 
+        (path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/615af9b2-5777-40d7-88a6-72f3cb129d0c" 
+          (reference "U10") 
+          (unit 2))))) 
+  (symbol 
+    (lib_id "power:GND") 
+    (at 158.75 50.8 0) 
+    (unit 1) 
+    (body_style 1) 
+    (exclude_from_sim no) 
+    (in_bom yes) 
+    (on_board yes) 
+    (in_pos_files yes) 
+    (dnp no) 
+    (fields_autoplaced yes) 
+    (uuid "eac03bc7-470f-46a2-8dbe-d0b7a82de1d2") 
+    (property "Reference" "#PWR036" 
+      (at 158.75 57.15 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Value" "GND" 
+      (at 161.29 52.0699 0) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)) 
+        (justify left))) 
+    (property "Footprint" "" 
+      (at 158.75 50.8 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Datasheet" "" 
+      (at 158.75 50.8 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Description" "Power symbol creates a global label with name \"GND\" , ground" 
+      (at 158.75 50.8 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (pin "1" 
+      (uuid "80340cd7-7c63-41e9-aa61-e3df86d972ba")) 
+    (instances 
+      (project "Radio_Receiver_McCormick_Mendoza_Duplicate" 
+        (path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/615af9b2-5777-40d7-88a6-72f3cb129d0c" 
+          (reference "#PWR036") 
+          (unit 1))))) 
+  (symbol 
+    (lib_id "Device:C") 
+    (at 100.33 81.28 0) 
+    (unit 1) 
+    (body_style 1) 
+    (exclude_from_sim no) 
+    (in_bom yes) 
+    (on_board yes) 
+    (in_pos_files yes) 
+    (dnp no) 
+    (fields_autoplaced yes) 
+    (uuid "ecf873da-c786-4f25-9a3d-42803381733e") 
+    (property "Reference" "C12" 
+      (at 104.14 80.0099 0) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)) 
+        (justify left))) 
+    (property "Value" "4.7n" 
+      (at 104.14 82.5499 0) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)) 
+        (justify left))) 
+    (property "Footprint" "" 
+      (at 101.2952 85.09 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Datasheet" "" 
+      (at 100.33 81.28 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Description" "Unpolarized capacitor" 
+      (at 100.33 81.28 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (pin "1" 
+      (uuid "2631b355-1eff-409d-8588-38e360ca7ccf")) 
+    (pin "2" 
+      (uuid "34186e12-62cb-4b6c-9ab7-5003d7c52728")) 
+    (instances 
+      (project "Radio_Receiver_McCormick_Mendoza_Duplicate" 
+        (path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/615af9b2-5777-40d7-88a6-72f3cb129d0c" 
+          (reference "C12") 
+          (unit 1))))) 
+  (symbol 
+    (lib_id "Device:R") 
+    (at 110.49 111.76 90) 
+    (unit 1) 
+    (body_style 1) 
+    (exclude_from_sim no) 
+    (in_bom yes) 
+    (on_board yes) 
+    (in_pos_files yes) 
+    (dnp no) 
+    (fields_autoplaced yes) 
+    (uuid "ef19a7a4-cb29-40ac-abc8-bc3594d40dfb") 
+    (property "Reference" "R14" 
+      (at 110.49 105.41 90) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Value" "1.1k" 
+      (at 110.49 107.95 90) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Footprint" "" 
+      (at 110.49 113.538 90) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Datasheet" "" 
+      (at 110.49 111.76 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (property "Description" "Resistor" 
+      (at 110.49 111.76 0) 
+      (hide yes) 
+      (show_name no) 
+      (do_not_autoplace no) 
+      (effects 
+        (font 
+          (size 1.27 1.27)))) 
+    (pin "1" 
+      (uuid "7990b33c-412e-460c-a793-c3b86c47bf0d")) 
+    (pin "2" 
+      (uuid "3f0e5711-0b42-4aa3-95e1-4adfb6290bc2")) 
+    (instances 
+      (project "Radio_Receiver_McCormick_Mendoza_Duplicate" 
+        (path "/f31d31ab-6846-4f3a-92b1-aa5a6a13373f/615af9b2-5777-40d7-88a6-72f3cb129d0c" 
+          (reference "R14") 
+          (unit 1))))))
