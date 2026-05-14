@@ -2606,12 +2606,6 @@
 		(uuid "fff76063-e83b-486f-bbcc-3838b5a211a4")
 	)
 	(junction
-		(at 219.71 115.57)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1c1b8c0c-1a62-42a1-b4b6-eda39ee312b0")
-	)
-	(junction
 		(at 71.12 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2847,46 +2841,6 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 115.57) (xy 219.71 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "54c55ca5-1288-4456-bb99-89970f9bae98")
-	)
-	(wire
-		(pts
-			(xy 219.71 104.14) (xy 219.71 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "56732b43-f357-4ece-b9e8-5fa141991487")
-	)
-	(wire
-		(pts
-			(xy 236.22 104.14) (xy 219.71 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "648057bb-bb87-480f-960b-f26a0e175fe6")
-	)
-	(wire
-		(pts
-			(xy 39.37 88.9) (xy 54.61 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6534a02e-e409-4c59-a0bd-ef08240aab0f")
-	)
-	(wire
-		(pts
 			(xy 80.01 93.98) (xy 88.9 93.98)
 		)
 		(stroke
@@ -2957,7 +2911,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 88.9) (xy 80.01 93.98)
+			(xy 80.01 85.09) (xy 80.01 93.98)
 		)
 		(stroke
 			(width 0)
@@ -2984,16 +2938,6 @@
 			(type default)
 		)
 		(uuid "a6625f03-e0cf-4521-8a72-fb135896f3b2")
-	)
-	(wire
-		(pts
-			(xy 219.71 137.16) (xy 234.95 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a6e688f6-baf6-4894-b5a9-5b2306d11d19")
 	)
 	(wire
 		(pts
@@ -3087,7 +3031,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 88.9) (xy 80.01 88.9)
+			(xy 62.23 85.09) (xy 80.01 85.09)
 		)
 		(stroke
 			(width 0)
@@ -3204,26 +3148,6 @@
 			(type default)
 		)
 		(uuid "f7dc706a-3b46-4ce0-8df2-489aea07c2eb")
-	)
-	(wire
-		(pts
-			(xy 39.37 101.6) (xy 39.37 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fa9f33ce-5d2c-4224-9d11-7020a5680985")
-	)
-	(wire
-		(pts
-			(xy 219.71 115.57) (xy 219.71 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fc859744-dc25-4cfb-818b-5612fbf1ebb5")
 	)
 	(image
 		(at 55.88 40.005)
@@ -5905,6 +5829,16 @@
 		)
 		(uuid "3296ffa6-7c83-4e52-9397-4aeabd9bad38")
 	)
+	(label "VREF"
+		(at 204.47 115.57 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "33113430-cd55-4ce5-9f7a-4d04edbcbcdb")
+	)
 	(label "MD1"
 		(at 186.055 115.57 180)
 		(effects
@@ -6315,6 +6249,16 @@
 		)
 		(uuid "deae0d8d-66dd-4fb7-b2d1-d669cf33f25a")
 	)
+	(label "VREF"
+		(at 234.95 137.16 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "df9100dd-3f73-41d0-b52b-29e57f8ef997")
+	)
 	(label "ANG_B"
 		(at 118.11 107.95 0)
 		(effects
@@ -6324,6 +6268,16 @@
 			(justify left bottom)
 		)
 		(uuid "e51bcf7a-2a59-4310-8889-317b96bccaa7")
+	)
+	(label "VREF"
+		(at 236.22 104.14 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e5af4772-2a40-4124-91fb-25612ea6a985")
 	)
 	(label "I"
 		(at 185.42 102.87 180)
@@ -6472,7 +6426,7 @@
 	)
 	(symbol
 		(lib_id "PCM_JLCPCB-Diodes:LED,0805,Red")
-		(at 39.37 92.71 0)
+		(at 54.61 88.9 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6483,7 +6437,7 @@
 		(fields_autoplaced yes)
 		(uuid "0540f82b-a6d3-4387-80ca-6a920a91b489")
 		(property "Reference" "D2"
-			(at 41.91 91.3446 0)
+			(at 57.15 87.5346 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6494,7 +6448,7 @@
 			)
 		)
 		(property "Value" "Red"
-			(at 41.91 93.8847 0)
+			(at 57.15 90.0747 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6505,7 +6459,7 @@
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:D_0805"
-			(at 37.592 92.71 90)
+			(at 52.832 88.9 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6516,7 +6470,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2409272203_Foshan-NationStar-Optoelectronics-NCD0805R1_C84256.pdf"
-			(at 39.37 92.71 0)
+			(at 54.61 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6527,7 +6481,7 @@
 			)
 		)
 		(property "Description" "25mA Colorless transparent lens 67mcd~195mcd -30°C~+85°C 615nm~630nm Individual diode Red 130° 65mW 1.6V~2.6V 0805 LED Indication - Discrete ROHS"
-			(at 39.37 92.71 0)
+			(at 54.61 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6538,7 +6492,7 @@
 			)
 		)
 		(property "LCSC" "C84256"
-			(at 39.37 92.71 0)
+			(at 54.61 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6549,7 +6503,7 @@
 			)
 		)
 		(property "Stock" "2976925"
-			(at 39.37 92.71 0)
+			(at 54.61 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6560,7 +6514,7 @@
 			)
 		)
 		(property "Price" "0.016USD"
-			(at 39.37 92.71 0)
+			(at 54.61 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6571,7 +6525,7 @@
 			)
 		)
 		(property "Process" "SMT"
-			(at 39.37 92.71 0)
+			(at 54.61 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6582,7 +6536,7 @@
 			)
 		)
 		(property "Minimum Qty" "20"
-			(at 39.37 92.71 0)
+			(at 54.61 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6593,7 +6547,7 @@
 			)
 		)
 		(property "Attrition Qty" "10"
-			(at 39.37 92.71 0)
+			(at 54.61 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6604,7 +6558,7 @@
 			)
 		)
 		(property "Class" "Basic Component"
-			(at 39.37 92.71 0)
+			(at 54.61 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6615,7 +6569,7 @@
 			)
 		)
 		(property "Category" "Optoelectronics,Light Emitting Diodes (LED)"
-			(at 39.37 92.71 0)
+			(at 54.61 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6626,7 +6580,7 @@
 			)
 		)
 		(property "Part" "NCD0805R1"
-			(at 39.37 92.71 0)
+			(at 54.61 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6637,7 +6591,7 @@
 			)
 		)
 		(property "Operating Temperature" "-30°C~+85°C"
-			(at 39.37 92.71 0)
+			(at 54.61 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6648,7 +6602,7 @@
 			)
 		)
 		(property "Viewing Angle" "130°"
-			(at 39.37 92.71 0)
+			(at 54.61 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6659,7 +6613,7 @@
 			)
 		)
 		(property "Forward Current" "25mA"
-			(at 39.37 92.71 0)
+			(at 54.61 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6670,7 +6624,7 @@
 			)
 		)
 		(property "Forward Voltage (VF)" "1.6V~2.6V"
-			(at 39.37 92.71 0)
+			(at 54.61 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6681,7 +6635,7 @@
 			)
 		)
 		(property "Luminous Intensity" "67mcd~195mcd"
-			(at 39.37 92.71 0)
+			(at 54.61 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6692,7 +6646,7 @@
 			)
 		)
 		(property "Dominant Wavelength" "615nm~630nm"
-			(at 39.37 92.71 0)
+			(at 54.61 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6703,7 +6657,7 @@
 			)
 		)
 		(property "Power Dissipation" "65mW"
-			(at 39.37 92.71 0)
+			(at 54.61 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6714,7 +6668,7 @@
 			)
 		)
 		(property "Emitted Color" "Red"
-			(at 39.37 92.71 0)
+			(at 54.61 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6725,7 +6679,7 @@
 			)
 		)
 		(property "Diode Configuration" "Independent Diode"
-			(at 39.37 92.71 0)
+			(at 54.61 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6736,7 +6690,7 @@
 			)
 		)
 		(property "Lens Color" "Colorless Transparent Lens"
-			(at 39.37 92.71 0)
+			(at 54.61 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6841,7 +6795,7 @@
 	)
 	(symbol
 		(lib_id "PCM_JLCPCB-Resistors:0603,220Ω")
-		(at 58.42 88.9 90)
+		(at 58.42 85.09 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6852,7 +6806,7 @@
 		(fields_autoplaced yes)
 		(uuid "060dd073-47fc-450b-a70e-aa3d765730f6")
 		(property "Reference" "R37"
-			(at 58.42 85.09 90)
+			(at 58.42 81.28 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6862,7 +6816,7 @@
 			)
 		)
 		(property "Value" "220Ω"
-			(at 58.42 88.9 90)
+			(at 58.42 85.09 90)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -6872,7 +6826,7 @@
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:R_0603"
-			(at 58.42 90.678 90)
+			(at 58.42 86.868 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6883,7 +6837,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010130_UNI-ROYAL-Uniroyal-Elec-0603WAF2200T5E_C22962.pdf"
-			(at 58.42 88.9 0)
+			(at 58.42 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6894,7 +6848,7 @@
 			)
 		)
 		(property "Description" "100mW Thick Film Resistors 75V ±100ppm/°C ±1% 220Ω 0603 Chip Resistor - Surface Mount ROHS"
-			(at 58.42 88.9 0)
+			(at 58.42 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6905,7 +6859,7 @@
 			)
 		)
 		(property "LCSC" "C22962"
-			(at 58.42 88.9 0)
+			(at 58.42 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6916,7 +6870,7 @@
 			)
 		)
 		(property "Stock" "3019407"
-			(at 58.42 88.9 0)
+			(at 58.42 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6927,7 +6881,7 @@
 			)
 		)
 		(property "Price" "0.004USD"
-			(at 58.42 88.9 0)
+			(at 58.42 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6938,7 +6892,7 @@
 			)
 		)
 		(property "Process" "SMT"
-			(at 58.42 88.9 0)
+			(at 58.42 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6949,7 +6903,7 @@
 			)
 		)
 		(property "Minimum Qty" "20"
-			(at 58.42 88.9 0)
+			(at 58.42 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6960,7 +6914,7 @@
 			)
 		)
 		(property "Attrition Qty" "10"
-			(at 58.42 88.9 0)
+			(at 58.42 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6971,7 +6925,7 @@
 			)
 		)
 		(property "Class" "Basic Component"
-			(at 58.42 88.9 0)
+			(at 58.42 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6982,7 +6936,7 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 58.42 88.9 0)
+			(at 58.42 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6993,7 +6947,7 @@
 			)
 		)
 		(property "Part" "0603WAF2200T5E"
-			(at 58.42 88.9 0)
+			(at 58.42 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7004,7 +6958,7 @@
 			)
 		)
 		(property "Resistance" "220Ω"
-			(at 58.42 88.9 0)
+			(at 58.42 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7015,7 +6969,7 @@
 			)
 		)
 		(property "Power(Watts)" "100mW"
-			(at 58.42 88.9 0)
+			(at 58.42 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7026,7 +6980,7 @@
 			)
 		)
 		(property "Type" "Thick Film Resistors"
-			(at 58.42 88.9 0)
+			(at 58.42 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7037,7 +6991,7 @@
 			)
 		)
 		(property "Overload Voltage (Max)" "75V"
-			(at 58.42 88.9 0)
+			(at 58.42 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7048,7 +7002,7 @@
 			)
 		)
 		(property "Operating Temperature Range" "-55°C~+155°C"
-			(at 58.42 88.9 0)
+			(at 58.42 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7059,7 +7013,7 @@
 			)
 		)
 		(property "Tolerance" "±1%"
-			(at 58.42 88.9 0)
+			(at 58.42 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7070,7 +7024,7 @@
 			)
 		)
 		(property "Temperature Coefficient" "±100ppm/°C"
-			(at 58.42 88.9 0)
+			(at 58.42 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7175,7 +7129,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 39.37 101.6 0)
+		(at 54.61 92.71 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7186,7 +7140,7 @@
 		(fields_autoplaced yes)
 		(uuid "4143e2c4-ff24-4b45-9a0a-0435231be5e7")
 		(property "Reference" "#PWR088"
-			(at 39.37 107.95 0)
+			(at 54.61 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7197,7 +7151,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 39.37 106.68 0)
+			(at 54.61 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7207,7 +7161,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 39.37 101.6 0)
+			(at 54.61 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7218,7 +7172,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 39.37 101.6 0)
+			(at 54.61 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7229,7 +7183,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 39.37 101.6 0)
+			(at 54.61 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9398,9 +9352,9 @@
 				(justify left)
 			)
 		)
-		(pin "VDDA{slash}2" input
+		(pin "VREF" input
 			(at 234.95 137.16 180)
-			(uuid "4afac8a2-c8e5-4c5e-bbaa-4c491d93b3e0")
+			(uuid "ac64539c-f7c5-45dc-88c5-001f93dcca65")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10074,16 +10028,6 @@
 				(justify left top)
 			)
 		)
-		(pin "VDDA{slash}2" input
-			(at 236.22 104.14 180)
-			(uuid "1ee55ad1-e15c-4786-91c7-e83431d09c25")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "CTL1" input
 			(at 236.22 110.49 180)
 			(uuid "8ff00816-ca13-468b-a417-0d1b4ecd056a")
@@ -10122,6 +10066,16 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+		(pin "VREF" input
+			(at 236.22 104.14 180)
+			(uuid "491e5155-51b7-45c9-bcb3-a5bd3c1d2060")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -10336,9 +10290,9 @@
 				(justify right)
 			)
 		)
-		(pin "VDDA{slash}2" output
-			(at 204.47 115.57 0)
-			(uuid "16d6a697-25fa-4527-9dab-642db8049273")
+		(pin "WS" output
+			(at 204.47 107.95 0)
+			(uuid "4827b6e8-cac4-4636-8b0d-3715943ba3b9")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10346,9 +10300,9 @@
 				(justify right)
 			)
 		)
-		(pin "WS" output
-			(at 204.47 107.95 0)
-			(uuid "4827b6e8-cac4-4636-8b0d-3715943ba3b9")
+		(pin "VREF" output
+			(at 204.47 115.57 0)
+			(uuid "025eea68-8dcc-4706-a26d-2862d8076cff")
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -5,12 +5,34 @@
 	(layer "F.Cu")
 	(descr "Transformer, Toroid, horizontal, laying, Diameter 10,5mm, Amidon T37,")
 	(tags "Transformer Toroid horizontal laying Diameter 10 5mm Amidon T37 ")
+	(property "Reference" "REF**"
+		(at 2.051732 -8.8 0)
+		(layer "F.SilkS")
+		(uuid "85e81bb3-770f-4e1e-a5df-27d174d7f235")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Transformer_Toroid_Vertical_2Pri_3Sec_T37"
+		(at 1.951732 2.7 0)
+		(layer "F.Fab")
+		(uuid "9c4aad93-ea2a-45f0-8062-22902d6f42dc")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
 	(property "Datasheet" ""
 		(at 0 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "a5cd6a71-4f86-4a35-a057-6b5e176e6c18")
+		(uuid "0d6b0f59-b0e0-47d6-8142-30ce3a2c9244")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -23,7 +45,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "931da5da-8f2d-446b-a545-3fc8e72dad7d")
+		(uuid "9d3a9d75-a3d8-4cd8-a8ee-e33ef3d686e6")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -31,97 +53,75 @@
 			)
 		)
 	)
-	(property "Value" "Transformer_Toroid_Vertical_2Pri_3Sec_T37"
-		(at 1.951732 3.8 0)
-		(layer "F.Fab")
-		(uuid "a3bc6a49-77da-46d9-8cc1-94870ebb2cae")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Reference" "REF**"
-		(at 2.051732 -9.3 0)
-		(layer "F.SilkS")
-		(uuid "6682a4bb-94bf-4124-bb90-face0e5edd04")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
 	(attr through_hole)
 	(duplicate_pad_numbers_are_jumpers no)
 	(fp_rect
-		(start -3.448268 -5)
-		(end 7.551732 -1)
+		(start -3.448268 -4.65)
+		(end 7.551732 -1.35)
 		(stroke
 			(width 0.1)
 			(type default)
 		)
 		(fill no)
 		(layer "F.SilkS")
-		(uuid "9a1bae50-f7b0-40dc-abdf-5d01cd48606b")
+		(uuid "eaddd772-db77-4791-8ac5-a23b2c0a3ed8")
 	)
 	(fp_line
-		(start -6.198268 -8.55)
-		(end -6.198268 2.55)
+		(start -6.198268 -7.5)
+		(end -6.198268 1.5)
 		(stroke
 			(width 0.05)
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "bfa4ddec-de42-49cd-a551-ed8ef8900319")
+		(uuid "db8f38bd-8678-4d21-9603-42b6484edd03")
 	)
 	(fp_line
-		(start -6.198268 -8.55)
-		(end 10.301732 -8.55)
+		(start -6.198268 -7.5)
+		(end 10.301732 -7.5)
 		(stroke
 			(width 0.05)
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "9c290475-711f-4f3a-99d5-403ab60edf1e")
+		(uuid "67e6bf6f-1469-4eb7-a522-8c7a6fc3c0c4")
 	)
 	(fp_line
-		(start 10.301732 2.55)
-		(end -6.198268 2.55)
+		(start 10.301732 1.5)
+		(end -6.198268 1.5)
 		(stroke
 			(width 0.05)
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "b0a7c892-01d0-468e-8581-6253566e513f")
+		(uuid "b349c356-0286-4cc7-959e-cc423dffba16")
 	)
 	(fp_line
-		(start 10.301732 2.55)
-		(end 10.301732 -8.55)
+		(start 10.301732 1.5)
+		(end 10.301732 -7.5)
 		(stroke
 			(width 0.05)
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "612f7edd-535b-4673-9cf1-2d9a93011157")
+		(uuid "5b454653-5ab9-4031-bf12-8a61b7b1b93a")
 	)
 	(fp_rect
-		(start -3.368245 -4.921447)
-		(end 7.5 -1.06103)
+		(start -3.368245 -4.549999)
+		(end 7.5 -1.45)
 		(stroke
 			(width 0.1)
 			(type default)
 		)
 		(fill no)
 		(layer "F.Fab")
-		(uuid "71e1ff69-3611-4617-9253-9a324552503f")
+		(uuid "4d2c8099-8305-4420-a851-447be88ec00e")
 	)
 	(fp_text user "CTR"
 		(at 0.551732 -7 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "a2bd4748-90e5-404a-a800-dfe25a094bd2")
+		(uuid "e1c9c7a5-78bc-4546-ad4b-2d538c90142e")
 		(effects
 			(font
 				(size 1 1)
@@ -133,7 +133,7 @@
 	(fp_text user "${REFERENCE}"
 		(at 2.051732 -3 0)
 		(layer "F.Fab")
-		(uuid "8102c875-69a1-4d03-8df3-0faa4830d1fe")
+		(uuid "1ed1adbd-82a3-4db1-826c-547973d1322d")
 		(effects
 			(font
 				(size 1 1)
@@ -148,8 +148,7 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers yes)
 		(keep_end_layers yes)
-		(zone_layer_connections)
-		(uuid "7c57d383-509e-4a33-b354-aed0e2b9f4a9")
+		(uuid "f2f47319-7ec4-4777-89be-839792e72fbc")
 	)
 	(pad "2" thru_hole circle
 		(at 4.051732 0)
@@ -158,8 +157,7 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers yes)
 		(keep_end_layers yes)
-		(zone_layer_connections)
-		(uuid "4ec4cfbf-3bb8-440d-9459-f2e789768e1d")
+		(uuid "c7c10b47-3afe-46da-b69a-7b9657f27918")
 	)
 	(pad "3" thru_hole circle
 		(at 5.551732 -6)
@@ -168,8 +166,7 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers yes)
 		(keep_end_layers yes)
-		(zone_layer_connections)
-		(uuid "758a5ffa-b0f2-4ee9-b6c7-64e1e5df410a")
+		(uuid "f684bcfa-c37f-41a5-844b-485fabccb32c")
 	)
 	(pad "4" thru_hole circle
 		(at 2.051732 -6)
@@ -178,8 +175,7 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers yes)
 		(keep_end_layers yes)
-		(zone_layer_connections)
-		(uuid "6e5cf4cc-8ac4-4319-9f87-79ca441e338f")
+		(uuid "98f13e1a-2c52-4214-ba88-676c1bee93da")
 	)
 	(pad "5" thru_hole circle
 		(at -1.448268 -6)
@@ -188,12 +184,11 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers yes)
 		(keep_end_layers yes)
-		(zone_layer_connections)
-		(uuid "ab497789-67ec-4058-9618-53f997efe496")
+		(uuid "0a2fb094-db63-47ad-b5c3-13a2a07859c7")
 	)
 	(zone
 		(layer "F.Fab")
-		(uuid "30a2dd79-bcd7-4d46-a5c1-ac4aa9d74b1c")
+		(uuid "2ac56484-fbe4-45df-b928-9065016668ec")
 		(hatch edge 0.5)
 		(connect_pads
 			(clearance 0)
@@ -217,7 +212,7 @@
 		)
 		(polygon
 			(pts
-				(xy -3.368245 -4.921447) (xy 7.5 -4.921447) (xy 7.5 -1.06103) (xy -3.368245 -1.06103)
+				(xy -3.368245 -4.55) (xy 7.5 -4.55) (xy 7.5 -1.45) (xy -3.368245 -1.45)
 			)
 		)
 	)

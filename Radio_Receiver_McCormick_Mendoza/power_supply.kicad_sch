@@ -4407,6 +4407,76 @@
 			"AABJRU5ErkJggg=="
 		)
 	)
+	(label "4.5VA"
+		(at 144.78 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3273cb7c-6f61-401c-abeb-5945cda0c399")
+	)
+	(label "ON-OFF"
+		(at 68.58 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5465c233-fe7b-45ac-a59a-8976fd3bae39")
+	)
+	(label "4.5V"
+		(at 129.54 163.83 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6a87e1b8-1cd5-4774-85f9-2a8d57234817")
+	)
+	(label "VRIN"
+		(at 91.44 135.89 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a4559f2e-45c6-425b-b99e-3400f32d45d4")
+	)
+	(label "3.3VA"
+		(at 198.12 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bb104ed1-8de3-4911-998d-55d7267f8d68")
+	)
+	(label "5V_FIL"
+		(at 59.69 66.04 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d0b687ed-efb0-4a05-942c-440f292f90d0")
+	)
+	(label "VBAT"
+		(at 59.69 102.87 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "efd777e4-ee72-47f5-bf5c-58c3205e9a84")
+	)
 	(symbol
 		(lib_id "PCM_JLCPCB-Inductors:Ferrite,0805,(2)")
 		(at 59.69 46.99 0)
@@ -10548,7 +10618,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TPS727-3.3V_regulator:DSE0006A"
+		(property "Footprint" "Reciever_Parts:TS727_3.3VDSE0006A"
 			(at 172.72 106.68 0)
 			(hide yes)
 			(show_name no)

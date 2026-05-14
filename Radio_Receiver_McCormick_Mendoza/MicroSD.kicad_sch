@@ -4056,7 +4056,7 @@
 				)
 			)
 		)
-		(property "Footprint" "0_Personal:TF-SMD_TF-PUSH"
+		(property "Footprint" "Reciever_Parts:TF-SMD_TF-PUSH"
 			(at 209.55 83.82 0)
 			(hide yes)
 			(show_name no)

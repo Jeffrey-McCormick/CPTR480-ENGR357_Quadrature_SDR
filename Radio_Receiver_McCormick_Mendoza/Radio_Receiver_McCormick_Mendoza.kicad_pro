@@ -40,8 +40,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.8,
-          "height": 1.27,
-          "width": 2.54
+          "height": 2.0,
+          "width": 2.0
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -70,7 +70,7 @@
         "connection_width": "warning",
         "copper_edge_clearance": "error",
         "copper_sliver": "warning",
-        "courtyards_overlap": "error",
+        "courtyards_overlap": "ignore",
         "creepage": "error",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
@@ -194,7 +194,12 @@
         }
       ],
       "track_widths": [
-        0.0
+        0.0,
+        0.2,
+        0.254,
+        0.3048,
+        0.381,
+        0.635
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -463,7 +468,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
       "similar_label_and_power": "warning",
@@ -513,6 +518,7 @@
         "clearance": 0.1778,
         "diff_pair_gap": 0.25,
         "diff_pair_width": 0.2,
+        "line_style": 2,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "Digital_Fast",
@@ -525,9 +531,10 @@
         "via_drill": 0.254
       },
       {
-        "clearance": 0.2032,
+        "clearance": 0.2,
         "diff_pair_gap": 0.25,
         "diff_pair_width": 0.2,
+        "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "Power_Analog",
@@ -540,9 +547,10 @@
         "via_drill": 0.3048
       },
       {
-        "clearance": 0.254,
+        "clearance": 0.25,
         "diff_pair_gap": 0.25,
         "diff_pair_width": 0.2,
+        "line_style": 1,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "Power_Main",
@@ -555,9 +563,10 @@
         "via_drill": 0.381
       },
       {
-        "clearance": 0.2032,
+        "clearance": 0.2,
         "diff_pair_gap": 0.25,
         "diff_pair_width": 0.2,
+        "line_style": 3,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "Signal_Audio",
@@ -570,9 +579,10 @@
         "via_drill": 0.3048
       },
       {
-        "clearance": 0.254,
+        "clearance": 0.25,
         "diff_pair_gap": 0.25,
         "diff_pair_width": 0.2,
+        "line_style": 4,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "Signal_RF",
@@ -621,7 +631,268 @@
         "5V"
       ]
     },
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "Signal_RF",
+        "pattern": "/RF_IN(1|2)"
+      },
+      {
+        "netclass": "Signal_RF",
+        "pattern": "/ADC-24bit/(I_OUTA|Q_OUTA)"
+      },
+      {
+        "netclass": "Signal_RF",
+        "pattern": "/ADC-24bit/VIN(L|R)"
+      },
+      {
+        "netclass": "Signal_RF",
+        "pattern": "/Antenna/Signal_OUT"
+      },
+      {
+        "netclass": "Signal_RF",
+        "pattern": "/I|/Q"
+      },
+      {
+        "netclass": "Signal_RF",
+        "pattern": "/Antenna/Signal_IN"
+      },
+      {
+        "netclass": "Signal_RF",
+        "pattern": "/Mixer - Taloe Detector/(00 = 0°|01 = 270°|10 = 90°|11 = 180°)"
+      },
+      {
+        "netclass": "Signal_RF",
+        "pattern": "/Mixer - Taloe Detector/RG(I1|I2|Q1|Q2)"
+      },
+      {
+        "netclass": "Signal_RF",
+        "pattern": "/Antenna/APF1|/Antenna/APF2|/Antenna/BPF1|/Antenna/BPF2|/Antenna/BPF3|/Antenna/LPF1|/Antenna/LPF2|/Antenna/LPF3"
+      },
+      {
+        "netclass": "Signal_Audio",
+        "pattern": "/Audio DAC/MONO"
+      },
+      {
+        "netclass": "Signal_Audio",
+        "pattern": "/Audio DAC/OUT(L|R)"
+      },
+      {
+        "netclass": "Signal_Audio",
+        "pattern": "/Audio DAC/Stereo(R|T)"
+      },
+      {
+        "netclass": "Signal_Audio",
+        "pattern": "/Audio DAC/MONO_OUT"
+      },
+      {
+        "netclass": "Signal_Audio",
+        "pattern": "AMP-"
+      },
+      {
+        "netclass": "Signal_Audio",
+        "pattern": "/Audio DAC/OUTLR"
+      },
+      {
+        "netclass": "Signal_Audio",
+        "pattern": "/ADC-24bit/VREF0"
+      },
+      {
+        "netclass": "Signal_Audio",
+        "pattern": "/ADC-24bit/Buf_IN"
+      },
+      {
+        "netclass": "Signal_Audio",
+        "pattern": "/Audio DAC/OUT(L_FIL|R_FIL)"
+      },
+      {
+        "netclass": "Signal_Audio",
+        "pattern": "AMP+"
+      },
+      {
+        "netclass": "Power_Main",
+        "pattern": "/Power Supply/5V_FIL|/Power Supply/ON-OFF|/Power Supply/VBAT|/Power Supply/VRIN"
+      },
+      {
+        "netclass": "Power_Main",
+        "pattern": "+5V"
+      },
+      {
+        "netclass": "Power_Analog",
+        "pattern": "/ADC-24bit/JackS"
+      },
+      {
+        "netclass": "Power_Analog",
+        "pattern": "/Raspberry_Pi_Pico/VSYS"
+      },
+      {
+        "netclass": "Power_Analog",
+        "pattern": "/Clock Generator/JCVCC"
+      },
+      {
+        "netclass": "Power_Analog",
+        "pattern": "/VREF"
+      },
+      {
+        "netclass": "Power_Analog",
+        "pattern": "/ADC-24bit/VREF"
+      },
+      {
+        "netclass": "Power_Analog",
+        "pattern": "+3.3V"
+      },
+      {
+        "netclass": "Power_Analog",
+        "pattern": "VDD*"
+      },
+      {
+        "netclass": "Power_Analog",
+        "pattern": "GND*"
+      },
+      {
+        "netclass": "Power_Analog",
+        "pattern": "/Power Supply/3.3VA|/Power Supply/4.5V|/Power Supply/4.5VA"
+      },
+      {
+        "netclass": "Power_Analog",
+        "pattern": "/Raspberry_Pi_Pico/RST"
+      },
+      {
+        "netclass": "Power_Analog",
+        "pattern": "/Clock Generator/Y1VDD"
+      },
+      {
+        "netclass": "Power_Analog",
+        "pattern": "/Clock Generator/3.3VA"
+      },
+      {
+        "netclass": "Power_Analog",
+        "pattern": "/ADC-24bit/V+"
+      },
+      {
+        "netclass": "Power_Analog",
+        "pattern": "/Clock Generator/CGVDD(|O)"
+      },
+      {
+        "netclass": "Power_Analog",
+        "pattern": "/Audio DAC/3.3VA"
+      },
+      {
+        "netclass": "Power_Analog",
+        "pattern": "/Audio DAC/(AVDD|CPVDD)"
+      },
+      {
+        "netclass": "Power_Analog",
+        "pattern": "/Audio DAC/JackS1"
+      },
+      {
+        "netclass": "Power_Analog",
+        "pattern": "V_DIV"
+      },
+      {
+        "netclass": "Power_Analog",
+        "pattern": "/ADC-24bit/OPA_OUT"
+      },
+      {
+        "netclass": "Power_Analog",
+        "pattern": "/ADC-24bit/VDDA2"
+      },
+      {
+        "netclass": "Power_Analog",
+        "pattern": "/Audio DAC/JackS2"
+      },
+      {
+        "netclass": "Power_Analog",
+        "pattern": "/Audio DAC/LDOO"
+      },
+      {
+        "netclass": "Digital_Fast",
+        "pattern": "/BCKO|/DATA"
+      },
+      {
+        "netclass": "Digital_Fast",
+        "pattern": "/Clock Generator/JC5-12"
+      },
+      {
+        "netclass": "Digital_Fast",
+        "pattern": "/ADC-24bit/SCKI"
+      },
+      {
+        "netclass": "Digital_Fast",
+        "pattern": "/Clock Generator/(I_LO|Q_LO)"
+      },
+      {
+        "netclass": "Digital_Fast",
+        "pattern": "/CS|/MISO|/MOSI|/SPI_CK"
+      },
+      {
+        "netclass": "Digital_Fast",
+        "pattern": "/Clock Generator/XA"
+      },
+      {
+        "netclass": "Digital_Fast",
+        "pattern": "/Clock Generator/CLK0"
+      },
+      {
+        "netclass": "Digital_Fast",
+        "pattern": "/Clock Generator/Y1_Pin3"
+      },
+      {
+        "netclass": "Digital_Fast",
+        "pattern": "/Audio DAC/SCK|/BCK|/EX_CLK|/LRCK|/MCLK|/SDIN"
+      },
+      {
+        "netclass": "Digital_Fast",
+        "pattern": "AMP(+|-)"
+      },
+      {
+        "netclass": "Digital_Fast",
+        "pattern": "/EX_CLK"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/Raspberry_Pi_Pico/GPIO5"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/ANG_A|/ANG_B|/SW_C"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/WS"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/CTL(1|2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/SD_CD"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/MUTE"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/OSC_SCL|/OSC_SDA|/Raspberry_Pi_Pico/GPIO12|/Raspberry_Pi_Pico/GPIO13|/SCL|/SDA"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FMT|/MD1"
+      },
+      {
+        "netclass": "Power_Analog",
+        "pattern": "/Antenna/J5_Ext"
+      },
+      {
+        "netclass": "Power_Analog",
+        "pattern": "GNDA"
+      },
+      {
+        "netclass": "Digital_Fast",
+        "pattern": "GNDA"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -1207,7 +1478,7 @@
         "uuid": "f31d31ab-6846-4f3a-92b1-aa5a6a13373f"
       }
     ],
-    "used_designators": "",
+    "used_designators": "J48-49,R5",
     "variants": []
   },
   "sheets": [

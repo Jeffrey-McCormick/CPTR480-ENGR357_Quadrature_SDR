@@ -3338,6 +3338,16 @@
 		)
 		(uuid "6b31c76f-ac6c-4db6-814b-eb4ec2d36503")
 	)
+	(label "RGI1"
+		(at 193.04 54.61 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7c7f50f9-897f-445d-b5ad-cb792cee3455")
+	)
 	(label "00 = 0°"
 		(at 125.73 76.2 180)
 		(effects
@@ -3378,6 +3388,16 @@
 		)
 		(uuid "bc59e9e0-9d45-4dc6-9b7a-aebe96b41e63")
 	)
+	(label "RGQ1"
+		(at 194.31 116.84 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c4ae4a5b-b052-4195-b297-0e680c1befd5")
+	)
 	(label "11 = 180°"
 		(at 156.21 78.74 180)
 		(effects
@@ -3397,6 +3417,26 @@
 			(justify right bottom)
 		)
 		(uuid "dbf8858c-1655-4770-9479-4e85ba79416d")
+	)
+	(label "RGI2"
+		(at 195.58 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e73e42d1-b6b9-418b-90f0-51532a65c029")
+	)
+	(label "RGQ2"
+		(at 196.85 133.35 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f7bcdcf2-2efe-45af-9f5c-b35a6a174679")
 	)
 	(label "01 = 270°"
 		(at 127 81.28 180)
@@ -3452,7 +3492,7 @@
 		)
 		(uuid "6996cf63-d1fc-4b27-9274-d3d5d74a163f")
 	)
-	(hierarchical_label "VDDA{slash}2"
+	(hierarchical_label "VREF"
 		(shape input)
 		(at 260.35 130.81 0)
 		(effects
@@ -3463,7 +3503,7 @@
 		)
 		(uuid "90feb6ef-9cc7-4b9a-a7d8-3b6d419a061b")
 	)
-	(hierarchical_label "VDDA{slash}2"
+	(hierarchical_label "VREF"
 		(shape input)
 		(at 260.35 67.31 0)
 		(effects
@@ -4138,7 +4178,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "INA821ID:D0008A_N"
+		(property "Footprint" "Reciever_Parts:D0008A_N"
 			(at 242.57 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -5216,7 +5256,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SN74CBT3253CDBR_1-4_MUX:DB0016A_N"
+		(property "Footprint" "Reciever_Parts:DB0016A_N"
 			(at 95.25 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -7381,7 +7421,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "INA821ID:D0008A_N"
+		(property "Footprint" "Reciever_Parts:D0008A_N"
 			(at 241.3 59.69 0)
 			(hide yes)
 			(show_name no)
