@@ -738,7 +738,7 @@
       },
       {
         "netclass": "Power_Analog",
-        "pattern": "+3.3V"
+        "pattern": "+3.3V*"
       },
       {
         "netclass": "Power_Analog",
@@ -891,6 +891,22 @@
       {
         "netclass": "Digital_Fast",
         "pattern": "GNDA"
+      },
+      {
+        "netclass": "Power_Analog",
+        "pattern": "/ADC-24bit/VDDA3"
+      },
+      {
+        "netclass": "Digital_Fast",
+        "pattern": "/Clock Generator/Q_LO2"
+      },
+      {
+        "netclass": "Digital_Fast",
+        "pattern": "/Clock Generator/I_LO2"
+      },
+      {
+        "netclass": "Power_Analog",
+        "pattern": "GND"
       }
     ]
   },

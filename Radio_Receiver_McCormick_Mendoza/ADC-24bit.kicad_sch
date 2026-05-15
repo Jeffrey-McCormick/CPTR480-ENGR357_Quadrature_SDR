@@ -8854,7 +8854,7 @@
 		)
 		(uuid "ba785ef7-bad6-47f0-a5d1-c72fc6452575")
 	)
-	(label "VDDA"
+	(label "VDDA3"
 		(at 73.66 121.92 180)
 		(effects
 			(font

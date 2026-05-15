@@ -5723,7 +5723,7 @@
 		)
 		(uuid "176cf769-62f1-443c-a30b-adf3c4f4918b")
 	)
-	(label "Q_LO"
+	(label "Q_LO2"
 		(at 152.4 78.74 180)
 		(effects
 			(font
@@ -5773,7 +5773,7 @@
 		)
 		(uuid "4e79bcae-3a7f-4a1d-8e5f-c6061f9b0f94")
 	)
-	(label "I_LO"
+	(label "I_LO2"
 		(at 167.64 85.09 0)
 		(effects
 			(font
