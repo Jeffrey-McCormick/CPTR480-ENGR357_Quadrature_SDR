@@ -11424,7 +11424,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_Audio:Jack_3.5mm_CUI_SJ-3523-SMT_Horizontal"
+		(property "Footprint" "Reciever_Parts:Jack_3.5mm_CUI_SJ-3523-SMT_Horizontal"
 			(at 252.73 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -13905,7 +13905,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_Audio:Jack_3.5mm_CUI_SJ-3523-SMT_Horizontal"
+		(property "Footprint" "Reciever_Parts:Jack_3.5mm_CUI_SJ-3523-SMT_Horizontal"
 			(at 196.85 118.11 0)
 			(hide yes)
 			(show_name no)
