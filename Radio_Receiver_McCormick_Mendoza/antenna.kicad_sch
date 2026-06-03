@@ -3500,7 +3500,7 @@
 		)
 		(uuid "0708db1d-bd2a-4110-af10-f9c068532055")
 	)
-	(text "T50-6 Toroid: \n[NUM_1]/[NUM_2] turns"
+	(text "FT50-61 Toroid: \n[13]/[26] turns"
 		(exclude_from_sim no)
 		(at 120.396 24.892 0)
 		(effects
@@ -3532,7 +3532,7 @@
 		)
 		(uuid "186cd954-7071-4323-b70f-375a85a1ceb7")
 	)
-	(text "T37-6 Toroid: \n[NUMBER] turns"
+	(text "T50-6 Toroid: \n[44.6] turns"
 		(exclude_from_sim no)
 		(at 233.426 88.138 0)
 		(effects
@@ -3583,7 +3583,7 @@
 		)
 		(uuid "4a8870cf-d552-40f6-a181-7ba839842972")
 	)
-	(text "T37-6 Toroid:\n[NUM] turns"
+	(text "T50-6 Toroid:\n[10.5] turns"
 		(exclude_from_sim no)
 		(at 240.284 118.872 0)
 		(effects
@@ -3634,7 +3634,7 @@
 		)
 		(uuid "6fda3638-6f99-4b53-a537-3e9d10dab44f")
 	)
-	(text "T37-6 Toroid: \n[NUMBER] turns"
+	(text "T50-6 Toroid: \n[12.8] turns"
 		(exclude_from_sim no)
 		(at 205.994 118.618 0)
 		(effects
@@ -3666,7 +3666,7 @@
 		)
 		(uuid "907aaef0-5edc-4fd0-bbd0-bbacdd2122a0")
 	)
-	(text "T37-6 Toroid: \n[NUM] turns"
+	(text "T50-6 Toroid: \n[12.8] turns"
 		(exclude_from_sim no)
 		(at 255.27 118.872 0)
 		(effects
