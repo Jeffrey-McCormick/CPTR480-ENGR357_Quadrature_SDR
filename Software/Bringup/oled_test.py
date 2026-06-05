@@ -302,4 +302,5 @@ def run_all():
             print(f"  ERROR in {t.__name__}: {e}")
         time.sleep_ms(200)
 
-run_all()
+if __name__ == "__main__":
+    run_all()

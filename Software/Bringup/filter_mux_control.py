@@ -58,9 +58,3 @@ def select_channel(channel):
 if __name__ == "__main__":
     select_channel(0)
 
-        
-# Optional test: Uncomment to cycle through all channels
-# for i in range(4):
-#     print(f"Selecting channel {i}")
-#     select_channel(i)
-#     time.sleep(.01)

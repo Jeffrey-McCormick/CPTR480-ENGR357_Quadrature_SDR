@@ -106,21 +106,23 @@ class ButtonHandler:
             print(f"{self.name} pressed")
 
 
-# Initialize encoder and buttons
-encoder = QuadratureEncoder(pin_a=21, pin_b=20, ppr=1)
-center_button = ButtonHandler(pin=22, name="Center click")
+if __name__ == "__main__":
 
-print("=" * 50)
-print("Rotary Encoder and Button Controller")
-print("=" * 50)
-print("Encoder:     GPIO 21 (A) and GPIO 20 (B)")
-print("Center Button: GPIO 22")
-print("-" * 50)
-print("Turn the encoder or press buttons...\n")
+    # Initialize encoder and buttons
+    encoder = QuadratureEncoder(pin_a=21, pin_b=20, ppr=1)
+    center_button = ButtonHandler(pin=22, name="Center click")
 
-# Keep the script running
-try:
-    while True:
-        time.sleep(0.1)
-except KeyboardInterrupt:
-    print("\nProgram stopped")
+    print("=" * 50)
+    print("Rotary Encoder and Button Controller")
+    print("=" * 50)
+    print("Encoder:     GPIO 21 (A) and GPIO 20 (B)")
+    print("Center Button: GPIO 22")
+    print("-" * 50)
+    print("Turn the encoder or press buttons...\n")
+
+    # Keep the script running
+    try:
+        while True:
+            time.sleep(0.1)
+    except KeyboardInterrupt:
+        print("\nProgram stopped")
