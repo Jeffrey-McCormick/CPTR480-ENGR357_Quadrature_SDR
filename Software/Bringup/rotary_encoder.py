@@ -75,7 +75,7 @@ class QuadratureEncoder:
 class ButtonHandler:
     """Handle push button inputs with debouncing."""
     
-    def __init__(self, pin, name, debounce_ms=20):
+    def __init__(self, pin, name, debounce_ms=20, callback=None):
         """
         Initialize button handler.
         
@@ -83,11 +83,14 @@ class ButtonHandler:
             pin: GPIO pin number
             name: Display name for button
             debounce_ms: Debounce time in milliseconds
+            callback: Optional function to call on press
         """
         self.pin = Pin(pin, Pin.IN, Pin.PULL_UP)
         self.name = name
         self.debounce_ms = debounce_ms
         self.last_press_time = 0
+        self.callback = callback
+        self.flag = False
         
         # Attach interrupt for falling edge (button press, active LOW)
         self.pin.irq(trigger=Pin.IRQ_FALLING, handler=self.on_press)
@@ -103,14 +106,24 @@ class ButtonHandler:
         # Confirm button is still pressed (active LOW)
         if self.pin.value() == 0:
             self.last_press_time = current_time
+            self.flag = True
             print(f"{self.name} pressed")
+            if self.callback:
+                self.callback()
+                
+    def get_click(self):
+        """Return True if button was clicked since last check, and clear flag."""
+        if self.flag:
+            self.flag = False
+            return True
+        return False
 
 
 if __name__ == "__main__":
 
     # Initialize encoder and buttons
-    encoder = QuadratureEncoder(pin_a=21, pin_b=20, ppr=1)
-    center_button = ButtonHandler(pin=22, name="Center click")
+    encoder = QuadratureEncoder(pin_a=18, pin_b=17, ppr=1)
+    center_button = ButtonHandler(pin=5, name="Center click")
 
     print("=" * 50)
     print("Rotary Encoder and Button Controller")
