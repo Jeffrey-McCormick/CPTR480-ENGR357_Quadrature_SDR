@@ -3594,6 +3594,16 @@
 		)
 		(uuid "4b9d331d-ce3f-4ad3-b303-bf698cfdb7d0")
 	)
+	(text "s0,s1"
+		(exclude_from_sim no)
+		(at 149.098 111.76 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "5564211e-c58e-48d9-82e3-7e3bc50026cd")
+	)
 	(text "01"
 		(exclude_from_sim no)
 		(at 148.59 132.588 0)
