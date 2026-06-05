@@ -122,8 +122,8 @@ class ButtonHandler:
 if __name__ == "__main__":
 
     # Initialize encoder and buttons
-    encoder = QuadratureEncoder(pin_a=18, pin_b=17, ppr=1)
-    center_button = ButtonHandler(pin=5, name="Center click")
+    encoder = QuadratureEncoder(pin_a=20, pin_b=21, ppr=1)
+    center_button = ButtonHandler(pin=22, name="Center click")
 
     print("=" * 50)
     print("Rotary Encoder and Button Controller")
