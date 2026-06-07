@@ -50,6 +50,8 @@ class QuadratureEncoder:
         """Handle changes on either encoder pin using quadrature logic."""
         current_a = self.pin_a.value()
         current_b = self.pin_b.value()
+
+        print(f"Current A: {current_a}, Current B: {current_b}")
         
         # Only process on A pin changes for cleaner detent detection
         if current_a != self.last_a:
@@ -122,8 +124,8 @@ class ButtonHandler:
 if __name__ == "__main__":
 
     # Initialize encoder and buttons
-    encoder = QuadratureEncoder(pin_a=20, pin_b=21, ppr=1)
-    center_button = ButtonHandler(pin=22, name="Center click")
+    encoder = QuadratureEncoder(pin_a=18, pin_b=17, ppr=1)
+    center_button = ButtonHandler(pin=5, name="Center click")
 
     print("=" * 50)
     print("Rotary Encoder and Button Controller")

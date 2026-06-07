@@ -19,10 +19,13 @@ I2C_SCL = 13
 I2C_FREQ = 400_000
 
 # Encoder Setup
-ENC_A = 20          #18 for test Intro to CAD board
-ENC_B = 21          #17
-ENC_BUTTON = 22     #5
+# ENC_A = 20          #18 for test Intro to CAD board
+# ENC_B = 21          #17
+# ENC_BUTTON = 22     #5
 
+ENC_A = 18          #18 for test Intro to CAD board
+ENC_B = 17          #17
+ENC_BUTTON = 5     #5
 
 class Menu:
     """
