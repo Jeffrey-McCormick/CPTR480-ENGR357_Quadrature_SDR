@@ -125,6 +125,7 @@ def main():
         (10240000, 60),    # 614.4 MHz / 60 = 10.24 MHz (integer)
         (12288000, 50),    # 614.4 MHz / 50 = 12.288 MHz (integer)
         (40960000, 15),    # 614.4 MHz / 15 = 40.96 MHz (integer)
+        (4096000, 150)     # 614.4 MHz / 150 = 4.096 MHz (integer)
     ]
     
     print("--- Frequency Sweep with Integer Divider Validation ---")
