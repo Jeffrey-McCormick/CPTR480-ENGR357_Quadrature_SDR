@@ -50,6 +50,7 @@ class QuadratureEncoder:
         """Handle changes on either encoder pin using quadrature logic."""
         current_a = self.pin_a.value()
         current_b = self.pin_b.value()
+        print(f"a= {current_a} b= {current_b}")
         
         # Only process on A pin changes for cleaner detent detection
         if current_a != self.last_a:
