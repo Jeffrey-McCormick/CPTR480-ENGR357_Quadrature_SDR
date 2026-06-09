@@ -2,7 +2,10 @@ import os
 import sys
 import time
 import _thread  # MicroPython dual-core module
-from machine import SPI, I2S, Pin
+from machine import SPI, Pin
+#from machine import I2S
+
+from dac import DAC
 
 SD_CS_PIN = 1
 SD_SCK_PIN = 2
@@ -17,11 +20,13 @@ BUFFER_SIZE = 512
 
 class AudioStreamer:
     def __init__(self, bits=16, rate=44100, ibuf=20480):
-        self.i2s = None
-        self.init_i2s(bits, rate, ibuf)
+        #self.i2s = None
+        #self.init_i2s(bits, rate, ibuf)
+        self.dac = DAC()
         self.paused = False
         self.current_song = None
         self.is_running = False
+        self.dac.set_stereo()
 
     def init_i2s(self, bits=16, rate=44100, ibuf=20480):
         self.i2s = I2S(0, sck=Pin(I2S_BCLK_PIN), ws=Pin(I2S_LRCK_PIN), sd=Pin(I2S_DIN_PIN), 
@@ -32,7 +37,6 @@ class AudioStreamer:
         return [f for f in os.listdir("/sd") if f.lower().endswith('.wav')]
 
     def _audio_thread_worker(self):
-        """This function runs entirely on Core 1 in the background."""
         self.is_running = True
         try:
             with open("/sd/" + self.current_song, "rb") as f:
@@ -44,25 +48,23 @@ class AudioStreamer:
                     if not byte:
                         break
                         
-                    # Shift all elements left by 1 using slicing
                     header_buffer[0:3] = header_buffer[1:4]
                     header_buffer[3] = byte[0]
                         
-                    # Check if our rolling window spells 'data' (0x64, 0x61, 0x74, 0x61)
                     if header_buffer == b'data':
-                        f.read(4) # Read size integer to clear data pointer
+                        f.read(4) 
                         break
                 
                 # --- RUN THE NORMAL STREAMING LOOP ---
-                # Now safely aligned deep within the open file context block
                 while self.is_running:
                     if not self.paused:
                         data = f.read(BUFFER_SIZE)
                         if not data:
-                            break  # End of file reached
+                            break 
                         
-                        self.i2s.write(data)
-                        sys.stdout.buffer.write(data)
+                        # Use the new DAC object to write the buffer
+                        self.dac.write_buffer(data) 
+                        
                     else:
                         time.sleep(0.02)
                         
