@@ -1,7 +1,7 @@
 """
 DAC code
 """
-from machine import I2S, Pin
+from machine import I2S, Pin, PWM
 import time
 
 class DAC:
@@ -18,14 +18,19 @@ class DAC:
         self.buffer_size = buffer_size
         self.i2s = None
 
+        self.sck_fallback = PWM(Pin(17))
+        self.sck_fallback.freq(11289600)
+        self.sck_fallback.duty_u16(32768)
+
         # Set up the optional hardware mute pin (XSMT on PCM5102A)
         self.mute_control = None
         if mute_pin is not None:
             self.mute_control = Pin(mute_pin, Pin.OUT)
-            self.mute() # Start muted to prevent pops during init
+            self.unmute() # Start muted to prevent pops during init
 
         # Default to Stereo initialization
         self.set_stereo()
+
 
     def mute(self):
         """Pulls the XSMT pin LOW to soft-mute the DAC output."""
@@ -76,3 +81,20 @@ class DAC:
         time.sleep_ms(20) # Give the PCM5102A a moment to ramp down gracefully
         if self.i2s:
             self.i2s.deinit()
+
+if __name__ == "__main__":
+    import struct, math
+    dac = DAC()
+    dac.unmute()  # explicit, just in case
+
+    # Generate a 440Hz sine tone, 1 second worth
+    sample_rate = 44100
+    freq = 440
+    num_samples = sample_rate  # 1 second
+    buf = bytearray(num_samples * 4)  # stereo, 16-bit = 4 bytes/frame
+
+    for i in range(num_samples):
+        val = int(32767 * math.sin(2 * math.pi * freq * i / sample_rate))
+        struct.pack_into("<hh", buf, i * 4, val, val)  # L and R
+    
+    dac.write_buffer(buf)
