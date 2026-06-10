@@ -107,9 +107,10 @@ if __name__ == "__main__":
     streamer.init_sd()
     # streamer.init_i2s()
     songs = streamer.list_files()
-    streamer.start_stream(songs[0])  
-    # time.sleep(5)
-    # streamer.stop_stream()
-    while streamer.is_running:
-        time.sleep(1)
+    streamer.start_stream(songs[0]) 
+     
+    input("Press Enter to stop")
+
+    streamer.stop_stream()
+    time.sleep(0.5)
     
