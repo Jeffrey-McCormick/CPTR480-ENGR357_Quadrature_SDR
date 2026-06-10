@@ -105,8 +105,11 @@ if __name__ == "__main__":
     
     streamer = AudioStreamer()
     streamer.init_sd()
-    streamer.init_i2s()
+    # streamer.init_i2s()
     songs = streamer.list_files()
     streamer.start_stream(songs[0])  
-    time.sleep(5)
-    streamer.stop_stream()
+    # time.sleep(5)
+    # streamer.stop_stream()
+    while streamer.is_running:
+        time.sleep(1)
+    

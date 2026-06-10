@@ -53,10 +53,11 @@ def run_test():
     test_frequencies = [440, 880, 1046, 2000] 
     tone_duration = 1.0 
     
-    for freq in test_frequencies:
-        print(f"Playing {freq} Hz...")
-        play_tone(audio_out, freq, SAMPLE_RATE, tone_duration, volume=0.2)
-        time.sleep(0.2)
+    while True:
+        for freq in test_frequencies:
+            print(f"Playing {freq} Hz...")
+            play_tone(audio_out, freq, SAMPLE_RATE, tone_duration, volume=0.2)
+            time.sleep(0.2)
 
     print("Test complete. Muting and closing DAC.")
     audio_out.close()

@@ -76,3 +76,20 @@ class DAC:
         time.sleep_ms(20) # Give the PCM5102A a moment to ramp down gracefully
         if self.i2s:
             self.i2s.deinit()
+
+if __name__ == "__main__":
+    import struct, math
+    dac = DAC()
+    dac.unmute()  # explicit, just in case
+
+    # Generate a 440Hz sine tone, 1 second worth
+    sample_rate = 44100
+    freq = 440
+    num_samples = sample_rate  # 1 second
+    buf = bytearray(num_samples * 4)  # stereo, 16-bit = 4 bytes/frame
+
+    for i in range(num_samples):
+        val = int(32767 * math.sin(2 * math.pi * freq * i / sample_rate))
+        struct.pack_into("<hh", buf, i * 4, val, val)  # L and R
+    
+    dac.write_buffer(buf)
