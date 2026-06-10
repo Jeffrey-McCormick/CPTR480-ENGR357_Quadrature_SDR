@@ -1,5 +1,6 @@
 import os
 from machine import SPI, Pin
+import sdcard
 
 SD_CS_PIN = 1
 SD_SCK_PIN = 2
@@ -10,17 +11,17 @@ SD_MISO_PIN = 0
 def mount_sd(mount_point="/sd"):
     """Mount the SD card over SPI at the given path."""
     try:
-        import sdcard
         spi = SPI(
             0,
-            baudrate=15000000,
+            baudrate=20000000,
             polarity=0,
             phase=0,
             sck=Pin(SD_SCK_PIN),
             mosi=Pin(SD_MOSI_PIN),
             miso=Pin(SD_MISO_PIN),
         )
-        sd = sdcard.SDCard(spi, Pin(SD_CS_PIN))
+        sd = sdcard.SDCard(spi, Pin(SD_CS_PIN), baudrate=25000000)
+        sd.init_spi(25000000)
         os.mount(sd, mount_point)
         print(f"SD Card mounted successfully at {mount_point}")
     except Exception as e:
@@ -52,9 +53,8 @@ if __name__ == "__main__":
     print(f"Found {len(tracks)} track(s): {tracks}")
 
     if tracks:
-        player.play(tracks[1])
+        player.play(tracks[0])
         while player.is_active():
-            print("Pumping")
             player.pump()
 
     player.shutdown()
