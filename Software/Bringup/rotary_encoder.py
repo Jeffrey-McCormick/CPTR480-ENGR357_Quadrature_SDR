@@ -74,9 +74,9 @@ class QuadratureEncoder:
 
 
 class ButtonHandler:
-    """Handle push button inputs with debouncing."""
+    """Handle push button inputs with debouncing and long-press detection."""
     
-    def __init__(self, pin, name, debounce_ms=20, callback=None):
+    def __init__(self, pin, name, debounce_ms=20, long_press_ms=600, callback=None):
         """
         Initialize button handler.
         
@@ -84,14 +84,20 @@ class ButtonHandler:
             pin: GPIO pin number
             name: Display name for button
             debounce_ms: Debounce time in milliseconds
+            long_press_ms: Duration for long-press detection
             callback: Optional function to call on press
         """
         self.pin = Pin(pin, Pin.IN, Pin.PULL_UP)
         self.name = name
         self.debounce_ms = debounce_ms
+        self.long_press_ms = long_press_ms
         self.last_press_time = 0
         self.callback = callback
-        self.flag = False
+        self._down = False
+        self._down_at = 0
+        self._long_sent = False
+        self._click_pending = False
+        self._long_pending = False
         
         # Attach interrupt for falling edge (button press, active LOW)
         self.pin.irq(trigger=Pin.IRQ_FALLING, handler=self.on_press)
@@ -101,30 +107,58 @@ class ButtonHandler:
         current_time = time.ticks_ms()
         
         # Debounce: ignore if pressed too soon after last press
-        if current_time - self.last_press_time < self.debounce_ms:
+        if time.ticks_diff(current_time, self.last_press_time) < self.debounce_ms:
             return
         
         # Confirm button is still pressed (active LOW)
         if self.pin.value() == 0:
             self.last_press_time = current_time
-            self.flag = True
+            self._down = True
+            self._down_at = current_time
+            self._long_sent = False
             print(f"{self.name} pressed")
             if self.callback:
                 self.callback()
+
+    def update(self):
+        """Poll button state each main loop iteration for release and long-press."""
+        if not self._down:
+            return
+
+        now = time.ticks_ms()
+
+        if self.pin.value() == 1:
+            held = time.ticks_diff(now, self._down_at)
+            if not self._long_sent and held < self.long_press_ms:
+                self._click_pending = True
+            self._down = False
+            self._long_sent = False
+            return
+
+        if not self._long_sent and time.ticks_diff(now, self._down_at) >= self.long_press_ms:
+            self._long_pending = True
+            self._long_sent = True
+            print(f"{self.name} long press")
+
+    def get_events(self):
+        """Return (short_click, long_press) since last check and clear flags."""
+        clicked = self._click_pending
+        long_press = self._long_pending
+        self._click_pending = False
+        self._long_pending = False
+        return clicked, long_press
                 
     def get_click(self):
         """Return True if button was clicked since last check, and clear flag."""
-        if self.flag:
-            self.flag = False
-            return True
-        return False
+        clicked, _ = self.get_events()
+        return clicked
 
 
 if __name__ == "__main__":
 
     # Initialize encoder and buttons
-    encoder = QuadratureEncoder(pin_a=18, pin_b=17, ppr=1)
-    center_button = ButtonHandler(pin=5, name="Center click")
+    encoder = QuadratureEncoder(pin_a=21, pin_b=20, ppr=1)
+    center_button = ButtonHandler(pin=22, name="Center click")
 
     print("=" * 50)
     print("Rotary Encoder and Button Controller")

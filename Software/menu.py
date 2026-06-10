@@ -19,13 +19,13 @@ I2C_SCL = 13
 I2C_FREQ = 400_000
 
 # Encoder Setup
-# ENC_A = 20          #18 for test Intro to CAD board
-# ENC_B = 21          #17
-# ENC_BUTTON = 22     #5
+ENC_A = 20          #18 for test Intro to CAD board
+ENC_B = 21          #17
+ENC_BUTTON = 22     #5
 
-ENC_A = 18          #18 for test Intro to CAD board
-ENC_B = 17          #17
-ENC_BUTTON = 5     #5
+# ENC_A = 18          #18 for test Intro to CAD board
+# ENC_B = 17          #17
+# ENC_BUTTON = 5     #5
 
 class Menu:
     """
@@ -78,10 +78,15 @@ class Menu:
             y += 12
 
 
+from ui.page import NavStack
+from ui.menu_page import MenuPage, MenuItem
+from ui.freq_pages import AddFreqPage, FreqListPage
+
+
 class SDRApp:
     """
     The main application class that ties together hardware interfaces 
-    and handles the menu states and logic.
+    and handles navigation via a page stack.
     """
     def __init__(self):
         self._init_hardware()
@@ -89,22 +94,19 @@ class SDRApp:
         # Sorted array holding the saved frequencies
         self.freqs = [] 
         
-        # Setup Menus
-        self.main_menu = Menu("Main Menu\n", [
-            "Add Frequency",
-            "Remove Freq",
-            "Listen Freq"
-        ])
-        self.freq_menu = Menu("Select Freq\n", [])
-        
-        # State machine: "main", "add", "remove", "listen"
-        self.state = "main"
-        
         # Add frequency properties
         self.current_freq_input = 1000000 # Default to 1MHz
         self.step_size = 1000 # 1kHz steps
         
         self.last_counter = self.encoder.counter
+
+        self.nav_stack = NavStack(self)
+        root = MenuPage("Main Menu\n", [
+            MenuItem("Add Frequency", page_factory=lambda app: AddFreqPage()),
+            MenuItem("Remove Freq", page_factory=lambda app: FreqListPage("remove")),
+            MenuItem("Listen Freq", page_factory=lambda app: FreqListPage("listen")),
+        ], show_back=False)
+        self.nav_stack.push(root)
 
     def _init_hardware(self):
         self.i2c = machine.I2C(0, sda=machine.Pin(I2C_SDA), scl=machine.Pin(I2C_SCL), freq=I2C_FREQ)
@@ -118,120 +120,32 @@ class SDRApp:
         self.button = ButtonHandler(pin=ENC_BUTTON, name="Center Click")
 
     def run(self):
-        #Main loop
         self.update_display()
         while True:
             self.handle_input()
             time.sleep_ms(50)
 
     def handle_input(self):
-        #Poll the encoder and button, and route the changes to the correct state
         current_counter = self.encoder.counter
         diff = current_counter - self.last_counter
         self.last_counter = current_counter
-        
-        clicked = self.button.get_click()
-        
-        # Only process if there is a change
+
+        self.button.update()
+        clicked, long_press = self.button.get_events()
+
+        if long_press and self.nav_stack.can_pop():
+            self.nav_stack.pop()
+            self.update_display()
+            return
+
         if diff != 0 or clicked:
-            if self.state == "main":
-                self.handle_main_menu(diff, clicked)
-            elif self.state == "add":
-                self.handle_add_freq(diff, clicked)
-            elif self.state == "remove":
-                self.handle_remove_freq(diff, clicked)
-            elif self.state == "listen":
-                self.handle_listen_freq(diff, clicked)
-                
+            self.nav_stack.current.handle_input(self, diff, clicked, False)
             self.update_display()
 
-    def handle_main_menu(self, diff, clicked):
-        if diff > 0:
-            self.main_menu.next()
-        elif diff < 0:
-            self.main_menu.prev()
-            
-        if clicked:
-            selected = self.main_menu.get_selected()
-            if selected == "Add Frequency":
-                self.state = "add"
-                # Keep previously typed freq or reset? Here we keep it.
-            elif selected == "Remove Freq":
-                self.state = "remove"
-                self.update_freq_menu("Remove Freq")
-            elif selected == "Listen Freq":
-                self.state = "listen"
-                self.update_freq_menu("Listen Freq")
-
-    def update_freq_menu(self, title):
-        """Populate the dynamic frequency menu based on saved frequencies."""
-        self.freq_menu.title = title
-        self.freq_menu.options = [f"{f} Hz" for f in self.freqs]
-        self.freq_menu.selected_idx = 0
-        self.freq_menu.scroll_offset = 0
-
-    def handle_add_freq(self, diff, clicked):
-        if diff != 0:
-            self.current_freq_input += diff * self.step_size
-            if self.current_freq_input < 0:
-                self.current_freq_input = 0
-                
-        if clicked:
-            # Save the new frequency
-            if self.current_freq_input not in self.freqs:
-                self.freqs.append(self.current_freq_input)
-                self.freqs.sort()
-            self.state = "main"
-
-    def handle_remove_freq(self, diff, clicked):
-        if diff > 0:
-            self.freq_menu.next()
-        elif diff < 0:
-            self.freq_menu.prev()
-            
-        if clicked:
-            if self.freqs:
-                idx = self.freq_menu.selected_idx
-                self.freqs.pop(idx)
-            # Return to main menu after action
-            self.state = "main"
-
-    def handle_listen_freq(self, diff, clicked):
-        if diff > 0:
-            self.freq_menu.next()
-        elif diff < 0:
-            self.freq_menu.prev()
-            
-        if clicked:
-            if self.freqs:
-                # Placeholder for listening logic where a frequency is actually tuned
-                selected_freq = self.freqs[self.freq_menu.selected_idx]
-                print(f"Now tuning to {selected_freq} Hz...")
-            self.state = "main"
-
     def update_display(self):
-        """Render the current state to the OLED."""
+        """Render the current page to the OLED."""
         self.oled.fill(0)
-        
-        if self.state == "main":
-            self.main_menu.draw(self.oled)
-            
-        elif self.state == "add":
-            self.oled.text("Add Frequency", 0, 0, 1)
-            self.oled.hline(0, 10, 128, 1)
-            self.oled.text(f"Val: {self.current_freq_input} Hz", 0, 25, 1)
-            self.oled.text("Click to save", 0, 50, 1)
-            
-        elif self.state == "remove":
-            self.freq_menu.draw(self.oled)
-            if not self.freqs:
-                self.oled.text("Click to back", 0, 50, 1)
-                
-        elif self.state == "listen":
-            self.freq_menu.draw(self.oled)
-            if not self.freqs:
-                self.oled.text("Click to back", 0, 50, 1)
-            
+        self.nav_stack.current.draw(self.oled)
         self.oled.show()
 
 if __name__ == "__main__":
