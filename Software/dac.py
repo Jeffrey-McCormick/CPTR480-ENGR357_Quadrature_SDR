@@ -5,7 +5,7 @@ from machine import I2S, Pin
 import time
 
 class DAC:
-    def __init__(self, bck_pin=15, ws_pin=16, data_pin=14, mute_pin=6, i2s_id=0, sample_rate=44100, bits=16, buffer_size=20480):
+    def __init__(self, bck_pin=15, ws_pin=16, data_pin=14, mute_pin=6, i2s_id=0, sample_rate=22050, bits=16, buffer_size=2000):
         """
         Initializes the I2S interface for the PCM5102A.
         """
