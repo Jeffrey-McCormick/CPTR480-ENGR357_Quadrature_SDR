@@ -18,6 +18,7 @@ The radio is a direct-conversion, quadrature-sampling receiver (commonly utilizi
    ![SN74CBT3253CDBR](images/schematics_3.png)
    ![Tayloe Detector](images/schematics_4.png)
    - **SN74AC74DR**: Dual D-Type Positive-Edge-Triggered Flip-Flop, typically used to accurately divide the synthesized clock to drive the Tayloe detector switches with precise 90-degree phase offsets.
+   ![Johnson Counter](images/schematics_7.png)
    
 3. **Clock Generation**
    - **Si5351A-B-GT**: I2C-programmable ANY-frequency CMOS clock generator. Driven by a high-precision **24.576 MHz TCXO** (ASTX-H11) for ultra-low drift, it synthesizes the Local Oscillator (LO) frequencies. For quadrature mixing, it is configured to output signals at 4x the target listen frequency.
