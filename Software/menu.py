@@ -1,5 +1,6 @@
 import machine
 import time
+import sys
 
 try:
     from si5351 import Si5351
@@ -7,11 +8,18 @@ try:
     from rotary_encoder import QuadratureEncoder, ButtonHandler
 except ImportError:
     # If the modules are located in the Bringup folders during testing
-    import sys
     sys.path.append('Bringup')
     sys.path.append('Bringup/Load_files')
     from ssd1306 import SSD1306_I2C
     from rotary_encoder import QuadratureEncoder, ButtonHandler
+
+sys.path.append('ui')
+sys.path.append('player')
+
+try:
+    import uasyncio as asyncio
+except ImportError:
+    import asyncio
 
 # I2C setup for OLED
 I2C_SDA = 12 
@@ -78,9 +86,12 @@ class Menu:
             y += 12
 
 
-from ui.page import NavStack
-from ui.menu_page import MenuPage, MenuItem
-from ui.freq_pages import AddFreqPage, FreqListPage
+from page import NavStack
+from menu_page import MenuPage, MenuItem
+from freq_pages import AddFreqPage, FreqListPage
+from music_pages import MusicListPage, PlaybackPage
+from screen_mode_page import ScreenModePage
+from PlaybackController import PlaybackController
 
 
 class SDRApp:
@@ -101,11 +112,19 @@ class SDRApp:
         self.last_counter = self.encoder.counter
 
         self.nav_stack = NavStack(self)
-        root = MenuPage("Main Menu\n", [
+        
+        radio_menu = MenuPage("Radio\n", [
             MenuItem("Add Frequency", page_factory=lambda app: AddFreqPage()),
             MenuItem("Remove Freq", page_factory=lambda app: FreqListPage("remove")),
             MenuItem("Listen Freq", page_factory=lambda app: FreqListPage("listen")),
+        ], show_back=True)
+
+        root = MenuPage("FrohnePod\n", [
+            MenuItem("Radio", page_factory=lambda app: radio_menu),
+            MenuItem("Music Player", page_factory=lambda app: MusicListPage()),
+            MenuItem("Screen Mode", page_factory=lambda app: ScreenModePage()),
         ], show_back=False)
+        
         self.nav_stack.push(root)
 
     def _init_hardware(self):
@@ -119,11 +138,19 @@ class SDRApp:
         self.encoder = QuadratureEncoder(pin_a=ENC_A, pin_b=ENC_B, ppr=1)
         self.button = ButtonHandler(pin=ENC_BUTTON, name="Center Click")
 
-    def run(self):
+        # Initialize Playback Controller
+        self.playback_controller = PlaybackController()
+        try:
+            self.playback_controller.initialize()
+            print("Playback controller initialized.")
+        except Exception as e:
+            print("Warning: failed to initialize playback controller:", e)
+
+    async def run(self):
         self.update_display()
         while True:
             self.handle_input()
-            time.sleep_ms(50)
+            await asyncio.sleep_ms(50)
 
     def handle_input(self):
         current_counter = self.encoder.counter
@@ -150,4 +177,4 @@ class SDRApp:
 
 if __name__ == "__main__":
     app = SDRApp()
-    app.run()
+    asyncio.run(app.run())

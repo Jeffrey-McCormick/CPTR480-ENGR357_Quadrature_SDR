@@ -11,6 +11,11 @@ SD_MISO_PIN = 0
 def mount_sd(mount_point="/sd"):
     """Mount the SD card over SPI at the given path."""
     try:
+        os.umount(mount_point)
+    except OSError:
+        pass
+
+    try:
         spi = SPI(
             0,
             baudrate=20000000,

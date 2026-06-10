@@ -64,8 +64,13 @@ def configure_si5351():
     si5351.enable_output(clk0=True, clk1=False, clk2=False)
     
 if __name__ == "__main__":
-    configure_si5351()
+    try:
+        import uasyncio as asyncio
+    except ImportError:
+        import asyncio
+
+    # configure_si5351()
 
     print("Starting SDR Menu...")
     app = SDRApp()
-    app.run()
+    asyncio.run(app.run())

@@ -1,4 +1,4 @@
-from ui.page import Page
+from page import Page
 
 BACK_LABEL = "< Back"
 
@@ -74,7 +74,3 @@ class MenuPage(Page):
 
     def draw(self, oled):
         self.menu.draw(oled)
-        if self.show_back:
-            Page.draw_footer(oled, "Hold: back")
-        else:
-            Page.draw_footer(oled, "Click: select")

@@ -39,8 +39,8 @@ class PlaybackController:
     def initialize(self):
         """Mount SD card and initialize the DAC (stereo, muted)."""
         mount_sd(self.sd_mount)
-        # No IRQ handler: asyncio drives I2S through the stream interface.
-        self.dac = DAC(nonblocking=False)
+        # We manually poll the non-blocking DAC in _stream_task
+        self.dac = DAC(nonblocking=True)
         self.dac.set_stereo()
 
     def shutdown(self):
@@ -51,8 +51,18 @@ class PlaybackController:
             self.dac = None
 
     def list_tracks(self):
-        """Return sorted .wav filenames on the SD card."""
-        return list_wav_files(self.sd_mount)
+        """Return sorted .wav filenames on the SD card, automatically remounting if needed."""
+        try:
+            mount_sd(self.sd_mount)
+        except Exception as e:
+            print("Failed to mount SD card:", e)
+            return []
+            
+        try:
+            return list_wav_files(self.sd_mount)
+        except Exception as e:
+            print("Failed to list SD card files:", e)
+            return []
 
     def play(self, filename):
         """
@@ -70,8 +80,13 @@ class PlaybackController:
         self.stop()
 
         path = self.sd_mount + "/" + filename
-        self._file = open(path, "rb")
-        self._skip_to_pcm(self._file)
+        try:
+            self._file = open(path, "rb")
+            self._skip_to_pcm(self._file)
+        except Exception as e:
+            print(f"Failed to open {filename}: {e}")
+            self.state = "stopped"
+            return False
 
         self.current_file = filename
         self.paused = False
@@ -133,7 +148,6 @@ class PlaybackController:
             await asyncio.sleep_ms(100)
 
     async def _stream_task(self, gen):
-        swriter = asyncio.StreamWriter(self.dac.i2s)
         buf = bytearray(self.buffer_size)
         mv = memoryview(buf)
         chunks = 0
@@ -148,10 +162,18 @@ class PlaybackController:
                 if nbytes <= 0:
                     break
 
-                swriter.write(mv[:nbytes])
-                # Yields here until the I2S ring accepts the whole chunk;
-                # display/UI tasks run during this await.
-                await swriter.drain()
+                offset = 0
+                while offset < nbytes:
+                    if self.paused:
+                        await asyncio.sleep_ms(20)
+                        continue
+                    
+                    written = self.dac.write(mv[offset:nbytes])
+                    if written is None or written == 0:
+                        # DAC buffer full, yield to other tasks
+                        await asyncio.sleep_ms(10)
+                    else:
+                        offset += written
 
                 chunks += 1
                 if not self._unmuted and chunks >= UNMUTE_AFTER_CHUNKS:

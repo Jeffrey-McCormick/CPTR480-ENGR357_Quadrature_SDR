@@ -1,5 +1,5 @@
-from ui.page import Page
-from ui.menu_page import BACK_LABEL
+from page import Page
+from menu_page import BACK_LABEL
 
 
 class ValueEditorPage(Page):
@@ -39,8 +39,6 @@ class ValueEditorPage(Page):
         oled.text(self.title, 0, 0, 1)
         oled.hline(0, 10, 128, 1)
         oled.text(f"Val: {getattr(app, self.value_attr)} Hz", 0, 25, 1)
-        Page.draw_footer(oled, "Hold: Back", y=44)
-        Page.draw_footer(oled, "Click: Save", y=54)
 
 
 class AddFreqPage(ValueEditorPage):
@@ -119,4 +117,3 @@ class FreqListPage(Page):
         self.menu.draw(oled)
         if self._draw_app is not None and not self._draw_app.freqs:
             oled.text("  (No freqs)", 0, 27, 1)
-        Page.draw_footer(oled, "Hold: back")

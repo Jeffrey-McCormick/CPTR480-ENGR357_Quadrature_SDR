@@ -12,6 +12,7 @@ class DAC:
         ws_pin=16,
         data_pin=14,
         mute_pin=6,
+        mclk_pin=17,
         i2s_id=0,
         sample_rate=44100,
         bits=16,
@@ -24,6 +25,7 @@ class DAC:
         self.bck_pin = bck_pin
         self.ws_pin = ws_pin
         self.data_pin = data_pin
+        self.mclk_pin = mclk_pin
         self.i2s_id = i2s_id
         self.sample_rate = sample_rate
         self.bits = bits
@@ -31,6 +33,13 @@ class DAC:
         self.nonblocking = nonblocking
         self.i2s = None
         self._drain_handler = None
+
+        self.mclk = None
+        if self.mclk_pin is not None:
+            from machine import PWM
+            self.mclk = PWM(Pin(self.mclk_pin))
+            self.mclk.freq(self.sample_rate * 256)
+            self.mclk.duty_u16(32768)
 
         self.mute_control = None
         if mute_pin is not None:
