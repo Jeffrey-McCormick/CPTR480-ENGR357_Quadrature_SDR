@@ -1,6 +1,7 @@
 # CPTR480 Quadrature SDR Hardware Documentation
 
-This repository contains the KiCad schematics, PCB layouts, and Bills of Materials for the CPTR480 Quadrature Software Defined Radio (SDR) receiver board designed by McCormick and Mendoza for ENGR357.
+This repository contains the KiCad schematics, PCB layouts, and Bills of Materials for the CPTR480 Quadrature Software Defined Radio (SDR) receiver board designed by Jeffrey McCormick and Daniel Mendoza for ENGR357.
+**Other contributors**: Raily Smith, Joshua Garbi
 
 ## System Architecture
 
@@ -12,8 +13,7 @@ The radio is a direct-conversion, quadrature-sampling receiver (commonly utilizi
    - **Raspberry Pi Pico (RP2040)**: The brains of the SDR. Handles I2C UI/Hardware control, I2S digital audio streams, DSP, and SD card interfacing. The board will support both the original Raspberry Pi Pico board varients and the YD2040 from CPTR480. 
 
 2. **RF Front-End & Mixing (Tayloe Detector)**
-   - 
-   **SN74CBT3253CDBR**: Dual 1-of-4 FET Multiplexer/Demultiplexer. This high-speed analog switch acts as the quadrature mixer, sequentially sampling the incoming RF signal at the Local Oscillator frequency to produce differential baseband I and Q signals.
+   - **SN74CBT3253CDBR**: Dual 1-of-4 FET Multiplexer/Demultiplexer. This high-speed analog switch acts as the quadrature mixer, sequentially sampling the incoming RF signal at the Local Oscillator frequency to produce differential baseband I and Q signals.
    ![SN74CBT3253CDBR](images/schematics_3.png)
    - **SN74AC74DR**: Dual D-Type Positive-Edge-Triggered Flip-Flop, typically used to accurately divide the synthesized clock to drive the Tayloe detector switches with precise 90-degree phase offsets.
    ![Tayloe Detector](images/schematics_4.png)
