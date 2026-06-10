@@ -14,10 +14,11 @@ The radio is a direct-conversion, quadrature-sampling receiver (commonly utilizi
    - **Raspberry Pi Pico (RP2040)**: The brains of the SDR. Handles I2C UI/Hardware control, I2S digital audio streams, DSP, and SD card interfacing. The board will support both the original Raspberry Pi Pico board varients and the YD2040 from CPTR480. 
 
 2. **RF Front-End & Mixing (Tayloe Detector)**
-   - **SN74CBT3253CDBR**: Dual 1-of-4 FET Multiplexer/Demultiplexer. This high-speed analog switch acts as the quadrature mixer, sequentially sampling the incoming RF signal at the Local Oscillator frequency to produce differential baseband I and Q signals.
+   - **SN74CBT3253CDBR**: Dual 1-of-4 FET Multiplexer/Demultiplexer. This high-speed analog switch acts as the quadrature mixer, sequentially sampling the incoming RF signal at the Local Oscillator frequency to produce differential baseband I and Q signals. A second SN74CBT was used for RF filter switching in the front-end.   
    ![SN74CBT3253CDBR](images/schematics_3.png)
-   - **SN74AC74DR**: Dual D-Type Positive-Edge-Triggered Flip-Flop, typically used to accurately divide the synthesized clock to drive the Tayloe detector switches with precise 90-degree phase offsets.
    ![Tayloe Detector](images/schematics_4.png)
+   - **SN74AC74DR**: Dual D-Type Positive-Edge-Triggered Flip-Flop, typically used to accurately divide the synthesized clock to drive the Tayloe detector switches with precise 90-degree phase offsets.
+   
 3. **Clock Generation**
    - **Si5351A-B-GT**: I2C-programmable ANY-frequency CMOS clock generator. Driven by a high-precision **24.576 MHz TCXO** (ASTX-H11) for ultra-low drift, it synthesizes the Local Oscillator (LO) frequencies. For quadrature mixing, it is configured to output signals at 4x the target listen frequency.
    ![Si5351A-B-GT](images/schematics_1.png)
