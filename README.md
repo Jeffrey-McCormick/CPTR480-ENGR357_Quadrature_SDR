@@ -78,14 +78,17 @@ Standalone scripts used during hardware validation. Each can be uploaded and run
 
 | Component | File | Function | Pass/Fail |
 |-----------|------|----------|-----------|
-| LED | `Bringup/led_blink.py` | Blinks GPIO5 to confirm basic GPIO and upload toolchain | — |
-| I2C bus | `Bringup/i2c_scan.py` | Scans I2C0 (SDA=12, SCL=13); expects Si5351 at `0x60`, OLED at `0x3C` | — |
-| OLED display | `Bringup/oled_test.py` | Full exercise suite for the SSD1306 (text, lines, animation, contrast, power cycle) via `ssd1306.py` | — |
-| Rotary encoder + button | `Bringup/rotary_encoder.py` | `QuadratureEncoder` (detent counting on GPIO 20/21) and `ButtonHandler` (debounced click + long-press on GPIO 22) | — |
-| Si5351 clock | `Bringup/si5351_test.py` | Register R/W test, PLL lock check, 10.24 MHz quadrature setup, frequency sweep with integer-divider validation | — |
-| Filter MUX | `Bringup/filter_mux_control.py` | Drives CTL1 (GPIO19) and CTL2 (GPIO18) to select one of four analog filter paths | — |
-| Si5351 driver | `Bringup/Load_files/si5351.py` | I2C driver: PLL/multiplier config, per-clock dividers, phase offset, output enable | — |
-| OLED driver | `Bringup/Load_files/ssd1306.py` | Standard MicroPython SSD1306 I2C framebuffer driver | — |
+| LED | `Bringup/led_blink.py` | Blinks GPIO5 to confirm basic GPIO and upload toolchain | &check; |
+| I2C bus | `Bringup/i2c_scan.py` | Scans I2C0 (SDA=12, SCL=13); expects Si5351 at `0x60`, OLED at `0x3C` | &check; |
+| OLED display | `Bringup/oled_test.py` | Full exercise suite for the SSD1306 (text, lines, animation, contrast, power cycle) via `ssd1306.py` | &check; |
+| Rotary encoder + button | `Bringup/rotary_encoder.py` | `QuadratureEncoder` (detent counting on GPIO 20/21) and `ButtonHandler` (debounced click + long-press on GPIO 22) | &check; |
+| Si5351 clock | `Bringup/si5351_test.py` | Register R/W test, PLL lock check, 10.24 MHz quadrature setup, frequency sweep with integer-divider validation | &check; |
+| Filter MUX | `Bringup/filter_mux_control.py` | Drives CTL1 (GPIO19) and CTL2 (GPIO18) to select one of four analog filter paths | &check; |
+| Si5351 driver | `Bringup/Load_files/si5351.py` | I2C driver: PLL/multiplier config, per-clock dividers, phase offset, output enable | &check; |
+| OLED driver | `Bringup/Load_files/ssd1306.py` | Standard MicroPython SSD1306 I2C framebuffer driver | &check; |
+| DAC | `Bringup/dac.py` | I2S driver: Configure DAC for stereo or mono playback at 44.1 kHz | &check; |
+| ADC | `Bringup/adc.py` | I2S driver: Configure ADC for 16-bit stereo sampling | &cross; |
+|  ADC Integration | `Bringup/adc_test.py` | Full duplex loopback test: DAC outputs a sine wave, ADC reads it back, and an LED toggles based on amplitude | &cross; |
 
 **`si5351_test.py` details:** Configures PLLA with N=25 (VCO = 24.576 MHz × 25 = 614.4 MHz), sets CLK0/1/2 dividers, and applies phase offsets of 0°, 90°, and 180° via `set_phase()`. The `is_integer_divider()` helper ensures only frequencies that divide the VCO evenly are programmed during the sweep.
 
