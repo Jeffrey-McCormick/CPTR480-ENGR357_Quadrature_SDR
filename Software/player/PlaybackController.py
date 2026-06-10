@@ -1,14 +1,16 @@
 import sys
 import struct
 import time
-import _thread
 
 from dac import DAC
 from sd import mount_sd, list_wav_files
 
 FRAME_BYTES = 4  # 16-bit stereo
-NUM_BUFFERS = 4
-PREFILL_CHUNKS = 3
+DRAIN_TAIL_MS = 500
+UNMUTE_BYTES = 8192  # ~46 ms stereo @ 44.1 kHz; avoid long mute during SD prefill
+
+_EMPTY = 0
+_FULL = 1
 
 
 class PlaybackController:
@@ -22,19 +24,31 @@ class PlaybackController:
         self.current_file = None
         self.paused = False
         self.is_running = False
-        self._writer_active = False
         self._read_done = False
+        self._unmuted = False
+        self._i2s_bytes_out = 0
+        self._eof_at = None
         self._file = None
-        self._buffers = None
-        self._free_slots = []
-        self._ready_queue = []
-        self._queue_lock = _thread.allocate_lock()
+        # Ping-pong double buffer: two halves with strict ownership.
+        # The producer (SD read) fills any _EMPTY half; the consumer
+        # (I2S feed) drains the current _FULL play half, then swaps.
+        self._buf = None
+        self._len = [0, 0]
+        self._status = [_EMPTY, _EMPTY]
+        self._play = 0
+        self._play_off = 0
 
     def initialize(self):
         """Mount SD card and initialize the DAC (stereo, muted)."""
         mount_sd(self.sd_mount)
-        self.dac = DAC()
+        # Blocking I2S writes: pump() interleaves SD reads with draining, so
+        # partial non-blocking writes are unnecessary and easy to starve.
+        self.dac = DAC(nonblocking=False)
         self.dac.set_stereo()
+        # Pure polled: pump() drives both SD reads and I2S feeding, so we
+        # intentionally do NOT register an IRQ drain handler. This keeps the
+        # ping-pong handoff single-threaded and free of IRQ races.
+        self.dac.set_drain_handler(None)
 
     def shutdown(self):
         """Stop playback and release DAC hardware."""
@@ -48,7 +62,7 @@ class PlaybackController:
         return list_wav_files(self.sd_mount)
 
     def play(self, filename):
-        """Start playback. SD reads happen on core 0 via pump()."""
+        """Start playback. pump() reads SD and feeds I2S from the main loop."""
         if not self.dac:
             print("PlaybackController not initialized")
             return False
@@ -64,22 +78,21 @@ class PlaybackController:
         self.state = "playing"
         self.is_running = True
         self._read_done = False
-        self._buffers = [bytearray(self.buffer_size) for _ in range(NUM_BUFFERS)]
-        self._free_slots = list(range(NUM_BUFFERS))
-        self._ready_queue = []
+        self._unmuted = False
+        self._i2s_bytes_out = 0
+        self._eof_at = None
+
+        self._buf = [bytearray(self.buffer_size), bytearray(self.buffer_size)]
+        self._len = [0, 0]
+        self._status = [_EMPTY, _EMPTY]
+        self._play = 0
+        self._play_off = 0
 
         path = self.sd_mount + "/" + filename
         self._file = open(path, "rb")
         self._skip_to_pcm(self._file)
-
-        try:
-            _thread.start_new_thread(self._writer, ())
-            print(f"Started streaming {filename}")
-            return True
-        except OSError:
-            print("Core 1 busy, using blocking playback")
-            self._blocking_playback()
-            return True
+        print(f"Started streaming {filename} (ping-pong double buffer)")
+        return True
 
     def pause(self):
         """Pause playback while keeping the current track."""
@@ -96,7 +109,7 @@ class PlaybackController:
             return
         self.paused = False
         self.state = "playing"
-        if self.dac:
+        if self.dac and self._unmuted:
             self.dac.unmute()
 
     def stop(self):
@@ -105,19 +118,19 @@ class PlaybackController:
         self._read_done = True
         self._close_file()
 
-        for _ in range(100):
-            if not self._writer_active:
-                break
-            time.sleep_ms(10)
-
         if self.dac:
             self.dac.mute()
         self.state = "stopped"
         self.current_file = None
         self.paused = False
-        self._buffers = None
-        self._ready_queue = []
-        self._free_slots = []
+        self._unmuted = False
+        self._i2s_bytes_out = 0
+        self._eof_at = None
+        self._buf = None
+        self._len = [0, 0]
+        self._status = [_EMPTY, _EMPTY]
+        self._play = 0
+        self._play_off = 0
 
     def toggle_pause(self):
         """Toggle between playing and paused."""
@@ -130,38 +143,112 @@ class PlaybackController:
         return self.state == "playing"
 
     def is_active(self):
-        """True while playback thread is running or SD reads are pending."""
-        return self._writer_active or (self.is_running and not self._read_done)
+        """True while reading, or while either half still holds audio to drain."""
+        if self.is_running and not self._read_done:
+            return True
+        if self._status[0] == _FULL or self._status[1] == _FULL:
+            return True
+        if self._eof_at is not None:
+            return time.ticks_diff(time.ticks_ms(), self._eof_at) < DRAIN_TAIL_MS
+        return False
 
     def pump(self):
         """
-        Read SD chunks on core 0, filling every free buffer slot.
-        Call this often from the main loop. Returns True while active.
+        Drive playback from the main loop: fill empty halves from SD and
+        drain the current play half into the I2S ring. Call this often.
         """
-        if not self.is_running or self.paused or self._read_done:
+        if not self.is_running:
+            return False
+
+        if self.paused:
             return self.is_active()
 
-        while True:
-            slot = self._take_free_slot()
-            if slot is None:
-                break
-
-            try:
-                nbytes = self._read_pcm_chunk(self._file, self._buffers[slot])
-                if nbytes <= 0:
-                    self._return_free_slot(slot)
-                    self._read_done = True
-                    self._close_file()
-                    break
-
-                self._enqueue_ready(slot, nbytes)
-            except Exception as e:
-                sys.stderr.write(f"Pump error: {e}\n")
-                self._read_done = True
-                self._close_file()
-                return False
-
+        # Drain I2S before reading SD so a slow card read cannot starve output.
+        self._drain()
+        self._fill()
+        self._maybe_finish()
         return self.is_active()
+
+    def _fill(self):
+        """Producer: read one SD chunk into a single _EMPTY half per pump()."""
+        if self._read_done:
+            return
+
+        idx = self._empty_half()
+        if idx is None:
+            return
+
+        try:
+            nbytes = self._read_pcm_chunk(self._file, self._buf[idx])
+        except Exception as e:
+            sys.stderr.write(f"Fill error: {e}\n")
+            self._read_done = True
+            self._close_file()
+            return
+
+        if nbytes <= 0:
+            self._read_done = True
+            self._close_file()
+            return
+
+        self._len[idx] = nbytes
+        self._status[idx] = _FULL
+
+    def _drain(self):
+        """Consumer: push the current play half into the non-blocking I2S ring."""
+        if not self.dac or self.paused:
+            return
+
+        while self._status[self._play] == _FULL:
+            view = memoryview(self._buf[self._play])[self._play_off:self._len[self._play]]
+            if len(view) == 0:
+                self._swap_play_half()
+                continue
+
+            written = self.dac.write(view)
+            if written <= 0:
+                break  # I2S ring is full; try again next pump()
+
+            self._play_off += written
+            self._i2s_bytes_out += written
+            if self._play_off >= self._len[self._play]:
+                self._swap_play_half()
+
+        if not self._unmuted and self._i2s_bytes_out >= UNMUTE_BYTES:
+            self.dac.unmute()
+            self._unmuted = True
+
+    def _swap_play_half(self):
+        """Release the drained half back to the producer and ping-pong over."""
+        self._status[self._play] = _EMPTY
+        self._len[self._play] = 0
+        self._play_off = 0
+        self._play ^= 1
+
+    def _empty_half(self):
+        if self._status[0] == _EMPTY:
+            return 0
+        if self._status[1] == _EMPTY:
+            return 1
+        return None
+
+    def _maybe_finish(self):
+        if not self._read_done:
+            return
+        if self._status[0] == _FULL or self._status[1] == _FULL:
+            self._eof_at = None
+            return
+        if self._eof_at is None:
+            self._eof_at = time.ticks_ms()
+            return
+        if time.ticks_diff(time.ticks_ms(), self._eof_at) >= DRAIN_TAIL_MS:
+            self.is_running = False
+            self.state = "stopped"
+            self.current_file = None
+            self.paused = False
+            if self.dac:
+                self.dac.mute()
+            self._unmuted = False
 
     def _close_file(self):
         if self._file:
@@ -176,7 +263,7 @@ class PlaybackController:
         if f.read(4) != b"RIFF":
             raise ValueError("Not a WAV file")
 
-        f.read(4)  # file size
+        f.read(4)
 
         if f.read(4) != b"WAVE":
             raise ValueError("Not a WAVE file")
@@ -198,125 +285,3 @@ class PlaybackController:
         if nbytes <= 0:
             return 0
         return nbytes & ~(FRAME_BYTES - 1)
-
-    def _take_free_slot(self):
-        self._queue_lock.acquire()
-        try:
-            if self._free_slots:
-                return self._free_slots.pop(0)
-            return None
-        finally:
-            self._queue_lock.release()
-
-    def _return_free_slot(self, slot):
-        self._queue_lock.acquire()
-        try:
-            self._free_slots.append(slot)
-        finally:
-            self._queue_lock.release()
-
-    def _enqueue_ready(self, slot, nbytes):
-        self._queue_lock.acquire()
-        try:
-            self._ready_queue.append((slot, nbytes))
-        finally:
-            self._queue_lock.release()
-
-    def _dequeue_ready(self):
-        self._queue_lock.acquire()
-        try:
-            if self._ready_queue:
-                return self._ready_queue.pop(0)
-            return None
-        finally:
-            self._queue_lock.release()
-
-    def _ready_count(self):
-        self._queue_lock.acquire()
-        try:
-            return len(self._ready_queue)
-        finally:
-            self._queue_lock.release()
-
-    def _writer(self):
-        """I2S output on core 1. Never touches the SD card."""
-        self._writer_active = True
-        unmuted = False
-
-        try:
-            while True:
-                if not self.is_running and self._read_done and self._ready_count() == 0:
-                    break
-
-                if self.paused:
-                    time.sleep_ms(5)
-                    continue
-
-                if not unmuted:
-                    if self._ready_count() < PREFILL_CHUNKS:
-                        if self._read_done:
-                            break
-                        continue
-                    self.dac.unmute()
-                    unmuted = True
-
-                chunk = self._dequeue_ready()
-                if chunk is None:
-                    if self._read_done:
-                        break
-                    continue
-
-                slot, nbytes = chunk
-                self.dac.write_buffer(self._buffers[slot], nbytes)
-                self._return_free_slot(slot)
-
-        except Exception as e:
-            sys.stderr.write(f"Writer error: {e}\n")
-        finally:
-            self.is_running = False
-            self._writer_active = False
-            self._read_done = True
-            self._close_file()
-            self.state = "stopped"
-            self.current_file = None
-            self.paused = False
-            if self.dac:
-                self.dac.mute()
-            _thread.exit()
-
-    def _blocking_playback(self):
-        """Fallback when core 1 is unavailable: read and write on core 0."""
-        self._writer_active = True
-        buf = self._buffers[0]
-
-        try:
-            for _ in range(PREFILL_CHUNKS):
-                nbytes = self._read_pcm_chunk(self._file, buf)
-                if nbytes <= 0:
-                    return
-                self.dac.write_buffer(buf, nbytes)
-
-            self.dac.unmute()
-
-            while self.is_running:
-                if self.paused:
-                    time.sleep_ms(5)
-                    continue
-
-                nbytes = self._read_pcm_chunk(self._file, buf)
-                if nbytes <= 0:
-                    break
-                self.dac.write_buffer(buf, nbytes)
-
-        except Exception as e:
-            sys.stderr.write(f"Playback error: {e}\n")
-        finally:
-            self.is_running = False
-            self._writer_active = False
-            self._read_done = True
-            self._close_file()
-            self.state = "stopped"
-            self.current_file = None
-            self.paused = False
-            if self.dac:
-                self.dac.mute()

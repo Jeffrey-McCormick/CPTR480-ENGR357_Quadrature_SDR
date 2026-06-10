@@ -52,8 +52,9 @@ if __name__ == "__main__":
     print(f"Found {len(tracks)} track(s): {tracks}")
 
     if tracks:
-        player.play(tracks[0])
+        player.play(tracks[1])
         while player.is_active():
+            print("Pumping")
             player.pump()
 
     player.shutdown()

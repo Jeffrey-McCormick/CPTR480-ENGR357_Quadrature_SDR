@@ -50,7 +50,8 @@ def configure_si5351():
         print("✓ PLLB locked")
     time.sleep(5)
     print()
-    frequency = (4096000, 150) 
+    # 1.42 MHz
+    frequency = (4915200, 125)
     # Verify this is an integer divisor of the PLL frequency
     print(f"Setting CLK0, CLK1, and CLK2 to {frequency[0] / 1e6:.3f} MHz (M={frequency[1]})")
     si5351.configure_clk0(frequency[1])
@@ -63,7 +64,7 @@ def configure_si5351():
     si5351.enable_output(clk0=True, clk1=False, clk2=False)
     
 if __name__ == "__main__":
-    # configure_si5351()
+    configure_si5351()
 
     print("Starting SDR Menu...")
     app = SDRApp()
