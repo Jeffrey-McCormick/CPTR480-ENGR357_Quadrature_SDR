@@ -1,7 +1,7 @@
 """
 DAC code
 """
-from machine import I2S, Pin
+from machine import I2S, Pin, PWM
 import time
 
 class DAC:
@@ -18,6 +18,10 @@ class DAC:
         self.buffer_size = buffer_size
         self.i2s = None
 
+        self.sck_fallback = PWM(Pin(17))
+        self.sck_fallback.freq(11289600)
+        self.sck_fallback.duty_u16(32768)
+
         # Set up the optional hardware mute pin (XSMT on PCM5102A)
         self.mute_control = None
         if mute_pin is not None:
@@ -26,6 +30,7 @@ class DAC:
 
         # Default to Stereo initialization
         self.set_stereo()
+
 
     def mute(self):
         """Pulls the XSMT pin LOW to soft-mute the DAC output."""
