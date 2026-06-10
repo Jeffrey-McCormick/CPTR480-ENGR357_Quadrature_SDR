@@ -22,7 +22,7 @@ class DAC:
         self.mute_control = None
         if mute_pin is not None:
             self.mute_control = Pin(mute_pin, Pin.OUT)
-            self.mute() # Start muted to prevent pops during init
+            self.unmute() # Start muted to prevent pops during init
 
         # Default to Stereo initialization
         self.set_stereo()

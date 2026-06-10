@@ -26,7 +26,7 @@ class AudioStreamer:
         self.paused = False
         self.current_song = None
         self.is_running = False
-        self.dac.set_stereo()
+        self.dac.set_mono()
 
     def init_i2s(self, bits=16, rate=44100, ibuf=20480):
         self.i2s = I2S(0, sck=Pin(I2S_BCLK_PIN), ws=Pin(I2S_LRCK_PIN), sd=Pin(I2S_DIN_PIN), 
@@ -38,6 +38,7 @@ class AudioStreamer:
 
     def _audio_thread_worker(self):
         self.is_running = True
+        self.dac.unmute()  # Ensure DAC is unmuted before starting playback
         try:
             with open("/sd/" + self.current_song, "rb") as f:
                 # --- AUTOMATIC DATA FINDER ---
@@ -110,6 +111,9 @@ if __name__ == "__main__":
     streamer.start_stream(songs[0])  
     # time.sleep(5)
     # streamer.stop_stream()
-    while streamer.is_running:
-        time.sleep(1)
+    input("Press Enter to stop playback...\n") 
+        
+        # If the user presses Enter, execution continues down here:
+    streamer.stop_stream()
+    time.sleep(0.5)
     
