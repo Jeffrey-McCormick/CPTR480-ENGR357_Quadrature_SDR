@@ -16,6 +16,7 @@ import math
 import struct
 from machine import I2S
 from machine import Pin
+from machine import PWM
 
 def make_tone(rate, bits, frequency):
     # create a buffer containing the pure tone samples
@@ -75,7 +76,8 @@ elif os.uname().machine.count("Raspberry"):
     SCK_PIN = 15
     WS_PIN = 16
     SD_PIN = 14
-    I2S_ID = 1
+    I2S_ID = 0
+    MCLK = 17
     BUFFER_LENGTH_IN_BYTES = 2000
     # ======= I2S CONFIGURATION =======
 
@@ -94,10 +96,16 @@ else:
 
 # ======= AUDIO CONFIGURATION =======
 TONE_FREQUENCY_IN_HZ = 440
-SAMPLE_SIZE_IN_BITS = 16
+SAMPLE_SIZE_IN_BITS = 32
 FORMAT = I2S.MONO  # only MONO supported in this example
 SAMPLE_RATE_IN_HZ = 22_050
 # ======= AUDIO CONFIGURATION =======
+
+mclk = PWM(Pin(MCLK))
+mclk.freq(SAMPLE_RATE_IN_HZ * 256)
+mclk.duty_u16(32768)
+
+Pin(6, Pin.OUT).value(1)
 
 audio_out = I2S(
     I2S_ID,

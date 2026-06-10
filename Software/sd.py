@@ -13,7 +13,7 @@ def mount_sd(mount_point="/sd"):
         import sdcard
         spi = SPI(
             0,
-            baudrate=20000000,
+            baudrate=15000000,
             polarity=0,
             phase=0,
             sck=Pin(SD_SCK_PIN),
@@ -31,7 +31,8 @@ def mount_sd(mount_point="/sd"):
 def list_wav_files(mount_point="/sd"):
     """Return sorted .wav filenames from the mounted SD card."""
     return sorted(
-        f for f in os.listdir(mount_point) if f.lower().endswith(".wav")
+        f for f in os.listdir(mount_point)
+        if f.lower().endswith(".wav") and not f.startswith("._")
     )
 
 
@@ -51,12 +52,8 @@ if __name__ == "__main__":
     print(f"Found {len(tracks)} track(s): {tracks}")
 
     if tracks:
-        player.play(tracks[1])
-        time.sleep(3)
-        player.pause()
-        time.sleep(2)
-        player.resume()
-        time.sleep(3)
-        player.stop()
+        player.play(tracks[0])
+        while player.is_active():
+            player.pump()
 
     player.shutdown()
