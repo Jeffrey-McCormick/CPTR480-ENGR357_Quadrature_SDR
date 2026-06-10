@@ -42,6 +42,14 @@ def list_wav_files(mount_point="/sd"):
     )
 
 
+def list_bmp_files(mount_point="/sd"):
+    """Return sorted .bmp filenames from the mounted SD card."""
+    return sorted(
+        f for f in os.listdir(mount_point)
+        if f.lower().endswith(".bmp") and not f.startswith("._")
+    )
+
+
 if __name__ == "__main__":
     import sys
     import time

@@ -78,7 +78,11 @@ class FreqListPage(Page):
         self._ensure_menu()
         self._draw_app = app
         options = [BACK_LABEL]
-        options.extend(f"{f} Hz" for f in app.freqs)
+        for f in app.freqs:
+            if self.mode == "listen" and getattr(app, "current_listen_freq", None) == f:
+                options.append(f"{f} Hz *")
+            else:
+                options.append(f"{f} Hz")
         self.menu.title = self.title + "\n"
         self.menu.options = options
         self.menu.selected_idx = 0
@@ -110,6 +114,8 @@ class FreqListPage(Page):
                 elif self.mode == "listen":
                     selected_freq = app.freqs[freq_idx]
                     print(f"Now tuning to {selected_freq} Hz...")
+                    app.tune_to(selected_freq)
+                    self.on_enter(app)
 
         return "redraw"
 

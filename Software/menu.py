@@ -10,6 +10,7 @@ except ImportError:
     # If the modules are located in the Bringup folders during testing
     sys.path.append('Bringup')
     sys.path.append('Bringup/Load_files')
+    from si5351 import Si5351
     from ssd1306 import SSD1306_I2C
     from rotary_encoder import QuadratureEncoder, ButtonHandler
 
@@ -108,6 +109,7 @@ class SDRApp:
         # Add frequency properties
         self.current_freq_input = 1000000 # Default to 1MHz
         self.step_size = 1000 # 1kHz steps
+        self.current_listen_freq = None
         
         self.last_counter = self.encoder.counter
 
@@ -138,6 +140,18 @@ class SDRApp:
         self.encoder = QuadratureEncoder(pin_a=ENC_A, pin_b=ENC_B, ppr=1)
         self.button = ButtonHandler(pin=ENC_BUTTON, name="Center Click")
 
+        # Initialize Si5351
+        self.si5351 = None
+        if 0x60 in devices:
+            try:
+                self.si5351 = Si5351(self.i2c)
+                self.si5351.initialize()
+                print("Si5351 initialized.")
+            except Exception as e:
+                print("Warning: failed to initialize Si5351:", e)
+        else:
+            print("Warning: Si5351 not found on I2C bus")
+
         # Initialize Playback Controller
         self.playback_controller = PlaybackController()
         try:
@@ -145,6 +159,24 @@ class SDRApp:
             print("Playback controller initialized.")
         except Exception as e:
             print("Warning: failed to initialize playback controller:", e)
+
+    def tune_to(self, freq):
+        """
+        Tunes the Si5351 to 4 times the target listen frequency.
+        """
+        self.current_listen_freq = freq
+        if not self.si5351:
+            print("Si5351 not initialized, cannot tune.")
+            return
+
+        target_freq = 4 * freq
+        print(f"Tuning Si5351 to LO = {target_freq} Hz (Listen Freq = {freq} Hz)...")
+        
+        try:
+            self.si5351.set_quadrature(target_freq)
+            print(f"Successfully tuned Si5351 to quadrature LO: {target_freq} Hz")
+        except Exception as e:
+            print("Error tuning Si5351:", e)
 
     async def run(self):
         self.update_display()

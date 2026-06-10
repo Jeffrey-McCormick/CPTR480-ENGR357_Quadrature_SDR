@@ -128,36 +128,77 @@ class Si5351:
         # The phase offset is a 7-bit value
         self.write_register(reg, phase_value & 0x7F)
 
-    def set_quadrature(self, freq):
-        """Sets CLK0 and CLK1 to the same frequency with 90 degree offset"""
-        crystal_freq = self.crystal_freq
-        
-        # To get a 90 deg offset, we need an integer ms_div.
-        # Let's force a 900MHz PLL for simplicity
-        pll_freq = 900000000
-        pll_mult = pll_freq // crystal_freq
-        ms_div = pll_freq // freq
-        
-        # Ensure ms_div is even for integer mode stability
-        # if ms_div % 2 != 0:
-        #     ms_div -= 1
-            
-        # 1. Configure PLL
+    def set_freq(self, clk, freq):
+        """
+        Sets a specific clock to the requested frequency using a fractional divider.
+        This provides arbitrary frequency output, but quadrature phase offset will not work.
+        """
+        # Force an arbitrary PLL frequency (e.g. from pll_mult = 36 -> 884.736 MHz)
+        pll_mult = 36
+        actual_pll_freq = self.crystal_freq * pll_mult
         self.configure_plla(pll_mult)
         
-        # 2. Configure MultiSynths (Set to Integer Mode)
-        # To set Integer Mode, the p2 and p3 values must be 0 and 1
-        self.configure_clk0(ms_div, num=0, denom=1)
-        self.configure_clk1(ms_div, num=0, denom=1)
+        # Calculate fractional MultiSynth divider
+        divider = actual_pll_freq / freq
+        ms_div = int(divider)
+        denom = 1000000
+        num = int((divider - ms_div) * denom)
         
-        # 3. Set Phase Offset (90 degrees = ms_div / 4)
-        phase_offset = int(ms_div)  # 90 degree offset
-        self.set_phase(0, 0)             # CLK0 at 0 degrees
-        self.set_phase(1, phase_offset)  # CLK1 at 90 degrees
-        
-        # 4. CRITICAL: Reset PLL to sync the phase registers
+        if clk == 0:
+            self.configure_clk0(ms_div, num, denom)
+        elif clk == 1:
+            self.configure_clk1(ms_div, num, denom)
+        elif clk == 2:
+            self.configure_clk2(ms_div, num, denom)
+            
         self.write_register(177, 0xAC)
-        self.enable_output(clk0=True, clk1=True)
+
+    def set_quadrature(self, target_freq):
+        """
+        Sets CLK0 and CLK1 to the same frequency with a 90-degree phase offset.
+        Dynamically adjusts the PLL (with fractional multipliers if needed) to ensure
+        the MultiSynth divider remains an integer, satisfying the hardware phase offset requirement.
+        """
+        crystal_freq = self.crystal_freq
+        
+        # 1. Try to find a pure integer configuration first (VCO in 600-900 MHz)
+        for div in range(8, 901):
+            vco_freq = target_freq * div
+            if 600000000 <= vco_freq <= 900000000:
+                if vco_freq % crystal_freq == 0:
+                    pll_mult = vco_freq // crystal_freq
+                    if 15 <= pll_mult <= 90:
+                        self.configure_plla(pll_mult)
+                        self._apply_quadrature_config(div)
+                        return
+        
+        # 2. Fall back to fractional PLL configuration with integer divider
+        for div in range(8, 901):
+            vco_freq = target_freq * div
+            if 600000000 <= vco_freq <= 900000000:
+                pll_mult_exact = vco_freq / crystal_freq
+                pll_mult = int(pll_mult_exact)
+                if 15 <= pll_mult <= 90:
+                    denom = 1000000
+                    num = int((pll_mult_exact - pll_mult) * denom)
+                    self.configure_plla(pll_mult, num, denom)
+                    self._apply_quadrature_config(div)
+                    return
+                    
+        raise ValueError("Could not find suitable PLL parameters for requested quadrature frequency")
+
+    def _apply_quadrature_config(self, div):
+        # Configure MultiSynths (Set to Integer Mode)
+        self.configure_clk0(div, num=0, denom=1)
+        self.configure_clk1(div, num=0, denom=1)
+        
+        # Set Phase Offset
+        self.set_phase(0, 0)
+        self.set_phase(1, div)
+        
+        # CRITICAL: Reset PLL to sync the phase registers
+        self.write_register(177, 0xAC)
+        self.enable_output(clk0=True, clk1=True, clk2=False)
 
 # Correct Example usage for 10 MHz
 if __name__ == "__main__":
