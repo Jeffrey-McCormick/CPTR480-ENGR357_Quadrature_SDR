@@ -44,7 +44,7 @@ def play_tone(audio_out, frequency, sample_rate, duration_seconds, volume=0.2):
 def run_test():
     print("Initializing DAC...")
     audio_out = DAC()
-    
+
     # Set to Mono for this test
     audio_out.set_mono()
     audio_out.unmute()
