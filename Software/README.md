@@ -92,6 +92,8 @@ WAV playback from the SD card is handled cooperatively with `asyncio` (not a sec
 
 **Standalone usage:** `sd.py` can be run directly (`python sd.py` on-device) to play the first track found on the card.
 
+![Watch this lol](./_Media/IMG_4193.MOV)
+
 ---
 
 ### DAC
