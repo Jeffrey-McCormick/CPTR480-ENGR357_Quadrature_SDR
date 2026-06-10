@@ -1,6 +1,6 @@
 # CPTR480 Quadrature SDR Hardware Documentation
 
-This repository contains the KiCad schematics, PCB layouts, and Bills of Materials for the CPTR480 Quadrature Software Defined Radio (SDR) receiver board designed by Jeffrey McCormick and Daniel Mendoza for ENGR357.
+This repository contains the KiCad schematics, PCB layouts, and Bills of Materials for the CPTR480 Quadrature Software Defined Radio (SDR) receiver board designed by Jeffrey McCormick and Daniel Mendoza for ENGR357 and CPTR480.
 
 **Other contributors**: Riley Smith, Joshua Garbi
 
