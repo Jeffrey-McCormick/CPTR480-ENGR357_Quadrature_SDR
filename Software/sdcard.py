@@ -194,15 +194,17 @@ class SDCard:
     def readinto(self, buf):
         self.cs(0)
 
-        # read until start byte (0xff)
-        for i in range(_CMD_TIMEOUT):
+        # Busy-poll for the data token. The upstream driver slept 1 ms per
+        # poll, which costs up to ~64 ms per 32 KB multi-block read and
+        # caps throughput below what streaming audio needs.
+        deadline = time.ticks_add(time.ticks_ms(), 300)
+        while True:
             self.spi.readinto(self.tokenbuf, 0xFF)
             if self.tokenbuf[0] == _TOKEN_DATA:
                 break
-            time.sleep_ms(1)
-        else:
-            self.cs(1)
-            raise OSError("timeout waiting for response")
+            if time.ticks_diff(deadline, time.ticks_ms()) <= 0:
+                self.cs(1)
+                raise OSError("timeout waiting for response")
 
         # read data
         mv = self.dummybuf_memoryview
