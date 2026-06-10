@@ -40,21 +40,24 @@ def list_wav_files(mount_point="/sd"):
 if __name__ == "__main__":
     import sys
     import time
+    import asyncio
 
     sys.path.append("player")
     from PlaybackController import PlaybackController
 
     time.sleep(2)
 
-    player = PlaybackController()
-    player.initialize()
+    async def main():
+        player = PlaybackController()
+        player.initialize()
 
-    tracks = player.list_tracks()
-    print(f"Found {len(tracks)} track(s): {tracks}")
+        tracks = player.list_tracks()
+        print(f"Found {len(tracks)} track(s): {tracks}")
 
-    if tracks:
-        player.play(tracks[0])
-        while player.is_active():
-            player.pump()
+        if tracks:
+            player.play(tracks[0])
+            await player.wait_done()
 
-    player.shutdown()
+        player.shutdown()
+
+    asyncio.run(main())
